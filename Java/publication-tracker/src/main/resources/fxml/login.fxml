@@ -21,9 +21,9 @@
         <Image url="@../assets/background.jpg" />
       </image>
     </ImageView>
-    <TextField layoutX="76.0" layoutY="159.0" prefHeight="46.0" prefWidth="244.0" promptText="Email" />
-    <PasswordField layoutX="76.0" layoutY="211.0" prefHeight="46.0" prefWidth="244.0" promptText="Password" />
-    <Button focusTraversable="true" layoutX="76.0" layoutY="262.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="LOGIN" textFill="WHITE">
+    <TextField  fx:id="email" layoutX="76.0" layoutY="159.0" prefHeight="46.0" prefWidth="244.0" promptText="Email" />
+    <PasswordField fx:id="password" layoutX="76.0" layoutY="211.0" prefHeight="46.0" prefWidth="244.0" promptText="Password" />
+    <Button  fx:id="loginButton" focusTraversable="true" layoutX="76.0" layoutY="262.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="LOGIN" textFill="WHITE">
       <font>
         <Font name="System Bold" size="15.0" fx:id="x1" />
       </font>
