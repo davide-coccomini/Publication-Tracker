@@ -57,13 +57,16 @@ def extractPublicationInfo(idAuthor, publication):
     publicationDict["idAuthor"] = idAuthor
     if len(publications) > 6 and len(authors) > 1:
         try:
-            citations = random.sample(range(idpublication,len(publications)), random.randrange(0, 5))
+            citations = random.sample(range(0,idpublication-5), random.randrange(0, 5))
             if citations not in tmp_author_publications:
-                publicationDict["citations"] = citations
+                publicationDict["citatedby"] = citations
         except:
+            publicationDict["citatedby"] = []
+            print("PUBLICATION:")
+            print(publicationDict)
             return publicationDict
     else:
-        publicationDict["citations"] = []
+        publicationDict["citatedby"] = []
     print("PUBLICATION:")
     print(publicationDict)
     return publicationDict
