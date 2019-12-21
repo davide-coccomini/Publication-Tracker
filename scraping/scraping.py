@@ -1,11 +1,12 @@
 import scholarly
 import json
+import random 
 
 author_id = 0
 publication_id = 0
 authors = {}
 publications = {}
-
+tmp_author_publications = []
 def sanitizeString(publication):
     return " ".join((publication.replace("\n", "")).split()).replace("'",'"')
 
@@ -46,17 +47,30 @@ def extractAuthorInfo(author):
 
 
 def extractPublicationInfo(idAuthor, publication):
+    global tmp_author_publications
     publicationDict = {}
-    publicationDict["id"] = getNewPublicationId(publication.bib.get("title"),publication.bib.get("year"))
+    idpublication = getNewPublicationId(publication.bib.get("title"),publication.bib.get("year"))
+    tmp_author_publications.append(idpublication)
+    publicationDict["id"] = idpublication
     publicationDict["title"] = publication.bib.get("title")
     publicationDict["year"] = publication.bib.get("year")
     publicationDict["idAuthor"] = idAuthor
-    for citation in publication.get_citedby():
-        publicationDict["citations"] = [getNewPublicationId(citation.bib.get("title"),citation.bib.get("year")) for citation in publication.get_citedby()]
+    if len(publications) > 6 and len(authors) > 1:
+        try:
+            citations = random.sample(range(idpublication,len(publications)), random.randrange(0, 5))
+            if citations not in tmp_author_publications:
+                publicationDict["citations"] = citations
+        except:
+            return publicationDict
+    else:
+        publicationDict["citations"] = []
     print("PUBLICATION:")
     print(publicationDict)
     return publicationDict
+
+
 def main():
+    global tmp_author_publications
     i = 0
     result_authors_file = open("data/authors.json", "w")
     result_publications_file = open("data/publications.json", "w")
@@ -67,8 +81,9 @@ def main():
         authorDict = extractAuthorInfo(author)
         result_authors_file.write(str(json.dumps(authorDict))+"\n") 
         j = 0
+        tmp_author_publications = []
         for publication in author.publications:
-            if j == 2:
+            if j == 5:
                 break
             publicationDict = extractPublicationInfo(authorDict["id"], publication.fill())
             result_publications_file.write(str(json.dumps(publicationDict))+"\n")
