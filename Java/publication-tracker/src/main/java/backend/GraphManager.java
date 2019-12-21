@@ -134,7 +134,14 @@ public class GraphManager implements AutoCloseable{
             return new Publication(result.single());
         }
     }
-
+    // Retrieve all the publication and their citations too
+    public Publication getPublicationByIdComplete(long id){ // Computationally Espensive
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (p:Publication) WHERE id(p) = "+id+" RETURN p");
+            return new Publication(result.single().get("name").asString(), result.single().get("year").asInt(),getPublicationAuthors(id), getPublicationCitations(id));
+        }
+    }
    // Given the id of a Publication, get all the relationships with it
    public List<Publication> getPublicationCitations(final Long id){
         try (Session session = driver.session()){
