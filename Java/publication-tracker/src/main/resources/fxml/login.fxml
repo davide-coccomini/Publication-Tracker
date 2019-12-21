@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="476.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.mycompany.publication.tracker.FXMLController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <ImageView fitHeight="378.0" fitWidth="756.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../assets/background.jpg" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="390.1612810897827" fitWidth="779.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../assets/background.jpg" />
+      </image>
+    </ImageView>
+    <TextField layoutX="76.0" layoutY="159.0" prefHeight="46.0" prefWidth="244.0" promptText="Email" />
+    <PasswordField layoutX="76.0" layoutY="211.0" prefHeight="46.0" prefWidth="244.0" />
+    <Button focusTraversable="true" layoutX="76.0" layoutY="267.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="LOGIN" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Button>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="98.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../assets/logo.png" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>
