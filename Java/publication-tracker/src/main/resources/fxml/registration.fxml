@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="476.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <ImageView fitHeight="378.0" fitWidth="756.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../assets/background.jpg" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="390.1612810897827" fitWidth="779.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../assets/background.jpg" />
+      </image>
+    </ImageView>
+    <TextField layoutX="76.0" layoutY="133.0" prefHeight="46.0" prefWidth="244.0" promptText="Email" />
+    <PasswordField layoutX="76.0" layoutY="187.0" prefHeight="46.0" prefWidth="244.0" promptText="Password" />
+    <ImageView fitHeight="54.32" fitWidth="97.0" layoutX="6.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../assets/logo.png" />
+      </image>
+    </ImageView>
+    <Button focusTraversable="true" layoutX="76.0" layoutY="298.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="CREATE ACCOUNT" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <TextField layoutX="76.0" layoutY="79.0" prefHeight="46.0" prefWidth="244.0" promptText="Name" />
+    <PasswordField layoutX="76.0" layoutY="240.0" prefHeight="46.0" prefWidth="244.0" promptText="Confirm password" />
+  </children>
+</AnchorPane>
