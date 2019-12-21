@@ -8,18 +8,16 @@ package backend;
 import org.neo4j.driver.v1.AuthTokens;
 import org.neo4j.driver.v1.Driver;
 import org.neo4j.driver.v1.GraphDatabase;
-import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.Session;
 import org.neo4j.driver.v1.StatementResult;
 import org.neo4j.driver.v1.Transaction;
-import org.neo4j.driver.v1.TransactionWork;
 
 import static org.neo4j.driver.v1.Values.parameters;
 
 import java.util.ArrayList;
 import java.util.List;
 import middleware.Author;
-import org.neo4j.driver.v1.Value;
+import middleware.Publication;
 
 public class GraphManager implements AutoCloseable{
     private final Driver driver;
@@ -80,7 +78,13 @@ public class GraphManager implements AutoCloseable{
             return authors;
         }
     }
-   
+     // Given the id of an Author, get all the relationships with it
+   public StatementResult getAuthorRelationships(final Long id){
+        try (Session session = driver.session()){
+            StatementResult result = session.run("MATCH (a:Author)-[r]-(b) WHERE id(a)="+id+" RETURN type(r) as relation, a as author, p as publication");
+            return result;
+        }
+   }
    ///// END AUTHORS METHODS /////
     
    ///// PUBLICATIONS METHODS /////
@@ -104,4 +108,49 @@ public class GraphManager implements AutoCloseable{
             return idNewPublication;
         }
    }
+    // Given an id, get the matching Publication
+    public Publication getPublicationById(long id){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (p:Publication) WHERE id(p) = "+id+" RETURN p");
+            return new Publication(result.single());
+        }
+    }
+
+   // Given the id of a Publication, get all the relationships with it
+   public List<Publication> getPublicationCitations(final Long id){
+        try (Session session = driver.session()){
+            StatementResult result = session.run("MATCH (p:Publication)-[r]-(a) WHERE id(p)="+id+" AND type(r) = 'CITES' RETURN id(p) as publication");
+            List<Publication> publications = new ArrayList();
+            while (result.hasNext()){
+                Publication p = getPublicationById(result.next().get("publication").asLong());
+                publications.add(p);
+            }
+            return publications;
+        }
+   }
+   // Get the authors that wrote the publication
+   public List<Author> getPublicationAuthors(final Long id){
+        try (Session session = driver.session()){
+            StatementResult result = session.run("MATCH (p:Publication)-[r]-(a) WHERE id(p)="+id+" AND type(r) = 'PUBLISHES' RETURN id(a) as author");
+            List<Author> authors = new ArrayList();
+            while (result.hasNext()){
+                Author p = getAuthorById(result.next().get("author").asLong());
+                authors.add(p);
+            }
+            return authors;
+        }
+   }
+   // Given a key and a value, get a single publication that matches
+   public Publication getPublicationBy(final String key, final String value){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (p:Publication {"+key+": $value}) RETURN p,id(p) as id LIMIT 1",
+                    parameters("value", value));
+            
+            long id = result.single().get("id").asLong();
+            
+            return new Publication(result.single().get("name").asString(), result.single().get("year").asInt(),getPublicationAuthors(id), getPublicationCitations(id));
+        }
+    }
 }

@@ -2,6 +2,7 @@
 package middleware;
 
 import java.util.List;
+import org.neo4j.driver.v1.Record;
 
 public class Publication {
     private String name;
@@ -15,7 +16,18 @@ public class Publication {
         this.authors = authors;
         this.citations = citations;
     }
-
+    public Publication(Record publication){
+        name = publication.get("name").toString();
+        year = publication.get("year").asInt();
+        authors = null;
+        citations = null;
+    }
+    public Publication(Record publication, List<Author> authors, List<Publication> citations){
+        name = publication.get("name").toString();
+        year = publication.get("year").asInt();
+        this.authors = authors;
+        this.citations = citations;
+    }
     public String getName() {
         return name;
     }
