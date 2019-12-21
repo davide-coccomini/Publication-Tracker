@@ -1,0 +1,683 @@
+{"id": 0, "title": "Gaussian09", "year": 2009, "idAuthor": [0], "citedby": []}
+{"id": 1, "title": "Gaussian 09, Revision D. 01, Gaussian", "year": 2009, "idAuthor": [0], "citedby": []}
+{"id": 2, "title": "Quantum mechanical continuum solvation models", "year": 2005, "idAuthor": [0], "citedby": []}
+{"id": 3, "title": "Gaussian 03, revision C. 02; Gaussian, Inc", "year": 2004, "idAuthor": [0], "citedby": []}
+{"id": 4, "title": "A new integral equation formalism for the polarizable continuum model: Theoretical background and applications to isotropic and anisotropic dielectrics", "year": 1997, "idAuthor": [0], "citedby": []}
+{"id": 5, "title": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC", "year": 2012, "idAuthor": [1], "citedby": []}
+{"id": 6, "title": "Observation of a new boson with mass near 125 GeV in pp collisions at  and 8 TeV", "year": 2013, "idAuthor": [1], "citedby": []}
+{"id": 7, "title": "Precise determination of the mass of the Higgs boson and tests of compatibility of its couplings with the standard model predictions using proton collisions at 7 and 8", "year": 2015, "idAuthor": [1], "citedby": []}
+{"id": 8, "title": "Evidence for the 125 GeV Higgs boson decaying to a pair of \u03c4 leptons", "year": 2014, "idAuthor": [1], "citedby": []}
+{"id": 9, "title": "Search for top-squark pair production in the single-lepton final state in pp collisions at ", "year": 2013, "idAuthor": [1], "citedby": [3, 1]}
+{"id": 10, "title": "Observation of gravitational waves from a binary black hole merger", "year": 2016, "idAuthor": [2, 5, 6, 37], "citedby": []}
+{"id": 11, "title": "GW151226: observation of gravitational waves from a 22-solar-mass binary black hole coalescence", "year": 2016, "idAuthor": [2, 5, 6], "citedby": [1, 2, 0, 4]}
+{"id": 12, "title": "ALEPH: a detector for electron-positron annihilations at LEP", "year": 1990, "idAuthor": [2], "citedby": [5, 6]}
+{"id": 13, "title": "Advanced ligo", "year": 2015, "idAuthor": [2, 6, 19], "citedby": []}
+{"id": 14, "title": "GW170104: observation of a 50-solar-mass binary black hole coalescence at redshift 0.2", "year": 2017, "idAuthor": [2, 5, 6], "citedby": [8, 3, 2, 4]}
+{"id": 15, "title": "The BABAR detector", "year": 2002, "idAuthor": [3], "citedby": [7, 9]}
+{"id": 16, "title": "Observation of  Violation in the  Meson System", "year": 2001, "idAuthor": [3], "citedby": [0, 7, 3, 10]}
+{"id": 17, "title": "The BaBar detector: upgrades, operation and performance", "year": 2013, "idAuthor": [3], "citedby": [1, 8, 9, 2]}
+{"id": 18, "title": "Observation of a Broad Structure in the  Mass Spectrum around ", "year": 2005, "idAuthor": [3], "citedby": [5, 7, 6, 8]}
+{"id": 19, "title": "Observation of a Narrow Meson State Decaying to  at a Mass of ", "year": 2003, "idAuthor": [3], "citedby": [1, 6]}
+{"id": 20, "title": "Executive summary: heart disease and stroke statistics\u20142013 update: a report from the American Heart Association", "year": 2013, "idAuthor": [4, 7], "citedby": [9]}
+{"id": 21, "title": "European Guidelines on cardiovascular disease prevention in clinical practice (version 2012) The Fifth Joint Task Force of the European Society of Cardiology and Other \u2026", "year": 2012, "idAuthor": [4], "citedby": [2, 14]}
+{"id": 22, "title": "Pathophysiology and treatment of type 2 diabetes: perspectives on the past, present, and future", "year": 2014, "idAuthor": [4], "citedby": [13, 7, 9]}
+{"id": 23, "title": "Glucose and free fatty acid metabolism in non-insulin-dependent diabetes mellitus. Evidence for multiple sites of insulin resistance.", "year": 1989, "idAuthor": [4], "citedby": [3, 0]}
+{"id": 24, "title": "GW170817: observation of gravitational waves from a binary neutron star inspiral", "year": 2017, "idAuthor": [5], "citedby": [11, 13, 17]}
+{"id": 25, "title": "GW170814: A three-detector observation of gravitational waves from a binary black hole coalescence", "year": 2017, "idAuthor": [5], "citedby": []}
+{"id": 26, "title": "GW170814: a three-detector observation of gravitational waves from a binary black hole coalescence", "year": 2017, "idAuthor": [6], "citedby": []}
+{"id": 27, "title": "Heart disease and stroke statistics-2018 update: a report from the American Heart Association.", "year": 2018, "idAuthor": [7], "citedby": [4, 9, 20]}
+{"id": 28, "title": "Insulin resistance and hypersecretion in obesity. European Group for the Study of Insulin Resistance (EGIR).", "year": 1997, "idAuthor": [7], "citedby": [13, 10, 17]}
+{"id": 29, "title": "Endothelial function and dysfunction. Part II: Association with cardiovascular risk factors and diseases. A statement by the Working Group on Endothelins and Endothelial \u2026", "year": 2005, "idAuthor": [7], "citedby": [10, 15]}
+{"id": 30, "title": "Effect of insulin on uric acid excretion in humans", "year": 1995, "idAuthor": [7], "citedby": [1, 18]}
+{"id": 31, "title": "An assay for circulating antibodies to a major etiologic virus of human non-A, non-B hepatitis", "year": 1989, "idAuthor": [8], "citedby": [23, 7, 16, 20]}
+{"id": 32, "title": "Peginterferon alfa-2a alone, lamivudine alone, and the two in combination in patients with HBeAg-negative chronic hepatitis B", "year": 2004, "idAuthor": [8], "citedby": [12, 21, 3, 11]}
+{"id": 33, "title": "A proposed system for the nomenclature of hepatitis C viral genotypes", "year": 1994, "idAuthor": [8], "citedby": [19, 9, 0]}
+{"id": 34, "title": "Immunofluorescence detection of new antigen-antibody system (delta/anti-delta) associated to hepatitis B virus in liver and in serum of HBsAg carriers.", "year": 1977, "idAuthor": [8], "citedby": [3, 20, 22]}
+{"id": 35, "title": "Evidence for immune selection of hepatitis C virus (HCV) putative envelope glycoprotein variants: potential role in chronic HCV infections.", "year": 1992, "idAuthor": [8], "citedby": [13, 17]}
+{"id": 36, "title": "Role of conventional ultrasonography and color flow-doppler sonography in predicting malignancy in'cold'thyroid nodules", "year": 1998, "idAuthor": [9, 12], "citedby": [19, 22]}
+{"id": 37, "title": "Impact of routine measurement of serum calcitonin on the diagnosis and outcome of medullary thyroid cancer: experience in 10,864 patients with nodular thyroid disorders", "year": 2004, "idAuthor": [9], "citedby": [21, 17]}
+{"id": 38, "title": "BRAFV600E Mutation and Outcome of Patients with Papillary Thyroid Carcinoma: A 15-Year Median Follow-Up Study", "year": 2008, "idAuthor": [9], "citedby": [11, 18]}
+{"id": 39, "title": "Minimally invasive, video-assisted parathyroid surgery for primary hyperparathyroidism", "year": 1997, "idAuthor": [9], "citedby": [16, 22, 11, 0]}
+{"id": 40, "title": "Prognostic Significance of Somatic RET Oncogene Mutations in Sporadic Medullary Thyroid Cancer: A 10-Year Follow-Up Study", "year": 2008, "idAuthor": [9], "citedby": [22, 8, 3]}
+{"id": 41, "title": "The ventriloquist effect results from near-optimal bimodal integration", "year": 2004, "idAuthor": [10], "citedby": [8, 30, 5]}
+{"id": 42, "title": "Feature detection in human vision: A phase-dependent energy model", "year": 1988, "idAuthor": [10], "citedby": [1]}
+{"id": 43, "title": "Selective suppression of the magnocellular visual pathway during saccadic eye movements", "year": 1994, "idAuthor": [10], "citedby": [30, 23]}
+{"id": 44, "title": "Changes in visual perception at the time of saccades", "year": 2001, "idAuthor": [10], "citedby": []}
+{"id": 45, "title": "When the world becomes \u2018too real\u2019: a Bayesian explanation of autistic perception", "year": 2012, "idAuthor": [10], "citedby": [28, 15, 33]}
+{"id": 46, "title": "Carbon nanotube actuators", "year": 1999, "idAuthor": [11], "citedby": [38, 29]}
+{"id": 47, "title": "Dielectric elastomers as electromechanical transducers: Fundamentals, materials, devices, models and applications of an emerging electroactive polymer technology", "year": 2011, "idAuthor": [11], "citedby": []}
+{"id": 48, "title": "Polymer gels", "year": 1991, "idAuthor": [11], "citedby": [7, 38, 39, 24]}
+{"id": 49, "title": "Stretching dielectric elastomer performance", "year": 2010, "idAuthor": [11], "citedby": [43]}
+{"id": 50, "title": "Electroactive polymer-based devices for e-textiles in biomedicine", "year": 2005, "idAuthor": [11], "citedby": [19, 8]}
+{"id": 51, "title": "Relation between therapy for hyperthyroidism and the course of Graves' ophthalmopathy", "year": 1998, "idAuthor": [12], "citedby": [14, 32, 29, 43]}
+{"id": 52, "title": "The effects of amiodarone on the thyroid", "year": 2001, "idAuthor": [12], "citedby": [21, 7, 18]}
+{"id": 53, "title": "The spectrum of thyroid disorders in an iodine-deficient community: the Pescopagano survey", "year": 1999, "idAuthor": [12], "citedby": [1, 18, 42, 14]}
+{"id": 54, "title": "Environmental iodine intake and thyroid dysfunction during chronic amiodarone therapy", "year": 1984, "idAuthor": [12], "citedby": [47, 39, 16, 6]}
+{"id": 55, "title": "Guidelines for the use and interpretation of assays for monitoring autophagy", "year": 2012, "idAuthor": [13], "citedby": [47, 6, 10, 7]}
+{"id": 56, "title": "Guidelines for the use and interpretation of assays for monitoring autophagy in higher eukaryotes", "year": 2008, "idAuthor": [13], "citedby": []}
+{"id": 57, "title": "Lithium delays progression of amyotrophic lateral sclerosis", "year": 2008, "idAuthor": [13], "citedby": []}
+{"id": 58, "title": "Parkinson-like syndrome induced by continuous MPTP infusion: convergent roles of the ubiquitin-proteasome system and \u03b1-synuclein", "year": 2005, "idAuthor": [13], "citedby": [20, 6]}
+{"id": 59, "title": "Double-knockout mice for \u03b1-and \u03b2-synucleins: effect on synaptic functions", "year": 2004, "idAuthor": [13], "citedby": [47, 33, 49]}
+{"id": 60, "title": "Clozapine treatment for suicidality in schizophrenia: international suicide prevention trial (InterSePT)", "year": 2003, "idAuthor": [14], "citedby": []}
+{"id": 61, "title": "Olanzapine versus lithium in the maintenance treatment of bipolar disorder: a 12-month, randomized, double-blind, controlled clinical trial", "year": 2005, "idAuthor": [14], "citedby": []}
+{"id": 62, "title": "The bipolar spectrum: a clinical reality in search of diagnostic criteria and an assessment methodology", "year": 1999, "idAuthor": [14, 36], "citedby": [5]}
+{"id": 63, "title": "The mood spectrum in unipolar and bipolar disorder: arguments for a unitary approach", "year": 2004, "idAuthor": [14], "citedby": [55, 5, 34, 11]}
+{"id": 64, "title": "Insight into illness in schizophrenia, schizoaffective disorder, and mood disorders with psychotic features", "year": 2001, "idAuthor": [14], "citedby": [41, 11]}
+{"id": 65, "title": "Genome-wide association study identifies variants at CLU and PICALM associated with Alzheimer's disease", "year": 2009, "idAuthor": [15], "citedby": [4, 2, 54]}
+{"id": 66, "title": "Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for Alzheimer's disease", "year": 2013, "idAuthor": [15], "citedby": [43, 45, 40]}
+{"id": 67, "title": "Common variants at ABCA7, MS4A6A/MS4A4E, EPHA1, CD33 and CD2AP are associated with Alzheimer's disease", "year": 2011, "idAuthor": [15], "citedby": [56, 31, 2, 36]}
+{"id": 68, "title": "Mitochondrial encephalomyopathies", "year": 1993, "idAuthor": [15], "citedby": []}
+{"id": 69, "title": "Mitochondrial diseases", "year": 2004, "idAuthor": [15], "citedby": [11, 61, 9]}
+{"id": 70, "title": "The International Society for Bipolar Disorders (ISBD) task force report on antidepressant use in bipolar disorders", "year": 2013, "idAuthor": [16], "citedby": []}
+{"id": 71, "title": "Agitated \u201cunipolar\u201d depression re-conceptualized as a depressive mixed state: implications for the antidepressant-suicide controversy", "year": 2005, "idAuthor": [16], "citedby": [31, 28, 50, 16]}
+{"id": 72, "title": "Prevalence and characteristics of undiagnosed bipolar disorders in patients with a major depressive episode: the BRIDGE study", "year": 2011, "idAuthor": [16], "citedby": [36]}
+{"id": 73, "title": "The high prevalence of \u201csoft\u201d bipolar (II) features in atypical depression", "year": 1998, "idAuthor": [16], "citedby": [62]}
+{"id": 74, "title": "Proposed subtypes of bipolar II and related disorders: with hypomanic episodes (or cyclothymia) and with hyperthymic temperament", "year": 1992, "idAuthor": [16], "citedby": [44, 13, 30, 11]}
+{"id": 75, "title": "Molecular basis of resistance to azole antifungals", "year": 2002, "idAuthor": [17], "citedby": [38, 31, 67, 48]}
+{"id": 76, "title": "MicroRNA-21 in pancreatic cancer: correlation with clinical outcome and pharmacologic aspects underlying its role in the modulation of gemcitabine activity", "year": 2010, "idAuthor": [17], "citedby": [43, 0, 64, 2]}
+{"id": 77, "title": "Transcription analysis of human equilibrative nucleoside transporter-1 predicts survival in pancreas cancer patients treated with gemcitabine", "year": 2006, "idAuthor": [17], "citedby": []}
+{"id": 78, "title": "Pharmacogenomics of ABC transporters and its role in cancer chemotherapy", "year": 2003, "idAuthor": [17], "citedby": [71, 16, 60]}
+{"id": 79, "title": "Correlation of CDA, ERCC1, and XPD Polymorphisms with Response and Survival in Gemcitabine/Cisplatin\u2013Treated Advanced Non\u2013Small Cell Lung Cancer Patients", "year": 2008, "idAuthor": [17], "citedby": [58, 73, 72, 42]}
+{"id": 80, "title": "Electronics based on two-dimensional materials", "year": 2014, "idAuthor": [18, 56], "citedby": [69]}
+{"id": 81, "title": "CMS technical proposal", "year": 1994, "idAuthor": [18], "citedby": [57, 44]}
+{"id": 82, "title": "The muon project technical design report", "year": 1997, "idAuthor": [18], "citedby": [28, 23, 24, 19]}
+{"id": 83, "title": "CMS: The Tridas Project. Technical Design Report, Vol. 2: Data Acquisition And High-Level Trigger", "year": 2002, "idAuthor": [18], "citedby": []}
+{"id": 84, "title": "The TriDAS project, technical design report. Volume 1: The level-1 trigger", "year": 2000, "idAuthor": [18], "citedby": [43, 22, 75]}
+{"id": 85, "title": "Predictions for the rates of compact binary coalescences observable by ground-based gravitational-wave detectors", "year": 2010, "idAuthor": [19], "citedby": [16]}
+{"id": 86, "title": "An upper limit on the stochastic gravitational-wave background of cosmological origin", "year": 2009, "idAuthor": [19], "citedby": []}
+{"id": 87, "title": "The virgo status", "year": 2006, "idAuthor": [19], "citedby": [42, 67, 47, 24]}
+{"id": 88, "title": "Virgo: a laser interferometer to detect gravitational waves", "year": 2012, "idAuthor": [19], "citedby": [31, 59, 76, 27]}
+{"id": 89, "title": "An early marker for neurological deficits after perinatal brain lesions", "year": 1997, "idAuthor": [20], "citedby": []}
+{"id": 90, "title": "A cortical area that responds specifically to optic flow, revealed by fMRI", "year": 2000, "idAuthor": [20], "citedby": [54, 74, 32, 48]}
+{"id": 91, "title": "Prechtl's method on the qualitative assessment of general movements in preterm, term and young infants", "year": 2004, "idAuthor": [20], "citedby": []}
+{"id": 92, "title": "Qualitative changes of general movements in preterm infants with brain lesions", "year": 1990, "idAuthor": [20], "citedby": []}
+{"id": 93, "title": "The qualitative assessment of general movements in preterm, term and young infants\u2014review of the methodology", "year": 1997, "idAuthor": [20], "citedby": [16, 32, 2, 67]}
+{"id": 94, "title": "Research in mosquito control: current challenges for a brighter future", "year": 2015, "idAuthor": [21], "citedby": [29, 57, 73, 66]}
+{"id": 95, "title": "Declining malaria, rising of dengue and Zika virus: insights for mosquito vector control", "year": 2016, "idAuthor": [21], "citedby": [25, 1, 26, 30]}
+{"id": 96, "title": "Plant-mediated biosynthesis of nanoparticles as an emerging tool against mosquitoes of medical and veterinary importance: a review", "year": 2016, "idAuthor": [21], "citedby": [24, 57, 17, 68]}
+{"id": 97, "title": "Essential oils as ecofriendly biopesticides? Challenges and constraints", "year": 2016, "idAuthor": [21], "citedby": [13, 63, 69, 36]}
+{"id": 98, "title": "Plant-borne ovicides in the fight against mosquito vectors of medical and veterinary importance: a systematic review", "year": 2015, "idAuthor": [21], "citedby": [28, 18, 62, 85]}
+{"id": 99, "title": "Molecular interactions in solution: an overview of methods based on continuous distributions of the solvent", "year": 1994, "idAuthor": [22], "citedby": []}
+{"id": 100, "title": "The on-the-fly surface-hopping program system Newton-X: Application to ab initio simulation of the nonadiabatic photodynamics of benchmark systems", "year": 2007, "idAuthor": [22], "citedby": [64]}
+{"id": 101, "title": "Critical appraisal of the fewest switches algorithm for surface hopping", "year": 2007, "idAuthor": [22], "citedby": []}
+{"id": 102, "title": "Direct semiclassical simulation of photochemical processes with semiempirical wave functions", "year": 2001, "idAuthor": [22], "citedby": [35]}
+{"id": 103, "title": "The photoisomerization mechanism of azobenzene: A semiclassical simulation of nonadiabatic dynamics", "year": 2004, "idAuthor": [22], "citedby": [31]}
+{"id": 104, "title": "Trajectory pattern mining", "year": 2007, "idAuthor": [23], "citedby": [12, 95]}
+{"id": 105, "title": "Human mobility, social ties, and link prediction", "year": 2011, "idAuthor": [23], "citedby": [1]}
+{"id": 106, "title": "Time-focused clustering of trajectories of moving objects", "year": 2006, "idAuthor": [23], "citedby": [90, 15]}
+{"id": 107, "title": "Discrimination-aware data mining", "year": 2008, "idAuthor": [23, 111], "citedby": [50]}
+{"id": 108, "title": "Mobility, data mining and privacy: Geographic knowledge discovery", "year": 2008, "idAuthor": [23], "citedby": []}
+{"id": 109, "title": "On the relationship between firm size and export intensity", "year": 1992, "idAuthor": [24], "citedby": []}
+{"id": 110, "title": "Why open source software can succeed", "year": 2003, "idAuthor": [24], "citedby": [20]}
+{"id": 111, "title": "A theoretical framework for the evaluation of university\u2010industry relationships", "year": 1994, "idAuthor": [24], "citedby": [19, 36, 86, 33]}
+{"id": 112, "title": "Entry strategies under competing standards: Hybrid business models in the open source software industry", "year": 2006, "idAuthor": [24], "citedby": [32, 80, 38, 56]}
+{"id": 113, "title": "Strategic partnerships in new product development: an Italian case study", "year": 1994, "idAuthor": [24], "citedby": [89]}
+{"id": 114, "title": "The orphan receptor GPR17 identified as a new dual uracil nucleotides/cysteinyl\u2010leukotrienes receptor", "year": 2006, "idAuthor": [25], "citedby": [104, 79, 33, 56]}
+{"id": 115, "title": "Plasma and serum brain-derived neurotrophic factor (BDNF) in depressed patients during 1 year of antidepressant treatments", "year": 2008, "idAuthor": [25], "citedby": [33, 40, 22]}
+{"id": 116, "title": "Oxytocin receptor polymorphisms and adult attachment style in patients with depression", "year": 2009, "idAuthor": [25], "citedby": [69, 37, 42, 7]}
+{"id": 117, "title": "The recently identified P2Y-like receptor GPR17 is a sensor of brain damage and a new target for brain repair", "year": 2008, "idAuthor": [25], "citedby": []}
+{"id": 118, "title": "Cloning, pharmacological characterisation and distribution of the rat G-protein-coupled P2Y13 receptor", "year": 2004, "idAuthor": [25], "citedby": [111, 30, 58, 96]}
+{"id": 119, "title": "Heart disease and stroke statistics-2016 update a report from the American Heart Association", "year": 2016, "idAuthor": [26], "citedby": [101]}
+{"id": 120, "title": "Risk factors for falls in community-dwelling older people:\" a systematic review and meta-analysis\"", "year": 2010, "idAuthor": [26], "citedby": [33, 91, 28]}
+{"id": 121, "title": "Cigarette smoking and pancreatic cancer: an analysis from the International Pancreatic Cancer Case-Control Consortium (Panc4)", "year": 2011, "idAuthor": [26], "citedby": [110, 53]}
+{"id": 122, "title": "AHA statistical update", "year": 2013, "idAuthor": [26], "citedby": []}
+{"id": 123, "title": "Risk factors for falls in older people in nursing homes and hospitals. A systematic review and meta-analysis", "year": 2013, "idAuthor": [26], "citedby": [77, 63, 32]}
+{"id": 124, "title": "Outcomes associated with drug-eluting and bare-metal stents: a collaborative network meta-analysis", "year": 2007, "idAuthor": [27], "citedby": [91]}
+{"id": 125, "title": "Incidence and predictors of early and late mortality after transcatheter aortic valve implantation in 663 patients with severe aortic stenosis", "year": 2011, "idAuthor": [27], "citedby": [54, 59, 41]}
+{"id": 126, "title": "Transcatheter aortic valve implantation in failed bioprosthetic surgical valves", "year": 2014, "idAuthor": [27], "citedby": []}
+{"id": 127, "title": "Safety and efficacy of the subclavian approach for transcatheter aortic valve implantation with the CoreValve revalving system", "year": 2010, "idAuthor": [27], "citedby": [111, 19, 30, 74]}
+{"id": 128, "title": "Transcatheter aortic valve implantation: 3-year outcomes of self-expanding CoreValve prosthesis", "year": 2012, "idAuthor": [27], "citedby": [48, 73]}
+{"id": 129, "title": "Ionic liquids: solvent properties and organic reactivity", "year": 2005, "idAuthor": [28], "citedby": [28, 24]}
+{"id": 130, "title": "Acute toxicity of ionic liquids to the zebrafish (Danio rerio)", "year": 2006, "idAuthor": [28], "citedby": []}
+{"id": 131, "title": "Acute toxicity of ionic liquids for three freshwater organisms: Pseudokirchneriella subcapitata, Daphnia magna and Danio rerio", "year": 2009, "idAuthor": [28], "citedby": []}
+{"id": 132, "title": "Tailor-made ionic liquids", "year": 2005, "idAuthor": [28], "citedby": [82, 78, 44]}
+{"id": 133, "title": "Development of cation/anion \u201cinteraction\u201d scales for ionic liquids through ESI-MS measurements", "year": 2007, "idAuthor": [28], "citedby": [66]}
+{"id": 134, "title": "Soluble proteins in insect chemical communication", "year": 2006, "idAuthor": [29], "citedby": []}
+{"id": 135, "title": "Odorant-binding proteins", "year": 1994, "idAuthor": [29], "citedby": [27, 84, 73, 121]}
+{"id": 136, "title": "Odorant-binding proteins in insects", "year": 1995, "idAuthor": [29], "citedby": [65, 21, 89, 122]}
+{"id": 137, "title": "Perireceptor events in olfaction", "year": 1996, "idAuthor": [29], "citedby": []}
+{"id": 138, "title": "Mammalian odorant binding proteins", "year": 2000, "idAuthor": [29], "citedby": [117, 66, 119]}
+{"id": 139, "title": "Biocompatible surfactants for water-in-fluorocarbon emulsions", "year": 2008, "idAuthor": [30], "citedby": [121, 59, 41]}
+{"id": 140, "title": "High performance piezoelectric devices based on aligned arrays of nanofibers of poly (vinylidenefluoride-co-trifluoroethylene)", "year": 2013, "idAuthor": [30], "citedby": [125, 79]}
+{"id": 141, "title": "Industrial upscaling of electrospinning and applications of polymer nanofibers: a review", "year": 2013, "idAuthor": [30], "citedby": [82, 112, 28]}
+{"id": 142, "title": "Drop-based microfluidic devices for encapsulation of single cells", "year": 2008, "idAuthor": [30], "citedby": [108, 33, 133]}
+{"id": 143, "title": "Making silicon hydrophobic: wettability control by two-lengthscale simultaneous patterning with femtosecond laser irradiation", "year": 2006, "idAuthor": [30], "citedby": [8, 79]}
+{"id": 144, "title": "Critical phenomena and renormalization-group theory", "year": 2002, "idAuthor": [31], "citedby": [55, 61]}
+{"id": 145, "title": "Critical exponents and equation of state of the three-dimensional Heisenberg universality class", "year": 2002, "idAuthor": [31], "citedby": [72]}
+{"id": 146, "title": "Critical behavior of the three-dimensional  universality class", "year": 2001, "idAuthor": [31], "citedby": [60]}
+{"id": 147, "title": "Theoretical estimates of the critical exponents of the superfluid transition in  by lattice methods", "year": 2006, "idAuthor": [31], "citedby": [63, 44, 84]}
+{"id": 148, "title": "25th-order high-temperature expansion results for three-dimensional Ising-like systems on the simple-cubic lattice", "year": 2002, "idAuthor": [31], "citedby": [40, 22, 38, 70]}
+{"id": 149, "title": "Energy conservation in wireless sensor networks: A survey", "year": 2009, "idAuthor": [32], "citedby": [88, 76, 91, 89]}
+{"id": 150, "title": "Data collection in wireless sensor networks with mobile elements: A survey", "year": 2011, "idAuthor": [32], "citedby": []}
+{"id": 151, "title": "Performance measurements of motes sensor networks", "year": 2004, "idAuthor": [32], "citedby": []}
+{"id": 152, "title": "IEEE 802.11 ad hoc networks: performance measurements", "year": 2003, "idAuthor": [32], "citedby": []}
+{"id": 153, "title": "Energy management in wireless sensor networks with energy-hungry sensors", "year": 2009, "idAuthor": [32], "citedby": [35, 144, 39, 64]}
+{"id": 154, "title": "Chitosan\u2014A versatile semi-synthetic polymer in biomedical applications", "year": 2011, "idAuthor": [33], "citedby": []}
+{"id": 155, "title": "Polymeric materials for bone and cartilage repair", "year": 2010, "idAuthor": [33], "citedby": [87, 96, 62]}
+{"id": 156, "title": "Additive manufacturing techniques for the production of tissue engineering constructs", "year": 2015, "idAuthor": [33], "citedby": [123, 28, 17]}
+{"id": 157, "title": "Perspectives on alternatives to phthalate plasticized poly (vinyl chloride) in medical devices applications", "year": 2013, "idAuthor": [33], "citedby": [142, 121, 60]}
+{"id": 158, "title": "Fibrin-based scaffold incorporating VEGF-and bFGF-loaded nanoparticles stimulates wound healing in diabetic mice", "year": 2013, "idAuthor": [33], "citedby": [51, 92, 47]}
+{"id": 159, "title": "Indexing compressed text", "year": 2005, "idAuthor": [34], "citedby": [132, 10, 124, 58]}
+{"id": 160, "title": "Fast and accurate annotation of short texts with wikipedia pages", "year": 2011, "idAuthor": [34], "citedby": [110]}
+{"id": 161, "title": "The string B-tree: a new data structure for string search in external memory and its applications", "year": 1999, "idAuthor": [34, 75], "citedby": [131, 153]}
+{"id": 162, "title": "Optical recognition of motor vehicle license plates", "year": 1995, "idAuthor": [34], "citedby": []}
+{"id": 163, "title": "A personalized search engine based on Web\u2010snippet hierarchical clustering", "year": 2008, "idAuthor": [34], "citedby": []}
+{"id": 164, "title": "Marine reserves: size and age do matter", "year": 2008, "idAuthor": [35], "citedby": [78, 45]}
+{"id": 165, "title": "Predicting the consequences of anthropogenic disturbance: large-scale effects of loss of canopy algae on rocky shores", "year": 2001, "idAuthor": [35], "citedby": [57, 159, 112, 30]}
+{"id": 166, "title": "Patterns of distribution of marine assemblages from rocky shores: evidence of relevant scales of variation", "year": 2005, "idAuthor": [35], "citedby": []}
+{"id": 167, "title": "Marine reserves: fish life history and ecological traits matter", "year": 2010, "idAuthor": [35], "citedby": [31]}
+{"id": 168, "title": "Variability in abundance of algae and invertebrates at different spatial scales on rocky sea shores", "year": 2001, "idAuthor": [35], "citedby": [144, 103, 40, 50]}
+{"id": 169, "title": "Common mental disorders and disability across cultures: results from the WHO Collaborative Study on Psychological Problems in General Health Care", "year": 1994, "idAuthor": [36], "citedby": [29, 17, 134]}
+{"id": 170, "title": "Efficacy of ECT in depression: a meta-analytic review", "year": 2004, "idAuthor": [36], "citedby": [153]}
+{"id": 171, "title": "Prevalence and burden of bipolar disorders in European countries", "year": 2005, "idAuthor": [36], "citedby": [95, 91, 33]}
+{"id": 172, "title": "Efficacy of drug treatment in obsessive-compulsive disorder", "year": 1995, "idAuthor": [36], "citedby": [126]}
+{"id": 173, "title": "Prospects for observing and localizing gravitational-wave transients with Advanced LIGO, Advanced Virgo and KAGRA", "year": 2018, "idAuthor": [37], "citedby": [53, 138]}
+{"id": 174, "title": "The basic physics of the binary black hole merger GW150914", "year": 2017, "idAuthor": [37], "citedby": [42, 76]}
+{"id": 175, "title": "Search for high-energy neutrinos from gravitational wave event GW151226 and candidate LVT151012 with ANTARES and IceCube", "year": 2017, "idAuthor": [37], "citedby": [18]}
+{"id": 176, "title": "Evolutionary competition between boundedly rational behavioral rules in oligopoly games", "year": 2015, "idAuthor": [37], "citedby": [52]}
+{"id": 177, "title": "Covariance matrix estimation for CFAR detection in correlated heavy tailed clutter", "year": 2002, "idAuthor": [38, 74], "citedby": []}
+{"id": 178, "title": "High resolution sea clutter data: statistical analysis of recorded live data", "year": 1997, "idAuthor": [38, 74], "citedby": []}
+{"id": 179, "title": "Layover solution in multibaseline SAR interferometry", "year": 2002, "idAuthor": [38], "citedby": [140, 69, 48, 161]}
+{"id": 180, "title": "Frequency offset and symbol timing recovery in flat-fading channels: A cyclostationary approach", "year": 1998, "idAuthor": [38], "citedby": []}
+{"id": 181, "title": "Statistical analyses of measured radar ground clutter data", "year": 1999, "idAuthor": [38, 74], "citedby": [44, 103, 40]}
+{"id": 182, "title": "The abstract state machines method for high-level system design and analysis", "year": 2010, "idAuthor": [39], "citedby": [101, 114, 147, 2]}
+{"id": 183, "title": "The classical decision problem", "year": 2001, "idAuthor": [39], "citedby": [116, 55, 151]}
+{"id": 184, "title": "Java and the Java virtual machine: definition, verification, validation", "year": 2012, "idAuthor": [39], "citedby": []}
+{"id": 185, "title": "Subject-oriented business process management", "year": 2012, "idAuthor": [39], "citedby": [32, 175, 137]}
+{"id": 186, "title": "High level system design and analysis using abstract state machines", "year": 1998, "idAuthor": [39], "citedby": [135]}
+{"id": 187, "title": "Polynomial and matrix computations: fundamental algorithms", "year": 2012, "idAuthor": [40], "citedby": [5]}
+{"id": 188, "title": "Handbook of linear algebra", "year": 2013, "idAuthor": [40], "citedby": [20, 132, 84, 18]}
+{"id": 189, "title": "Numerical methods for structured Markov chains", "year": 2005, "idAuthor": [40, 119], "citedby": [181, 32]}
+{"id": 190, "title": "O (N2. 7799) COMPLEXITY FOR N BY N APPROXIMATE MATRIX MULTIPLICATION", "year": 1979, "idAuthor": [40], "citedby": []}
+{"id": 191, "title": "Design, analysis, and implementation of a multiprecision polynomial rootfinder", "year": 2000, "idAuthor": [40], "citedby": [149, 164, 63, 73]}
+{"id": 192, "title": "The micro-determinants of meso-level learning and innovation: evidence from a Chilean wine cluster", "year": 2005, "idAuthor": [41], "citedby": [180, 84]}
+{"id": 193, "title": "Upgrading in global value chains: lessons from Latin American clusters", "year": 2005, "idAuthor": [41], "citedby": [90, 15, 187, 76]}
+{"id": 194, "title": "The selective nature of knowledge networks in clusters: evidence from the wine industry", "year": 2006, "idAuthor": [41], "citedby": [65]}
+{"id": 195, "title": "Cluster absorptive capacity: why do some clusters forge ahead and others lag behind?", "year": 2005, "idAuthor": [41], "citedby": [90, 38, 123]}
+{"id": 196, "title": "What drives the formation of \u2018valuable\u2019university\u2013industry linkages?: Insights from the wine industry", "year": 2009, "idAuthor": [41], "citedby": [31, 36]}
+{"id": 197, "title": "Wound bed preparation: a systematic approach to wound management", "year": 2003, "idAuthor": [42], "citedby": [128, 48]}
+{"id": 198, "title": "Observation of the optical spin Hall effect", "year": 2007, "idAuthor": [42], "citedby": [173, 131]}
+{"id": 199, "title": "Conservative surgical approach versus non\u2010surgical management for diabetic neuropathic foot ulcers: a randomized trial", "year": 1998, "idAuthor": [42], "citedby": [18, 28, 51, 60]}
+{"id": 200, "title": "GWTC-1: a gravitational-wave transient catalog of compact binary mergers observed by LIGO and Virgo during the first and second observing runs", "year": 2019, "idAuthor": [42], "citedby": [110]}
+{"id": 201, "title": "Statement of the European Pressure Ulcer Advisory Panel-Pressure Ulcer Classification: Differentiation Between Pressure Ulcers and Moisture Lesions.", "year": 2005, "idAuthor": [42], "citedby": [16]}
+{"id": 202, "title": "Protracted low-dose effects on human endothelial cell proliferation and survival in vitro reveal a selective antiangiogenic window for various chemotherapeutic drugs", "year": 2002, "idAuthor": [43], "citedby": [21]}
+{"id": 203, "title": "Thrombospondin 1, a mediator of the antiangiogenic effects of low-dose metronomic chemotherapy", "year": 2003, "idAuthor": [43], "citedby": [2, 118, 63, 74]}
+{"id": 204, "title": "Antitumor effects in mice of low-dose (metronomic) cyclophosphamide administered continuously through the drinking water", "year": 2002, "idAuthor": [43], "citedby": [189, 76]}
+{"id": 205, "title": "A Naturally Occurring Soluble Form of Vascular Endothelial Growth Factor Receptor 2 Detected in Mouse and Human Plasma11Ontario Graduate Scholarship in Science and Technology \u2026", "year": 2004, "idAuthor": [43], "citedby": [63, 26, 32]}
+{"id": 206, "title": "Increased plasma vascular endothelial growth factor (VEGF) as a surrogate marker for optimal therapeutic dosing of VEGF receptor-2 monoclonal antibodies", "year": 2004, "idAuthor": [43], "citedby": [144, 72, 23]}
+{"id": 207, "title": "Finite density QCD via an imaginary chemical potential", "year": 2003, "idAuthor": [44], "citedby": [157, 111, 58, 14]}
+{"id": 208, "title": "Field strength correlators in full QCD", "year": 1997, "idAuthor": [44], "citedby": []}
+{"id": 209, "title": "Relevance of center vortices to QCD", "year": 1999, "idAuthor": [44], "citedby": [59, 107]}
+{"id": 210, "title": "QCD phase transition in a strong magnetic background", "year": 2010, "idAuthor": [44], "citedby": [202]}
+{"id": 211, "title": "Topological susceptibility at zero and finite T in SU (3) Yang-Mills theory", "year": 1997, "idAuthor": [44], "citedby": []}
+{"id": 212, "title": "Application of electronic circular dichroism in configurational and conformational analysis of organic compounds", "year": 2007, "idAuthor": [45], "citedby": []}
+{"id": 213, "title": "Determination of absolute configuration of acyclic 1, 2-diols with Mo2 (OAc) 4. 1. Snatzke's method revisited", "year": 2001, "idAuthor": [45], "citedby": [23]}
+{"id": 214, "title": "Conformational aspects in the studies of organic compounds by electronic circular dichroism", "year": 2011, "idAuthor": [45], "citedby": [203, 167, 6, 63]}
+{"id": 215, "title": "Conformational study of 2, 2'-homosubstituted 1, 1'-binaphthyls by means of UV and CD spectroscopy", "year": 1999, "idAuthor": [45], "citedby": [36]}
+{"id": 216, "title": "Application of electronic circular dichroism in the study of supramolecular systems", "year": 2014, "idAuthor": [45], "citedby": [135, 71, 123]}
+{"id": 217, "title": "An annotated checklist of the Italian vascular flora", "year": 2005, "idAuthor": [46], "citedby": [137, 38, 142]}
+{"id": 218, "title": "Integrazioni alla checklist della flora vascolare italiana", "year": 2007, "idAuthor": [46], "citedby": [46, 204]}
+{"id": 219, "title": "An updated checklist of the vascular flora native to Italy", "year": 2018, "idAuthor": [46], "citedby": []}
+{"id": 220, "title": "Chromosome diversity and evolution in Liliaceae", "year": 2008, "idAuthor": [46], "citedby": [158, 187, 120, 83]}
+{"id": 221, "title": "Karyotype asymmetry: again, how to measure and what to measure?", "year": 2013, "idAuthor": [46], "citedby": [34, 120, 62, 32]}
+{"id": 222, "title": "Analysis and design of ultra thin electromagnetic absorbers comprising resistively loaded high impedance surfaces", "year": 2010, "idAuthor": [47, 105], "citedby": [24, 63]}
+{"id": 223, "title": "The design synthesis of multiband artificial magnetic conductors using high impedance frequency selective surfaces", "year": 2005, "idAuthor": [47], "citedby": [140, 27, 108]}
+{"id": 224, "title": "A frequency selective radome with wideband absorbing properties", "year": 2012, "idAuthor": [47, 105], "citedby": [40]}
+{"id": 225, "title": "A thin electromagnetic absorber for wide incidence angles and both polarizations", "year": 2009, "idAuthor": [47, 105], "citedby": [218, 123, 145, 83]}
+{"id": 226, "title": "A space-time discretization criterion for a stable time-marching solution of the electric field integral equation", "year": 1997, "idAuthor": [47], "citedby": [124, 49, 110]}
+{"id": 227, "title": "Colorectal cancer: role of CT colonography in preoperative evaluation after incomplete colonoscopy", "year": 2002, "idAuthor": [48, 97], "citedby": []}
+{"id": 228, "title": "Treatment of small hepatocellular carcinoma with percutaneous ethanol injection. Analysis of prognostic factors in 105 Western patients", "year": 1995, "idAuthor": [48], "citedby": [63, 83, 101]}
+{"id": 229, "title": "Treatment of large HCC: transcatheter arterial chemoembolization combined with percutaneous ethanol injection versus repeated transcatheter arterial chemoembolization.", "year": 1995, "idAuthor": [48], "citedby": []}
+{"id": 230, "title": "Vascular injuries after percutaneous renal procedures: treatment by transcatheter embolization", "year": 2004, "idAuthor": [48], "citedby": []}
+{"id": 231, "title": "Ultrasound lung comets in systemic sclerosis: a chest sonography hallmark of pulmonary interstitial fibrosis", "year": 2009, "idAuthor": [48], "citedby": [134]}
+{"id": 232, "title": "Wearable, redundant fabric-based sensor arrays for reconstruction of body segment posture", "year": 2004, "idAuthor": [49], "citedby": [52, 41, 130]}
+{"id": 233, "title": "Performance evaluation of sensing fabrics for monitoring physiological and biomechanical variables", "year": 2005, "idAuthor": [49], "citedby": [42]}
+{"id": 234, "title": "Strain-sensing fabrics for wearable kinaesthetic-like systems", "year": 2003, "idAuthor": [49], "citedby": [10, 78]}
+{"id": 235, "title": "Strain sensing fabric for hand posture and gesture monitoring", "year": 2005, "idAuthor": [49], "citedby": [36, 169, 82, 74]}
+{"id": 236, "title": "A sensorized minimally invasive surgery tool for detecting tissutal elastic properties", "year": 1996, "idAuthor": [49], "citedby": [29, 164]}
+{"id": 237, "title": "Minimum physical length and the generalized uncertainty principle in string theory", "year": 1990, "idAuthor": [50], "citedby": [78]}
+{"id": 238, "title": "Non-perturbative aspects in supersymmetric gauge theories", "year": 1988, "idAuthor": [50], "citedby": [55, 83, 11, 166]}
+{"id": 239, "title": "Jet calculus: a simple algorithm for resolving QCD jets", "year": 1979, "idAuthor": [50], "citedby": [114, 113]}
+{"id": 240, "title": "Nonabelian superconductors: Vortices and confinement in N= 2 SQCD", "year": 2003, "idAuthor": [50], "citedby": [85, 97, 208]}
+{"id": 241, "title": "Anomalous supersymmetry transformation of some composite operators in SQCD", "year": 1984, "idAuthor": [50], "citedby": [47, 180, 97]}
+{"id": 242, "title": "TEMPS-I: delineating the most discriminant traits of the cyclothymic, depressive, hyperthymic and irritable temperaments in a nonpatient population", "year": 1998, "idAuthor": [51], "citedby": []}
+{"id": 243, "title": "The semi-structured affective temperament interview (TEMPS-I): reliability and psychometric properties in 1010 14\u201326-year-old students", "year": 1998, "idAuthor": [51], "citedby": [129, 70, 141, 91]}
+{"id": 244, "title": "Buprenorphine: a controlled clinical trial in the treatment of opioid dependence", "year": 2000, "idAuthor": [51], "citedby": [67, 211, 97, 117]}
+{"id": 245, "title": "Substance use and quality of life over 12 months among buprenorphine maintenance-treated and methadone maintenance-treated heroin-addicted patients", "year": 2007, "idAuthor": [51], "citedby": [47]}
+{"id": 246, "title": "QTc interval prolongation in patients on long-term methadone maintenance therapy", "year": 2005, "idAuthor": [51], "citedby": [25, 31, 206, 17]}
+{"id": 247, "title": "Initial therapy with FOLFOXIRI and bevacizumab for metastatic colorectal cancer", "year": 2014, "idAuthor": [52], "citedby": [152, 70, 75]}
+{"id": 248, "title": "Clonal evolution and resistance to EGFR blockade in the blood of colorectal cancer patients", "year": 2015, "idAuthor": [52], "citedby": [13, 86, 85, 144]}
+{"id": 249, "title": "KRAS codon 61, 146 and BRAF mutations predict resistance to cetuximab plus irinotecan in KRAS codon 12 and 13 wild-type metastatic colorectal cancer", "year": 2009, "idAuthor": [52], "citedby": [89, 176]}
+{"id": 250, "title": "PTEN expression and KRAS mutations on primary tumors and metastases in the prediction of benefit from cetuximab plus irinotecan for patients with metastatic colorectal cancer", "year": 2009, "idAuthor": [52], "citedby": [164, 8, 15]}
+{"id": 251, "title": "FOLFOXIRI plus bevacizumab versus FOLFIRI plus bevacizumab as first-line treatment of patients with metastatic colorectal cancer: updated overall survival and molecular \u2026", "year": 2015, "idAuthor": [52], "citedby": [10, 125, 20, 106]}
+{"id": 252, "title": "High density collimated beams of relativistic ions produced by petawatt laser pulses in plasmas", "year": 2000, "idAuthor": [53], "citedby": []}
+{"id": 253, "title": "A numerical scheme for the integration of the Vlasov\u2013Maxwell system of equations", "year": 2002, "idAuthor": [53], "citedby": [54, 22, 122]}
+{"id": 254, "title": "A hybrid-Vlasov model based on the current advance method for the simulation of collisionless magnetized plasma", "year": 2007, "idAuthor": [53], "citedby": [183, 11, 153, 150]}
+{"id": 255, "title": "Kinetic saturation of the Weibel instability in a collisionless plasma", "year": 1998, "idAuthor": [53], "citedby": []}
+{"id": 256, "title": "Bursts of superreflected laser light from inhomogeneous plasmas due to the generation of relativistic solitary waves", "year": 1999, "idAuthor": [53], "citedby": [191, 13, 27, 102]}
+{"id": 257, "title": "Rural development: from practices and policies towards theory", "year": 2000, "idAuthor": [54], "citedby": []}
+{"id": 258, "title": "Synergy and coherence through collective action: some insights from wine routes in Tuscany", "year": 2000, "idAuthor": [54], "citedby": [42, 166]}
+{"id": 259, "title": "Rural development: from practices and policies toward theory", "year": 2000, "idAuthor": [54], "citedby": []}
+{"id": 260, "title": "Towards a better conceptual framework for innovation processes in agriculture and rural development: from linear models to systemic approaches", "year": 2009, "idAuthor": [54], "citedby": [51]}
+{"id": 261, "title": "On the new social relations around and beyond food. Analysing consumers' role and action in Gruppi di Acquisto Solidale (Solidarity Purchasing Groups)", "year": 2012, "idAuthor": [54], "citedby": [82, 55, 112]}
+{"id": 262, "title": "Minimally invasive surgery for gastric cancer", "year": 1999, "idAuthor": [55], "citedby": [23]}
+{"id": 263, "title": "Everolimus With Reduced Tacrolimus Improves Renal Function in De Novo Liver Transplant Recipients: A Randomized Controlled Trial", "year": 2012, "idAuthor": [55], "citedby": []}
+{"id": 264, "title": "LHCb VELO upgrade technical design report", "year": 2013, "idAuthor": [55], "citedby": [230, 200]}
+{"id": 265, "title": "Comparison of plasma neurohormones in congestive heart failure patients with atrial fibrillation versus patients with sinus rhythm", "year": 1998, "idAuthor": [55], "citedby": [82, 245, 215]}
+{"id": 266, "title": "Renal function at two years in liver transplant patients receiving everolimus: results of a randomized, multicenter study", "year": 2013, "idAuthor": [55], "citedby": []}
+{"id": 267, "title": "Simulation of graphene nanoribbon field-effect transistors", "year": 2007, "idAuthor": [56], "citedby": []}
+{"id": 268, "title": "Ab-initio simulations of deformation potentials and electron mobility in chemically modified graphene and two-dimensional hexagonal boron-nitride", "year": 2011, "idAuthor": [56], "citedby": [44, 96, 45]}
+{"id": 269, "title": "Water-based and biocompatible 2D crystal inks for all-inkjet-printed heterostructures", "year": 2017, "idAuthor": [56], "citedby": [144]}
+{"id": 270, "title": "Ultralow-voltage bilayer graphene tunnel FET", "year": 2009, "idAuthor": [56], "citedby": [167, 229, 178, 66]}
+{"id": 271, "title": "Wireless sensor networks: A survey on the state of the art and the 802.15. 4 and ZigBee standards", "year": 2007, "idAuthor": [57], "citedby": [248, 23, 118, 106]}
+{"id": 272, "title": "GPS free coordinate assignment and routing in wireless sensor networks", "year": 2005, "idAuthor": [57], "citedby": [240, 41, 87]}
+{"id": 273, "title": "Comparison-based system-level fault diagnosis in ad hoc networks", "year": 2001, "idAuthor": [57], "citedby": [221, 128, 194]}
+{"id": 274, "title": "Crash faults identification in wireless sensor networks", "year": 2002, "idAuthor": [57], "citedby": [206, 268, 135, 189]}
+{"id": 275, "title": "A novel approach to indoor RSSI localization by automatic calibration of the wireless propagation model", "year": 2009, "idAuthor": [57], "citedby": [217]}
+{"id": 276, "title": "Insulin resistance in morbid obesity: reversal with intramyocellular fat depletion", "year": 2002, "idAuthor": [58], "citedby": [138, 67]}
+{"id": 277, "title": "Separate impact of obesity and glucose tolerance on the incretin effect in normal subjects and type 2 diabetic patients", "year": 2008, "idAuthor": [58], "citedby": [83, 44, 225, 238]}
+{"id": 278, "title": "\u03b1-Hydroxybutyrate is an early biomarker of insulin resistance and glucose intolerance in a nondiabetic population", "year": 2010, "idAuthor": [58], "citedby": [234, 260, 143]}
+{"id": 279, "title": "Influence of obesity and type 2 diabetes on gluconeogenesis and glucose output in humans: a quantitative study.", "year": 2000, "idAuthor": [58], "citedby": [218]}
+{"id": 280, "title": "Hyperinsulinemia and autonomic nervous system dysfunction in obesity: effects of weight loss", "year": 2001, "idAuthor": [58], "citedby": [156, 30, 123]}
+{"id": 281, "title": ". Tyrrhenian basin and Apenninic arcs: kinematic relations since Late Tortonian times", "year": 1990, "idAuthor": [59], "citedby": [125, 108, 26, 32]}
+{"id": 282, "title": "Post-Tortonian mountain building in the Apennines. The role of the passive sinking of a relic lithospheric slab", "year": 1989, "idAuthor": [59], "citedby": [145, 128, 187, 217]}
+{"id": 283, "title": "Segmentation and configuration of subducted lithosphere in Italy: An important control on thrust-belt and foredeep-basin evolution", "year": 1987, "idAuthor": [59], "citedby": [159, 79, 52]}
+{"id": 284, "title": "Quaternary kinematic evolution of the Southern Appennines. Relationships between surface geological features and deep lithospheric structures", "year": 1993, "idAuthor": [59], "citedby": [240, 5, 43]}
+{"id": 285, "title": "Geology of the southern Apennines", "year": 2007, "idAuthor": [59], "citedby": [24, 120, 217]}
+{"id": 286, "title": "Ion acceleration by superintense laser-plasma interaction", "year": 2013, "idAuthor": [60], "citedby": [207, 52]}
+{"id": 287, "title": "Laser acceleration of ion bunches at the front surface of overdense plasmas", "year": 2005, "idAuthor": [60], "citedby": [200, 119, 34]}
+{"id": 288, "title": "\u201cLight sail\u201d acceleration reexamined", "year": 2009, "idAuthor": [60], "citedby": [119, 260, 264]}
+{"id": 289, "title": "Dynamics of electric fields driving the laser acceleration of multi-MeV protons", "year": 2005, "idAuthor": [60], "citedby": [165]}
+{"id": 290, "title": "Ion acceleration in multispecies targets driven by intense laser radiation pressure", "year": 2012, "idAuthor": [60], "citedby": [199, 197]}
+{"id": 291, "title": "Outline of the uncertainty methodology based on accuracy extrapolation", "year": 1995, "idAuthor": [61], "citedby": [44]}
+{"id": 292, "title": "Development of a Code with the Capability of Internal Assessment of Uncertainty", "year": 2000, "idAuthor": [61], "citedby": []}
+{"id": 293, "title": "Methodology for the reliability evaluation of a passive system and its integration into a probabilistic safety assessment", "year": 2005, "idAuthor": [61], "citedby": [162, 99, 226, 194]}
+{"id": 294, "title": "Code validation and uncertainties in system thermalhydraulics", "year": 1998, "idAuthor": [61], "citedby": [241, 231, 101]}
+{"id": 295, "title": "Thermal-hydraulic system codes in nulcear reactor safety and qualification procedures", "year": 2008, "idAuthor": [61], "citedby": []}
+{"id": 296, "title": "Fabrication of PLGA scaffolds using soft lithography and microsyringe deposition", "year": 2003, "idAuthor": [62, 76], "citedby": [195]}
+{"id": 297, "title": "Blends of poly-(\u03b5-caprolactone) and polysaccharides in tissue engineering applications", "year": 2005, "idAuthor": [62, 76], "citedby": [155, 177, 18, 230]}
+{"id": 298, "title": "Genipin-crosslinked chitosan/gelatin blends for biomedical applications", "year": 2008, "idAuthor": [62, 76], "citedby": [195]}
+{"id": 299, "title": "Microsyringe-based deposition of two-dimensional and three-dimensional polymer scaffolds with a well-defined geometry for application to tissue engineering", "year": 2002, "idAuthor": [62], "citedby": [190, 68, 15, 291]}
+{"id": 300, "title": "A comparative study of protein immobilization techniques for optical immunosensors", "year": 1992, "idAuthor": [62], "citedby": []}
+{"id": 301, "title": "Quality of service support in IEEE 802.16 networks", "year": 2006, "idAuthor": [63, 100], "citedby": [244, 2, 83]}
+{"id": 302, "title": "Channel assignment strategies for multiradio wireless mesh networks: Issues and solutions", "year": 2007, "idAuthor": [63], "citedby": [92]}
+{"id": 303, "title": "Performance evaluation of the IEEE 802.16 MAC for QoS support", "year": 2006, "idAuthor": [63, 100], "citedby": []}
+{"id": 304, "title": "Smartphone-based crowdsourcing for network monitoring: opportunities, challenges, and a case study", "year": 2014, "idAuthor": [63], "citedby": [55, 111]}
+{"id": 305, "title": "QoS provided by the IEEE 802.11 wireless LAN to advanced data applications: a simulation analysis", "year": 2000, "idAuthor": [63], "citedby": [214, 218]}
+{"id": 306, "title": "Algebraic approaches to graph transformation\u2013part i: Basic concepts and double pushout approach", "year": 1997, "idAuthor": [64], "citedby": []}
+{"id": 307, "title": "Algebraic approaches to graph transformation\u2013part II: Single pushout approach and comparison with double pushout approach", "year": 1997, "idAuthor": [64], "citedby": [177, 53]}
+{"id": 308, "title": "Graph processes", "year": 1996, "idAuthor": [64], "citedby": [211]}
+{"id": 309, "title": "Contextual Petri nets, asymmetric event structures, and processes", "year": 2001, "idAuthor": [64], "citedby": [8, 279]}
+{"id": 310, "title": "Sesqui-pushout rewriting", "year": 2006, "idAuthor": [64], "citedby": [31, 185]}
+{"id": 311, "title": "Transfer of the Agrobacterium tumefaciens Ti plasmid to avirulent agrobacteria and to Rhizobium ex planta", "year": 1977, "idAuthor": [65], "citedby": [161, 226]}
+{"id": 312, "title": "Impact of Bt corn on rhizospheric and soil eubacterial communities and on beneficial mycorrhizal symbiosis in experimental microcosms", "year": 2005, "idAuthor": [65], "citedby": [253]}
+{"id": 313, "title": "Microbial diversity in soil: ecological theories, the contribution of molecular techniques and the impact of transgenic plants and transgenic microorganisms", "year": 2004, "idAuthor": [65], "citedby": [256]}
+{"id": 314, "title": "Evidence for nitrogen fixation (nif) genes on indigenous Rhizobium plasmids", "year": 1979, "idAuthor": [65], "citedby": [42, 37, 300, 180]}
+{"id": 315, "title": "The occurrence of anastomosis formation and nuclear exchange in intact arbuscular mycorrhizal networks", "year": 2001, "idAuthor": [65], "citedby": [38, 172, 206, 186]}
+{"id": 316, "title": "Carrier frequency recovery in all-digital modems for burst-mode transmissions", "year": 1995, "idAuthor": [66], "citedby": [69, 68, 233]}
+{"id": 317, "title": "Carrier frequency acquisition and tracking for OFDM systems", "year": 1996, "idAuthor": [66], "citedby": [298]}
+{"id": 318, "title": "Turbo synchronization: an EM algorithm interpretation", "year": 2003, "idAuthor": [66, 124], "citedby": [178, 293, 41, 166]}
+{"id": 319, "title": "Mobile and personal communications in the 60 GHz band: A survey", "year": 1999, "idAuthor": [66], "citedby": [115, 257, 121]}
+{"id": 320, "title": "Embedding carrier phase recovery into iterative decoding of turbo-coded linear modulations", "year": 2004, "idAuthor": [66, 124], "citedby": []}
+{"id": 321, "title": "Directed hypergraphs and applications", "year": 1993, "idAuthor": [67], "citedby": []}
+{"id": 322, "title": "A fast parametric maximum flow algorithm and applications", "year": 1989, "idAuthor": [67], "citedby": [294, 277, 269, 196]}
+{"id": 323, "title": "Shortest path algorithms", "year": 1988, "idAuthor": [67], "citedby": []}
+{"id": 324, "title": "Quadratic knapsack problems", "year": 1980, "idAuthor": [67], "citedby": []}
+{"id": 325, "title": "On some matching problems arising in vehicle scheduling models", "year": 1987, "idAuthor": [67], "citedby": [157]}
+{"id": 326, "title": "A simple algorithm for data compression in wireless sensor networks", "year": 2008, "idAuthor": [68], "citedby": [297, 131, 81]}
+{"id": 327, "title": "Patterns and technologies for enabling supply chain traceability through collaborative e-business", "year": 2008, "idAuthor": [68], "citedby": [25, 181, 103, 268]}
+{"id": 328, "title": "Real-time detection of traffic from twitter stream analysis", "year": 2015, "idAuthor": [68, 83], "citedby": []}
+{"id": 329, "title": "A multiobjective evolutionary approach to concurrently learn rule and data bases of linguistic fuzzy-rule-based systems", "year": 2009, "idAuthor": [68, 83], "citedby": [322, 34]}
+{"id": 330, "title": "A genetic algorithm for generating optimal assembly plans", "year": 2000, "idAuthor": [68, 83], "citedby": [184]}
+{"id": 331, "title": "Dorsal and ventral stream sensitivity in normal development and hemiplegia", "year": 2002, "idAuthor": [69], "citedby": [63]}
+{"id": 332, "title": "Early, accurate diagnosis and early intervention in cerebral palsy: advances in diagnosis and treatment", "year": 2017, "idAuthor": [69], "citedby": []}
+{"id": 333, "title": "Is hemiplegic cerebral palsy equivalent to amblyopia of the corticospinal system?", "year": 2007, "idAuthor": [69], "citedby": [9, 46]}
+{"id": 334, "title": "Massage accelerates brain development and the maturation of visual function", "year": 2009, "idAuthor": [69], "citedby": [200]}
+{"id": 335, "title": "Neonatal cerebral infarction and neuromotor outcome at school age", "year": 2004, "idAuthor": [69], "citedby": [150, 306, 151]}
+{"id": 336, "title": "Devolatilization rate of biomasses and coal\u2013biomass blends: an experimental investigation", "year": 2002, "idAuthor": [70], "citedby": [147, 323, 325, 14]}
+{"id": 337, "title": "Devolatilization of biomass fuels and biomass components studied by TG/FTIR technique", "year": 2006, "idAuthor": [70], "citedby": [204]}
+{"id": 338, "title": "Numerical and experimental investigation of a mild combustion burner", "year": 2007, "idAuthor": [70], "citedby": [184]}
+{"id": 339, "title": "Effect of the combustion model and kinetic mechanism on the MILD combustion in an industrial burner fed with hydrogen enriched fuels", "year": 2008, "idAuthor": [70], "citedby": []}
+{"id": 340, "title": "The products of the high temperature oxidation of a single char particle in an electrodynamic balance", "year": 1991, "idAuthor": [70], "citedby": [110, 46, 256, 158]}
+{"id": 341, "title": "ESCMID guidelines for the management of the infection control measures to reduce transmission of multidrug\u2010resistant Gram\u2010negative bacteria in hospitalized patients", "year": 2014, "idAuthor": [71], "citedby": []}
+{"id": 342, "title": "Outcomes of patients hospitalized with community-acquired, health care-associated, and hospital-acquired pneumonia", "year": 2009, "idAuthor": [71], "citedby": []}
+{"id": 343, "title": "Cirrhotic patients are at risk for health care\u2013associated bacterial infections", "year": 2010, "idAuthor": [71], "citedby": [69, 150]}
+{"id": 344, "title": "Ampicillin Plus Ceftriaxone Is as Effective as Ampicillin Plus Gentamicin for Treating Enterococcus faecalis Infective Endocarditis", "year": 2013, "idAuthor": [71], "citedby": []}
+{"id": 345, "title": "Effect of appropriate combination therapy on mortality of patients with bloodstream infections due to carbapenemase-producing Enterobacteriaceae (INCREMENT): a retrospective \u2026", "year": 2017, "idAuthor": [71], "citedby": []}
+{"id": 346, "title": "Relation between the activation energy of the Johari-Goldstein \u03b2 relaxation and  of glass formers", "year": 2004, "idAuthor": [72], "citedby": [335, 299, 290, 291]}
+{"id": 347, "title": "Do theories of the glass transition, in which the structural relaxation time does not define the dispersion of the structural relaxation, need revision?", "year": 2005, "idAuthor": [72], "citedby": [93, 22]}
+{"id": 348, "title": "The Johari\u2212 Goldstein \u03b2-relaxation of water", "year": 2007, "idAuthor": [72], "citedby": []}
+{"id": 349, "title": "Dielectric response analysis of a conducting polymer dominated by the hopping charge transport", "year": 1998, "idAuthor": [72], "citedby": [269, 71, 30]}
+{"id": 350, "title": "Dynamically correlated regions and configurational entropy in supercooled liquids", "year": 2008, "idAuthor": [72], "citedby": [255, 244]}
+{"id": 351, "title": "A formal approach to component adaptation", "year": 2005, "idAuthor": [73], "citedby": [47, 245, 156, 341]}
+{"id": 352, "title": "Formalizing web service choreographies", "year": 2004, "idAuthor": [73], "citedby": []}
+{"id": 353, "title": "The concurrent language, shared prolog", "year": 1991, "idAuthor": [73], "citedby": [71, 208, 131, 329]}
+{"id": 354, "title": "Automated generation of BPEL adapters", "year": 2006, "idAuthor": [73], "citedby": [74, 91, 259]}
+{"id": 355, "title": "Evolving logic programs", "year": 2002, "idAuthor": [73], "citedby": [300, 105]}
+{"id": 356, "title": "X-band sea-clutter nonstationarity: Influence of long waves", "year": 2004, "idAuthor": [74], "citedby": [123, 298]}
+{"id": 357, "title": "Coherent radar target detection in heavy-tailed compound-Gaussian clutter", "year": 2012, "idAuthor": [74], "citedby": []}
+{"id": 358, "title": "High-order entropy-compressed text indexes", "year": 2003, "idAuthor": [75], "citedby": [179, 96, 216]}
+{"id": 359, "title": "Compressed suffix arrays and suffix trees with applications to text indexing and string matching", "year": 2005, "idAuthor": [75], "citedby": []}
+{"id": 360, "title": "Squeezing succinct data structures into entropy bounds", "year": 2006, "idAuthor": [75], "citedby": [338, 321, 82, 350]}
+{"id": 361, "title": "When indexing equals compression: Experiments with compressing suffix arrays and applications", "year": 2004, "idAuthor": [75], "citedby": [280, 133, 78]}
+{"id": 362, "title": "Biofabrication: reappraising the definition of an evolving field", "year": 2016, "idAuthor": [76], "citedby": [119]}
+{"id": 363, "title": "Collagen VI regulates satellite cell self-renewal and muscle regeneration", "year": 2013, "idAuthor": [76], "citedby": [296, 143, 189]}
+{"id": 364, "title": "Brain\u2010derived neurotrophic factor (BDNF) is required for the enhancement of hippocampal neurogenesis following environmental enrichment", "year": 2006, "idAuthor": [77], "citedby": []}
+{"id": 365, "title": "Long-distance retrograde effects of botulinum neurotoxin A", "year": 2008, "idAuthor": [77], "citedby": [257, 128, 356, 218]}
+{"id": 366, "title": "Microvesicles released from microglia stimulate synaptic activity via enhanced sphingolipid metabolism", "year": 2012, "idAuthor": [77], "citedby": [145, 198]}
+{"id": 367, "title": "Synergistic effects of brain-derived neurotrophic factor and chondroitinase ABC on retinal fiber sprouting after denervation of the superior colliculus in adult rats", "year": 2003, "idAuthor": [77], "citedby": [178, 7, 44, 186]}
+{"id": 368, "title": "Brain-derived neurotrophic factor is an anterograde survival factor in the rat visual system", "year": 2000, "idAuthor": [77], "citedby": [301, 145, 140]}
+{"id": 369, "title": "The implications of location accuracy for the interpretation of satellite-tracking data", "year": 2001, "idAuthor": [78], "citedby": [13, 263]}
+{"id": 370, "title": "A review of long\u2010distance movements by marine turtles, and the possible role of ocean currents", "year": 2003, "idAuthor": [78], "citedby": [235, 353, 185]}
+{"id": 371, "title": "The navigational feats of green sea turtles migrating from Ascension Island investigated by satellite telemetry", "year": 1998, "idAuthor": [78], "citedby": [59, 129]}
+{"id": 372, "title": "Assessing accuracy and utility of satellite-tracking data using Argos-linked Fastloc-GPS", "year": 2010, "idAuthor": [78], "citedby": [304, 347, 79]}
+{"id": 373, "title": "Satellite telemetry suggests high levels of fishing-induced mortality in marine turtles", "year": 2003, "idAuthor": [78], "citedby": [67, 204, 313, 202]}
+{"id": 374, "title": "Solar fusion cross sections. II. The  chain and CNO cycles", "year": 2011, "idAuthor": [79], "citedby": [344, 137]}
+{"id": 375, "title": "Parameter-free effective field theory calculation for the solar proton-fusion and hep processes", "year": 2003, "idAuthor": [79], "citedby": [215]}
+{"id": 376, "title": "A high-precision variational approach to three-and four-nucleon bound and zero-energy scattering states", "year": 2008, "idAuthor": [79], "citedby": []}
+{"id": 377, "title": "Observation of Higgs boson decay to bottom quarks", "year": 2018, "idAuthor": [79], "citedby": [361, 244, 42, 370]}
+{"id": 378, "title": "Bulk properties of the medium produced in relativistic heavy-ion collisions from the beam energy scan program", "year": 2017, "idAuthor": [79], "citedby": [289]}
+{"id": 379, "title": "A sustainable process for the production of \u03b3-valerolactone by hydrogenation of biomass-derived levulinic acid", "year": 2012, "idAuthor": [80], "citedby": [35]}
+{"id": 380, "title": "Selective saccharides dehydration to 5-hydroxymethyl-2-furaldehyde by heterogeneous niobium catalysts", "year": 1999, "idAuthor": [80], "citedby": [156, 241, 273, 108]}
+{"id": 381, "title": "G. Busca, C. Carlini, M. Giuttari, AMR Galletti and G. Sbrana", "year": 2000, "idAuthor": [80], "citedby": [265]}
+{"id": 382, "title": "Heterogeneous catalysts based on vanadyl phosphate for fructose dehydration to 5-hydroxymethyl-2-furaldehyde", "year": 2004, "idAuthor": [80], "citedby": []}
+{"id": 383, "title": "Heterogeneous zirconium and titanium catalysts for the selective synthesis of 5-hydroxymethyl-2-furaldehyde from carbohydrates", "year": 2000, "idAuthor": [80], "citedby": [32]}
+{"id": 384, "title": "A 9,000-year record of Chagas' disease", "year": 2004, "idAuthor": [81], "citedby": [79]}
+{"id": 385, "title": "Isolation of Trypanosoma cruzi DNA in 4,000\u2010year\u2010old mummified human tissue from northern Chile", "year": 1999, "idAuthor": [81], "citedby": [50, 336]}
+{"id": 386, "title": "Recent advances in the development of dual topoisomerase I and II inhibitors as anticancer drugs", "year": 2010, "idAuthor": [81], "citedby": [158, 278, 374, 143]}
+{"id": 387, "title": "Chagas' disease in Peruvian Inca mummy", "year": 1992, "idAuthor": [81], "citedby": []}
+{"id": 388, "title": "Reliability in age determination by pulp/tooth ratio in upper canines in skeletal remains", "year": 2006, "idAuthor": [81], "citedby": []}
+{"id": 389, "title": "Alzheimer-like neurodegeneration in aged antinerve growth factor transgenic mice", "year": 2000, "idAuthor": [82], "citedby": [337, 125, 270]}
+{"id": 390, "title": "Intranasal administration of nerve growth factor (NGF) rescues recognition memory deficits in AD11 anti-NGF transgenic mice", "year": 2005, "idAuthor": [82], "citedby": [95]}
+{"id": 391, "title": "Nerve growth factor and galantamine ameliorate early signs of neurodegeneration in anti-nerve growth factor mice", "year": 2002, "idAuthor": [82], "citedby": [385]}
+{"id": 392, "title": "Phenotypic knockout of nerve growth factor in adult transgenic mice reveals severe deficits in basal forebrain cholinergic neurons, cell death in the spleen, and skeletal \u2026", "year": 2000, "idAuthor": [82], "citedby": [81]}
+{"id": 393, "title": "A small molecule targeting the multifactorial nature of Alzheimer's disease", "year": 2007, "idAuthor": [82], "citedby": [66, 128, 187]}
+{"id": 394, "title": "Evolutionary computation", "year": 2000, "idAuthor": [83], "citedby": [122, 201, 120, 26]}
+{"id": 396, "title": "Ozone stimulates apoplastic antioxidant systems in pumpkin leaves", "year": 1996, "idAuthor": [84, 106], "citedby": []}
+{"id": 397, "title": "The use of chlorophyll fluorescence and leaf gas exchange as methods for studying the different responses to ozone of two bean cultivars", "year": 1997, "idAuthor": [84, 106], "citedby": [381, 48, 374]}
+{"id": 398, "title": "Ecophysiological and biochemical strategies of response to ozone in Mediterranean evergreen broadleaf species", "year": 2004, "idAuthor": [84, 106], "citedby": [60, 120, 23]}
+{"id": 399, "title": "Early recurrence and cerebral bleeding in patients with acute ischemic stroke and atrial fibrillation: effect of anticoagulation and its timing: the RAF study", "year": 2015, "idAuthor": [84], "citedby": []}
+{"id": 400, "title": "Effect of chronic ozone fumigation on the photosynthetic process of poplar clones showing different sensitivity", "year": 2001, "idAuthor": [84, 106], "citedby": []}
+{"id": 401, "title": "Global research priorities for sea turtles: informing management and conservation in the 21st century", "year": 2010, "idAuthor": [85], "citedby": [382]}
+{"id": 402, "title": "Regional management units for marine turtles: a novel framework for prioritizing conservation and research across multiple scales", "year": 2010, "idAuthor": [85], "citedby": [359, 81]}
+{"id": 403, "title": "Global conservation priorities for marine turtles", "year": 2011, "idAuthor": [85], "citedby": [319]}
+{"id": 404, "title": "Loggerhead turtles in the Mediterranean: present knowledge and conservation perspectives", "year": 2003, "idAuthor": [85], "citedby": [209, 215]}
+{"id": 405, "title": "Molecular resolution of marine turtle stock composition in fishery bycatch: a case study in the Mediterranean", "year": 1998, "idAuthor": [85], "citedby": []}
+{"id": 406, "title": "CD39 and CD73 in immunity and inflammation", "year": 2013, "idAuthor": [86], "citedby": [214, 133]}
+{"id": 407, "title": "Immunity, inflammation and cancer: a leading role for adenosine", "year": 2013, "idAuthor": [86], "citedby": []}
+{"id": 408, "title": "Safety concerns associated with the use of serotonin reuptake inhibitors and other serotonergic/noradrenergic antidepressants during pregnancy: a review", "year": 2009, "idAuthor": [86], "citedby": [196, 299, 310]}
+{"id": 409, "title": "Anti-CD73 in cancer immunotherapy: awakening new opportunities", "year": 2016, "idAuthor": [86], "citedby": [286, 232]}
+{"id": 410, "title": "Inhibition of adenosine deaminase attenuates inflammation in experimental colitis", "year": 2007, "idAuthor": [86], "citedby": []}
+{"id": 411, "title": "Large and ongoing outbreak of haemolytic uraemic syndrome, Germany, May 2011", "year": 2011, "idAuthor": [87], "citedby": [298]}
+{"id": 412, "title": "Theoretical foundations for compensations in flow composition languages", "year": 2005, "idAuthor": [87], "citedby": [273, 5, 164, 205]}
+{"id": 413, "title": "SCC: a service centered calculus", "year": 2006, "idAuthor": [87], "citedby": [35, 218]}
+{"id": 414, "title": "Semantic foundations for generalized rewrite theories", "year": 2006, "idAuthor": [87], "citedby": []}
+{"id": 415, "title": "Sessions and pipelines for structured service programming", "year": 2008, "idAuthor": [87], "citedby": [195, 19, 144]}
+{"id": 416, "title": "Highly enantioselective catalytic conjugate addition and tandem conjugate addition\u2013aldol reactions of organozinc reagents", "year": 1997, "idAuthor": [88], "citedby": []}
+{"id": 417, "title": "Lanthanide (III) trifluoromethanesulfonates as extraordinarily effective new catalysts for the aminolysis of 1, 2-epoxides", "year": 1994, "idAuthor": [88], "citedby": [296, 352]}
+{"id": 418, "title": "Catalytic Enantioselective Annulations via 1, 4-Addition\u2212 Aldol Cyclization of Functionalized Organozinc Reagents", "year": 1999, "idAuthor": [88], "citedby": [135, 365, 137, 341]}
+{"id": 419, "title": "Copper phosphoramidite catalyzed enantioselective ring-opening of oxabicyclic alkenes: remarkable reversal of stereocontrol", "year": 2002, "idAuthor": [88], "citedby": [142, 224, 57, 72]}
+{"id": 420, "title": "Highly enantioselective catalytic conjugate additions to cyclohexadienones", "year": 1999, "idAuthor": [88], "citedby": [170]}
+{"id": 421, "title": "Causative and susceptibility genes for Alzheimer\u2019s disease: a review", "year": 2003, "idAuthor": [89], "citedby": [398, 223, 367, 344]}
+{"id": 422, "title": "Association between cigarette smoking and FHIT gene alterations in lung cancer", "year": 1997, "idAuthor": [89], "citedby": [405, 81]}
+{"id": 423, "title": "p53 alterations in non-small cell lung cancers correlate with metastatic involvement of hilar and mediastinal lymph nodes", "year": 1993, "idAuthor": [89], "citedby": [248, 324, 130]}
+{"id": 424, "title": "p53 alterations are predictive of chemoresistance and aggressiveness in ovarian carcinomas: a molecular and immunohistochemical study", "year": 1997, "idAuthor": [89], "citedby": [288, 200, 69, 211]}
+{"id": 425, "title": "p21 RNA and protein expression in non-small cell lung carcinomas: evidence of p53-independent expression and association with tumoral differentiation.", "year": 1996, "idAuthor": [89], "citedby": [383]}
+{"id": 426, "title": "High-resolution ISAR imaging of maneuvering targets by means of the range instantaneous Doppler technique: Modeling and performance analysis", "year": 2001, "idAuthor": [90], "citedby": [420, 147, 414]}
+{"id": 427, "title": "Contrast maximisation based technique for 2-D ISAR autofocusing", "year": 2005, "idAuthor": [90], "citedby": [382, 318]}
+{"id": 428, "title": "Novel approach for ISAR image cross-range scaling", "year": 2008, "idAuthor": [90], "citedby": [290, 145, 71, 124]}
+{"id": 429, "title": "Inverse synthetic aperture radar imaging principles, algorithms and applications", "year": 2014, "idAuthor": [90], "citedby": [296]}
+{"id": 430, "title": "On bistatic inverse synthetic aperture radar", "year": 2007, "idAuthor": [90], "citedby": [272]}
+{"id": 431, "title": "Biweekly chemotherapy with oxaliplatin, irinotecan, infusional fluorouracil, and leucovorin: a pilot study in patients with metastatic colorectal cancer", "year": 2002, "idAuthor": [91], "citedby": []}
+{"id": 432, "title": "Pharmacokinetic drug-drug interaction and their implication in clinical management", "year": 2013, "idAuthor": [91], "citedby": [214]}
+{"id": 433, "title": "Inhibition of experimental angiogenesis by the somatostatin analogue octreotide acetate (SMS 201-995).", "year": 1997, "idAuthor": [91], "citedby": [120, 269, 373]}
+{"id": 434, "title": "The pharmacological bases of the antiangiogenic activity of paclitaxel", "year": 2013, "idAuthor": [91], "citedby": []}
+{"id": 435, "title": "Relationship between 5-fluorouracil disposition, toxicity and dihydropy rimidine dehydrogenase activity in cancer patients", "year": 2001, "idAuthor": [91], "citedby": []}
+{"id": 436, "title": "Batteries and battery management systems for electric vehicles", "year": 2012, "idAuthor": [92, 117, 141, 144], "citedby": [64, 168, 208, 152]}
+{"id": 437, "title": "Sensing devices and sensor signal processing for remote monitoring of vital signs in CHF patients", "year": 2012, "idAuthor": [92, 117], "citedby": [297, 247, 419, 403]}
+{"id": 438, "title": "Low complexity LDPC code decoders for next generation standards", "year": 2007, "idAuthor": [92], "citedby": []}
+{"id": 439, "title": "A double-stage Kalman filter for orientation tracking with an integrated processor in 9-D IMU", "year": 2012, "idAuthor": [92], "citedby": [371, 391, 51, 92]}
+{"id": 440, "title": "Design and verification of hardware building blocks for high-speed and fault-tolerant in-vehicle networks", "year": 2009, "idAuthor": [92, 117], "citedby": [233, 153, 310, 420]}
+{"id": 441, "title": "On finding the maxima of a set of vectors", "year": 1975, "idAuthor": [93], "citedby": [344, 95]}
+{"id": 442, "title": "A method for minimizing the number of internal states in incompletely specified sequential networks", "year": 1965, "idAuthor": [93], "citedby": [414, 268]}
+{"id": 443, "title": "Structuring labeled trees for optimal succinctness, and beyond", "year": 2005, "idAuthor": [93], "citedby": [223, 357]}
+{"id": 444, "title": "Compressing and indexing labeled trees, with applications", "year": 2009, "idAuthor": [93], "citedby": [405, 295, 173, 229]}
+{"id": 445, "title": "On the decomposition of networks in minimally interconnected subnetworks", "year": 1969, "idAuthor": [93], "citedby": []}
+{"id": 446, "title": "Discovery of N-Hydroxyindole-Based Inhibitors of Human Lactate Dehydrogenase Isoform A (LDH-A) as Starvation Agents against Cancer Cells", "year": 2011, "idAuthor": [94], "citedby": [371, 210, 122]}
+{"id": 447, "title": "Cannabinoid CB2/CB1 selectivity. Receptor modeling and automated docking analysis", "year": 2006, "idAuthor": [94], "citedby": [337]}
+{"id": 448, "title": "Matrix metalloproteinase inhibitors: new challenges in the era of post broad-spectrum inhibitors", "year": 2007, "idAuthor": [94], "citedby": [358, 119]}
+{"id": 449, "title": "CDK inhibitors: from the bench to clinical trials", "year": 2010, "idAuthor": [94], "citedby": [351, 306, 143, 283]}
+{"id": 450, "title": "Proposal of a new binding orientation for non-peptide AT1 antagonists: Homology modeling, docking and three-dimensional quantitative structure\u2212 activity relationship analysis", "year": 2006, "idAuthor": [94], "citedby": [147, 416, 19, 49]}
+{"id": 451, "title": "Risk of parenterally transmitted hepatitis following exposure to surgery or other invasive procedures: results from the hepatitis surveillance system in Italy", "year": 2001, "idAuthor": [95], "citedby": [380, 9, 251, 330]}
+{"id": 452, "title": "Differences in national influenza vaccination policies across the European Union, Norway and Iceland 2008-2009", "year": 2010, "idAuthor": [95], "citedby": [254, 165, 35, 401]}
+{"id": 453, "title": "Role of beauty treatment in the spread of parenterally transmitted hepatitis viruses in Italy", "year": 2004, "idAuthor": [95], "citedby": [97, 278, 47, 281]}
+{"id": 454, "title": "Norovirus gastroenteritis general outbreak associated with raw shellfish consumption in south Italy", "year": 2004, "idAuthor": [95], "citedby": [417, 331]}
+{"id": 455, "title": "Hepatitis A and B in children and adolescents\u2013what can we learn from Puglia (Italy) and Catalonia (Spain)?", "year": 2000, "idAuthor": [95], "citedby": [73, 421, 232, 335]}
+{"id": 456, "title": "Social play in bonobos (Pan paniscus) and chimpanzees (Pan troglodytes): Implicationsfor natural social systems and interindividual relationships", "year": 2006, "idAuthor": [96], "citedby": [116]}
+{"id": 457, "title": "Contagious yawning in gelada baboons as a possible expression of empathy", "year": 2009, "idAuthor": [96], "citedby": []}
+{"id": 458, "title": "Reconciliation and consolation in captive bonobos (Pan paniscus)", "year": 2004, "idAuthor": [96], "citedby": []}
+{"id": 459, "title": "Yawn contagion and empathy in Homo sapiens", "year": 2011, "idAuthor": [96], "citedby": []}
+{"id": 460, "title": "Reconciliation in Wolves (Canis lupus): New Evidence for a Comparative Perspective", "year": 2008, "idAuthor": [96], "citedby": [415]}
+{"id": 461, "title": "Diagnostic accuracy of computed tomographic colonography for the detection of advanced neoplasia in individuals at increased risk of colorectal cancer", "year": 2009, "idAuthor": [97], "citedby": []}
+{"id": 462, "title": "The second ESGAR consensus statement on CT colonography", "year": 2013, "idAuthor": [97], "citedby": [78, 183]}
+{"id": 463, "title": "Clinical indications for computed tomographic colonography: European Society of Gastrointestinal Endoscopy (ESGE) and European Society of Gastrointestinal and Abdominal \u2026", "year": 2014, "idAuthor": [97], "citedby": [367, 396, 298, 375]}
+{"id": 464, "title": "A simple approximate long-memory model of realized volatility", "year": 2009, "idAuthor": [98], "citedby": [120, 81, 229]}
+{"id": 465, "title": "Threshold bipower variation and the impact of jumps on volatility forecasting", "year": 2010, "idAuthor": [98], "citedby": []}
+{"id": 466, "title": "The volatility of realized volatility", "year": 2008, "idAuthor": [98], "citedby": [47]}
+{"id": 467, "title": "Discrete-time volatility forecasting with persistent leverage effect and the link with continuous-time volatility modeling", "year": 2012, "idAuthor": [98], "citedby": [98]}
+{"id": 468, "title": "Consistent high\u2010precision volatility from high\u2010frequency data", "year": 2001, "idAuthor": [98], "citedby": [412, 389]}
+{"id": 469, "title": "Working consumers: the next step in marketing theory?", "year": 2009, "idAuthor": [99], "citedby": []}
+{"id": 470, "title": "Theory of value co-creation: a systematic literature review", "year": 2014, "idAuthor": [99], "citedby": [139, 317]}
+{"id": 471, "title": "Critical perspectives on consumers\u2019 role as \u2018producers\u2019: Broadening the debate on value co-creation in marketing processes", "year": 2011, "idAuthor": [99], "citedby": [93]}
+{"id": 472, "title": "il comportamento del consumatore.", "year": 2003, "idAuthor": [99], "citedby": []}
+{"id": 473, "title": "Emotions that Drive Consumers Away from Brands: Measuring Negative Emotions Toward Brands and Their Behavioral Effects", "year": 2012, "idAuthor": [99], "citedby": [389, 433, 122]}
+{"id": 474, "title": "Tight end-to-end per-flow delay bounds in FIFO multiplexing sink-tree networks", "year": 2006, "idAuthor": [100], "citedby": [31, 43, 340]}
+{"id": 475, "title": "The EuQoS system: a solution for QoS routing in heterogeneous networks [Quality of Service based Routing Algorithms for Heterogeneous Networks]", "year": 2007, "idAuthor": [100], "citedby": [29, 289, 25, 3]}
+{"id": 476, "title": "MAC protocols for wideband wireless local access: Evolution toward wireless ATM", "year": 1998, "idAuthor": [100], "citedby": [150, 312, 290, 363]}
+{"id": 477, "title": "Antennas and propagation for on-body communication systems", "year": 2007, "idAuthor": [101], "citedby": [64, 118]}
+{"id": 478, "title": "A focused planar microstrip array for 2.4 GHz RFID readers", "year": 2010, "idAuthor": [101], "citedby": []}
+{"id": 479, "title": "Diversity performance analysis for on-body communication channels at 2.45 GHz", "year": 2009, "idAuthor": [101], "citedby": [147]}
+{"id": 480, "title": "Design criteria for near-field-focused planar arrays", "year": 2012, "idAuthor": [101], "citedby": []}
+{"id": 481, "title": "Location, location, location", "year": 2008, "idAuthor": [101], "citedby": [305, 336, 270, 49]}
+{"id": 482, "title": "Long-lasting effects of sublingual immunotherapy according to its duration: a 15-year prospective study", "year": 2010, "idAuthor": [102], "citedby": [244, 415, 239]}
+{"id": 483, "title": "Preventive effects of sublingual immunotherapy in childhood: an open randomized controlled study", "year": 2008, "idAuthor": [102], "citedby": [357]}
+{"id": 484, "title": "Randomized controlled open study of sublingual immunotherapy for respiratory allergy in real\u2010life: clinical efficacy and more", "year": 2004, "idAuthor": [102], "citedby": []}
+{"id": 485, "title": "Evolution of 3-mercaptohexanol, hydrogen sulfide, and methyl mercaptan during bottle storage of Sauvignon blanc wines. Effect of glutathione, copper, oxygen exposure, and \u2026", "year": 2011, "idAuthor": [102], "citedby": [477, 231]}
+{"id": 486, "title": "Human activity helps prey win the predator-prey space race", "year": 2011, "idAuthor": [102], "citedby": []}
+{"id": 487, "title": "Effective thermal dynamics following a quantum quench in a spin chain", "year": 2009, "idAuthor": [103], "citedby": []}
+{"id": 488, "title": "Mott-insulating and glassy phases of polaritons in 1D arrays of coupled cavities", "year": 2007, "idAuthor": [103], "citedby": []}
+{"id": 489, "title": "Decoherence induced by interacting quantum spin baths", "year": 2007, "idAuthor": [103], "citedby": [164, 227, 128]}
+{"id": 490, "title": "Quantum quenches, thermalization, and many-body localization", "year": 2011, "idAuthor": [103], "citedby": [73, 329, 304, 140]}
+{"id": 491, "title": "Long time dynamics following a quench in an integrable quantum spin chain: Local versus nonlocal operators and effective thermal behavior", "year": 2010, "idAuthor": [103], "citedby": [137, 276]}
+{"id": 492, "title": "A new Palaeolithic discovery: tar-hafted stone tools in a European Mid-Pleistocene bone-bearing bed", "year": 2006, "idAuthor": [104], "citedby": [14]}
+{"id": 493, "title": "Combined GC/MS analytical procedure for the characterization of glycerolipid, waxy, resinous, and proteinaceous materials in a unique paint microsample", "year": 2006, "idAuthor": [104], "citedby": [203, 359, 41, 484]}
+{"id": 494, "title": "Organic mass spectrometry in art and archaeology", "year": 2009, "idAuthor": [104], "citedby": [431]}
+{"id": 495, "title": "Analytical strategies for characterizing organic paint media using gas chromatography/mass spectrometry", "year": 2010, "idAuthor": [104], "citedby": [442]}
+{"id": 496, "title": "Analytical methods for the characterization of organic dyes in artworks and in historical textiles", "year": 2009, "idAuthor": [104], "citedby": [410, 194, 32]}
+{"id": 497, "title": "Efficient analysis of frequency-selective surfaces by a simple equivalent-circuit model", "year": 2012, "idAuthor": [105], "citedby": []}
+{"id": 498, "title": "A circuit-based model for the interpretation of perfect metamaterial absorbers", "year": 2012, "idAuthor": [105], "citedby": [470, 242]}
+{"id": 499, "title": "Assessing steady-state fluorescence and PRI from hyperspectral proximal sensing as early indicators of plant stress: The case of ozone exposure", "year": 2008, "idAuthor": [106], "citedby": [365, 433, 185, 415]}
+{"id": 500, "title": "Pancreatic islets from type 2 diabetic patients have functional defects and increased apoptosis that are ameliorated by metformin", "year": 2004, "idAuthor": [107], "citedby": [366, 476, 434]}
+{"id": 501, "title": "Laparoscopic pancreaticoduodenectomy: a systematic literature review", "year": 2015, "idAuthor": [107], "citedby": [96, 97]}
+{"id": 502, "title": "Gliclazide protects human islet beta\u2010cells from apoptosis induced by intermittent high glucose", "year": 2007, "idAuthor": [107], "citedby": [168, 424, 356]}
+{"id": 503, "title": "Feasibility of robotic pancreaticoduodenectomy", "year": 2013, "idAuthor": [107], "citedby": [421]}
+{"id": 504, "title": "A multicenter pilot prospective study comparing Celsior and University of Wisconsin preserving solutions for use in liver transplantation", "year": 2003, "idAuthor": [107], "citedby": [263, 220, 331, 100]}
+{"id": 505, "title": "The Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP): illuminating the functional diversity of eukaryotic life in the oceans through transcriptome sequencing", "year": 2014, "idAuthor": [108], "citedby": [183, 329, 225, 351]}
+{"id": 506, "title": "Genes for the cytoskeletal protein tubulin in the bacterial genus Prosthecobacter", "year": 2002, "idAuthor": [108], "citedby": [11, 454, 99, 25]}
+{"id": 507, "title": "Defensive extrusive ectosymbionts of Euplotidium (Ciliophora) that contain microtubule-like structures are bacteria related to Verrucomicrobia", "year": 2000, "idAuthor": [108], "citedby": [187, 9]}
+{"id": 508, "title": "A molecular approach to the tangled intrageneric relationships underlying phylogeny in Euplotes (Ciliophora, Spirotrichea)", "year": 2002, "idAuthor": [108], "citedby": [373, 33]}
+{"id": 509, "title": "Characterization and evolution of cell division and cell wall synthesis genes in the bacterial phyla Verrucomicrobia, Lentisphaerae, Chlamydiae, and Planctomycetes and \u2026", "year": 2008, "idAuthor": [108], "citedby": []}
+{"id": 510, "title": "Catalytic upgrading of pyrolytic oils to fuel over different zeolites", "year": 1999, "idAuthor": [109, 112], "citedby": []}
+{"id": 511, "title": "Catalytic upgrading of pyrolytic oils over HZSM-5 zeolite: behaviour of the catalyst when used in repeated upgrading\u2013regenerating cycles", "year": 2001, "idAuthor": [109, 112], "citedby": [4]}
+{"id": 512, "title": "Brassica carinata as an alternative oil crop for the production of biodiesel in Italy: agronomic evaluation, fuel production by transesterification and characterization", "year": 2003, "idAuthor": [109, 112], "citedby": [263]}
+{"id": 513, "title": "Brassica carinata as an Alternative Oil Crop for the Production of Biodiesel in Italy:\u2009 Engine Performance and Regulated and Unregulated Exhaust Emissions", "year": 2002, "idAuthor": [109], "citedby": [421, 251, 352, 379]}
+{"id": 514, "title": "Modelling and simulation of time varying slag flow in a Prenflo entrained-flow gasifier", "year": 1998, "idAuthor": [109], "citedby": [472, 389]}
+{"id": 515, "title": "Polyhydroxyalkanoate (PHA): Review of synthesis, characteristics, processing and potential applications in packaging", "year": 2014, "idAuthor": [110], "citedby": [330, 455, 99, 287]}
+{"id": 516, "title": "Green synthesis of flexible polyurethane foams from liquefied lignin", "year": 2013, "idAuthor": [110], "citedby": [132, 126, 434, 200]}
+{"id": 517, "title": "Foamed articles based on potato starch, corn fibers and poly (vinyl alcohol)", "year": 2006, "idAuthor": [110], "citedby": [424, 367, 486, 121]}
+{"id": 518, "title": "Extruded cornstarch-glycerol-polyvinyl alcohol blends: mechanical properties, morphology, and biodegradability", "year": 2000, "idAuthor": [110], "citedby": [454]}
+{"id": 519, "title": "Composite films based on biorelated agro-industrial waste and poly (vinyl alcohol). Preparation and mechanical properties characterization", "year": 2001, "idAuthor": [110], "citedby": [139]}
+{"id": 520, "title": "A survey of methods for explaining black box models", "year": 2019, "idAuthor": [111, 143], "citedby": [278, 200]}
+{"id": 521, "title": "Data mining for discrimination discovery", "year": 2010, "idAuthor": [111], "citedby": [300]}
+{"id": 522, "title": "Measuring discrimination in socially-sensitive decision records", "year": 2009, "idAuthor": [111], "citedby": [156, 253, 276]}
+{"id": 523, "title": "k-NN as an implementation of situation testing for discrimination discovery and prevention", "year": 2011, "idAuthor": [111], "citedby": [340, 22]}
+{"id": 524, "title": "Brassica carinata as an alternative oil crop for the production of biodiesel in Italy: engine performance and regulated and unregulated exhaust emissions", "year": 2002, "idAuthor": [112], "citedby": [186, 260, 194]}
+{"id": 525, "title": "Treatment of olive oil industry wastes", "year": 1999, "idAuthor": [112], "citedby": [129, 234]}
+{"id": 526, "title": "Differential regulation of interleukin 12 and interleukin 23 production in human dendritic cells", "year": 2008, "idAuthor": [113], "citedby": [276, 54, 290, 109]}
+{"id": 527, "title": "Immunohistology of skin pathergy reaction in Beh\u00e7et's disease", "year": 1995, "idAuthor": [113], "citedby": [19]}
+{"id": 528, "title": "Use of antimicrobial peptides against microbial biofilms: advantages and limits", "year": 2011, "idAuthor": [113], "citedby": []}
+{"id": 529, "title": "Disruption of the ESX\u20105 system of Mycobacterium tuberculosis causes loss of PPE protein secretion, reduction of cell wall integrity and strong attenuation", "year": 2012, "idAuthor": [113], "citedby": [0]}
+{"id": 530, "title": "Direct binding of human NK cell natural cytotoxicity receptor NKp44 to the surfaces of mycobacteria and other bacteria", "year": 2008, "idAuthor": [113], "citedby": []}
+{"id": 531, "title": "HRPT2, encoding parafibromin, is mutated in hyperparathyroidism\u2013jaw tumor syndrome", "year": 2002, "idAuthor": [114], "citedby": [337, 407]}
+{"id": 532, "title": "TT virus in the nasal secretions of children with acute respiratory diseases: relations to viremia and disease severity", "year": 2003, "idAuthor": [114], "citedby": [213]}
+{"id": 533, "title": "Causes of death and postsurgical survival in familial adenomatous polyposis: results from the Italian Registry", "year": 1994, "idAuthor": [114], "citedby": [428]}
+{"id": 534, "title": "Germline mutations of the BRCA1\u2010associated ring domain (BARD1) gene in breast and breast/ovarian families negative for BRCA1 and BRCA2 alterations", "year": 2002, "idAuthor": [114], "citedby": [128, 8, 99]}
+{"id": 535, "title": "Survival of patients with hereditary colorectal cancer: comparison of HNPCC and colorectal cancer in FAP patients with sporadic colorectal cancer", "year": 1999, "idAuthor": [114], "citedby": [157, 76, 470, 383]}
+{"id": 536, "title": "Autonomous formation flight", "year": 2000, "idAuthor": [115], "citedby": []}
+{"id": 537, "title": "A sliding mode missile pitch autopilot synthesis for high angle of attack maneuvering", "year": 1998, "idAuthor": [115], "citedby": [426, 467]}
+{"id": 538, "title": "Neural-network-based scheme for sensor failure detection, identification, and accommodation", "year": 1995, "idAuthor": [115], "citedby": [308]}
+{"id": 539, "title": "Kalman filters and neural-network schemes for sensor validation in flight control systems", "year": 1998, "idAuthor": [115], "citedby": [242]}
+{"id": 540, "title": "Stability considerations in quaternion attitude control using discontinuous Lyapunov functions", "year": 2004, "idAuthor": [115], "citedby": [501, 35, 5]}
+{"id": 541, "title": "The association of continental crust rocks with ophiolites in the Northern Apennines (Italy): implications for the continent-ocean transition in the Western Tethys", "year": 1998, "idAuthor": [116], "citedby": [145]}
+{"id": 542, "title": "Geology and petrology of the ophiolitic sequences in the Mirdita region, northern Albania", "year": 1996, "idAuthor": [116], "citedby": [450, 439]}
+{"id": 543, "title": "Tectono-sedimentary evolution of the External Liguride units (Northern Apennines, Italy): Insights in the pre-collisional history of a fossil ocean-continent transition zone", "year": 2001, "idAuthor": [116], "citedby": [198, 151, 418]}
+{"id": 544, "title": "Geodynamic evolution of ophiolites from Albania and Greece (Dinaric-Hellenic belt): one, two, or more oceanic basins?", "year": 2013, "idAuthor": [116], "citedby": []}
+{"id": 545, "title": "Interaction between mid-ocean ridge and subduction magmatism in Albanian ophiolites", "year": 2002, "idAuthor": [116], "citedby": [408, 119, 104, 529]}
+{"id": 546, "title": "The JVT advanced video coding standard: complexity and performance analysis on a tool-by-tool basis", "year": 2003, "idAuthor": [117], "citedby": [425, 242, 441]}
+{"id": 547, "title": "Performance and complexity co-evaluation of the advanced video coding standard for cost-effective multimedia communications", "year": 2004, "idAuthor": [117], "citedby": [168, 477, 123, 266]}
+{"id": 548, "title": "The Role of Nonlinear Dynamics in Affective Valence and Arousal Recognition", "year": 2012, "idAuthor": [118], "citedby": [406, 163, 193, 102]}
+{"id": 549, "title": "Revealing Real-Time Emotional Responses: a Personalized Assessment based on Heartbeat Dynamics", "year": 2014, "idAuthor": [118], "citedby": [103, 256]}
+{"id": 550, "title": "Wearable Monitoring for Mood Recognition in Bipolar Disorder based on History-Dependent Long-Term Heart Rate Variability Analysis", "year": 2014, "idAuthor": [118], "citedby": []}
+{"id": 551, "title": "cvxEDA: a Convex Optimization Approach to Electrodermal Activity Processing", "year": 2016, "idAuthor": [118], "citedby": [391]}
+{"id": 552, "title": "Complexity Index from a Personalized Wearable Monitoring System for Assessing Remission in Mental Health", "year": 2015, "idAuthor": [118], "citedby": [265, 33, 538, 361]}
+{"id": 553, "title": "Numerical solution of algebraic Riccati equations", "year": 2012, "idAuthor": [119], "citedby": [410, 441, 218, 304]}
+{"id": 554, "title": "On the solution of a nonlinear matrix equation arising in queueing problems", "year": 1996, "idAuthor": [119], "citedby": []}
+{"id": 555, "title": "Efficient computation of the extreme solutions of \ud835\udc4b+ \ud835\udc34* \ud835\udc4b\u207b \u00b9\ud835\udc34= \ud835\udc44 and \ud835\udc4b-\ud835\udc34* \ud835\udc4b\u207b \u00b9\ud835\udc34= \ud835\udc44", "year": 2002, "idAuthor": [119], "citedby": [282, 313]}
+{"id": 556, "title": "On cyclic reduction applied to a class of Toeplitz-like matrices arising in queueing problems", "year": 1995, "idAuthor": [119], "citedby": [255]}
+{"id": 557, "title": "On a long-standing conjecture of E. De Giorgi: symmetry in 3D for general nonlinearities and a local minimality property", "year": 2001, "idAuthor": [120], "citedby": []}
+{"id": 558, "title": "A geometrical approach to monotone functions in  ", "year": 1999, "idAuthor": [120], "citedby": []}
+{"id": 559, "title": "Rank one property for derivatives of functions with bounded variation", "year": 1993, "idAuthor": [120], "citedby": []}
+{"id": 560, "title": "Variational models for phase transitions, an approach via \u0393-convergence", "year": 2000, "idAuthor": [120], "citedby": [153]}
+{"id": 561, "title": "A non-local anisotropic model for phase transitions: asymptotic behaviour of rescaled energies", "year": 1998, "idAuthor": [120], "citedby": [211, 467, 509, 78]}
+{"id": 562, "title": "Differential accumulation of flavonoids and hydroxycinnamates in leaves of Ligustrum vulgare under excess light and drought stress", "year": 2004, "idAuthor": [121], "citedby": [407, 552, 376]}
+{"id": 563, "title": "Antioxidant capacity, ascorbic acid, total phenols and carotenoids changes during harvest and after storage of Hayward kiwifruit", "year": 2008, "idAuthor": [121], "citedby": [424, 264, 73]}
+{"id": 564, "title": "Comparison of water status indicators for young peach trees", "year": 2003, "idAuthor": [121], "citedby": []}
+{"id": 565, "title": "Effect of rootstocks and harvesting time on the nutritional quality of peel and flesh of peach fruits", "year": 2008, "idAuthor": [121], "citedby": [471, 303, 243]}
+{"id": 566, "title": "On the role of flavonoids in the integrated mechanisms of response of Ligustrum vulgare and Phillyrea latifolia to high solar radiation", "year": 2005, "idAuthor": [121], "citedby": [498]}
+{"id": 567, "title": "Effects of magma storage and ascent on the kinetics of crystal growth", "year": 1994, "idAuthor": [122], "citedby": [292, 280, 550]}
+{"id": 568, "title": "A numerical model for simulation of tephra transport and deposition: Applications to May 18, 1980, Mount St. Helens eruption", "year": 1988, "idAuthor": [122], "citedby": [326, 312, 490, 324]}
+{"id": 569, "title": "The Phlegraean Fields: magma evolution within a shallow chamber", "year": 1983, "idAuthor": [122], "citedby": [234]}
+{"id": 570, "title": "Cenozoic magmatism in the western Ross Embayment: Role of mantle plume versus plate dynamics in the development of the West Antarctic Rift System", "year": 2002, "idAuthor": [122], "citedby": [363, 260, 234]}
+{"id": 571, "title": "Subduction-like fluids in the genesis of Mt. Etna magmas: evidence from boron isotopes and fluid mobile elements", "year": 2001, "idAuthor": [122], "citedby": [474, 122, 44, 338]}
+{"id": 572, "title": "The role of nonlinear dynamics in affective valence and arousal recognition", "year": 2011, "idAuthor": [123], "citedby": []}
+{"id": 573, "title": "Revealing real-time emotional responses: a personalized assessment based on heartbeat dynamics", "year": 2014, "idAuthor": [123], "citedby": [41]}
+{"id": 574, "title": "SoC CMOS UWB pulse radar sensor for contactless respiratory rate monitoring", "year": 2011, "idAuthor": [123], "citedby": [25, 375]}
+{"id": 575, "title": "Wearable monitoring for mood recognition in bipolar disorder based on history-dependent long-term heart rate variability analysis", "year": 2013, "idAuthor": [123], "citedby": []}
+{"id": 576, "title": "cvxEDA: A convex optimization approach to electrodermal activity processing", "year": 2015, "idAuthor": [123], "citedby": [15]}
+{"id": 577, "title": "Channel estimation for ultra-wideband communications", "year": 2002, "idAuthor": [124], "citedby": [193, 328, 84, 36]}
+{"id": 578, "title": "RF power amplifier linearization through amplitude and phase predistortion", "year": 1996, "idAuthor": [124], "citedby": [558]}
+{"id": 579, "title": "A theoretical framework for soft-information-based synchronization in iterative (turbo) receivers", "year": 2005, "idAuthor": [124], "citedby": [495, 167, 477]}
+{"id": 580, "title": "A priori tests of a new dynamic subgrid\u2010scale model for finite\u2010difference large\u2010eddy simulations", "year": 1995, "idAuthor": [125], "citedby": [490, 496, 182, 509]}
+{"id": 581, "title": "Direct numerical simulation of particle wall transfer and deposition in upward turbulent pipe flow", "year": 2003, "idAuthor": [125], "citedby": [480, 387, 415, 386]}
+{"id": 582, "title": "A low-diffusion MUSCL scheme for LES on unstructured grids", "year": 2004, "idAuthor": [125], "citedby": [112]}
+{"id": 583, "title": "Some issues concerning large-eddy simulation of inertial particle dispersion in turbulent bounded flows", "year": 2008, "idAuthor": [125], "citedby": [399]}
+{"id": 584, "title": "Benchmark on the aerodynamics of a rectangular 5: 1 cylinder: an overview after the first four years of activity", "year": 2014, "idAuthor": [125], "citedby": [23, 442, 48]}
+{"id": 585, "title": "Disturbance models for offset\u2010free model\u2010predictive control", "year": 2003, "idAuthor": [126], "citedby": [483, 156]}
+{"id": 586, "title": "Cooperative distributed model predictive control", "year": 2010, "idAuthor": [126], "citedby": [8, 240, 418]}
+{"id": 587, "title": "Fast, large-scale model predictive control by partial enumeration", "year": 2007, "idAuthor": [126], "citedby": [306, 346]}
+{"id": 588, "title": "Combined design of disturbance model and observer for offset-free model predictive control", "year": 2007, "idAuthor": [126], "citedby": []}
+{"id": 589, "title": "Conditions under which suboptimal nonlinear MPC is inherently robust", "year": 2011, "idAuthor": [126], "citedby": [194, 442, 532, 105]}
+{"id": 590, "title": "Specific absorption rate and temperature elevation in a subject exposed in the far-field of radio-frequency sources operating in the 10-900-MHz range", "year": 2003, "idAuthor": [127], "citedby": [34, 403, 61, 157]}
+{"id": 591, "title": "Specific absorption rate and temperature increases in the head of a cellular-phone user", "year": 2000, "idAuthor": [127], "citedby": [377, 258, 98]}
+{"id": 592, "title": "SAR distribution and temperature increase in an anatomical model of the human eye exposed to the field radiated by the user antenna in a wireless LAN", "year": 1998, "idAuthor": [127], "citedby": []}
+{"id": 593, "title": "Human exposure to radio base-station antennas in urban environment", "year": 2000, "idAuthor": [127], "citedby": [537, 283, 396]}
+{"id": 594, "title": "Evaluation of the SAR distribution in the human head for cellular phones used in a partially closed environment", "year": 1996, "idAuthor": [127], "citedby": []}
+{"id": 595, "title": "Molecular and electrophysiological evidence for net synaptic potentiation in wake and depression in sleep", "year": 2008, "idAuthor": [128], "citedby": [570]}
+{"id": 596, "title": "Cortical firing and sleep homeostasis", "year": 2009, "idAuthor": [128], "citedby": [230, 224, 544, 1]}
+{"id": 597, "title": "A causal role for brain-derived neurotrophic factor in the homeostatic regulation of sleep", "year": 2008, "idAuthor": [128], "citedby": [101, 124]}
+{"id": 598, "title": "Sleep and waking modulate spine turnover in the adolescent mouse cortex", "year": 2011, "idAuthor": [128], "citedby": []}
+{"id": 599, "title": "Direct evidence for wake-related increases and sleep-related decreases in synaptic strength in rodent cortex", "year": 2010, "idAuthor": [128], "citedby": [507]}
+{"id": 600, "title": "Magnetic memory of a single-molecule quantum magnet wired to a gold surface", "year": 2009, "idAuthor": [129], "citedby": [237, 368, 326, 388]}
+{"id": 601, "title": "Quantum tunnelling of the magnetization in a monolayer of oriented single-molecule magnets", "year": 2010, "idAuthor": [129], "citedby": [552, 230, 555]}
+{"id": 602, "title": "XAS and XMCD Investigation of Mn12 Monolayers on Gold", "year": 2008, "idAuthor": [129], "citedby": [133]}
+{"id": 603, "title": "Magnetic Poles Determinations and Robustness of Memory Effect upon Solubilization in a DyIII-Based Single Ion Magnet", "year": 2013, "idAuthor": [129], "citedby": [304, 1, 128]}
+{"id": 604, "title": "Magneto\u2010optical investigations of nanostructured materials based on single\u2010molecule magnets monitor strong environmental effects", "year": 2007, "idAuthor": [129], "citedby": [446]}
+{"id": 605, "title": "Iron deficiency differently affects peroxidase isoforms in sunflower", "year": 2001, "idAuthor": [130], "citedby": [195, 105, 550]}
+{"id": 606, "title": "Cadmium tolerance in Brassica juncea roots and shoots is affected by antioxidant status and phytochelatin biosynthesis", "year": 2012, "idAuthor": [130], "citedby": [141, 348]}
+{"id": 607, "title": "Oxidative stress and phytochelatin characterisation in bread wheat exposed to cadmium excess", "year": 2005, "idAuthor": [130], "citedby": [470]}
+{"id": 608, "title": "Detoxification and repair process of ozone injury: from O3 uptake to gene expression adjustment", "year": 2009, "idAuthor": [130], "citedby": [470, 601, 367]}
+{"id": 609, "title": "Sea fennel (Crithmum maritimum L.) under salinity conditions: a comparison of leaf and root antioxidant responses", "year": 2007, "idAuthor": [130], "citedby": [62, 305, 471]}
+{"id": 610, "title": "CMS physics technical design report: Addendum on high density QCD with heavy ions", "year": 2007, "idAuthor": [131], "citedby": []}
+{"id": 611, "title": "Inhibition of cytochrome P450 enzymes by enrofloxacin in the sea bass (Dicentrarchus labrax)", "year": 2003, "idAuthor": [131], "citedby": [423, 378, 418, 321]}
+{"id": 612, "title": "Pharmacokinetics of tramadol and its metabolites M1, M2 and M5 in horses following intravenous, immediate release (fasted/fed) and sustained release single dose administration", "year": 2007, "idAuthor": [131], "citedby": [311, 425]}
+{"id": 613, "title": "Pharmacokinetic evaluation of tramadol and its major metabolites after single oral sustained tablet administration in the dog: a pilot study", "year": 2009, "idAuthor": [131], "citedby": [494, 106]}
+{"id": 614, "title": "Globalization from below: Transnational activists and protest networks", "year": 2006, "idAuthor": [132], "citedby": [0, 109, 339, 27]}
+{"id": 615, "title": "Global justice movement: Cross-national and transnational perspectives", "year": 2015, "idAuthor": [132], "citedby": [269]}
+{"id": 616, "title": "Global, noglobal, new global. La protesta contro il G8 a Genova", "year": 2002, "idAuthor": [132], "citedby": [360, 19]}
+{"id": 617, "title": "No global-new global: Identit\u00e4t und Strategien der Antiglobalisierungsbewegung", "year": 2003, "idAuthor": [132], "citedby": [262]}
+{"id": 618, "title": "Late neoliberalism and its discontents in the economic crisis: comparing social movements in the European periphery", "year": 2016, "idAuthor": [132], "citedby": [397, 454]}
+{"id": 619, "title": "Validation, comparison, and combination of algorithms for automatic detection of pulmonary nodules in computed tomography images: the LUNA16 challenge", "year": 2017, "idAuthor": [133], "citedby": [52, 134, 168]}
+{"id": 620, "title": "Comparing and combining algorithms for computer-aided detection of pulmonary nodules in computed tomography scans: the ANODE09 study", "year": 2010, "idAuthor": [133], "citedby": [248, 502, 441, 299]}
+{"id": 621, "title": "Mammogram segmentation by contour searching and mass lesions classification with neural network", "year": 2006, "idAuthor": [133], "citedby": [565, 102, 302]}
+{"id": 622, "title": "A completely automated CAD system for mass detection in a large mammographic database", "year": 2006, "idAuthor": [133], "citedby": []}
+{"id": 623, "title": "Lung nodule detection in low-dose and thin-slice computed tomography", "year": 2008, "idAuthor": [133], "citedby": [453, 332, 107]}
+{"id": 624, "title": "Homing in pigeons: the role of the hippocampal formation in the representation of landmarks used for navigation", "year": 1999, "idAuthor": [134], "citedby": []}
+{"id": 625, "title": "Separate processing mechanisms for encoding of geometric and landmark information in the avian hippocampus", "year": 2003, "idAuthor": [134], "citedby": [411, 178, 47]}
+{"id": 626, "title": "Forty years of olfactory navigation in birds", "year": 2013, "idAuthor": [134], "citedby": []}
+{"id": 627, "title": "Testing the role of sensory systems in the migratory heading of a songbird", "year": 2009, "idAuthor": [134], "citedby": [38, 302, 604]}
+{"id": 628, "title": "Why do warning-coloured prey live gregariously?", "year": 1993, "idAuthor": [134], "citedby": [9, 255, 294]}
+{"id": 629, "title": "Statistical physics of vaccination", "year": 2016, "idAuthor": [135], "citedby": [398, 345]}
+{"id": 630, "title": "Mitigation measures for pandemic influenza in Italy: an individual based model considering different scenarios", "year": 2008, "idAuthor": [135], "citedby": [235, 293, 330]}
+{"id": 631, "title": "Vaccinating behaviour, information, and the dynamics of SIR vaccine preventable diseases", "year": 2007, "idAuthor": [135], "citedby": []}
+{"id": 632, "title": "Modeling the interplay between human behavior and the spread of infectious diseases", "year": 2013, "idAuthor": [135], "citedby": [567]}
+{"id": 633, "title": "Using time-use data to parameterize models for the spread of close-contact infectious diseases", "year": 2008, "idAuthor": [135], "citedby": [519, 423, 108, 476]}
+{"id": 634, "title": "Hyperbolic metamaterials and their applications", "year": 2015, "idAuthor": [136], "citedby": [87, 65]}
+{"id": 635, "title": "Feasibility analysis of a Darrieus vertical-axis wind turbine installation in the rooftop of a building", "year": 2012, "idAuthor": [136], "citedby": [252]}
+{"id": 636, "title": "Critical issues in the CFD simulation of Darrieus wind turbines", "year": 2016, "idAuthor": [136], "citedby": [421, 142, 600, 545]}
+{"id": 637, "title": "Experimental Investigation and Characterization of the Rotating Stall in a High Pressure Centrifugal Compressor: Part I\u2014Influence of Diffuser Geometry on Stall Inception", "year": 2002, "idAuthor": [136], "citedby": [554, 494, 68]}
+{"id": 638, "title": "Enhanced spontaneous emission inside hyperbolic metamaterials", "year": 2014, "idAuthor": [136], "citedby": [617, 273, 16, 339]}
+{"id": 639, "title": "Increased sensitivity of the neuronal nicotinic receptor \u03b12 subunit causes familial epilepsy with nocturnal wandering and ictal fear", "year": 2006, "idAuthor": [137], "citedby": [14]}
+{"id": 640, "title": "Ectopic Hoxa2 induction after neural crest migration results in homeosis of jaw elements in Xenopus", "year": 2000, "idAuthor": [137], "citedby": [214]}
+{"id": 641, "title": "Distribution and cellular localization of the serotonin type 2C receptor messenger RNA in human brain", "year": 1999, "idAuthor": [137], "citedby": [592, 372]}
+{"id": 642, "title": "Lack of brain serotonin affects postnatal development and serotonergic neuronal circuitry formation", "year": 2013, "idAuthor": [137], "citedby": [392, 581, 180]}
+{"id": 643, "title": "Evolutionary biology:  Lamprey Hox genes and the evolution of jaws", "year": 2004, "idAuthor": [137], "citedby": [293, 286, 276]}
+{"id": 644, "title": "Reasoning about inconsistencies in natural language requirements", "year": 2005, "idAuthor": [138], "citedby": [558, 375, 594, 63]}
+{"id": 645, "title": "Processing natural language requirements", "year": 1997, "idAuthor": [138], "citedby": []}
+{"id": 646, "title": "Lightweight validation of natural language requirements", "year": 2002, "idAuthor": [138], "citedby": [240, 482, 317, 230]}
+{"id": 647, "title": "On the Systematic Analysis of Natural Language Requirements with CIRCE", "year": 2006, "idAuthor": [138], "citedby": [416, 203, 535, 580]}
+{"id": 648, "title": "CoreASM: An extensible ASM execution engine", "year": 2007, "idAuthor": [138], "citedby": [259, 546]}
+{"id": 649, "title": "Efficient computation of zero-dimensional Gr\u00f6bner bases by change of ordering", "year": 1993, "idAuthor": [139], "citedby": []}
+{"id": 650, "title": "Gr\u00f6bner bases and primary decomposition of polynomial ideals", "year": 1988, "idAuthor": [139], "citedby": [16, 389, 278]}
+{"id": 651, "title": "The singular value decomposition for polynomial systems", "year": 1995, "idAuthor": [139], "citedby": [582]}
+{"id": 652, "title": "Algebrric solution of systems of polynomirl equations using Groebher bases", "year": 1987, "idAuthor": [139], "citedby": [377, 629, 486]}
+{"id": 653, "title": "A reordered Schur factorization method for zero-dimensional polynomial systems with multiple roots", "year": 1997, "idAuthor": [139], "citedby": [322, 167, 618, 355]}
+{"id": 654, "title": "MADAM: a multi-level anomaly detector for android malware", "year": 2012, "idAuthor": [140], "citedby": [89]}
+{"id": 655, "title": "Madam: Effective and efficient behavior-based android malware detection and prevention", "year": 2016, "idAuthor": [140], "citedby": [21, 98]}
+{"id": 656, "title": "An algorithm for reconnecting wireless sensor network partitions", "year": 2008, "idAuthor": [140], "citedby": []}
+{"id": 657, "title": "Considerations on security in zigbee networks", "year": 2010, "idAuthor": [140], "citedby": [219, 315]}
+{"id": 658, "title": "Enriched view synchrony: A programming paradigm for partitionable asynchronous distributed systems", "year": 1997, "idAuthor": [140], "citedby": [549]}
+{"id": 659, "title": "Ultralow-power adiabatic circuit semi-custom design", "year": 2004, "idAuthor": [141], "citedby": [57, 518, 567]}
+{"id": 660, "title": "Performance comparison of active balancing techniques for lithium-ion batteries", "year": 2014, "idAuthor": [141, 144], "citedby": [15]}
+{"id": 661, "title": "Current fluctuations and silicon oxide wear\u2010out in metal\u2010oxide\u2010semiconductor tunnel diodes", "year": 1988, "idAuthor": [141], "citedby": [378, 354]}
+{"id": 662, "title": "High-efficiency digitally controlled charge equalizer for series-connected cells based on switching converter and super-capacitor", "year": 2012, "idAuthor": [141, 144], "citedby": [189, 353, 56]}
+{"id": 663, "title": "Recursive self-organizing network models", "year": 2004, "idAuthor": [142], "citedby": [56]}
+{"id": 664, "title": "A general framework for unsupervised processing of structured data", "year": 2004, "idAuthor": [142], "citedby": [647, 422]}
+{"id": 665, "title": "Architectural and markovian factors of echo state networks", "year": 2011, "idAuthor": [142], "citedby": [97, 559]}
+{"id": 666, "title": "Application of cascade correlation networks for structures to chemistry", "year": 2000, "idAuthor": [142], "citedby": [313]}
+{"id": 667, "title": "Analysis of the internal representations developed by neural networks for structures applied to quantitative structure\u2212 activity relationship studies of benzodiazepines", "year": 2001, "idAuthor": [142], "citedby": [389, 135, 398]}
+{"id": 668, "title": "Wherenext: a location predictor on trajectory pattern mining", "year": 2009, "idAuthor": [143], "citedby": [202, 619, 582]}
+{"id": 669, "title": "Movement data anonymity through generalization.", "year": 2010, "idAuthor": [143], "citedby": []}
+{"id": 670, "title": "Privacy-preserving mining of association rules from outsourced transaction databases", "year": 2013, "idAuthor": [143], "citedby": []}
+{"id": 671, "title": "Multidimensional networks: foundations of structural analysis", "year": 2013, "idAuthor": [143], "citedby": []}
+{"id": 672, "title": "Battery management system: An overview of its application in the smart grid and electric vehicles", "year": 2013, "idAuthor": [144], "citedby": [375, 582]}
+{"id": 673, "title": "Online adaptive parameter identification and state-of-charge coestimation for lithium-polymer battery cells", "year": 2013, "idAuthor": [144], "citedby": []}
+{"id": 674, "title": "Longitudinal shear-induced diffusion of spheres in a dilute suspension", "year": 1992, "idAuthor": [145], "citedby": [417, 22, 390, 317]}
+{"id": 675, "title": "Shear-induced resuspension in a Couette device", "year": 1993, "idAuthor": [145], "citedby": [121, 244, 170]}
+{"id": 676, "title": "Dispersion, convection, and reaction in porous media", "year": 1991, "idAuthor": [145], "citedby": [159]}
+{"id": 677, "title": "Dispersion and convection in periodic porous media", "year": 1986, "idAuthor": [145], "citedby": []}
+{"id": 678, "title": "Two-dimensional model of phase segregation in liquid binary mixtures", "year": 1999, "idAuthor": [145], "citedby": [641, 353, 261]}
+{"id": 679, "title": "Invited Article: Electric solar wind sail: Toward test missions", "year": 2010, "idAuthor": [146], "citedby": [345, 332, 237, 610]}
+{"id": 680, "title": "Electric sail performance analysis", "year": 2008, "idAuthor": [146], "citedby": [615]}
+{"id": 681, "title": "Parametric model and optimal control of solar sails with optical degradation", "year": 2006, "idAuthor": [146], "citedby": []}
+{"id": 682, "title": "Optimal Three-Dimensional Interplanetary Rendezvous Using Non-Ideal Solar Sail", "year": 2005, "idAuthor": [146], "citedby": [165, 81]}
+{"id": 683, "title": "Non-Keplerian orbits for electric sails", "year": 2009, "idAuthor": [146], "citedby": [40, 234, 412]}
