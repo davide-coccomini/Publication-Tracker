@@ -1,5 +1,7 @@
 package middleware;
 
+import org.neo4j.driver.v1.Record;
+
 
 public class Author {
     private String name;
@@ -11,7 +13,11 @@ public class Author {
         this.email = email;
         this.affiliation = affiliation;
     }
-
+    public Author(Record author){
+        name = author.get("name").asString();
+        email = author.get("email").asString();
+        affiliation = author.get("affiliation").asString();
+    }
     public String getName() {
         return name;
     }
