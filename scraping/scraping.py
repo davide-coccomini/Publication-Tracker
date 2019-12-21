@@ -11,13 +11,14 @@ def sanitizeString(publication):
     return " ".join((publication.replace("\n", "")).split()).replace("'",'"')
 
 
-def getNewAuthorId(email):
+def getNewAuthorId(email,name):
     global authors
     global author_id
-    if(email in authors):
-        return authors[email]
+    key = email + name
+    if(key in authors):
+        return authors[key]
     else:
-        authors[email] = author_id
+        authors[key] = author_id
         author_id += 1
         return author_id - 1
 
@@ -36,11 +37,10 @@ def getNewPublicationId(title,year):
 
 def extractAuthorInfo(author):
     authorDict = {}
-    authorDict["id"] = getNewAuthorId(author.email)
+    authorDict["id"] = getNewAuthorId(author.email,author.name)
     authorDict["name"] = author.name
     authorDict["email"] = author.email
     authorDict["affiliation"] = author.affiliation
-    authorDict["citedBy"] = author.citedby
     print("AUTHOR:")
     print(authorDict)
     return authorDict
@@ -59,20 +59,72 @@ def extractPublicationInfo(idAuthor, publication):
         try:
             citations = random.sample(range(0,idpublication-5), random.randrange(0, 5))
             if citations not in tmp_author_publications:
-                publicationDict["citatedby"] = citations
+                publicationDict["citedby"] = citations
         except:
-            publicationDict["citatedby"] = []
+            publicationDict["citedby"] = []
             print("PUBLICATION:")
             print(publicationDict)
             return publicationDict
     else:
-        publicationDict["citatedby"] = []
+        publicationDict["citedby"] = []
     print("PUBLICATION:")
     print(publicationDict)
     return publicationDict
 
+def remove_duplicates_publications():
+    # Remove duplicates in publications (the ones published by more than one person) and collapse them in a single voice
+    result_publications_file = open("data/publications.json", "r")
+    data_lines = result_publications_file.readlines()
+    result_file = open("data/publications_collapsed.json", "w")
+    readed_publications = []
+    for data_line in data_lines:
+        publication = json.loads(data_line)
+        publication_authors = []
+        print(publication)
 
+        current_author = publication["idAuthor"]
+        publication_authors.append(current_author)
+        current_title = publication["title"]
+        if current_title in readed_publications:
+            continue
+        readed_publications.append(current_title)
+
+        for tmp_data_line in data_lines:
+            tmp_publication = json.loads(tmp_data_line)
+            tmp_title = tmp_publication["title"]
+            tmp_author = tmp_publication["idAuthor"]
+            if tmp_author == current_author:
+                continue
+            if tmp_title == current_title:
+                publication_authors.append(tmp_publication["idAuthor"])
+        publication["idAuthor"] = publication_authors
+        result_file.write(str(json.dumps(publication))+"\n")
+
+
+def remove_unreferred_citations():
+    # Remove the citations referring to publications removed in remove_duplicates_publications)
+    result_publications_file = open("data/publications_collapsed.json", "r")
+    data_lines = result_publications_file.readlines()
+    result_file = open("data/publications_collapsed_checked.json", "w")
+    readed_publications = []
+    for data_line in data_lines:
+        publication = json.loads(data_line)
+        
+        current_citations = publication["citedby"]
+        for citation in current_citations:
+            citation_found = False
+            for tmp_data_line in data_lines:
+                tmp_publication = json.loads(tmp_data_line)
+                if citation == tmp_publication["id"]: # The citation is correct and referring to a real publication
+                    citation_found = True
+                    break
+            if not citation_found: # the citation must be removed from the citations
+                current_citations.remove(citation)
+        
+        publication["citedby"] = current_citations
+        result_file.write(str(json.dumps(publication))+"\n")
 def main():
+    
     global tmp_author_publications
     i = 0
     result_authors_file = open("data/authors.json", "w")
@@ -94,5 +146,8 @@ def main():
         
         i += 1
         author = next(search_authors_query).fill()
+    remove_duplicates_publications()
+    
+    remove_unreferred_citations()
     
 main()
