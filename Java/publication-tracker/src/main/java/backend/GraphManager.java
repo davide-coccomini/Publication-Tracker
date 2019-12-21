@@ -78,12 +78,30 @@ public class GraphManager implements AutoCloseable{
             return authors;
         }
     }
-     // Given the id of an Author, get all the relationships with it
+   // Given the id of an Author, get all the relationships with it
    public StatementResult getAuthorRelationships(final Long id){
         try (Session session = driver.session()){
             StatementResult result = session.run("MATCH (a:Author)-[r]-(b) WHERE id(a)="+id+" RETURN type(r) as relation, a as author, p as publication");
             return result;
         }
+   }
+   // Given an author id, delete it
+   public void deleteAuthor(final Long id){
+       try (Session session = driver.session()){
+            try (Transaction tx = session.beginTransaction()){
+                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DELETE a");
+                tx.success(); 
+            }
+       }
+   }
+   // Given an author id, remove all relationships with it 
+   public void detatchAuthor(final Long id){
+       try (Session session = driver.session()){
+            try (Transaction tx = session.beginTransaction()){
+                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETATCH a");
+                tx.success(); 
+            }
+       }
    }
    ///// END AUTHORS METHODS /////
     
@@ -153,4 +171,22 @@ public class GraphManager implements AutoCloseable{
             return new Publication(result.single().get("name").asString(), result.single().get("year").asInt(),getPublicationAuthors(id), getPublicationCitations(id));
         }
     }
+   // Given publication id, delete it
+   public void deletePublication(final Long id){
+       try (Session session = driver.session()){
+            try (Transaction tx = session.beginTransaction()){
+                tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DELETE p");
+                tx.success(); 
+            }
+       }
+   }
+   // Given publication id, remove all the relationships with it
+   public void detatchPublication(final Long id){
+       try (Session session = driver.session()){
+            try (Transaction tx = session.beginTransaction()){
+                tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DETATCH p");
+                tx.success(); 
+            }
+       }
+   }
 }
