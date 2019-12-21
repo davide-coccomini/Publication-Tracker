@@ -7,6 +7,7 @@ import java.util.List;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import middleware.User;
 
@@ -66,4 +67,5 @@ public class SessionController {
             System.out.println(e);
         }
     }
+
 }

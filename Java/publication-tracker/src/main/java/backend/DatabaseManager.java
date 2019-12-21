@@ -64,7 +64,12 @@ public class DatabaseManager {
         String query = "UPDATE user SET "+field+" = ?";
         worker(query,args);
     }
-    
+    public User autentication(Object[] args){    
+        String query = "SELECT * FROM user WHERE email = ? AND password = ?";
+        List<Object> result = worker(query,args);
+        User u = (User) result.get(0);
+        return u;       
+    }
     /* Creates an ArrayList of the Object that needs to be returned as a result of the query */
     public List<Object> worker(String query, Object[] args){
         try{
