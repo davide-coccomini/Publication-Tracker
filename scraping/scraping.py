@@ -1,6 +1,7 @@
 import scholarly
 import json
 import random 
+import time
 
 author_id = 0
 publication_id = 0
@@ -46,7 +47,7 @@ def extractAuthorInfo(author):
     return authorDict
 
 
-def extractPublicationInfo(idAuthor, publication):
+def extractPublicationInfo(result_authors_file, result_publications_file, idAuthor, publication):
     global tmp_author_publications
     publicationDict = {}
     idpublication = getNewPublicationId(publication.bib.get("title"),publication.bib.get("year"))
@@ -55,18 +56,50 @@ def extractPublicationInfo(idAuthor, publication):
     publicationDict["title"] = publication.bib.get("title")
     publicationDict["year"] = publication.bib.get("year")
     publicationDict["idAuthor"] = idAuthor
-    if len(publications) > 6 and len(authors) > 1:
-        try:
-            citations = random.sample(range(0,idpublication-5), random.randrange(0, 5))
-            if citations not in tmp_author_publications:
-                publicationDict["citedby"] = citations
-        except:
-            publicationDict["citedby"] = []
-            print("PUBLICATION:")
-            print(publicationDict)
-            return publicationDict
-    else:
-        publicationDict["citedby"] = []
+    citations = []
+    # DEEP LEVEL:  Author -> Publication -> Citation -> Author
+    for citation in publication.get_citedby():
+        title = citation.bib['title']
+        citationKey = citation.bib.get("title") + str(citation.bib.get("year"))
+        if citationKey in publications: # The publication is already on the file
+            idCitation = getNewPublicationId(citation.bib.get("title"),citation.bib.get("year"))
+            citations.append(idCitation)
+        else: # Add the publication to the file
+            idCitation = getNewPublicationId(citation.bib.get("title"),citation.bib.get("year"))
+            citations.append(idCitation)
+            citationDict = {}
+            citationDict["id"] = idCitation
+            citationDict["title"] = citation.bib.get("title")
+            citationDict["year"] = citation.bib.get("year")
+        
+            authorName = citation.bib.get("author").split("and")[0]
+            search_author_query = scholarly.search_author(authorName)
+            authorDict = {}
+            try:
+                authorElement = next(search_author_query)
+                key = authorElement.email + authorElement.name
+                idCitationAuthor = None
+                if key in authors: # The author information are already in the file
+                    idCitationAuthor = getNewAuthorId(authorElement.email, authorElement.name)
+                else: # Write a new author in the file
+                    authorDict = extractAuthorInfo(next(search_author_query))
+                    idCitationAuthor = authorDict["id"]
+                    result_authors_file.write(str(json.dumps(authorDict))+"\n")
+
+                citationDict["idAuthor"] = idCitationAuthor
+                citationDict["citedby"] = []
+
+                print("CITATION:")
+                print(citationDict)
+                result_publications_file.write(str(json.dumps(citationDict))+"\n")
+            except:
+                time.sleep(2)
+                continue
+      
+        
+
+    publicationDict["citedby"] = citations
+    
     print("PUBLICATION:")
     print(publicationDict)
     return publicationDict
@@ -80,7 +113,6 @@ def remove_duplicates_publications():
     for data_line in data_lines:
         publication = json.loads(data_line)
         publication_authors = []
-        print(publication)
 
         current_author = publication["idAuthor"]
         publication_authors.append(current_author)
@@ -109,45 +141,61 @@ def remove_unreferred_citations():
     readed_publications = []
     for data_line in data_lines:
         publication = json.loads(data_line)
-        
+
         current_citations = publication["citedby"]
         for citation in current_citations:
             citation_found = False
             for tmp_data_line in data_lines:
                 tmp_publication = json.loads(tmp_data_line)
-                if citation == tmp_publication["id"]: # The citation is correct and referring to a real publication
+                # The citation is correct and referring to a real publication
+                if citation == tmp_publication["id"]:
                     citation_found = True
                     break
-            if not citation_found: # the citation must be removed from the citations
+            if not citation_found:  # the citation must be removed from the citations
                 current_citations.remove(citation)
-        
+
         publication["citedby"] = current_citations
         result_file.write(str(json.dumps(publication))+"\n")
 def main():
-    
+    publication_limit = 5
+    authors = ["Giuseppe Lettieri", "Pietro Ducange","Francesco Marcelloni", "Francesco Pistolesi", "Mario Giovanni Cosimo Antonio Cimino","Carlo Vallati", "Enzo Mingozzi", "Giovanni Stea", "Marco Cococcioni", "Giuseppe Anastasi", "Marco Avvenuti", "Alessio Vecchio", "Cinzia Bernardeschi", "Beatrice Lazzerini", "gigliola vaglini", "University of Pisa", "Università di Pisa"]
     global tmp_author_publications
     i = 0
     result_authors_file = open("data/authors.json", "w")
     result_publications_file = open("data/publications.json", "w")
-
-    search_authors_query = scholarly.search_author('University of Pisa')
-    author = next(search_authors_query).fill()
-    while author:
-        authorDict = extractAuthorInfo(author)
-        result_authors_file.write(str(json.dumps(authorDict))+"\n") 
-        j = 0
-        tmp_author_publications = []
-        for publication in author.publications:
-            if j == 5:
-                break
-            publicationDict = extractPublicationInfo(authorDict["id"], publication.fill())
-            result_publications_file.write(str(json.dumps(publicationDict))+"\n")
-            j += 1
-        
-        i += 1
-        author = next(search_authors_query).fill()
-    remove_duplicates_publications()
     
-    remove_unreferred_citations()
+    for currentAuthor in authors:
+        print("__________________________"+currentAuthor+"___________________________")
+        search_authors_query = scholarly.search_author(currentAuthor)
+        
+        try:
+            author = next(search_authors_query).fill()
+        except:
+            continue
+        while author:
+            if "Università di Pisa" not in author.affiliation and "University of Pisa" not in author.affiliation and "UNIPI" not in author.affiliation:
+                continue
+            authorDict = extractAuthorInfo(author)
+            result_authors_file.write(str(json.dumps(authorDict))+"\n") 
+            j = 0
+            tmp_author_publications = []
+            for publication in author.publications:
+                if j == publication_limit:
+                    break
+                publicationDict = extractPublicationInfo(result_authors_file, result_publications_file, authorDict["id"], publication)
+                result_publications_file.write(str(json.dumps(publicationDict))+"\n")
+                j += 1
+            
+            i += 1
+            
+            try:
+                print("Sleeping 60 seconds ...")
+                time.sleep(60)
+                author = next(search_authors_query).fill()
+            except:
+                break
+    #remove_duplicates_publications()
+    
+    #remove_unreferred_citations()
     
 main()
