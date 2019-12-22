@@ -13,9 +13,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import middleware.User;
 
-public class LoginController implements Initializable {
-    @FXML private TextField email;
-    @FXML private TextField password;
+public class LoginController {
+    @FXML private TextField emailField;
+    @FXML private TextField passwordField;
     @FXML private Button loginButton;
     SessionController controller;
     
@@ -24,50 +24,40 @@ public class LoginController implements Initializable {
     }
      @FXML
     public void authorize() { 
-
-      try{
-          String e = email.getText();
-          String p = password.getText();
-          Object[] args = new Object[2];
-          args[0] = e;
-          args[1] = p;
-          User session = controller.getDbManager().autentication(args);
-          if (session != null) {
-              controller.setSession(session);
-              controller.navigate(2,null); // go to menu
-              //errorText.setVisible(false);
-          }else{
-              System.out.println("Login failed: wrong credentials");
-              //errorText.setVisible(true)
-          }
-      }catch(Exception e){
-          System.out.println(e);
-      }
+        System.out.println("test");
+        
+            String e = emailField.getText();
+            String p = passwordField.getText();
+            Object[] args = new Object[2];
+            args[0] = e;
+            args[1] = p;
+            User session = controller.getDbManager().autentication(args);
+            if (session != null) {
+                controller.setSession(session);
+                controller.navigate(2,null); // go to menu
+                //errorText.setVisible(false);
+            }else{
+                System.out.println("Login failed: wrong credentials");
+                //errorText.setVisible(true)
+            }
+     
     }
 
     public void initController() {
-      email.setOnAction(new EventHandler<ActionEvent>() {
-          @Override public void handle(ActionEvent e) {
-              authorize();
-          }
-      });  
-      password.setOnAction(new EventHandler<ActionEvent>() {
-          @Override public void handle(ActionEvent e) {
-              authorize();
-          }
-      });  
-      loginButton.setOnAction(new EventHandler<ActionEvent>() {
-          @Override public void handle(ActionEvent e) {
-              authorize();
-          }
-      });        
-
-      }
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        
+        emailField.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                authorize();
+            }
+        });  
+        passwordField.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                authorize();
+            }
+        });  
+        loginButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                authorize();
+            }
+        });        
     }
- 
-    
 }

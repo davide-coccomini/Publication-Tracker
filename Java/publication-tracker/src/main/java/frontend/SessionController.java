@@ -48,7 +48,7 @@ public class SessionController {
          switch(page){
              case 0: // Login
                 LoginController c0 = new LoginController(this);
-                load_Page(c0,"menu.fxml");
+                load_Page(c0,"login.fxml");
                 c0.initController();
                 break;
          

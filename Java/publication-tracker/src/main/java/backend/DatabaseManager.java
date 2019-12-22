@@ -39,50 +39,51 @@ public class DatabaseManager {
     /* METHODS FOR USERS MANAGEMENT */
     public void createUser(Object[] args){
         String query = "INSERT INTO user(name, password, email, role) VALUES(?,?,?,?)";
-        worker(query, args);
+        worker(query, args, 1);
     }
     
     public void deleteUser(Object[] args){
         String query = "DELETE FROM user WHERE id = ?";
-        worker(query, args);
+        worker(query, args, 0);
     }
     
     public User getUser(Object[] args){
         String query = "SELECT * FROM user WHERE id = ?";
-        List<Object> result = worker(query, args);
+        List<Object> result = worker(query, args, 1);
         User u = (User) result.get(0);
         return u;
     }
     
     public List<Object> getUsers(){
         String query = "SELECT * FROM user";
-        List<Object> users = worker(query, null);
+        List<Object> users = worker(query, null, 1);
         return users;
     }
     
     public void updateUserField(String field, Object[] args){
         String query = "UPDATE user SET "+field+" = ?";
-        worker(query,args);
+        worker(query,args,0);
     }
     public User autentication(Object[] args){    
         String query = "SELECT * FROM user WHERE email = ? AND password = ?";
-        List<Object> result = worker(query,args);
+        List<Object> result = worker(query,args, 0);
         User u = (User) result.get(0);
         return u;       
     }
-    /* Creates an ArrayList of the Object that needs to be returned as a result of the query */
-    public List<Object> worker(String query, Object[] args){
+    /* Creates a List of the Object that needs to be returned as a result of the query */
+    public List<Object> worker(String query, Object[] args, int type){
         try{
             if(args == null){
                 Statement stmt = conn.createStatement();
+                
                 stmt.execute(query);                                    
                 ResultSet rs = stmt.getResultSet();  
 
-                List<Object> result = new ArrayList<>();
+                List<Object> result = new ArrayList();
                 User u;
 
                 while(rs.next()){
-                    u = new User(rs.getInt("idUser"),rs.getString("name"), rs.getString("password"),rs.getString("email"), rs.getInt("role"));
+                    u = new User(rs.getInt("id"),rs.getString("name"), rs.getString("password"),rs.getString("email"), rs.getInt("role"));
                     result.add(u);
                 }
 
@@ -94,7 +95,20 @@ public class DatabaseManager {
                 for(int i=0; i<args.length; i++){
                     ps.setObject(i + 1,args[i]);
                 }
-                ps.executeUpdate();
+                System.out.println(ps);
+                if(type == 0){
+                    ResultSet rs = ps.executeQuery();
+                    List<Object> result = new ArrayList();
+                    User u;
+
+                    while(rs.next()){
+                        u = new User(rs.getInt("id"),rs.getString("name"), rs.getString("password"),rs.getString("email"), rs.getInt("role"));
+                        result.add(u);
+                    }
+                    return result;
+                }else{
+                    ps.executeUpdate();
+                }
                 return null;
             }
         }catch(Exception ex){
