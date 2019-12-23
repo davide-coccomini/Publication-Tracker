@@ -47,13 +47,23 @@ public class DatabaseManager {
         worker(query, args, 0);
     }
     
-    public User getUser(Object[] args){
+    public User getUserById(Object[] args){
         String query = "SELECT * FROM user WHERE id = ?";
-        List<Object> result = worker(query, args, 1);
+        List<Object> result = worker(query, args, 0);
         User u = (User) result.get(0);
         return u;
     }
-    
+     public User getUserByEmail(Object[] args){
+        String query = "SELECT * FROM user WHERE email = ?";
+        List<Object> result = worker(query, args, 0);
+        System.out.println(result);
+        if(result.size()>0){
+            User u = (User) result.get(0);
+            return u;
+        }else{
+            return null;
+        }
+    }
     public List<Object> getUsers(){
         String query = "SELECT * FROM user";
         List<Object> users = worker(query, null, 1);
