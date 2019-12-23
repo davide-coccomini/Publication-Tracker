@@ -129,6 +129,21 @@ def extractPublicationInfo(result_authors_file, result_publications_file, idAuth
     time.sleep(3 + random.uniform(2,4))
     return publicationDict
 
+
+def remove_duplicates_authors():
+    readed_authors = []
+    result_authors_file = open("data/authors.json", "r")
+    data_lines = result_authors_file.readlines()
+    result_file = open("data/authors_collapsed.json", "w")
+    for data_line in data_lines:
+        author = json.loads(data_line)
+        idAuthor = author["id"]
+        if idAuthor in readed_authors:
+            continue
+        else:
+            readed_authors.append(idAuthor)
+            result_file.write(data_line)
+
 def remove_duplicates_publications():
     # Remove duplicates in publications (the ones published by more than one person) and collapse them in a single voice
     result_publications_file = open("data/publications.json", "r")
@@ -281,17 +296,18 @@ def resume():
         if author["id"] >= author_id:
             author_id = author["id"] + 1
     resumed_authors_file.close()
+
 def main(): 
     global tmp_author_publications
+    
     change_useragent()
     # change_ip()
     if RESUME:
         resume()
     
     publication_limit = 5
-    old_authors = ["Carlo Vallati", "Enzo Mingozzi", "Giovanni Stea", "Marco Cococcioni", "Giuseppe Anastasi", "Marco Avvenuti", "Alessio Vecchio", "Cinzia Bernardeschi",
-                   "Beatrice Lazzerini", "gigliola vaglini", "Mario Giovanni Cosimo Antonio Cimino", "Pericle Perazzo","Antonio Virdis", "Gianluca Dini", "Giuseppe Lettieri", "Pietro Ducange", "Francesco Marcelloni","Alessio Vecchio", "Cinzia Bernardeschi","Beatrice Lazzerini", "gigliola vaglini","University of Pisa"]
-    authors = ["Giovanni Nardini","Guglielmo Cola", "Massimo Piotto","Marco Luise","Guido Tonelli","UNIPI",  "Università di Pisa", "University of Pisa", ]
+    authors = ["Carlo Vallati", "Enzo Mingozzi", "Giovanni Stea", "Marco Cococcioni", "Giuseppe Anastasi", "Marco Avvenuti", "Alessio Vecchio", "Cinzia Bernardeschi",
+                   "Alessio Bechini", "Andrea Domenici", "Luigi Rizzo", "Massimo Pappalardo", "Giovanni Nardini", "Guglielmo Cola", "Massimo Piotto", "Marco Luise", "Beatrice Lazzerini", "gigliola vaglini", "Mario Giovanni Cosimo Antonio Cimino", "Pericle Perazzo", "Antonio Virdis", "Gianluca Dini", "Giuseppe Lettieri", "Pietro Ducange", "Francesco Marcelloni", "Alessio Vecchio", "Cinzia Bernardeschi", "Beatrice Lazzerini", "gigliola vaglini", "Armando Segatori", "Emilio Ancillotti", "UNIPI",  "Università di Pisa", "University of Pisa", ]
    
     i = 0
     result_authors_file = open("data/authors.json", "a")
@@ -314,7 +330,7 @@ def main():
             continue
         while author:
             time.sleep(10 + random.uniform(0,10))
-            if "unipi" not in author.email and "Università di Pisa" not in author.affiliation and "University of Pisa" not in author.affiliation and "UNIPI" not in author.affiliation:
+            if "nokia" not in author.email and "unipi" not in author.email and "Università di Pisa" not in author.affiliation and "University of Pisa" not in author.affiliation and "UNIPI" not in author.affiliation:
                 time.sleep(3 + random.uniform(0, 3))
                 author = next(search_authors_query).fill()
                 time.sleep(2 + random.uniform(0,5))
@@ -344,8 +360,12 @@ def main():
                 author = next(search_authors_query).fill()
             except:
                 break
-    #remove_duplicates_publications()
     
-    #remove_unreferred_citations()
+
+    remove_duplicates_authors()
+
+    remove_duplicates_publications()
+    
+    remove_unreferred_citations()
     
 main()
