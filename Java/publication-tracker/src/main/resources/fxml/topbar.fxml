@@ -32,7 +32,7 @@
         <Image url="@../assets/logo.png" />
       </image>
     </ImageView>
-    <Button id="buttonUsers" focusTraversable="true" layoutX="640.0" layoutY="58.0" mnemonicParsing="false" prefHeight="37.29290771484375" prefWidth="75.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;" text="LOGOUT" textFill="WHITE">
+    <Button fx:id="logoutButton" focusTraversable="true" layoutX="640.0" layoutY="58.0" mnemonicParsing="false" prefHeight="37.29290771484375" prefWidth="75.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;" text="LOGOUT" textFill="WHITE">
       <font>
         <Font name="System Bold" size="13.0" />
       </font>

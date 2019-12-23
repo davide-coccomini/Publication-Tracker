@@ -25,7 +25,10 @@ public class AuthorsListController {
         controller = c;
         dbManager = c.getDbManager();
     }
-    
+    public void initController(){
+        controller.load_Topbar(topbar);
+        topbar.toFront();
+    }
     
     
 }

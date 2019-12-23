@@ -72,7 +72,7 @@ public class SessionController {
                 c4.initController();
                 break;
             case 5: //  Authors List
-                MenuController c5 = new MenuController(this);
+                AuthorsListController c5 = new AuthorsListController(this);
                 load_Page(c5,"authorsList.fxml");
                 c5.initController();
                 break;
@@ -102,7 +102,7 @@ public class SessionController {
         }
     }    
     public TopController load_Topbar(AnchorPane pane){
-        String url = "/fxml/components/topbar.fxml";
+        String url = "/fxml/topbar.fxml";
         TopController controller = new TopController(this);;
         try{     
             java.net.URL target = getClass().getResource(url);             
@@ -112,6 +112,7 @@ public class SessionController {
             AnchorPane newPane =  FXMLLoader.load(target);
             pane.getChildren().add(newPane);
             pane.getChildren().add((AnchorPane) loader.load());
+            newPane.toFront();
             controller.initController();
         }catch(IOException e){
             System.out.println(e);
