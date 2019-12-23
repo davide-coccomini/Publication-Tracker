@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package frontend;
 
 import java.util.List;
@@ -32,33 +27,32 @@ public class TopController {
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
                 logout();
-                }
-            });
-        authorsButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                controller.navigate(3,null);
-                setSectionButtonStyle(authorsButton);
-                }
-        });
-        publicationsButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                controller.navigate(4,null);
-                setSectionButtonStyle(publicationsButton);
-                }
-        });   
-        statisticsButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                controller.navigate(5,null);
-                setSectionButtonStyle(statisticsButton);
-                }
+            }
         });
         usersButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                controller.navigate(6,null);
+                controller.navigate(3,null);
                 setSectionButtonStyle(usersButton);
-                }
+            }
         });
-        
+        statisticsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(6,null);
+                setSectionButtonStyle(statisticsButton);
+            }
+        });
+        authorsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(5,null);
+                setSectionButtonStyle(authorsButton);
+            }
+        });
+        publicationsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(7,null);
+                setSectionButtonStyle(publicationsButton);
+            }
+        });   
         User u = controller.getLoggedUser();
         if(u.getRole()==1){ // Admin
             usersButton.setVisible(true);
@@ -76,7 +70,9 @@ public class TopController {
         focusedButton.setStyle("-fx-background-color: #095185");
     }
     private void show_Name(){
-        
+        /*User u=controller.getLoggedUser();
+        loggedRole.setText(u.getRoleAsString());
+        loggedName.setText(u.getFullName());*/
     }
     public void logout(){
         controller.logout();
