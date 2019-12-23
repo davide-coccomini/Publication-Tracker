@@ -6,25 +6,21 @@ import org.neo4j.driver.v1.Record;
 
 public class Publication {
     private String name;
-    private int year;
     private List<Author> authors;
     private List<Publication> citations;
 
-    public Publication(String name, int year, List<Author> authors, List<Publication> citations) {
+    public Publication(String name, List<Author> authors, List<Publication> citations) {
         this.name = name;
-        this.year = year;
         this.authors = authors;
         this.citations = citations;
     }
     public Publication(Record publication){
         name = publication.get("name").toString();
-        year = publication.get("year").asInt();
         authors = null;
         citations = null;
     }
     public Publication(Record publication, List<Author> authors, List<Publication> citations){
         name = publication.get("name").toString();
-        year = publication.get("year").asInt();
         this.authors = authors;
         this.citations = citations;
     }
@@ -34,14 +30,6 @@ public class Publication {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
     public List<Author> getAuthors() {

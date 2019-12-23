@@ -43,7 +43,7 @@ public class MainApp extends Application {
         authors.add(graphManager.addAuthor("Marilisa Lippini", "m.lippini@studenti.unipi.it", "University of Pisa"));
         
         List<Long> citations = new ArrayList();
-        citations.add(graphManager.addPublication("Test1", 2018, authors, citations));
-        citations.add(graphManager.addPublication("Test2", 2019, authors, citations));
+        citations.add(graphManager.addPublication("Test1", authors, citations));
+        citations.add(graphManager.addPublication("Test2", authors, citations));
     }
 }
