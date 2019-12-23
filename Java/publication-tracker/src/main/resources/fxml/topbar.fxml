@@ -10,14 +10,14 @@
 
 <AnchorPane id="AnchorPane" prefHeight="120.0" prefWidth="337.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
-    <Button id="createButton" focusTraversable="true" layoutX="5.0" layoutY="44.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="65.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="AUTHORS" textFill="WHITE">
+    <Button fx:id="authorsButton" focusTraversable="true" layoutX="5.0" layoutY="44.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="65.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="AUTHORS" textFill="WHITE">
       <font>
         <Font name="System Bold" size="10.0" fx:id="x1" />
       </font>
     </Button>
-    <Button id="createButton" focusTraversable="true" font="$x1" layoutX="97.0" layoutY="7.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="88.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="PUBLICATIONS" textFill="WHITE" />
-    <Button id="createButton" focusTraversable="true" font="$x1" layoutX="198.0" layoutY="44.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="74.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="STATISTICS" textFill="WHITE" />
-    <Button id="createButton" focusTraversable="true" font="$x1" layoutX="276.0" layoutY="9.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="52.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="USERS" textFill="WHITE" />
+    <Button fx:id="publicationsButton" focusTraversable="true" font="$x1" layoutX="97.0" layoutY="7.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="88.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="PUBLICATIONS" textFill="WHITE" />
+    <Button fx:id="statisticsButton" focusTraversable="true" font="$x1" layoutX="198.0" layoutY="44.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="74.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="STATISTICS" textFill="WHITE" />
+    <Button fx:id="usersButton" focusTraversable="true" font="$x1" layoutX="276.0" layoutY="9.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="52.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="USERS" textFill="WHITE" />
     <Line endX="28.0" endY="-171.0" layoutX="68.0" layoutY="223.0" startX="0.0" startY="-156.0" />
     <Line endX="49.0" endY="-64.0" layoutX="150.0" layoutY="146.0" startX="31.0" startY="-81.0" />
     <Line endX="-54.0" endY="-135.0" layoutX="336.0" layoutY="186.0" startX="-66.0" startY="-114.0" />

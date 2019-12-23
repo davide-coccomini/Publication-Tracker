@@ -5,10 +5,75 @@
  */
 package frontend;
 
-/**
- *
- * @author user
- */
+import java.util.List;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import middleware.User;
+
 public class TopController {
+    @FXML
+    private Button usersButton;
+    @FXML
+    private Button statisticsButton;
+    @FXML
+    private Button authorsButton;
+    @FXML
+    private Button publicationsButton;
+    @FXML
+    private Button logoutButton;
     
+    private SessionController controller;
+    public TopController(SessionController c){
+        controller = c;
+    }
+    public void initController(){
+        logoutButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                logout();
+                }
+            });
+        usersButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(3,null);
+                setSectionButtonStyle(usersButton);
+                }
+            });
+        statisticsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(4,null);
+                setSectionButtonStyle(statisticsButton);
+                }
+            });
+        authorsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(5,null);
+                setSectionButtonStyle(authorsButton);
+                }
+            });
+        publicationsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(6,null);
+                setSectionButtonStyle(publicationsButton);
+                }
+            });   
+        User u = controller.getLoggedUser();
+        if(u.getRole()==1){ // Admin
+            usersButton.setVisible(true);
+        }else{ // User
+            usersButton.setVisible(false);
+        }
+        show_Name();
+        
+    } 
+    private void setSectionButtonStyle(Button focusedButton){
+        
+    }
+    private void show_Name(){
+        
+    }
+    public void logout(){
+        controller.logout();
+    }
 }
