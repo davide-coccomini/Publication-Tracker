@@ -33,7 +33,7 @@
         <Image url="@../assets/logo.png" />
       </image>
     </ImageView>
-    <Button focusTraversable="true" font="$x1" layoutX="76.0" layoutY="323.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="REGISTRATION" textFill="WHITE" />
+    <Button fx:id="registrationButton" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="323.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="REGISTRATION" textFill="WHITE" />
     <Text fx:id="errorText" fill="#cc0000" font="$x1" layoutX="107.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong email or password" visible="false" />
   </children>
 </AnchorPane>

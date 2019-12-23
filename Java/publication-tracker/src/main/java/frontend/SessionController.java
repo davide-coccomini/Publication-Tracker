@@ -52,7 +52,9 @@ public class SessionController {
                 c0.initController();
                 break;
              case 1: // Registration
-               
+                RegistrationController c1 = new RegistrationController(this);
+                load_Page(c1,"registration.fxml");
+                c1.initController();
                 break;
              case 2: // Menu 
                 MenuController c2 = new MenuController(this);

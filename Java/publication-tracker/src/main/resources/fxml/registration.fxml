@@ -28,12 +28,14 @@
         <Image url="@../assets/logo.png" />
       </image>
     </ImageView>
-    <Button fx:id="createButton" focusTraversable="true" layoutX="76.0" layoutY="298.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="CREATE ACCOUNT" textFill="WHITE">
+    <Button fx:id="createButton" focusTraversable="true" layoutX="76.0" layoutY="294.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="CREATE ACCOUNT" textFill="WHITE">
       <font>
         <Font name="System Bold" size="15.0" fx:id="x1" />
       </font>
     </Button>
     <TextField fx:id="nameText" layoutX="76.0" layoutY="79.0" prefHeight="46.0" prefWidth="244.0" promptText="Name" />
     <PasswordField fx:id="passwordConfirmText" layoutX="76.0" layoutY="240.0" prefHeight="46.0" prefWidth="244.0" promptText="Confirm password" />
+    <Text fx:id="errorText" fill="RED" font="$x1" layoutX="77.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+    <Button fx:id="backButton" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="347.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="BACK" textFill="WHITE" />
   </children>
 </AnchorPane>

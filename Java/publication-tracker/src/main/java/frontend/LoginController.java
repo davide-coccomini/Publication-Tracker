@@ -18,6 +18,7 @@ public class LoginController {
     @FXML private TextField emailField;
     @FXML private TextField passwordField;
     @FXML private Button loginButton;
+    @FXML private Button registrationButton;
     @FXML private Text errorText;
     SessionController controller;
     
@@ -62,6 +63,11 @@ public class LoginController {
             @Override public void handle(ActionEvent e) {
                 authorize();
             }
-        });        
+        });   
+        registrationButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(1, null);
+            }
+        });   
     }
 }
