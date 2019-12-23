@@ -1,0 +1,247 @@
+{"id": 1, "title": "Enterprise systems: state-of-the-art and future trends", "year": null, "idAuthor": 1, "citedby": []}
+{"id": 2, "title": "Information architecture for supply chain quality management", "year": null, "idAuthor": 2, "citedby": []}
+{"id": 3, "title": "Traceability issues in food supply chain management: A review", "year": null, "idAuthor": 3, "citedby": []}
+{"id": 4, "title": "Framework for implementing traceability system in the bulk grain supply chain", "year": null, "idAuthor": 4, "citedby": []}
+{"id": 6, "title": "A model and prototype implementation for tracking and tracing agricultural batch products along the food chain", "year": null, "idAuthor": 5, "citedby": []}
+{"id": 7, "title": "Food traceability systems: Performance evaluation and optimization", "year": null, "idAuthor": 3, "citedby": []}
+{"id": 8, "title": "A framework for beef traceability from farm to slaughter using global standards: an Irish perspective", "year": null, "idAuthor": 6, "citedby": []}
+{"id": 9, "title": "A survey of software adaptation in mobile and ubiquitous computing", "year": null, "idAuthor": 7, "citedby": []}
+{"id": 10, "title": "Supply chain ontology: Review, analysis and synthesis", "year": null, "idAuthor": 8, "citedby": []}
+{"id": 0, "title": "Patterns and technologies for enabling supply chain traceability through collaborative e-business", "year": 2008, "idAuthor": 0, "citedby": [1, 2, 3, 4, 6, 7, 8, 9, 10]}
+{"id": 12, "title": "A stigmergic approach to indoor localization using bluetooth low energy beacons", "year": null, "idAuthor": 9, "citedby": []}
+{"id": 13, "title": "Activity and anomaly detection in smart home: A survey", "year": null, "idAuthor": 10, "citedby": []}
+{"id": 14, "title": "Sleep behavior assessment via smartwatch and stigmergic receptive fields", "year": null, "idAuthor": 11, "citedby": []}
+{"id": 15, "title": "The use of adaptive traffic signal systems based on floating car data", "year": null, "idAuthor": 12, "citedby": []}
+{"id": 16, "title": "Tangibot: a tangible-mediated robot to support cognitive games for ageing people\u2014a usability study", "year": null, "idAuthor": 13, "citedby": []}
+{"id": 17, "title": "Phone application for indoor localization based on Ble signal Fingerprint", "year": null, "idAuthor": 14, "citedby": []}
+{"id": 18, "title": "Measuring physical activity of older adults via smartwatch and stigmergic receptive fields", "year": null, "idAuthor": 11, "citedby": []}
+{"id": 19, "title": "A fuzzy data fusion solution to enhance the QoS and the energy consumption in wireless sensor networks", "year": null, "idAuthor": 15, "citedby": []}
+{"id": 20, "title": "Detecting socialization events in ageing people: the experience of the DOREMI project", "year": null, "idAuthor": 16, "citedby": []}
+{"id": 21, "title": "Implementing virtual pheromones in bdi robots using mqtt and jason (short paper)", "year": null, "idAuthor": 17, "citedby": []}
+{"id": 11, "title": "Monitoring elderly behavior via indoor position-based stigmergy", "year": 2015, "idAuthor": 0, "citedby": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21]}
+{"id": 23, "title": "Supply chain product visibility: Methods, systems and impacts", "year": null, "idAuthor": 18, "citedby": []}
+{"id": 24, "title": "Intelligent cryptography approach for secure distributed big data storage in cloud computing", "year": null, "idAuthor": 19, "citedby": []}
+{"id": 25, "title": "Monitoring elderly behavior via indoor position-based stigmergy", "year": null, "idAuthor": 20, "citedby": []}
+{"id": 26, "title": "Embedded devices for supply chain applications: Towards hardware integration of disparate technologies", "year": null, "idAuthor": 18, "citedby": []}
+{"id": 27, "title": "An approach to debug interactions in multi-agent system software tests", "year": null, "idAuthor": 21, "citedby": []}
+{"id": 28, "title": "Mobile apps for product customisation and design of manufacturing networks", "year": null, "idAuthor": 22, "citedby": []}
+{"id": 29, "title": "Mars, a multi-agent system for assessing rowers' coordination via motion-based stigmergy", "year": null, "idAuthor": 23, "citedby": []}
+{"id": 31, "title": "IoT-based production logistics and supply chain system\u2013Part 1: Modeling IoT-based manufacturing supply chain", "year": null, "idAuthor": 24, "citedby": []}
+{"id": 32, "title": "An interval-valued approach to business process simulation based on genetic algorithms and the BPMN", "year": null, "idAuthor": 25, "citedby": []}
+{"id": 22, "title": "Autonomic tracing of production processes with mobile and agent-based computing", "year": 2011, "idAuthor": 0, "citedby": [23, 24, 25, 26, 27, 28, 29, 31, 32]}
+{"id": 34, "title": "Traceability in a food supply chain: Safety and quality perspectives", "year": null, "idAuthor": 26, "citedby": []}
+{"id": 37, "title": "The European Union and the regulation of food traceability: from risk management to informed choice?", "year": null, "idAuthor": 27, "citedby": []}
+{"id": 38, "title": "TraceALL: a semantic web framework for food traceability systems", "year": null, "idAuthor": 28, "citedby": []}
+{"id": 39, "title": "Global markets, global challenges: Improving food safety and traceability while empowering smallholders through ICT", "year": null, "idAuthor": 29, "citedby": []}
+{"id": 41, "title": "Low-effort support to efficient urban parking in a smart city perspective", "year": null, "idAuthor": 30, "citedby": []}
+{"id": 42, "title": "Traceability in agri-food sector using RFID", "year": null, "idAuthor": 31, "citedby": []}
+{"id": 33, "title": "A general framework for food traceability", "year": 2005, "idAuthor": 0, "citedby": [34, 37, 38, 39, 41, 42]}
+{"id": 45, "title": "Social media analytics for natural disaster management", "year": null, "idAuthor": 32, "citedby": []}
+{"id": 46, "title": "You are probably not the weakest link: Towards practical prediction of susceptibility to semantic social engineering attacks", "year": null, "idAuthor": 33, "citedby": []}
+{"id": 47, "title": "Twitter as a tool for the management and analysis of emergency situations: A systematic literature review", "year": null, "idAuthor": 34, "citedby": []}
+{"id": 48, "title": "Hybrid crowdsensing: A novel paradigm to combine the strengths of opportunistic and participatory crowdsensing", "year": null, "idAuthor": 23, "citedby": []}
+{"id": 49, "title": "Monitoring the environment and human sentiment on the Great Barrier Reef: assessing the potential of collective sensing", "year": null, "idAuthor": 35, "citedby": []}
+{"id": 50, "title": "Impromptu crisis mapping to prioritize emergency response", "year": null, "idAuthor": 23, "citedby": []}
+{"id": 51, "title": "Internet of Things (IoT), mobile cloud, cloudlet, mobile IoT, IoT cloud, fog, mobile edge, and edge emerging computing paradigms: Disambiguation and research \u2026", "year": null, "idAuthor": 36, "citedby": []}
+{"id": 52, "title": "CrisMap: a big data crisis mapping system based on damage detection and geoparsing", "year": null, "idAuthor": 23, "citedby": []}
+{"id": 53, "title": "Detecting semantic social engineering attacks with the weakest link: Implementation and empirical evaluation of a human-as-a-security-sensor framework", "year": null, "idAuthor": 33, "citedby": []}
+{"id": 54, "title": "Tweeting after an earthquake: user localization and communication patterns during the 2012 Emilia seismic sequence", "year": null, "idAuthor": 37, "citedby": []}
+{"id": 44, "title": "A framework for detecting unfolding emergencies using humans as sensors", "year": 2016, "idAuthor": 0, "citedby": [45, 46, 47, 48, 49, 50, 51, 52, 53, 54]}
+{"id": 56, "title": "On the accuracy of localizing terrestrial objects using drones", "year": null, "idAuthor": 39, "citedby": []}
+{"id": 57, "title": "Secure APIT localization scheme against sybil attacks in distributed wireless sensor networks", "year": null, "idAuthor": 40, "citedby": []}
+{"id": 58, "title": "Shooting to the stars: Secure location verification via meteor burst communications", "year": null, "idAuthor": 41, "citedby": []}
+{"id": 59, "title": "Precise localization in sparse sensor networks using a drone with directional antennas", "year": null, "idAuthor": 39, "citedby": []}
+{"id": 60, "title": "Range based algorithms for precise localization of terrestrial objects using a drone", "year": null, "idAuthor": 39, "citedby": []}
+{"id": 61, "title": "Tutorial on UAV: A Blue Sky View on Wireless Communication", "year": null, "idAuthor": 42, "citedby": []}
+{"id": 62, "title": "Neural-Blockchain-Based Ultrareliable Caching for Edge-Enabled UAV Networks", "year": null, "idAuthor": 43, "citedby": []}
+{"id": 63, "title": "Energy-constrained UAV trajectory design for ground node localization", "year": null, "idAuthor": 44, "citedby": []}
+{"id": 64, "title": "Survey on collaborative smart drones and internet of things for improving smartness of smart cities", "year": null, "idAuthor": 45, "citedby": []}
+{"id": 65, "title": "Complexity of energy efficient localization with the aid of a mobile beacon", "year": null, "idAuthor": 46, "citedby": []}
+{"id": 55, "title": "Drone path planning for secure positioning and secure position verification", "year": 2016, "idAuthor": 38, "citedby": [56, 57, 58, 59, 60, 61, 62, 63, 64, 65]}
+{"id": 67, "title": "Achieve personalized anonymity through query blocks exchanging", "year": null, "idAuthor": 47, "citedby": []}
+{"id": 68, "title": "One-round privacy-preserving meeting location determination for smartphone applications", "year": null, "idAuthor": 48, "citedby": []}
+{"id": 69, "title": "A users collaborative scheme for location and query privacy", "year": null, "idAuthor": 49, "citedby": []}
+{"id": 71, "title": "Probability Indistinguishable: A Query and Location Correlation Attack Resistance Scheme", "year": null, "idAuthor": 50, "citedby": []}
+{"id": 73, "title": "Security in Internet of Things: networked smart objects.", "year": null, "idAuthor": 51, "citedby": []}
+{"id": 74, "title": "QBPP: Quality of services\u2013based location privacy protection method for location-based services in cloud-enabled Internet of vehicles", "year": null, "idAuthor": 52, "citedby": []}
+{"id": 75, "title": "Intelligent pseudo\u2010location recommendation for protecting personal location privacy", "year": null, "idAuthor": 53, "citedby": []}
+{"id": 76, "title": "A Personalized QoS Prediction Method for Web Services via Blockchain-Based Matrix Factorization", "year": null, "idAuthor": 54, "citedby": []}
+{"id": 66, "title": "A Uniformity-Based Approach to Location Privacy", "year": 2015, "idAuthor": 38, "citedby": [67, 68, 69, 71, 73, 74, 75, 76]}
+{"id": 78, "title": "PPREM: privacy preserving REvocation mechanism for vehicular ad hoc networks", "year": null, "idAuthor": 55, "citedby": []}
+{"id": 79, "title": "A uniformity-based approach to location privacy", "year": null, "idAuthor": 56, "citedby": []}
+{"id": 80, "title": "A novel model for preserving location privacy in internet of things", "year": null, "idAuthor": 57, "citedby": []}
+{"id": 81, "title": "Time obfuscation-based privacy-preserving scheme for location-based services", "year": null, "idAuthor": 58, "citedby": []}
+{"id": 82, "title": "ESOT: A new privacy model for preserving location privacy in Internet of Things", "year": null, "idAuthor": 57, "citedby": []}
+{"id": 83, "title": "HUMsim: A privacy-oriented human mobility simulator", "year": null, "idAuthor": 59, "citedby": []}
+{"id": 84, "title": "Integration of privacy protection mechanisms in location-based services", "year": null, "idAuthor": 60, "citedby": []}
+{"id": 86, "title": "Location obfuscation and distance-based attacks on private trajectories: an experimental evaluation on real trajectory data sets", "year": null, "idAuthor": 61, "citedby": []}
+{"id": 87, "title": "On Designing Resilient Location-Privacy Obfuscators", "year": null, "idAuthor": 56, "citedby": []}
+{"id": 77, "title": "Uniform obfuscation for location privacy", "year": 2012, "idAuthor": 38, "citedby": [78, 79, 80, 81, 82, 83, 84, 86, 87]}
+{"id": 89, "title": "Implementation of a wormhole attack against a rpl network: Challenges and effects", "year": null, "idAuthor": 56, "citedby": []}
+{"id": 90, "title": "Suppression Attack Against Multicast Protocol in Low Power and Lossy Networks: Analysis and Defenses", "year": null, "idAuthor": 62, "citedby": []}
+{"id": 91, "title": "Spam DIS Attack Against Routing Protocol in the Internet of Things", "year": null, "idAuthor": 62, "citedby": []}
+{"id": 92, "title": "Energy Depletion Attack Against Routing Protocol in the Internet of Things", "year": null, "idAuthor": 62, "citedby": []}
+{"id": 93, "title": "FAN: framework for authentication of nodes in mobile adhoc environment of Internet-of-Things", "year": null, "idAuthor": 63, "citedby": []}
+{"id": 94, "title": "Routing Attacks and Mitigation Methods for RPL-Based Internet of Things", "year": null, "idAuthor": 64, "citedby": []}
+{"id": 95, "title": "Directed Acyclic Graph Inherited Attacks and Mitigation Methods in RPL: A Review", "year": null, "idAuthor": 65, "citedby": []}
+{"id": 96, "title": "Battery Drain Denial-of-Service Attacks and Defenses in the Internet of Things", "year": null, "idAuthor": 66, "citedby": []}
+{"id": 97, "title": "Energy Depletion Attack in Low Power and Lossy Networks: Analysis and Defenses", "year": null, "idAuthor": 62, "citedby": []}
+{"id": 98, "title": "Addressing the DAO Insider Attack in RPL's Internet of Things Networks", "year": null, "idAuthor": 67, "citedby": []}
+{"id": 88, "title": "DIO suppression attack against routing in the Internet of Things", "year": 2017, "idAuthor": 38, "citedby": [89, 90, 91, 92, 93, 94, 95, 96, 97, 98]}
+{"id": 100, "title": "Drone path planning for secure positioning and secure position verification", "year": null, "idAuthor": 56, "citedby": []}
+{"id": 101, "title": "Geo-spatial location spoofing detection for Internet of Things", "year": null, "idAuthor": 68, "citedby": []}
+{"id": 102, "title": "Secure positioning in wireless sensor networks through enlargement miscontrol detection", "year": null, "idAuthor": 56, "citedby": []}
+{"id": 103, "title": "Modeling enlargement attacks against UWB distance bounding protocols", "year": null, "idAuthor": 69, "citedby": []}
+{"id": 104, "title": "Secure Location of Things (SLOT): mitigating localization spoofing attacks in the Internet of Things", "year": null, "idAuthor": 70, "citedby": []}
+{"id": 105, "title": "Secure positioning with non-ideal distance bounding protocols", "year": null, "idAuthor": 56, "citedby": []}
+{"id": 106, "title": "Uwb-ed: Distance enlargement attack detection in ultra-wideband", "year": null, "idAuthor": 71, "citedby": []}
+{"id": 107, "title": "Physical-layer integrity for wireless messages", "year": null, "idAuthor": 72, "citedby": []}
+{"id": 108, "title": "GEO-SPATIAL SPOOFING DETECTION FOR CAPTURING RAINSTORMS & GUIDE FLOOD WARNING", "year": null, "idAuthor": 73, "citedby": []}
+{"id": 109, "title": "Security and privacy in wireless networking and mobile crowd sensing", "year": null, "idAuthor": 74, "citedby": []}
+{"id": 99, "title": "On the feasibility of overshadow enlargement attack on IEEE 802.15. 4a distance bounding", "year": 2013, "idAuthor": 38, "citedby": [100, 101, 102, 103, 104, 105, 106, 107, 108, 109]}
+{"id": 112, "title": "Remote distributed antenna system", "year": null, "idAuthor": 76, "citedby": []}
+{"id": 110, "title": "MADAM: a multi-level anomaly detector for android malware", "year": 2012, "idAuthor": 75, "citedby": [112]}
+{"id": 122, "title": "Droidsieve: Fast and accurate classification of obfuscated android malware", "year": null, "idAuthor": 77, "citedby": []}
+{"id": 123, "title": "Monet: a user-oriented behavior-based malware variants detection system for android", "year": null, "idAuthor": 78, "citedby": []}
+{"id": 124, "title": "Characterizing Android apps' behavior for effective detection of malapps at large scale", "year": null, "idAuthor": 48, "citedby": []}
+{"id": 125, "title": "Prescience: Probabilistic guidance on the retraining conundrum for malware detection", "year": null, "idAuthor": 79, "citedby": []}
+{"id": 126, "title": "Bridemaid: An hybrid tool for accurate detection of android malware", "year": null, "idAuthor": 80, "citedby": []}
+{"id": 127, "title": "Risk analysis of Android applications: A user-centric solution", "year": null, "idAuthor": 60, "citedby": []}
+{"id": 128, "title": "Samadroid: a novel 3-level hybrid malware detection model for android operating system", "year": null, "idAuthor": 81, "citedby": []}
+{"id": 129, "title": "Intelligent OS X malware threat detection with code inspection", "year": null, "idAuthor": 82, "citedby": []}
+{"id": 130, "title": "A multi-view context-aware approach to Android malware detection and malicious code localization", "year": null, "idAuthor": 83, "citedby": []}
+{"id": 131, "title": "Android malware detection based on system call sequences and LSTM", "year": null, "idAuthor": 84, "citedby": []}
+{"id": 121, "title": "Madam: Effective and efficient behavior-based android malware detection and prevention", "year": 2016, "idAuthor": 75, "citedby": [122, 123, 124, 125, 126, 127, 128, 129, 130, 131]}
+{"id": 133, "title": "Energy conservation in wireless sensor networks: A survey", "year": null, "idAuthor": 85, "citedby": []}
+{"id": 134, "title": "Data collection in wireless sensor networks with mobile elements: A survey", "year": null, "idAuthor": 86, "citedby": []}
+{"id": 135, "title": "Cut detection in wireless sensor networks", "year": null, "idAuthor": 87, "citedby": []}
+{"id": 136, "title": "Polynomial chaos expansion of random coefficients and the solution of stochastic partial differential equations in the tensor train format", "year": null, "idAuthor": 88, "citedby": []}
+{"id": 138, "title": "An overview of information extraction from mobile wireless sensor networks", "year": null, "idAuthor": 89, "citedby": []}
+{"id": 139, "title": "Boundary node selection algorithms in wsns", "year": null, "idAuthor": 90, "citedby": []}
+{"id": 140, "title": "Reliable and efficient data acquisition in wireless sensor networks in the presence of transfaulty nodes", "year": null, "idAuthor": 91, "citedby": []}
+{"id": 141, "title": "Energy-efficient connectivity re-establishment in WSN in the presence of dumb nodes", "year": null, "idAuthor": 91, "citedby": []}
+{"id": 142, "title": "Connectivity reestablishment in self-organizing sensor networks with dumb nodes", "year": null, "idAuthor": 91, "citedby": []}
+{"id": 132, "title": "An algorithm for reconnecting wireless sensor network partitions", "year": 2008, "idAuthor": 75, "citedby": [133, 134, 135, 136, 138, 139, 140, 141, 142]}
+{"id": 144, "title": "Cyber security in the smart grid: Survey and challenges", "year": null, "idAuthor": 92, "citedby": []}
+{"id": 145, "title": "Improving ZigBee device network authentication using ensemble decision tree classifiers with radio frequency distinct native attribute fingerprinting", "year": null, "idAuthor": 93, "citedby": []}
+{"id": 146, "title": "PHY foundation for multi-factor ZigBee node authentication", "year": null, "idAuthor": 94, "citedby": []}
+{"id": 147, "title": "Device authentication mechanism for smart energy home area networks", "year": null, "idAuthor": 95, "citedby": []}
+{"id": 148, "title": "A survey on secure communication protocols for IoT systems", "year": null, "idAuthor": 96, "citedby": []}
+{"id": 151, "title": "Design and implementation analysis of a public key infrastructure\u2010enabled security framework for ZigBee sensor networks", "year": null, "idAuthor": 97, "citedby": []}
+{"id": 152, "title": "Towards enhanced key management in multi-phase ZigBee network architecture", "year": null, "idAuthor": 98, "citedby": []}
+{"id": 153, "title": "Non-parametric feature generation for RF-fingerprinting on ZigBee devices", "year": null, "idAuthor": 99, "citedby": []}
+{"id": 143, "title": "Considerations on security in zigbee networks", "year": 2010, "idAuthor": 75, "citedby": [144, 145, 146, 147, 148, 151, 152, 153]}
+{"id": 156, "title": "Online reconfiguration in replicated databases based on group communication", "year": null, "idAuthor": 100, "citedby": []}
+{"id": 157, "title": "Using moldability to improve the performance of supercomputer jobs", "year": null, "idAuthor": 101, "citedby": []}
+{"id": 159, "title": "System support for partition-aware network applications", "year": null, "idAuthor": 102, "citedby": []}
+{"id": 160, "title": "Group-based multicast and dynamic membership in wireless networks with incomplete spatial coverage", "year": null, "idAuthor": 103, "citedby": []}
+{"id": 161, "title": "The Jgroup distributed object model", "year": null, "idAuthor": 104, "citedby": []}
+{"id": 162, "title": "A history of the virtual synchrony replication model", "year": null, "idAuthor": 105, "citedby": []}
+{"id": 163, "title": "Interactivity maintenance for event synchronization in massive multiplayer online games", "year": null, "idAuthor": 106, "citedby": []}
+{"id": 164, "title": "Group multicast in distributed mobile systems with unreliable wireless network", "year": null, "idAuthor": 85, "citedby": []}
+{"id": 154, "title": "Enriched view synchrony: A programming paradigm for partitionable asynchronous distributed systems", "year": 1997, "idAuthor": 75, "citedby": [156, 157, 159, 160, 161, 162, 163, 164]}
+{"id": 166, "title": "ClickOS and the art of network function virtualization", "year": null, "idAuthor": 108, "citedby": []}
+{"id": 167, "title": "E2: a framework for NFV applications", "year": null, "idAuthor": 109, "citedby": []}
+{"id": 168, "title": "Scalable, high performance ethernet forwarding with cuckooswitch", "year": null, "idAuthor": 110, "citedby": []}
+{"id": 169, "title": "Comparison of frameworks for high-performance packet IO", "year": null, "idAuthor": 111, "citedby": []}
+{"id": 170, "title": "Rollback-recovery for middleboxes", "year": null, "idAuthor": 112, "citedby": []}
+{"id": 171, "title": "SoftNIC: A software NIC to augment hardware", "year": null, "idAuthor": 113, "citedby": []}
+{"id": 172, "title": "Performance characteristics of virtual switching", "year": null, "idAuthor": 114, "citedby": []}
+{"id": 173, "title": "OpenNetVM: A platform for high performance network service chains", "year": null, "idAuthor": 115, "citedby": []}
+{"id": 174, "title": "A survey on data center networking for cloud computing", "year": null, "idAuthor": 116, "citedby": []}
+{"id": 175, "title": "mSwitch: a highly-scalable, modular software switch", "year": null, "idAuthor": 117, "citedby": []}
+{"id": 165, "title": "Vale, a switched ethernet for virtual machines", "year": 2012, "idAuthor": 107, "citedby": [166, 167, 168, 169, 170, 171, 172, 173, 174, 175]}
+{"id": 177, "title": "NetBricks: Taking the V out of {NFV}", "year": null, "idAuthor": 118, "citedby": []}
+{"id": 178, "title": "StackMap: Low-Latency Networking with the {OS} Stack and Dedicated NICs", "year": null, "idAuthor": 119, "citedby": []}
+{"id": 179, "title": "Parabox: Exploiting parallelism for virtual network functions in service chaining", "year": null, "idAuthor": 120, "citedby": []}
+{"id": 180, "title": "Ready-to-deploy service function chaining for mobile networks", "year": null, "idAuthor": 121, "citedby": []}
+{"id": 181, "title": "Netalytics: Cloud-scale application performance monitoring with sdn and nfv", "year": null, "idAuthor": 122, "citedby": []}
+{"id": 183, "title": "Taking control of sdn-based cloud systems via the data plane", "year": null, "idAuthor": 123, "citedby": []}
+{"id": 184, "title": "Flexible virtual machine networking using netmap passthrough", "year": null, "idAuthor": 124, "citedby": []}
+{"id": 176, "title": "mSwitch: a highly-scalable, modular software switch", "year": 2015, "idAuthor": 107, "citedby": [167, 177, 178, 179, 180, 181, 183, 184]}
+{"id": 187, "title": "Fast userspace packet processing", "year": null, "idAuthor": 125, "citedby": []}
+{"id": 188, "title": "Poptrie: A compressed trie with population count for fast and scalable software IP routing table lookup", "year": null, "idAuthor": 126, "citedby": []}
+{"id": 189, "title": "Softflow: A middlebox architecture for open vswitch", "year": null, "idAuthor": 127, "citedby": []}
+{"id": 190, "title": "Virtual device passthrough for high speed vm networking", "year": null, "idAuthor": 128, "citedby": []}
+{"id": 191, "title": "Md2-nfv: The case for multi-domain distributed network functions virtualization", "year": null, "idAuthor": 129, "citedby": []}
+{"id": 192, "title": "On Sockets and System Calls: Minimizing Context Switches for the Socket {API}", "year": null, "idAuthor": 130, "citedby": []}
+{"id": 193, "title": "Kvm virtualization impact on active round-trip time measurements", "year": null, "idAuthor": 131, "citedby": []}
+{"id": 186, "title": "Speeding up packet i/o in virtual machines", "year": 2013, "idAuthor": 107, "citedby": [166, 170, 187, 188, 189, 190, 191, 192, 184, 193]}
+{"id": 195, "title": "Ransomware steals your phone. formal methods rescue it", "year": null, "idAuthor": 132, "citedby": []}
+{"id": 196, "title": "Car hacking identification through fuzzy logic algorithms", "year": null, "idAuthor": 80, "citedby": []}
+{"id": 197, "title": "Hey malware, i can find you!", "year": null, "idAuthor": 132, "citedby": []}
+{"id": 198, "title": "A time series classification approach to game bot detection", "year": null, "idAuthor": 133, "citedby": []}
+{"id": 199, "title": "Who's Driving My Car? A Machine Learning based Approach to Driver Identification.", "year": null, "idAuthor": 80, "citedby": []}
+{"id": 200, "title": "Game Bot Detection in Online Role Player Game through Behavioural Features.", "year": null, "idAuthor": 133, "citedby": []}
+{"id": 202, "title": "Conformance Checking using Formal Methods.", "year": null, "idAuthor": 134, "citedby": []}
+{"id": 203, "title": "Probabilistic model checking applied to autonomous spacecraft reconfiguration", "year": null, "idAuthor": 135, "citedby": []}
+{"id": 204, "title": "Formal methods for prostate cancer Gleason score and treatment prediction using radiomic biomarkers", "year": null, "idAuthor": 136, "citedby": []}
+{"id": 194, "title": "Heuristic search for equivalence checking", "year": 2016, "idAuthor": 107, "citedby": [195, 196, 197, 198, 199, 200, 202, 203, 204]}
+{"id": 206, "title": "SDNFV: Flexible and dynamic software defined control of an application-and flow-aware data plane", "year": null, "idAuthor": 115, "citedby": []}
+{"id": 208, "title": "A study of speed mismatches between communicating virtual machines", "year": null, "idAuthor": 137, "citedby": []}
+{"id": 209, "title": "Fast packet processing: A survey", "year": null, "idAuthor": 138, "citedby": []}
+{"id": 210, "title": "HyperNF: Building a high performance, high utilization and fair NFV platform", "year": null, "idAuthor": 119, "citedby": []}
+{"id": 211, "title": "VIRTIO-USER: A new versatile channel for kernel-bypass networks", "year": null, "idAuthor": 139, "citedby": []}
+{"id": 212, "title": "A study of I/O performance of virtual machines", "year": null, "idAuthor": 107, "citedby": []}
+{"id": 213, "title": "Benchmarking nfv software dataplanes", "year": null, "idAuthor": 140, "citedby": []}
+{"id": 205, "title": "Virtual device passthrough for high speed vm networking", "year": 2015, "idAuthor": 107, "citedby": [167, 206, 184, 208, 209, 210, 211, 212, 213]}
+{"id": 215, "title": "Big data for social transportation", "year": null, "idAuthor": 142, "citedby": []}
+{"id": 216, "title": "Social media based transportation research: The state of the work and the networking", "year": null, "idAuthor": 143, "citedby": []}
+{"id": 217, "title": "Forecasting the subway passenger flow under event occurrences with social media", "year": null, "idAuthor": 144, "citedby": []}
+{"id": 218, "title": "Detection of traffic congestion and incidents from GPS trace analysis", "year": null, "idAuthor": 145, "citedby": []}
+{"id": 219, "title": "A deep learning approach for detecting traffic accidents from social media data", "year": null, "idAuthor": 146, "citedby": []}
+{"id": 220, "title": "A framework for detecting unfolding emergencies using humans as sensors", "year": null, "idAuthor": 23, "citedby": []}
+{"id": 221, "title": "Enabling next generation logistics and planning for smarter societies", "year": null, "idAuthor": 147, "citedby": []}
+{"id": 222, "title": "Citywide traffic congestion estimation with social media", "year": null, "idAuthor": 148, "citedby": []}
+{"id": 223, "title": "Automating a framework to extract and analyse transport related social media content: The potential and the challenges", "year": null, "idAuthor": 149, "citedby": []}
+{"id": 224, "title": "Long short-term memory model for traffic congestion prediction with online open data", "year": null, "idAuthor": 150, "citedby": []}
+{"id": 214, "title": "Real-time detection of traffic from twitter stream analysis", "year": 2015, "idAuthor": 141, "citedby": [215, 216, 217, 218, 219, 220, 221, 222, 223, 224]}
+{"id": 226, "title": "Interpretability of linguistic fuzzy rule-based systems: An overview of interpretability measures", "year": null, "idAuthor": 151, "citedby": []}
+{"id": 227, "title": "A historical review of evolutionary learning methods for Mamdani-type fuzzy rule-based systems: Designing interpretable genetic fuzzy systems", "year": null, "idAuthor": 152, "citedby": []}
+{"id": 228, "title": "A review of the application of multiobjective evolutionary fuzzy systems: Current status and further directions", "year": null, "idAuthor": 153, "citedby": []}
+{"id": 229, "title": "A dynamically constrained multiobjective genetic fuzzy system for regression problems", "year": null, "idAuthor": 154, "citedby": []}
+{"id": 230, "title": "A fast and scalable multiobjective genetic fuzzy system for linguistic fuzzy modeling in high-dimensional regression problems", "year": null, "idAuthor": 155, "citedby": []}
+{"id": 231, "title": "Evolutionary-group-based particle-swarm-optimized fuzzy controller with application to mobile-robot navigation in unknown environments", "year": null, "idAuthor": 156, "citedby": []}
+{"id": 232, "title": "Multiobjective genetic fuzzy rule selection of single granularity-based fuzzy classification rules and its interaction with the lateral tuning of membership functions", "year": null, "idAuthor": 155, "citedby": []}
+{"id": 233, "title": "List of references on evolutionary multiobjective optimization", "year": null, "idAuthor": 157, "citedby": []}
+{"id": 234, "title": "Multi-objective evolutionary design of granular rule-based classifiers", "year": null, "idAuthor": 158, "citedby": []}
+{"id": 235, "title": "Knowledge acquisition in fuzzy-rule-based systems with particle-swarm optimization", "year": null, "idAuthor": 159, "citedby": []}
+{"id": 225, "title": "A multiobjective evolutionary approach to concurrently learn rule and data bases of linguistic fuzzy-rule-based systems", "year": 2009, "idAuthor": 141, "citedby": [226, 227, 228, 229, 230, 231, 232, 233, 234, 235]}
+{"id": 237, "title": "Multiobjective evolutionary algorithms: A survey of the state of the art", "year": null, "idAuthor": 160, "citedby": []}
+{"id": 238, "title": "Genetic fuzzy systems: taxonomy, current research trends and prospects", "year": null, "idAuthor": 161, "citedby": []}
+{"id": 239, "title": "Low-level interpretability and high-level interpretability: a unified view of data-driven interpretable fuzzy system modelling", "year": null, "idAuthor": 162, "citedby": []}
+{"id": 240, "title": "A multiobjective evolutionary approach to concurrently learn rule and data bases of linguistic fuzzy-rule-based systems", "year": null, "idAuthor": 155, "citedby": []}
+{"id": 241, "title": "Adaptation and application of multi-objective evolutionary algorithms for rule reduction and parameter tuning of fuzzy rule-based systems", "year": null, "idAuthor": 151, "citedby": []}
+{"id": 242, "title": "Integration of an index to preserve the semantic interpretability in the multiobjective evolutionary rule selection and tuning of linguistic fuzzy systems", "year": null, "idAuthor": 151, "citedby": []}
+{"id": 236, "title": "A Pareto-based multi-objective evolutionary approach to the identification of Mamdani fuzzy systems", "year": 2007, "idAuthor": 141, "citedby": [237, 238, 226, 227, 228, 239, 240, 241, 229, 242]}
+{"id": 244, "title": "An insight into classification with imbalanced data: Empirical results and current trends on using data intrinsic characteristics", "year": null, "idAuthor": 163, "citedby": []}
+{"id": 245, "title": "A survey of multiobjective evolutionary algorithms for data mining: Part I", "year": null, "idAuthor": 164, "citedby": []}
+{"id": 246, "title": "Analysis of preprocessing vs. cost-sensitive learning for imbalanced classification. Open problems on intrinsic data characteristics", "year": null, "idAuthor": 163, "citedby": []}
+{"id": 247, "title": "On the 2-tuples based genetic tuning performance for fuzzy rule based classification systems in imbalanced data-sets", "year": null, "idAuthor": 165, "citedby": []}
+{"id": 248, "title": "Revisiting evolutionary fuzzy systems: Taxonomy, applications, new trends and challenges", "year": null, "idAuthor": 166, "citedby": []}
+{"id": 249, "title": "Addressing the classification with imbalanced data: open problems and new challenges on class distribution", "year": null, "idAuthor": 165, "citedby": []}
+{"id": 243, "title": "Multi-objective genetic fuzzy classifiers for imbalanced and cost-sensitive datasets", "year": 2010, "idAuthor": 141, "citedby": [237, 244, 227, 245, 228, 246, 247, 248, 233, 249]}
+{"id": 251, "title": "Novel basic operational laws for linguistic terms, hesitant fuzzy linguistic term sets and probabilistic linguistic term sets", "year": null, "idAuthor": 167, "citedby": []}
+{"id": 252, "title": "Multicriteria decision making based on the TOPSIS method and similarity measures between intuitionistic fuzzy values", "year": null, "idAuthor": 168, "citedby": []}
+{"id": 253, "title": "An overview of interval-valued intuitionistic fuzzy information aggregations and applications", "year": null, "idAuthor": 169, "citedby": []}
+{"id": 254, "title": "Granular computing: from granularity optimization to multi-granularity joint problem solving", "year": null, "idAuthor": 170, "citedby": []}
+{"id": 255, "title": "Robust decision making using intuitionistic fuzzy numbers", "year": null, "idAuthor": 171, "citedby": []}
+{"id": 256, "title": "The development of granular rule-based systems: a study in structural model compression", "year": null, "idAuthor": 172, "citedby": []}
+{"id": 257, "title": "An intuitionistic fuzzy multiplicative best-worst method for multi-criteria group decision making", "year": null, "idAuthor": 173, "citedby": []}
+{"id": 258, "title": "Fuzzy information granulation towards interpretable sentiment analysis", "year": null, "idAuthor": 174, "citedby": []}
+{"id": 259, "title": "Multiple attribute group decision making based on interval-valued intuitionistic fuzzy aggregation operators and transformation techniques of interval-valued \u2026", "year": null, "idAuthor": 168, "citedby": []}
+{"id": 260, "title": "A novel method for group decision making with interval-valued Atanassov intuitionistic fuzzy preference relations", "year": null, "idAuthor": 175, "citedby": []}
+{"id": 250, "title": "Multi-objective evolutionary design of granular rule-based classifiers", "year": 2016, "idAuthor": 141, "citedby": [251, 252, 253, 254, 255, 256, 257, 258, 259, 260]}
+{"id": 262, "title": "An ant colony optimization approach for maximizing the lifetime of heterogeneous wireless sensor networks", "year": null, "idAuthor": 177, "citedby": []}
+{"id": 263, "title": "Technologies and Architectures of the Internet-of-Things (IoT) for Health and Well-being", "year": null, "idAuthor": 178, "citedby": []}
+{"id": 264, "title": "Enabling energy-efficient and lossy-aware data compression in wireless sensor networks by multi-objective evolutionary optimization", "year": null, "idAuthor": 176, "citedby": []}
+{"id": 265, "title": "Big data meet green challenges: Greening big data", "year": null, "idAuthor": 179, "citedby": []}
+{"id": 266, "title": "DEEP: Density-based proactive data dissemination protocol for wireless sensor networks with uncontrolled sink mobility", "year": null, "idAuthor": 180, "citedby": []}
+{"id": 267, "title": "Design of modified adaptive Huffman data compression algorithm for wireless sensor network", "year": null, "idAuthor": 181, "citedby": []}
+{"id": 269, "title": "An adaptive lossless data compression scheme for wireless sensor networks", "year": null, "idAuthor": 182, "citedby": []}
+{"id": 270, "title": "A distributed data storage protocol for heterogeneous wireless sensor networks with mobile sinks", "year": null, "idAuthor": 183, "citedby": []}
+{"id": 271, "title": "WSNs for structural health monitoring of historical buildings", "year": null, "idAuthor": 85, "citedby": []}
+{"id": 261, "title": "A simple algorithm for data compression in wireless sensor networks", "year": 2008, "idAuthor": 176, "citedby": [262, 263, 264, 265, 266, 267, 269, 270, 271]}
+{"id": 0, "title": "Patterns and technologies for enabling supply chain traceability through collaborative e-business", "year": 2008, "idAuthor": 176, "citedby": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+{"id": 214, "title": "Real-time detection of traffic from twitter stream analysis", "year": 2015, "idAuthor": 176, "citedby": [215, 216, 217, 218, 219, 220, 221, 222, 223, 224]}
+{"id": 225, "title": "A multiobjective evolutionary approach to concurrently learn rule and data bases of linguistic fuzzy-rule-based systems", "year": 2009, "idAuthor": 176, "citedby": [226, 227, 228, 229, 230, 231, 232, 233, 234, 235]}

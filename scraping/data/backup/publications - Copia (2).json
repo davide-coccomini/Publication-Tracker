@@ -467,467 +467,89 @@
 {"id": 527, "title": "Smart multi-level tool for remote patient monitoring based on a wireless sensor network and mobile augmented reality", "idAuthor": 334, "citedby": []}
 {"id": 528, "title": "The future of assistive technologies for dementia", "idAuthor": 335, "citedby": []}
 {"id": 529, "title": "MIMS: A minimally invasive monitoring sensor platform", "idAuthor": 336, "citedby": []}
+{"id": 520, "title": "Monitoring of human movements for fall detection and activities recognition in elderly care using wireless sensor network: a survey", "idAuthor": 23, "citedby": [501, 521, 522, 523, 524, 525, 526, 527, 528, 529]}
+{"id": 531, "title": "The evolution of MAC protocols in wireless sensor networks: A survey", "idAuthor": 337, "citedby": []}
+{"id": 532, "title": "Low energy operation in WSNs: A survey of preamble sampling MAC protocols", "idAuthor": 338, "citedby": []}
+{"id": 533, "title": "Wind-blown foliage and human-induced fading in ground-surface narrowband communications at 400 MHz", "idAuthor": 339, "citedby": []}
+{"id": 534, "title": "Dual wake-up low power listening for duty cycled wireless sensor networks", "idAuthor": 340, "citedby": []}
+{"id": 535, "title": "Traffic aware medium access control protocol for wireless sensor networks", "idAuthor": 142, "citedby": []}
+{"id": 536, "title": "Spectrum agile medium access control protocol for wireless sensor networks", "idAuthor": 341, "citedby": []}
+{"id": 537, "title": "Dynamic sleep time control in wireless sensor networks", "idAuthor": 342, "citedby": []}
+{"id": 539, "title": "Comparison of CSMA based MAC protocols of wireless sensor networks", "idAuthor": 343, "citedby": []}
+{"id": 530, "title": "Increasing the efficiency of preamble sampling protocols for wireless sensor networks", "idAuthor": 23, "citedby": [531, 501, 532, 533, 534, 535, 536, 537, 539]}
+{"id": 541, "title": "Internet of things for smart healthcare: Technologies, challenges, and opportunities", "idAuthor": 344, "citedby": []}
+{"id": 542, "title": "Type and location of wearable sensors for monitoring falls during static and dynamic tasks in healthy elderly: a review", "idAuthor": 345, "citedby": []}
+{"id": 543, "title": "Gait-based authentication using a wrist-worn device", "idAuthor": 346, "citedby": []}
+{"id": 544, "title": "The lower limbs kinematics analysis by wearable sensor shoes", "idAuthor": 347, "citedby": []}
+{"id": 546, "title": "Real-life/real-time elderly fall detection with a triaxial accelerometer", "idAuthor": 348, "citedby": []}
+{"id": 547, "title": "Cooperative wireless network control based health and activity monitoring system", "idAuthor": 349, "citedby": []}
+{"id": 549, "title": "Real-time identification using gait pattern analysis on a standalone wearable accelerometer", "idAuthor": 346, "citedby": []}
+{"id": 540, "title": "An on-node processing approach for anomaly detection in gait", "idAuthor": 23, "citedby": [541, 542, 543, 544, 14, 546, 547, 549]}
 {"id": 501, "title": "A smartphone-based fall detection system", "idAuthor": 350, "citedby": [453, 502, 503, 504, 505, 507, 508, 509, 510]}
-{"id": 536, "title": "Transmission medium and communication interfaces and methods for use therewith", "idAuthor": 351, "citedby": []}
-{"id": 539, "title": "Magnetic coupling device and methods for use therewith", "idAuthor": 351, "citedby": []}
-{"id": 541, "title": "Method and apparatus for configuring a communication interface", "idAuthor": 352, "citedby": []}
-{"id": 531, "title": "Smartphone-based crowdsourcing for network monitoring: opportunities, challenges, and a case study", "idAuthor": 350, "citedby": [536, 539, 541]}
-{"id": 542, "title": "Monitoring of human movements for fall detection and activities recognition in elderly care using wireless sensor network: a survey", "idAuthor": 350, "citedby": [501, 521, 522, 523, 524, 525, 526, 527, 528, 529]}
-{"id": 544, "title": "The evolution of MAC protocols in wireless sensor networks: A survey", "idAuthor": 337, "citedby": []}
-{"id": 545, "title": "Low energy operation in WSNs: A survey of preamble sampling MAC protocols", "idAuthor": 338, "citedby": []}
-{"id": 546, "title": "Wind-blown foliage and human-induced fading in ground-surface narrowband communications at 400 MHz", "idAuthor": 339, "citedby": []}
-{"id": 547, "title": "Dual wake-up low power listening for duty cycled wireless sensor networks", "idAuthor": 340, "citedby": []}
-{"id": 548, "title": "Traffic aware medium access control protocol for wireless sensor networks", "idAuthor": 142, "citedby": []}
-{"id": 549, "title": "Spectrum agile medium access control protocol for wireless sensor networks", "idAuthor": 341, "citedby": []}
-{"id": 550, "title": "Dynamic sleep time control in wireless sensor networks", "idAuthor": 342, "citedby": []}
-{"id": 552, "title": "Comparison of CSMA based MAC protocols of wireless sensor networks", "idAuthor": 343, "citedby": []}
-{"id": 543, "title": "Increasing the efficiency of preamble sampling protocols for wireless sensor networks", "idAuthor": 350, "citedby": [544, 501, 545, 546, 547, 548, 549, 550, 552]}
-{"id": 554, "title": "Internet of things for smart healthcare: Technologies, challenges, and opportunities", "idAuthor": 344, "citedby": []}
-{"id": 555, "title": "Type and location of wearable sensors for monitoring falls during static and dynamic tasks in healthy elderly: a review", "idAuthor": 345, "citedby": []}
-{"id": 556, "title": "Gait-based authentication using a wrist-worn device", "idAuthor": 346, "citedby": []}
-{"id": 557, "title": "The lower limbs kinematics analysis by wearable sensor shoes", "idAuthor": 347, "citedby": []}
-{"id": 559, "title": "Real-life/real-time elderly fall detection with a triaxial accelerometer", "idAuthor": 348, "citedby": []}
-{"id": 560, "title": "Cooperative wireless network control based health and activity monitoring system", "idAuthor": 349, "citedby": []}
-{"id": 562, "title": "Real-time identification using gait pattern analysis on a standalone wearable accelerometer", "idAuthor": 346, "citedby": []}
-{"id": 553, "title": "An on-node processing approach for anomaly detection in gait", "idAuthor": 350, "citedby": [554, 555, 556, 557, 14, 559, 560, 562]}
-{"id": 564, "title": "High-integrity system specification and design", "idAuthor": 354, "citedby": []}
-{"id": 565, "title": "Formal verification of a railway interlocking system using model checking", "idAuthor": 355, "citedby": []}
-{"id": 566, "title": "Verification of a radio-based signaling system using the STATEMATE verification environment", "idAuthor": 356, "citedby": []}
-{"id": 569, "title": "Modular semantics for a UML statechart diagrams kernel and its extension to multicharts and branching time model-checking", "idAuthor": 357, "citedby": []}
-{"id": 570, "title": "An automatic SPIN validation of a safety critical railway control system", "idAuthor": 357, "citedby": []}
-{"id": 572, "title": "Some trends in formal methods applications to railway signaling", "idAuthor": 358, "citedby": []}
-{"id": 573, "title": "A symbolic model checker for ACTL", "idAuthor": 358, "citedby": []}
-{"id": 563, "title": "A formal verification environment for railway signaling system design", "idAuthor": 353, "citedby": [564, 565, 566, 569, 570, 572, 573]}
-{"id": 575, "title": "Modeling and verification of a fault-tolerant real-time startup protocol using calendar automata", "idAuthor": 359, "citedby": []}
-{"id": 576, "title": "Model checking a fault-tolerant startup algorithm: From design exploration to exhaustive fault simulation", "idAuthor": 360, "citedby": []}
-{"id": 577, "title": "Cumulative attestation kernels for embedded systems", "idAuthor": 361, "citedby": []}
-{"id": 578, "title": "Timed systems in SAL", "idAuthor": 359, "citedby": []}
-{"id": 579, "title": "Safe start-up of a network", "idAuthor": 360, "citedby": []}
-{"id": 580, "title": "A roadmap to electronic payment transaction guarantees and a Colored Petri Net model checking approach", "idAuthor": 362, "citedby": []}
-{"id": 581, "title": "Combining fault injection and model checking to verify fault tolerance in multi-agent systems", "idAuthor": 363, "citedby": []}
-{"id": 582, "title": "Selecting fault tolerant styles for third-party components with model checking support", "idAuthor": 364, "citedby": []}
-{"id": 583, "title": "Design and verification of fault-tolerant components", "idAuthor": 365, "citedby": []}
-{"id": 574, "title": "Model checking fault tolerant systems", "idAuthor": 353, "citedby": [575, 576, 577, 578, 577, 579, 580, 581, 582, 583]}
-{"id": 585, "title": "A typed assembly language for confidentiality", "idAuthor": 366, "citedby": []}
-{"id": 587, "title": "Efficient type inference for secure information flow", "idAuthor": 367, "citedby": []}
-{"id": 588, "title": "Statically checking confidentiality via dynamic labels", "idAuthor": 368, "citedby": []}
-{"id": 589, "title": "Abstract certification of global non-interference in rewriting logic", "idAuthor": 369, "citedby": []}
-{"id": 591, "title": "Identifying critical components during information security evaluations", "idAuthor": 370, "citedby": []}
-{"id": 592, "title": "Non-interference and erasure policies for java card bytecode", "idAuthor": 371, "citedby": []}
-{"id": 593, "title": "Java Bytecode Dependence Analysis for Secure Information Flow.", "idAuthor": 372, "citedby": []}
-{"id": 594, "title": "JCSI: A tool for checking secure information flow in Java Card applications", "idAuthor": 23, "citedby": []}
-{"id": 584, "title": "Java bytecode verification for secure information flow", "idAuthor": 353, "citedby": [585, 587, 588, 589, 591, 592, 593, 594]}
-{"id": 596, "title": "Automating the addition of fault tolerance with discrete controller synthesis", "idAuthor": 373, "citedby": []}
-{"id": 598, "title": "Crash failure detection in asynchronous agent communication languages", "idAuthor": 374, "citedby": []}
-{"id": 599, "title": "Optimal discrete controller synthesis for modeling fault-tolerant distributed systems", "idAuthor": 375, "citedby": []}
-{"id": 600, "title": "Model-based development of fault-tolerant real-time systems", "idAuthor": 376, "citedby": []}
-{"id": 601, "title": "An object based algebra for specifying a fault tolerant software architecture", "idAuthor": 374, "citedby": []}
-{"id": 603, "title": "Feasibility of stepwise design of multitolerant programs", "idAuthor": 377, "citedby": []}
-{"id": 604, "title": "Modeling fault-tolerant distributed systems for discrete controller synthesis", "idAuthor": 373, "citedby": []}
-{"id": 595, "title": "Formally verifying fault tolerant system designs", "idAuthor": 353, "citedby": [574, 596, 598, 599, 600, 601, 603, 604]}
-{"id": 606, "title": "Battery health prognosis for electric vehicles using sample entropy and sparse Bayesian predictive modeling", "idAuthor": 378, "citedby": []}
-{"id": 607, "title": "Evaluation of acceptable charging current of power Li-ion batteries based on polarization characteristics", "idAuthor": 379, "citedby": []}
-{"id": 608, "title": "Review of battery cell balancing techniques", "idAuthor": 380, "citedby": []}
-{"id": 609, "title": "A charge equalizer with a combination of APWM and PFM control based on a modified half-bridge converter", "idAuthor": 381, "citedby": []}
-{"id": 610, "title": "Verification of balancing architectures for modular batteries", "idAuthor": 382, "citedby": []}
-{"id": 611, "title": "Cyber-physical co-simulation framework for smart cells in scalable battery packs", "idAuthor": 383, "citedby": []}
-{"id": 614, "title": "Implementation of the fast charging concept for electric local public transport: The case-study of a minibus", "idAuthor": 384, "citedby": []}
-{"id": 615, "title": "Smart LiFePO4battery modules in a fast charge application for local public transportation", "idAuthor": 384, "citedby": []}
-{"id": 605, "title": "Design and safety verification of a distributed charge equalizer for modular li-ion batteries", "idAuthor": 353, "citedby": [606, 607, 608, 609, 610, 611, 614, 615]}
-{"id": 617, "title": "Genetic algorithms and genetic programming: modern concepts and practical applications", "idAuthor": 386, "citedby": []}
-{"id": 618, "title": "Generalized pyrolysis model for combustible solids", "idAuthor": 387, "citedby": []}
-{"id": 619, "title": "Elitism-based compact genetic algorithms", "idAuthor": 388, "citedby": []}
-{"id": 620, "title": "An investigation into mutation operators for particle swarm optimization", "idAuthor": 389, "citedby": []}
-{"id": 622, "title": "Advances in evolutionary algorithms", "idAuthor": 388, "citedby": []}
-{"id": 623, "title": "The application of a genetic algorithm to estimate material properties for fire modeling from bench-scale fire test data", "idAuthor": 387, "citedby": []}
-{"id": 624, "title": "Substructural and progressive structural identification methods", "idAuthor": 390, "citedby": []}
-{"id": 625, "title": "A hybrid computational strategy for identification of structural parameters", "idAuthor": 390, "citedby": []}
-{"id": 626, "title": "Multi expression programming", "idAuthor": 391, "citedby": []}
-{"id": 616, "title": "Evolutionary computation", "idAuthor": 385, "citedby": [617, 618, 619, 620, 622, 623, 624, 625, 626]}
-{"id": 627, "title": "A new evolutionary algorithm for function optimization", "idAuthor": 392, "citedby": []}
-{"id": 628, "title": "The structure optimization of radial basis probabilistic neural networks based on genetic algorithms", "idAuthor": 393, "citedby": []}
-{"id": 631, "title": "A gray-encoded, hybrid-accelerated, genetic algorithm for global optimizations in dynamical systems", "idAuthor": 394, "citedby": []}
-{"id": 633, "title": "Loadability of power systems and optimal SVC placement", "idAuthor": 395, "citedby": []}
-{"id": 634, "title": "A novel selection evolutionary strategy for constrained optimization", "idAuthor": 396, "citedby": []}
-{"id": 635, "title": "A schema-guiding evolutionary algorithm for 0-1 knapsack problem", "idAuthor": 397, "citedby": []}
-{"id": 636, "title": "Comparison between particle swarm optimization, differential evolution and multi-parents crossover", "idAuthor": 398, "citedby": []}
-{"id": 616, "title": "Evolutionary computation", "idAuthor": 385, "citedby": [627, 628, 631, 633, 634, 635, 636]}
-{"id": 214, "title": "Real-time detection of traffic from twitter stream analysis", "idAuthor": 385, "citedby": [215, 216, 217, 218, 219, 220, 221, 222, 223, 224]}
-{"id": 225, "title": "A multiobjective evolutionary approach to concurrently learn rule and data bases of linguistic fuzzy-rule-based systems", "idAuthor": 385, "citedby": [226, 227, 228, 229, 230, 231, 232, 233, 250, 235]}
-{"id": 638, "title": "Disassembly sequencing using genetic algorithm", "idAuthor": 399, "citedby": []}
-{"id": 639, "title": "A review on assembly sequence planning and assembly line balancing optimisation using soft computing approaches", "idAuthor": 400, "citedby": []}
-{"id": 640, "title": "A hybrid genetic algorithm approach on multi-objective of assembly planning problem", "idAuthor": 401, "citedby": []}
-{"id": 642, "title": "Assembly process planning and its future in collaborative manufacturing: a review", "idAuthor": 32, "citedby": []}
-{"id": 644, "title": "An enhanced genetic algorithm for automated assembly planning", "idAuthor": 402, "citedby": []}
-{"id": 645, "title": "Assembly planning with an ordering genetic algorithm", "idAuthor": 403, "citedby": []}
-{"id": 646, "title": "Assembly and disassembly planning by using fuzzy logic & genetic algorithms", "idAuthor": 404, "citedby": []}
-{"id": 647, "title": "An overview of artificial intelligence-based methods for building energy systems", "idAuthor": 405, "citedby": []}
-{"id": 637, "title": "A genetic algorithm for generating optimal assembly plans", "idAuthor": 385, "citedby": [638, 639, 640, 642, 644, 645, 646, 647]}
-{"id": 652, "title": "Monitoring distributed systems", "idAuthor": 407, "citedby": []}
-{"id": 654, "title": "A mechanism for efficient debugging of parallel programs", "idAuthor": 408, "citedby": []}
-{"id": 655, "title": "Breakpoints and halting in distributed programs", "idAuthor": 408, "citedby": []}
-{"id": 656, "title": "Observer-a concept for formal on-line validation of distributed systems", "idAuthor": 409, "citedby": []}
-{"id": 657, "title": "Distributed performance monitoring: methods, tools, and applications", "idAuthor": 410, "citedby": []}
-{"id": 658, "title": "Fundamentals of distributed system observation", "idAuthor": 411, "citedby": []}
-{"id": 648, "title": "Development of a Debugger for a Concurrent Language", "idAuthor": 406, "citedby": [652, 654, 655, 656, 657, 658]}
-{"id": 660, "title": "On-the-fly state space reductions for weak equivalences", "idAuthor": 412, "citedby": []}
-{"id": 661, "title": "Heuristic search+ local model checking in selective mu-calculus", "idAuthor": 134, "citedby": []}
-{"id": 662, "title": "Identification of Android Malware Families with Model Checking.", "idAuthor": 413, "citedby": []}
-{"id": 663, "title": "Clone detection through process algebras and Java bytecode.", "idAuthor": 134, "citedby": []}
-{"id": 665, "title": "Abstract interpretation and model checking for checking secure information flow in concurrent systems", "idAuthor": 414, "citedby": []}
-{"id": 666, "title": "Automatic verification of concurrent systems using a formula-based compositional approach", "idAuthor": 134, "citedby": []}
-{"id": 668, "title": "Efficient verification of a multicast protocol for mobile computing", "idAuthor": 85, "citedby": []}
-{"id": 659, "title": "Selective mu-calculus and formula-based equivalence of transition systems", "idAuthor": 406, "citedby": [660, 661, 662, 663, 665, 194, 666, 668]}
-{"id": 25, "title": "Monitoring elderly behavior via indoor position-based stigmergy", "idAuthor": 406, "citedby": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21]}
-{"id": 670, "title": "Video streaming over ad hoc networks: A qoe-based optimal routing solution", "idAuthor": 415, "citedby": []}
-{"id": 671, "title": "On end-to-end delay minimization in wireless networks under the physical interference model", "idAuthor": 19, "citedby": []}
-{"id": 672, "title": "Worst-Case Analysis of Tandem Queueing Systems Using Network Calculus", "idAuthor": 416, "citedby": []}
-{"id": 673, "title": "A fast and reliable broadcast service for LTE-Advanced exploiting multihop device-to-device transmissions", "idAuthor": 254, "citedby": []}
-{"id": 675, "title": "Broadcasting in LTE-Advanced networks using multihop D2D communications", "idAuthor": 254, "citedby": []}
-{"id": 676, "title": "A framework to compare topology algorithms in multi-channel multi-radio wireless mesh networks", "idAuthor": 417, "citedby": []}
-{"id": 677, "title": "Delay aware joint routing and scheduling for multi-Tx-Rx wireless mesh networks", "idAuthor": 32, "citedby": []}
-{"id": 679, "title": "Transmission of real-time traffic in TDMA multi-hop wireless ad-hoc networks", "idAuthor": 418, "citedby": []}
-{"id": 669, "title": "Optimal joint routing and link scheduling for real-time traffic in TDMA wireless mesh networks", "idAuthor": 406, "citedby": [670, 671, 672, 673, 675, 676, 677, 679]}
-{"id": 681, "title": "A heuristic solution for model checking graph transformation systems", "idAuthor": 419, "citedby": []}
-{"id": 682, "title": "10 Years of research on debugging concurrent and multicore software: a systematic mapping study", "idAuthor": 420, "citedby": []}
-{"id": 683, "title": "A meta-heuristic solution for automated refutation of complex software systems specified through graph transformations", "idAuthor": 421, "citedby": []}
-{"id": 684, "title": "GreASE: a tool for efficient \u201cNonequivalence\u201d checking", "idAuthor": 422, "citedby": []}
-{"id": 685, "title": "Analyzing ant colony optimization based routing protocol against the hole problem for enhancing user's connectivity experience", "idAuthor": 423, "citedby": []}
-{"id": 686, "title": "Analysis of the scalability and stability of an ACO based routing protocol for wireless sensor networks", "idAuthor": 423, "citedby": []}
-{"id": 687, "title": "A greedy algorithm versus metaheuristic solutions to deadlock detection in Graph Transformation Systems", "idAuthor": 419, "citedby": []}
-{"id": 688, "title": "Deadlock detection in complex software systems specified through graph transformation using Bayesian optimization algorithm", "idAuthor": 424, "citedby": []}
-{"id": 680, "title": "Ant colony optimization for deadlock detection in concurrent systems", "idAuthor": 406, "citedby": [195, 681, 682, 683, 197, 684, 685, 686, 687, 688]}
-{"id": 689, "title": "SimuLTE: A Modular System-level Simulator for LTE/LTE-A Networks based on OMNeT++", "idAuthor": 425, "citedby": [389, 390, 391, 381, 383, 394, 395, 396]}
-{"id": 693, "title": "Scalable route map for advanced metering infrastructure based on optimal routing of wireless heterogeneous networks", "idAuthor": 426, "citedby": []}
-{"id": 694, "title": "Modeling unicast device-to-device communications with SimuLTE", "idAuthor": 259, "citedby": []}
-{"id": 695, "title": "Simulating device-to-device communications in OMNeT++ with SimuLTE: scenarios and configurations", "idAuthor": 254, "citedby": []}
-{"id": 696, "title": "Modeling X2 backhauling for LTE-Advanced and assessing its effect on CoMP Coordinated Scheduling", "idAuthor": 254, "citedby": []}
-{"id": 697, "title": "A 5G cellular technology for distributed monitoring and control in smart grid", "idAuthor": 427, "citedby": []}
-{"id": 698, "title": "Performance evaluation of TCP-based traffic over direct communications in LTE-Advanced", "idAuthor": 254, "citedby": []}
-{"id": 699, "title": "Veins: The Open Source Vehicular Network Simulation Framework", "idAuthor": 428, "citedby": []}
-{"id": 700, "title": "Hybrid solutions for data dissemination in vehicular networks", "idAuthor": 429, "citedby": []}
-{"id": 692, "title": "Simulating LTE/LTE-Advanced Networks with SimuLTE", "idAuthor": 425, "citedby": [693, 304, 694, 695, 696, 697, 698, 699, 673, 700]}
-{"id": 701, "title": "Mobile-Edge Computing Come Home Connecting things in future smart homes using LTE device-to-device communications.", "idAuthor": 425, "citedby": [305, 306, 307, 308, 309, 310, 311, 313, 314]}
-{"id": 689, "title": "SimuLTE: A Modular System-level Simulator for LTE/LTE-A Networks based on OMNeT++", "idAuthor": 425, "citedby": [389, 390, 391, 381, 383, 394, 395, 396]}
-{"id": 692, "title": "Simulating LTE/LTE-Advanced Networks with SimuLTE", "idAuthor": 425, "citedby": [693, 304, 694, 695, 696, 697, 698, 699, 673, 700]}
-{"id": 701, "title": "Mobile-Edge Computing Come Home Connecting things in future smart homes using LTE device-to-device communications.", "idAuthor": 425, "citedby": [305, 306, 307, 308, 309, 310, 311, 313, 314]}
-{"id": 388, "title": "SimuLTE-A modular system-level simulator for LTE/LTE-A networks based on OMNeT++", "idAuthor": 254, "citedby": [389, 390, 391, 381, 383, 394, 395, 396]}
-{"id": 692, "title": "Simulating LTE/LTE-Advanced Networks with SimuLTE", "idAuthor": 254, "citedby": [693, 304, 694, 695, 696, 697, 698, 699, 673, 700]}
-{"id": 704, "title": "Better platooning control toward autonomous driving: An LTE device-to-device communications strategy that meets ultralow latency requirements", "idAuthor": 430, "citedby": []}
-{"id": 705, "title": "Cellular-V2X Communications for Platooning: Design and Evaluation", "idAuthor": 254, "citedby": []}
-{"id": 706, "title": "A scalable data-plane architecture for one-to-one device-to-device communications in LTE-Advanced", "idAuthor": 254, "citedby": []}
-{"id": 708, "title": "Geofenced Broadcasts via Centralized Scheduling of Device-to-Device Communications in LTE-Advanced", "idAuthor": 254, "citedby": []}
-{"id": 394, "title": "Resource allocation for network-controlled device-to-device communications in LTE-Advanced", "idAuthor": 254, "citedby": [704, 304, 694, 695, 673, 675, 705, 706, 708]}
-{"id": 709, "title": "A comprehensive review on coordinated multi-point operation for LTE-A", "idAuthor": 431, "citedby": []}
-{"id": 710, "title": "Efficient joint user association and resource allocation for cloud radio access networks", "idAuthor": 432, "citedby": []}
-{"id": 711, "title": "QoS priority\u2010based coordinated scheduling and hybrid spectrum access for femtocells in dense cooperative 5G cellular networks", "idAuthor": 433, "citedby": []}
-{"id": 713, "title": "Scalability and energy efficiency of Coordinated Scheduling in cellular networks towards 5G", "idAuthor": 254, "citedby": []}
-{"id": 715, "title": "Practical feasibility, scalability and effectiveness of coordinated scheduling algorithms in cellular networks towards 5G", "idAuthor": 254, "citedby": []}
-{"id": 716, "title": "Enhancement of QoS in LTE Macro network through Femto Cells with Interference Reduction", "idAuthor": 434, "citedby": []}
-{"id": 383, "title": "Practical large-scale coordinated scheduling in LTE-Advanced networks", "idAuthor": 254, "citedby": [709, 710, 396, 696, 711, 713, 715, 716]}
-{"id": 718, "title": "Simulating cellular communications in vehicular networks: making SimuLTE interoperable with Veins", "idAuthor": 254, "citedby": []}
-{"id": 719, "title": "Device-to-device network performance at 28 GHz and 60 GHz using device association vector algorithm", "idAuthor": 435, "citedby": []}
-{"id": 720, "title": "Effect of mode-switching on TCP short flows during D2D communication in LTE-A networks", "idAuthor": 436, "citedby": []}
-{"id": 721, "title": "Exploring LTE-V link level performance by geometry enhanced winner II channel model", "idAuthor": 437, "citedby": []}
-{"id": 722, "title": "Modeling Network-Controlled Device-to-Device Communications in SimuLTE", "idAuthor": 254, "citedby": []}
-{"id": 694, "title": "Modeling unicast device-to-device communications with SimuLTE", "idAuthor": 254, "citedby": [695, 697, 699, 718, 719, 706, 720, 721, 722]}
-{"id": 501, "title": "A smartphone-based fall detection system", "idAuthor": 438, "citedby": [453, 502, 503, 504, 505, 507, 508, 509, 510]}
-{"id": 724, "title": "An On-Node Processing Approach for Anomaly Detection in Gait", "idAuthor": 438, "citedby": [554, 555, 556, 557, 14, 559, 560, 562]}
-{"id": 729, "title": "Review of fall detection techniques: A data availability perspective", "idAuthor": 439, "citedby": []}
-{"id": 730, "title": "Analysis of android device-based solutions for fall detection", "idAuthor": 440, "citedby": []}
-{"id": 727, "title": "Recognition of false alarms in fall detection systems", "idAuthor": 438, "citedby": [501, 504, 523, 729, 524, 509, 553, 525, 730]}
-{"id": 731, "title": "Continuous authentication of smartphone users based on activity pattern recognition using passive mobile sensing", "idAuthor": 441, "citedby": []}
-{"id": 732, "title": "A continuous identity authentication scheme based on physiological and behavioral characteristics", "idAuthor": 442, "citedby": []}
-{"id": 733, "title": "Unobtrusive gait recognition using smartwatches", "idAuthor": 443, "citedby": []}
-{"id": 734, "title": "Enhanced free-text keystroke continuous authentication based on dynamics of wrist motion", "idAuthor": 220, "citedby": []}
-{"id": 735, "title": "Biometric-based wearable user authentication during sedentary and non-sedentary periods", "idAuthor": 444, "citedby": []}
-{"id": 736, "title": "DeepKey: An EEG and gait based dual-authentication system", "idAuthor": 142, "citedby": []}
-{"id": 737, "title": "Continuous user authentication using smartwatch motion sensor data", "idAuthor": 443, "citedby": []}
-{"id": 738, "title": "Continuous Identification in Smart Environments Using Wrist-Worn Inertial Sensors", "idAuthor": 445, "citedby": []}
-{"id": 739, "title": "Personalized Gait-based Authentication Using UWB Wearable Devices", "idAuthor": 446, "citedby": []}
-{"id": 556, "title": "Gait-based authentication using a wrist-worn device", "idAuthor": 438, "citedby": [14, 731, 732, 733, 734, 735, 736, 737, 738, 739]}
-{"id": 741, "title": "Human activity recognition based on the hierarchical feature selection and classification framework", "idAuthor": 120, "citedby": []}
-{"id": 742, "title": "An unsupervised approach for gait-based authentication", "idAuthor": 346, "citedby": []}
-{"id": 743, "title": "Comparison of two techniques for monitoring of human movements", "idAuthor": 447, "citedby": []}
-{"id": 745, "title": "Smart Shoe-Assisted Evaluation of Using a Single Trunk/Pocket-Worn Accelerometer to Detect Gait Phases", "idAuthor": 23, "citedby": []}
-{"id": 746, "title": "Posture recognition using the interdistances between wearable devices", "idAuthor": 350, "citedby": []}
-{"id": 747, "title": "Fall detection using a head-worn barometer", "idAuthor": 346, "citedby": []}
-{"id": 740, "title": "Improving the Performance of Fall Detection Systems through Walk Recognition", "idAuthor": 438, "citedby": [553, 741, 556, 742, 743, 562, 745, 746, 747]}
-{"id": 749, "title": "Black silicon: fabrication methods, properties and solar energy applications", "idAuthor": 208, "citedby": []}
-{"id": 750, "title": "Method and apparatus for providing information for decrypting content, and program executed on information processor", "idAuthor": 449, "citedby": []}
-{"id": 751, "title": "Electrochemical micromachining as an enabling technology for advanced silicon microstructuring", "idAuthor": 450, "citedby": []}
-{"id": 753, "title": "Fabrication of silicon oxide microneedles from macroporous silicon", "idAuthor": 451, "citedby": []}
-{"id": 755, "title": "3-D integration and through-silicon vias in MEMS and microsensors", "idAuthor": 32, "citedby": []}
-{"id": 757, "title": "Advances in modeling, design, and fabrication of deep-etched multilayer resonators", "idAuthor": 452, "citedby": []}
-{"id": 748, "title": "Electrochemical etching in HF solution for silicon micromachining", "idAuthor": 448, "citedby": [749, 750, 751, 753, 755, 757]}
-{"id": 760, "title": "An energy-efficient 15-bit capacitive-sensor interface based on period modulation", "idAuthor": 453, "citedby": []}
-{"id": 761, "title": "A low-power, wide-dynamic-range semi-digital universal sensor readout circuit using pulsewidth modulation", "idAuthor": 454, "citedby": []}
-{"id": 762, "title": "A dual-slope capacitance-to-digital converter integrated in an implantable pressure-sensing system", "idAuthor": 455, "citedby": []}
-{"id": 763, "title": "A low-power interface for capacitive sensors with PWM output and intrinsic low pass characteristic", "idAuthor": 456, "citedby": []}
-{"id": 764, "title": "A capacitance-ratio-modulated current front-end circuit with pulsewidth modulation output for a capacitive sensor interface", "idAuthor": 457, "citedby": []}
-{"id": 765, "title": "An integrated energy-efficient capacitive sensor digital interface circuit", "idAuthor": 458, "citedby": []}
-{"id": 766, "title": "1.5 V Sub\u2010mW CMOS Interface Circuit for Capacitive Sensor Applications in Ubiquitous Sensor Networks", "idAuthor": 459, "citedby": []}
-{"id": 767, "title": "A highly digital VCO-based ADC architecture for current sensing applications", "idAuthor": 460, "citedby": []}
-{"id": 768, "title": "A low-power capacitance to pulse width converter for MEMS interfacing", "idAuthor": 461, "citedby": []}
-{"id": 769, "title": "7.9 pJ/step energy-efficient multi-slope 13-bit capacitance-to-digital converter", "idAuthor": 458, "citedby": []}
-{"id": 759, "title": "A current-mode, dual slope, integrated capacitance-to-pulse duration converter", "idAuthor": 448, "citedby": [760, 761, 762, 763, 764, 765, 766, 767, 768, 769]}
-{"id": 772, "title": "A self-bended piezoresistive microcantilever flow sensor for low flow rate measurement", "idAuthor": 462, "citedby": []}
-{"id": 773, "title": "Effects of gas type on the sensitivity and transition pressure of integrated thermal flow sensors", "idAuthor": 461, "citedby": []}
-{"id": 774, "title": "A micro flow sensor from a polymer for gases and liquids", "idAuthor": 463, "citedby": []}
-{"id": 775, "title": "Thermal flow sensors for harsh environments", "idAuthor": 464, "citedby": []}
-{"id": 776, "title": "An offset compensation method with low residual drift for integrated thermal flow sensors", "idAuthor": 461, "citedby": []}
-{"id": 777, "title": "A MEMS-based flow rate and flow direction sensing platform with integrated temperature compensation scheme", "idAuthor": 465, "citedby": []}
-{"id": 778, "title": "Smart flow sensor with on-chip CMOS interface performing offset and pressure effect compensation", "idAuthor": 466, "citedby": []}
-{"id": 779, "title": "A compact package for integrated silicon thermal gas flow meters", "idAuthor": 461, "citedby": []}
-{"id": 780, "title": "Postprocessing, readout and packaging methods for integrated gas flow sensors", "idAuthor": 461, "citedby": []}
-{"id": 770, "title": "A double heater integrated gas flow sensor with thermal feedback", "idAuthor": 448, "citedby": [772, 773, 774, 775, 776, 777, 778, 779, 780]}
-{"id": 784, "title": "2-D micromachined thermal wind sensors\u2014A review", "idAuthor": 264, "citedby": []}
-{"id": 785, "title": "Thermoresistive effect for advanced thermal sensors: Fundamentals, design considerations, and applications", "idAuthor": 467, "citedby": []}
-{"id": 786, "title": "Fabrication and characterization of a directional anemometer based on a single chip MEMS flow sensor", "idAuthor": 466, "citedby": []}
-{"id": 787, "title": "Optical fiber anemometer using silver-coated fiber Bragg grating and bitaper", "idAuthor": 48, "citedby": []}
-{"id": 788, "title": "Wind speed and direction detection by means of solid-state anemometers embedded on small quadcopters", "idAuthor": 461, "citedby": []}
-{"id": 789, "title": "Design issues for low power integrated thermal flow sensors with ultra-wide dynamic range and low insertion loss", "idAuthor": 461, "citedby": []}
-{"id": 790, "title": "DRIE trenches and full-bridges for improving sensitivity of 2-D micromachined silicon thermal wind sensor", "idAuthor": 468, "citedby": []}
-{"id": 781, "title": "A low-power 2-D wind sensor based on integrated flow meters", "idAuthor": 448, "citedby": [784, 785, 786, 787, 788, 789, 790]}
-{"id": 793, "title": "A universal expression of band gap for silicon nanowires of different cross-section geometries", "idAuthor": 469, "citedby": []}
-{"id": 796, "title": "Influence of surface chemical modification on charge transport properties in ultrathin silicon membranes", "idAuthor": 470, "citedby": []}
-{"id": 798, "title": "Top-down fabrication of single crystal silicon nanowire using optical lithography", "idAuthor": 471, "citedby": []}
-{"id": 799, "title": "A new approach to fabricate vertically stacked single-crystalline silicon nanowires", "idAuthor": 472, "citedby": []}
-{"id": 800, "title": "Impact of parameter variation in fabrication of nanostructure by atomic force microscopy nanolithography", "idAuthor": 473, "citedby": []}
-{"id": 801, "title": "Top down fabricated silicon nanowire networks for thermoelectric applications", "idAuthor": 474, "citedby": []}
-{"id": 802, "title": "Integrated freestanding single-crystal silicon nanowires: conductivity and surface treatment", "idAuthor": 475, "citedby": []}
-{"id": 792, "title": "Fabrication and characterization of silicon nanowires with triangular cross section", "idAuthor": 448, "citedby": [793, 796, 798, 799, 800, 801, 802]}
-{"id": 804, "title": "OFDM and its wireless applications: A survey", "idAuthor": 477, "citedby": []}
-{"id": 805, "title": "Data-aided frequency estimation for burst digital transmission", "idAuthor": 478, "citedby": []}
-{"id": 806, "title": "DVB-S2: The second generation standard for satellite broad-band services", "idAuthor": 479, "citedby": []}
-{"id": 807, "title": "Carrier frequency acquisition and tracking for OFDM systems", "idAuthor": 480, "citedby": []}
-{"id": 808, "title": "DVB\u2010S2 modem algorithms design and performance over typical satellite channels", "idAuthor": 481, "citedby": []}
-{"id": 809, "title": "Frequency offset and symbol timing recovery in flat-fading channels: A cyclostationary approach", "idAuthor": 482, "citedby": []}
-{"id": 811, "title": "On the synchronization techniques for wireless OFDM systems", "idAuthor": 483, "citedby": []}
-{"id": 812, "title": "Feedforward frequency estimation for PSK: A tutorial review", "idAuthor": 484, "citedby": []}
-{"id": 813, "title": "Decision-directed fine synchronization in OFDM systems", "idAuthor": 485, "citedby": []}
-{"id": 803, "title": "Carrier frequency recovery in all-digital modems for burst-mode transmissions", "idAuthor": 476, "citedby": [804, 805, 806, 807, 808, 809, 811, 812, 813]}
-{"id": 815, "title": "Blind estimation of symbol timing and carrier frequency offset in wireless OFDM systems", "idAuthor": 486, "citedby": []}
-{"id": 816, "title": "System and methods to compensate for Doppler effects in multi-user (MU) multiple antenna systems (MAS)", "idAuthor": 487, "citedby": []}
-{"id": 817, "title": "System and method for DIDO precoding interpolation in multicarrier systems", "idAuthor": 487, "citedby": []}
-{"id": 819, "title": "Non-data-aided carrier offset estimators for OFDM with null subcarriers: identifiability, algorithms, and performance", "idAuthor": 488, "citedby": []}
-{"id": 821, "title": "A low-complexity frame synchronization and frequency offset compensation scheme for OFDM systems over fading channels", "idAuthor": 489, "citedby": []}
-{"id": 822, "title": "System and method for distributed input distributed output wireless communications", "idAuthor": 487, "citedby": []}
-{"id": 823, "title": "Channel-independent synchronization of orthogonal frequency division multiple access systems", "idAuthor": 490, "citedby": []}
-{"id": 807, "title": "Carrier frequency acquisition and tracking for OFDM systems", "idAuthor": 476, "citedby": [815, 816, 817, 819, 821, 822, 823]}
-{"id": 825, "title": "RF imperfections in high-rate wireless systems: impact and digital compensation", "idAuthor": 491, "citedby": []}
-{"id": 826, "title": "Algorithms for iterative decoding in the presence of strong phase noise", "idAuthor": 492, "citedby": []}
-{"id": 827, "title": "MIMO: from theory to implementation", "idAuthor": 493, "citedby": []}
-{"id": 828, "title": "A theoretical framework for soft-information-based synchronization in iterative (turbo) receivers", "idAuthor": 494, "citedby": []}
-{"id": 829, "title": "Code-aided turbo synchronization", "idAuthor": 495, "citedby": []}
-{"id": 830, "title": "Phase estimation by message passing", "idAuthor": 496, "citedby": []}
-{"id": 831, "title": "Joint iterative detection and decoding in the presence of phase noise and frequency offset", "idAuthor": 497, "citedby": []}
-{"id": 832, "title": "A theoretical framework for iterative synchronization based on the sum\u2013product and the expectation-maximization algorithms", "idAuthor": 495, "citedby": []}
-{"id": 833, "title": "True Cramer-Rao bound for timing recovery from a bandlimited linearly modulated waveform with unknown carrier phase and frequency", "idAuthor": 494, "citedby": []}
-{"id": 834, "title": "On LDPC codes over channels with memory", "idAuthor": 492, "citedby": []}
-{"id": 824, "title": "Turbo synchronization: an EM algorithm interpretation", "idAuthor": 476, "citedby": [825, 826, 827, 828, 829, 830, 831, 832, 833, 834]}
-{"id": 836, "title": "Millimeter wave cellular wireless networks: Potentials and challenges", "idAuthor": 498, "citedby": []}
-{"id": 837, "title": "Millimeter wave channel modeling and cellular capacity evaluation", "idAuthor": 499, "citedby": []}
-{"id": 838, "title": "An overview of signal processing techniques for millimeter wave MIMO systems", "idAuthor": 500, "citedby": []}
-{"id": 839, "title": "60 GHz wireless communications: Emerging requirements and design recommendations", "idAuthor": 501, "citedby": []}
-{"id": 840, "title": "A survey of millimeter wave communications (mmWave) for 5G: opportunities and challenges", "idAuthor": 502, "citedby": []}
-{"id": 841, "title": "60 GHz wireless: Up close and personal", "idAuthor": 501, "citedby": []}
-{"id": 842, "title": "Interference analysis for highly directional 60-GHz mesh networks: The case for rethinking medium access control", "idAuthor": 343, "citedby": []}
-{"id": 843, "title": "60-GHz photonic millimeter-wave link for short-to medium-range wireless transmission up to 12.5 Gb/s", "idAuthor": 503, "citedby": []}
-{"id": 844, "title": "Millimeter-wave photonic components for broadband wireless systems", "idAuthor": 504, "citedby": []}
-{"id": 845, "title": "Millimeter-wave frequency radio over fiber systems: a survey", "idAuthor": 505, "citedby": []}
-{"id": 835, "title": "Mobile and personal communications in the 60 GHz band: A survey", "idAuthor": 476, "citedby": [836, 837, 838, 839, 840, 841, 842, 843, 844, 845]}
-{"id": 847, "title": "MHOMS: high-speed ACM modem for satellite applications", "idAuthor": 506, "citedby": []}
-{"id": 848, "title": "Carrier phase recovery for turbo-coded linear modulations", "idAuthor": 507, "citedby": []}
-{"id": 849, "title": "Detection algorithms for wireless communications: with applications to wired and storage systems", "idAuthor": 508, "citedby": []}
-{"id": 851, "title": "Soft metrics and their performance analysis for optimal data detection in the presence of strong oscillator phase noise", "idAuthor": 509, "citedby": []}
-{"id": 846, "title": "Embedding carrier phase recovery into iterative decoding of turbo-coded linear modulations", "idAuthor": 476, "citedby": [826, 828, 829, 847, 831, 848, 834, 849, 851]}
-{"id": 854, "title": "A supersymmetry primer", "idAuthor": 511, "citedby": []}
-{"id": 855, "title": "Parton distributions for the LHC Run II", "idAuthor": 512, "citedby": []}
-{"id": 857, "title": "PDF4LHC recommendations for LHC run II", "idAuthor": 513, "citedby": []}
-{"id": 858, "title": "New parton distribution functions from a global analysis of quantum chromodynamics", "idAuthor": 514, "citedby": []}
-{"id": 859, "title": "Precise determination of the mass of the Higgs boson and tests of compatibility of its couplings with the standard model predictions using proton collisions at 7 \u2026", "idAuthor": 515, "citedby": []}
-{"id": 860, "title": "Measurement of the muon reconstruction performance of the ATLAS detector using 2011 and 2012 LHC proton\u2013proton collision data", "idAuthor": 516, "citedby": []}
-{"id": 861, "title": "Evidence for the spin-0 nature of the Higgs boson using ATLAS data", "idAuthor": 516, "citedby": []}
-{"id": 862, "title": "Performance of electron reconstruction and selection with the CMS detector in proton-proton collisions at sqrt (s)= 8 TeV", "idAuthor": 517, "citedby": []}
-{"id": 852, "title": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC", "idAuthor": 510, "citedby": [854, 855, 857, 858, 859, 860, 861, 862]}
-{"id": 864, "title": "Generalized nash equilibria for saas/paas clouds", "idAuthor": 519, "citedby": []}
-{"id": 865, "title": "A variational inequality formulation of equilibrium models for end-of-life products with nonlinear constraints", "idAuthor": 520, "citedby": []}
-{"id": 867, "title": "Refinements of existence results for relaxed quasimonotone equilibrium problems", "idAuthor": 521, "citedby": []}
-{"id": 868, "title": "Descent and penalization techniques for equilibrium problems with nonlinear constraints", "idAuthor": 522, "citedby": []}
-{"id": 870, "title": "On existence and solution methods for strongly pseudomonotone equilibrium problems", "idAuthor": 523, "citedby": []}
-{"id": 871, "title": "Hybrid methods for solving simultaneously an equilibrium problem and countably many fixed point problems in a Hilbert space", "idAuthor": 524, "citedby": []}
-{"id": 872, "title": "A convergent inexact solution method for equilibrium problems", "idAuthor": 525, "citedby": []}
-{"id": 873, "title": "An existence result for quasiequilibrium problems in separable Banach spaces", "idAuthor": 521, "citedby": []}
-{"id": 863, "title": "Existence and solution methods for equilibria", "idAuthor": 518, "citedby": [864, 865, 867, 868, 870, 871, 872, 873]}
-{"id": 876, "title": "Generalized Nash equilibrium problems", "idAuthor": 526, "citedby": []}
-{"id": 878, "title": "A game theoretic formulation of the service provisioning problem in cloud systems", "idAuthor": 527, "citedby": []}
-{"id": 879, "title": "Generalized nash equilibria for the service provisioning problem in multi-cloud systems", "idAuthor": 527, "citedby": []}
-{"id": 880, "title": "Equilibrium efficiency improvement in MIMO interference systems: A decentralized stream control approach", "idAuthor": 528, "citedby": []}
-{"id": 881, "title": "Dynamic pricing and inventory control: Uncertainty and competition", "idAuthor": 529, "citedby": []}
-{"id": 882, "title": "An evolutionary game theory approach to the day-to-day traffic dynamics", "idAuthor": 530, "citedby": []}
-{"id": 874, "title": "Nash equilibria, variational inequalities, and dynamical systems", "idAuthor": 518, "citedby": [876, 876, 878, 879, 880, 881, 864, 882]}
-{"id": 884, "title": "A practical optimality condition without constraint qualifications for nonlinear programming", "idAuthor": 531, "citedby": []}
-{"id": 885, "title": "Duality for vector optimization of set-valued functions", "idAuthor": 532, "citedby": []}
-{"id": 886, "title": "On regularity for constrained extremum problems. Part 2: necessary optimality conditions", "idAuthor": 533, "citedby": []}
-{"id": 887, "title": "On regularity for constrained extremum problems. Part 1: sufficient optimality conditions", "idAuthor": 533, "citedby": []}
-{"id": 888, "title": "Duality in set-valued optimization", "idAuthor": 532, "citedby": []}
-{"id": 889, "title": "Image Space Analysis and Scalarization of Multivalued Optimization.", "idAuthor": 534, "citedby": []}
-{"id": 890, "title": "Unified duality theory for constrained extremum problems. Part I: image space analysis", "idAuthor": 535, "citedby": []}
-{"id": 892, "title": "Nonlinear separation approach to constrained extremum problems", "idAuthor": 536, "citedby": []}
-{"id": 893, "title": "A unified approach for constrained extremum problems: image space analysis", "idAuthor": 364, "citedby": []}
-{"id": 883, "title": "Regularity conditions for constrained extremum problems via image space", "idAuthor": 518, "citedby": [884, 885, 886, 887, 888, 889, 890, 892, 893]}
-{"id": 895, "title": "Outer approximation algorithms for pseudomonotone equilibrium problems", "idAuthor": 537, "citedby": []}
-{"id": 896, "title": "On penalty and gap function methods for bilevel equilibrium problems", "idAuthor": 538, "citedby": []}
-{"id": 897, "title": "Gap functions and penalization for solving equilibrium problems with nonlinear constraints", "idAuthor": 522, "citedby": []}
-{"id": 898, "title": "On ergodic algorithms for equilibrium problems", "idAuthor": 537, "citedby": []}
-{"id": 900, "title": "Twelve monotonicity conditions arising from algorithms for equilibrium problems", "idAuthor": 522, "citedby": []}
-{"id": 901, "title": "Gap functions for quasi-equilibria", "idAuthor": 522, "citedby": []}
-{"id": 894, "title": "A new solution method for equilibrium problems", "idAuthor": 518, "citedby": [863, 895, 896, 897, 868, 872, 898, 900, 901]}
-{"id": 905, "title": "Multiobjective programming under generalized type I invexity", "idAuthor": 539, "citedby": []}
-{"id": 906, "title": "Infinite horizon multiobjective optimal control problems in the discrete time case", "idAuthor": 540, "citedby": []}
-{"id": 907, "title": "Theory of vector optimization", "idAuthor": 541, "citedby": []}
-{"id": 908, "title": "Nonlinear multiobjective programming", "idAuthor": 542, "citedby": []}
-{"id": 909, "title": "Strong Kuhn\u2013Tucker conditions and constraint qualifications in locally Lipschitz multiobjective optimization problems", "idAuthor": 543, "citedby": []}
-{"id": 910, "title": "On weak and strong Kuhn\u2013Tucker conditions for smooth multiobjective optimization", "idAuthor": 544, "citedby": []}
-{"id": 911, "title": "Multiobjective optimization: a brief overview", "idAuthor": 545, "citedby": []}
-{"id": 902, "title": "Regularity conditions in vector optimization", "idAuthor": 518, "citedby": [905, 884, 906, 907, 908, 909, 910, 911]}
-{"id": 914, "title": "LT codes", "idAuthor": 546, "citedby": []}
-{"id": 915, "title": "A digital fountain approach to reliable distribution of bulk data", "idAuthor": 547, "citedby": []}
-{"id": 916, "title": "Compact proofs of retrievability", "idAuthor": 548, "citedby": []}
-{"id": 917, "title": "Iolus: A framework for scalable secure multicasting", "idAuthor": 549, "citedby": []}
-{"id": 918, "title": "TCP-like congestion control for layered multicast data transfer", "idAuthor": 550, "citedby": []}
-{"id": 919, "title": "Recent and emerging topics in wireless industrial communications: A selection", "idAuthor": 551, "citedby": []}
-{"id": 920, "title": "A digital fountain approach to asynchronous reliable multicast", "idAuthor": 547, "citedby": []}
-{"id": 921, "title": "Unequal loss protection: Graceful degradation of image quality over packet erasure channels through forward error correction", "idAuthor": 552, "citedby": []}
-{"id": 912, "title": "Effective erasure codes for reliable computer communication protocols", "idAuthor": 137, "citedby": [914, 915, 916, 917, 918, 919, 920, 921, 134]}
-{"id": 923, "title": "An integrated experimental environment for distributed systems and networks", "idAuthor": 553, "citedby": []}
-{"id": 924, "title": "Rethinking virtual network embedding: substrate support for path splitting and migration", "idAuthor": 554, "citedby": []}
-{"id": 925, "title": "Sizing router buffers", "idAuthor": 555, "citedby": []}
-{"id": 926, "title": "An experimental evaluation of rate-adaptation algorithms in adaptive streaming over HTTP", "idAuthor": 556, "citedby": []}
-{"id": 927, "title": "NIST Net: a Linux-based network emulation tool", "idAuthor": 557, "citedby": []}
-{"id": 929, "title": "TCP Veno: TCP enhancement for transmission over wireless access networks", "idAuthor": 558, "citedby": []}
-{"id": 930, "title": "Improving fairness, efficiency, and stability in http-based adaptive video streaming with festive", "idAuthor": 379, "citedby": []}
-{"id": 931, "title": "Full TCP/IP for 8-bit architectures", "idAuthor": 559, "citedby": []}
-{"id": 932, "title": "Network emulation with NetEm", "idAuthor": 560, "citedby": []}
-{"id": 922, "title": "Dummynet: a simple approach to the evaluation of network protocols", "idAuthor": 137, "citedby": [923, 924, 925, 926, 927, 929, 930, 931, 932]}
-{"id": 933, "title": "Modeling TCP throughput: A simple model and its empirical validation", "idAuthor": 561, "citedby": []}
-{"id": 934, "title": "Equation-based congestion control for unicast applications", "idAuthor": 562, "citedby": []}
-{"id": 935, "title": "Modeling TCP Reno performance: a simple model and its empirical validation", "idAuthor": 561, "citedby": []}
-{"id": 936, "title": "A survey of packet loss recovery techniques for streaming audio", "idAuthor": 563, "citedby": []}
-{"id": 937, "title": "Modeling TCP latency", "idAuthor": 564, "citedby": []}
-{"id": 938, "title": "The ant system: An autocatalytic optimizing process", "idAuthor": 565, "citedby": []}
-{"id": 939, "title": "Pricing Communication Networks Economics, Technology and Modelling", "idAuthor": 566, "citedby": []}
-{"id": 918, "title": "TCP-like congestion control for layered multicast data transfer", "idAuthor": 137, "citedby": [914, 933, 934, 915, 935, 936, 937, 938, 939, 920]}
-{"id": 941, "title": "The design and implementation of open vswitch", "idAuthor": 567, "citedby": []}
-{"id": 942, "title": "ZMap: Fast Internet-wide scanning and its security applications", "idAuthor": 568, "citedby": []}
-{"id": 943, "title": "Network virtualization in multi-tenant datacenters", "idAuthor": 569, "citedby": []}
-{"id": 944, "title": "{MICA}: A Holistic Approach to Fast In-Memory Key-Value Storage", "idAuthor": 570, "citedby": []}
-{"id": 945, "title": "NetVM: High performance and flexible networking using virtualization on commodity platforms", "idAuthor": 571, "citedby": []}
-{"id": 946, "title": "Arrakis: The operating system is the control plane", "idAuthor": 572, "citedby": []}
-{"id": 947, "title": "On orchestrating virtual network functions", "idAuthor": 573, "citedby": []}
-{"id": 948, "title": "mTCP: a Highly Scalable User-level {TCP} Stack for Multicore Systems", "idAuthor": 574, "citedby": []}
-{"id": 940, "title": "netmap: a novel framework for fast packet I/O", "idAuthor": 137, "citedby": [941, 166, 942, 943, 944, 945, 946, 947, 948, 167]}
-{"id": 950, "title": "Web caching and Zipf-like distributions: Evidence and implications", "idAuthor": 575, "citedby": []}
-{"id": 951, "title": "Cost-aware www proxy caching algorithms.", "idAuthor": 576, "citedby": []}
-{"id": 952, "title": "Summary cache: A scalable wide-area web cache sharing protocol", "idAuthor": 577, "citedby": []}
-{"id": 954, "title": "Multimedia proxy caching mechanism for quality adaptive streaming applications in the internet", "idAuthor": 578, "citedby": []}
-{"id": 955, "title": "Evaluating content management techniques for web proxy caches", "idAuthor": 579, "citedby": []}
-{"id": 956, "title": "GreedyDual\u2217 Web caching algorithm: exploiting the two sources of temporal locality in Web request streams", "idAuthor": 580, "citedby": []}
-{"id": 957, "title": "Data placement for copy-on-write using virtual contiguity", "idAuthor": 581, "citedby": []}
-{"id": 949, "title": "Replacement policies for a proxy cache", "idAuthor": 137, "citedby": [950, 951, 952, 949, 954, 955, 956, 957]}
-{"id": 959, "title": "Data replication strategies in wide-area distributed systems", "idAuthor": 583, "citedby": []}
-{"id": 960, "title": "Branch replication scheme: A new model for data replication in large scale data grids", "idAuthor": 584, "citedby": []}
-{"id": 961, "title": "Adaptable replica consistency service for data grids", "idAuthor": 585, "citedby": []}
-{"id": 962, "title": "A hierarchical scheduling and replication strategy", "idAuthor": 586, "citedby": []}
-{"id": 964, "title": "A hybrid approach to replica management in data grids", "idAuthor": 587, "citedby": []}
-{"id": 965, "title": "DR2: A two-stage dynamic replication strategy for data grid", "idAuthor": 588, "citedby": []}
-{"id": 966, "title": "File replication, maintenance, and consistency management services in data grids", "idAuthor": 589, "citedby": []}
-{"id": 967, "title": "A hybrid approach for consistency management in large scale systems", "idAuthor": 587, "citedby": []}
-{"id": 968, "title": "A one-way file replica consistency model in data Grids", "idAuthor": 589, "citedby": []}
-{"id": 958, "title": "Replica consistency in a data grid", "idAuthor": 582, "citedby": [959, 960, 961, 962, 964, 965, 966, 967, 968]}
-{"id": 970, "title": "An on-line replication strategy to increase availability in data grids", "idAuthor": 590, "citedby": []}
-{"id": 975, "title": "Utility-driven solution for optimal resource allocation in computational grid", "idAuthor": 591, "citedby": []}
-{"id": 976, "title": "Relaxed data consistency with CONStanza", "idAuthor": 582, "citedby": []}
-{"id": 977, "title": "Scalable and distributed mechanisms for integrated scheduling and replication in data grids", "idAuthor": 592, "citedby": []}
-{"id": 979, "title": "Grid Computing with Globus: An Overview and Research Challenges.", "idAuthor": 593, "citedby": []}
-{"id": 969, "title": "Replica management in the european datagrid project", "idAuthor": 582, "citedby": [970, 975, 976, 977, 979]}
-{"id": 605, "title": "Design and safety verification of a distributed charge equalizer for modular li-ion batteries", "idAuthor": 582, "citedby": [606, 607, 608, 609, 610, 611, 614, 615]}
-{"id": 983, "title": "Content synchronization in replicated grid database resources", "idAuthor": 594, "citedby": []}
-{"id": 984, "title": "Optimizing write operation on replica in data grid", "idAuthor": 595, "citedby": []}
-{"id": 985, "title": "Eager computation and lazy propagation of modifications for reducing synchronization overhead in file replication system", "idAuthor": 596, "citedby": []}
-{"id": 986, "title": "Storage Management and Access in WLHC Computing Grid", "idAuthor": 597, "citedby": []}
-{"id": 987, "title": "Strategies for replica consistency in data grid\u2013a comprehensive survey", "idAuthor": 598, "citedby": []}
-{"id": 989, "title": "Performance of update propagation techniques for data grid", "idAuthor": 599, "citedby": []}
-{"id": 990, "title": "Update propagation technique for data grid", "idAuthor": 600, "citedby": []}
-{"id": 976, "title": "Relaxed data consistency with CONStanza", "idAuthor": 582, "citedby": [968, 983, 984, 985, 986, 987, 989, 990]}
-{"id": 992, "title": "Analysis of SRAM-based FPGA SEU sensitivity to combined EMI and TID-imprinted effects", "idAuthor": 601, "citedby": []}
-{"id": 993, "title": "Understanding radiation effects in SRAM-based field programmable gate arrays for implementing instrumentation and control systems of nuclear power plants", "idAuthor": 602, "citedby": []}
-{"id": 994, "title": "A review on SEU mitigation techniques for FPGA configuration memory", "idAuthor": 602, "citedby": []}
-{"id": 996, "title": "Analysis of COTS FPGA SEU-sensitivity to combined effects of conducted-EMI and TID", "idAuthor": 603, "citedby": []}
-{"id": 998, "title": "Analysis of sram-based fpga seu sensitivity to combined effects of conducted emi and tid", "idAuthor": 601, "citedby": []}
-{"id": 999, "title": "Dependable system design with soft error mitigation techniques in SRAM based FPGAs", "idAuthor": 602, "citedby": []}
-{"id": 1000, "title": "The coarse and fine granular fault tolerance techniques in FPGA-based processors", "idAuthor": 604, "citedby": []}
-{"id": 1001, "title": "Gate-Level-Accurate Fault-Effect Analysis at Virtual-Prototype Speed", "idAuthor": 605, "citedby": []}
-{"id": 991, "title": "SRAM-based FPGA systems for safety-critical applications: A survey on design standards and proposed methodologies", "idAuthor": 582, "citedby": [992, 993, 994, 996, 998, 999, 1000, 1001]}
-{"id": 0, "title": "Patterns and technologies for enabling supply chain traceability through collaborative e-business", "idAuthor": 606, "citedby": [1, 2, 3, 4, 6, 7, 8, 9, 10]}
-{"id": 1004, "title": "Big Data for supply chain management in the service and manufacturing sectors: Challenges, opportunities, and future perspectives", "idAuthor": 607, "citedby": []}
-{"id": 1005, "title": "Parallel processing algorithm for railway signal fault diagnosis data based on cloud computing", "idAuthor": 332, "citedby": []}
-{"id": 1006, "title": "On distributed fuzzy decision trees for big data", "idAuthor": 608, "citedby": []}
-{"id": 1007, "title": "Voting-based instance selection from large data sets with MapReduce and random weight networks", "idAuthor": 609, "citedby": []}
-{"id": 1008, "title": "A distributed approach to multi-objective evolutionary generation of fuzzy rule-based classifiers from big data", "idAuthor": 610, "citedby": []}
-{"id": 1010, "title": "A distributed fuzzy associative classifier for big data", "idAuthor": 608, "citedby": []}
-{"id": 1011, "title": "Scaling associative classification for very large datasets", "idAuthor": 611, "citedby": []}
-{"id": 1012, "title": "A fuzzy-based intelligent cloud broker with MapReduce framework to evaluate the trust level of cloud services using customer feedback", "idAuthor": 612, "citedby": []}
-{"id": 1013, "title": "Makespan minimization for MapReduce systems with different servers", "idAuthor": 613, "citedby": []}
-{"id": 1003, "title": "A MapReduce solution for associative classification of big data", "idAuthor": 606, "citedby": [1004, 1005, 1006, 1007, 1008, 1010, 1011, 1012, 1013]}
-{"id": 1015, "title": "Software platforms for smart cities: Concepts, requirements, challenges, and a unified reference architecture", "idAuthor": 614, "citedby": []}
-{"id": 1016, "title": "Information and communications technologies for sustainable development goals: state-of-the-art, needs and perspectives", "idAuthor": 179, "citedby": []}
-{"id": 1017, "title": "Personal mobility service system in urban areas: the IRMA project", "idAuthor": 615, "citedby": []}
-{"id": 1018, "title": "A glimpse on big data analytics in the framework of marketing strategies", "idAuthor": 141, "citedby": []}
-{"id": 1019, "title": "Avoiding the internet of insecure industrial things", "idAuthor": 616, "citedby": []}
-{"id": 1020, "title": "Social data analysis framework in cloud and mobility analyzer for smarter cities", "idAuthor": 617, "citedby": []}
-{"id": 1021, "title": "Data analytics for smart parking applications", "idAuthor": 618, "citedby": []}
-{"id": 1014, "title": "Urban and social sensing for sustainable mobility in smart cities", "idAuthor": 606, "citedby": [214, 1015, 1016, 218, 1017, 1018, 1019, 1020, 1021, 41]}
-{"id": 33, "title": "A general framework for food traceability", "idAuthor": 606, "citedby": [34, 37, 38, 39, 41, 42]}
-{"id": 1027, "title": "Using software architecture for code testing", "idAuthor": 619, "citedby": []}
-{"id": 1028, "title": "Tool support for testing concurrent Java components", "idAuthor": 620, "citedby": []}
-{"id": 1029, "title": "JaVis: A UML-based visualization and debugging environment for concurrent Java programs", "idAuthor": 621, "citedby": []}
-{"id": 1030, "title": "An explorative journey from architectural tests definition down to code tests execution", "idAuthor": 622, "citedby": []}
-{"id": 1031, "title": "A classification of concurrency failures in Java components", "idAuthor": 620, "citedby": []}
-{"id": 1032, "title": "A method for verifying concurrent Java components based on an analysis of concurrency failures", "idAuthor": 620, "citedby": []}
-{"id": 1033, "title": "Visualizing the synchronization of Java-threads with UML", "idAuthor": 621, "citedby": []}
-{"id": 1034, "title": "Mutation-based exploration of a method for verifying concurrent Java components", "idAuthor": 620, "citedby": []}
-{"id": 1035, "title": "Automated verification and test case generation for input validation", "idAuthor": 174, "citedby": []}
-{"id": 1036, "title": "Control of nondeterminism in testing distributed multithreaded programs", "idAuthor": 623, "citedby": []}
-{"id": 1026, "title": "Design of a toolset for dynamic analysis of concurrent Java programs", "idAuthor": 606, "citedby": [1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036]}
-{"id": 1003, "title": "A MapReduce solution for associative classification of big data", "idAuthor": 608, "citedby": [1004, 1005, 1006, 1007, 1008, 1010, 1011, 1012, 1013]}
-{"id": 1014, "title": "Urban and social sensing for sustainable mobility in smart cities", "idAuthor": 608, "citedby": [214, 1015, 1016, 218, 1017, 1018, 1019, 1020, 1021, 41]}
-{"id": 1038, "title": "A novel approach for internet traffic classification based on multi-objective evolutionary fuzzy classifiers", "idAuthor": 141, "citedby": []}
-{"id": 1039, "title": "A Pearson's correlation coefficient based decision tree and its parallel implementation", "idAuthor": 624, "citedby": []}
-{"id": 1040, "title": "Induction of accurate and interpretable fuzzy rules from preliminary crisp representation", "idAuthor": 625, "citedby": []}
-{"id": 1041, "title": "Soft and declarative fishing of information in big data lake", "idAuthor": 626, "citedby": []}
-{"id": 1042, "title": "Chi-Spark-RS: an spark-built evolutionary fuzzy rule selection algorithm in imbalanced classification for big data problems", "idAuthor": 166, "citedby": []}
-{"id": 1043, "title": "Evolutionary Fuzzy Systems for Explainable Artificial Intelligence: Why, When, What for, and Where to?", "idAuthor": 166, "citedby": []}
-{"id": 1044, "title": "Why linguistic fuzzy rule based classification systems perform well in big data applications?", "idAuthor": 165, "citedby": []}
-{"id": 1045, "title": "Tolerance rough fuzzy decision tree", "idAuthor": 609, "citedby": []}
-{"id": 1046, "title": "Hierarchical co-evolutionary clustering tree-based rough feature game equilibrium selection and its application in neonatal cerebral cortex MRI", "idAuthor": 627, "citedby": []}
-{"id": 1047, "title": "An Incremental Approach to Address Big Data Classification Problems Using Cognitive Models", "idAuthor": 628, "citedby": []}
-{"id": 1006, "title": "On distributed fuzzy decision trees for big data", "idAuthor": 608, "citedby": [1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047]}
-{"id": 1048, "title": "Evolutionary induction of classification trees on Spark", "idAuthor": 629, "citedby": []}
-{"id": 1049, "title": "Evolutionary fuzzy systems: a case study for intrusion detection systems", "idAuthor": 630, "citedby": []}
-{"id": 1050, "title": "Incremental adaptive semi-supervised fuzzy clustering for data stream classification", "idAuthor": 631, "citedby": []}
-{"id": 1051, "title": "Cluster-based distributed architecture for prediction of student's performance in higher education", "idAuthor": 632, "citedby": []}
-{"id": 1052, "title": "Drawing on the iPad to input fuzzy sets with an application to linguistic data science", "idAuthor": 633, "citedby": []}
-{"id": 1053, "title": "The state of the art and taxonomy of big data analytics: view from new big data framework", "idAuthor": 634, "citedby": []}
-{"id": 1054, "title": "BigData Analysis in Healthcare: Apache Hadoop, Apache spark and Apache Flink", "idAuthor": 635, "citedby": []}
-{"id": 1055, "title": "What Are the Limits of Evolutionary Induction of Decision Trees?", "idAuthor": 636, "citedby": []}
-{"id": 1008, "title": "A distributed approach to multi-objective evolutionary generation of fuzzy rule-based classifiers from big data", "idAuthor": 608, "citedby": [1043, 1048, 1044, 1049, 1050, 1051, 1052, 1053, 1054, 1055]}
-{"id": 1057, "title": "A new fast associative classification algorithm for detecting phishing websites", "idAuthor": 637, "citedby": []}
-{"id": 1058, "title": "WCBA: Weighted classification based on association rules algorithm for breast cancer disease", "idAuthor": 638, "citedby": []}
-{"id": 1059, "title": "A MapReduce-based fuzzy associative classifier for big data", "idAuthor": 141, "citedby": []}
-{"id": 1060, "title": "Efficient mining of multiple fuzzy frequent itemsets", "idAuthor": 639, "citedby": []}
-{"id": 1061, "title": "ACPRISM: Associative classification based on PRISM algorithm", "idAuthor": 637, "citedby": []}
-{"id": 1062, "title": "Evolving association streams", "idAuthor": 640, "citedby": []}
-{"id": 1064, "title": "Efficient mining of maximal biclusters in mixed-attribute datasets", "idAuthor": 641, "citedby": []}
-{"id": 1056, "title": "A novel associative classification model based on a fuzzy frequent pattern mining algorithm", "idAuthor": 608, "citedby": [1057, 1058, 1059, 1010, 1060, 1061, 1062, 1064]}
+{"id": 556, "title": "Transmission medium and communication interfaces and methods for use therewith", "idAuthor": 351, "citedby": []}
+{"id": 559, "title": "Magnetic coupling device and methods for use therewith", "idAuthor": 351, "citedby": []}
+{"id": 561, "title": "Method and apparatus for configuring a communication interface", "idAuthor": 352, "citedby": []}
+{"id": 551, "title": "Smartphone-based crowdsourcing for network monitoring: opportunities, challenges, and a case study", "idAuthor": 350, "citedby": [556, 559, 561]}
+{"id": 520, "title": "Monitoring of human movements for fall detection and activities recognition in elderly care using wireless sensor network: a survey", "idAuthor": 350, "citedby": [501, 521, 522, 523, 524, 525, 526, 527, 528, 529]}
+{"id": 530, "title": "Increasing the efficiency of preamble sampling protocols for wireless sensor networks", "idAuthor": 350, "citedby": []}
+{"id": 540, "title": "An on-node processing approach for anomaly detection in gait", "idAuthor": 350, "citedby": []}
+{"id": 562, "title": "A formal verification environment for railway signaling system design", "idAuthor": 353, "citedby": []}
+{"id": 563, "title": "Model checking fault tolerant systems", "idAuthor": 353, "citedby": []}
+{"id": 564, "title": "Java bytecode verification for secure information flow", "idAuthor": 353, "citedby": []}
+{"id": 565, "title": "Formally verifying fault tolerant system designs", "idAuthor": 353, "citedby": []}
+{"id": 566, "title": "Design and safety verification of a distributed charge equalizer for modular li-ion batteries", "idAuthor": 353, "citedby": []}
+{"id": 567, "title": "Evolutionary computation", "idAuthor": 354, "citedby": []}
+{"id": 567, "title": "Evolutionary computation", "idAuthor": 354, "citedby": []}
+{"id": 214, "title": "Real-time detection of traffic from twitter stream analysis", "idAuthor": 354, "citedby": []}
+{"id": 225, "title": "A multiobjective evolutionary approach to concurrently learn rule and data bases of linguistic fuzzy-rule-based systems", "idAuthor": 354, "citedby": []}
+{"id": 568, "title": "A genetic algorithm for generating optimal assembly plans", "idAuthor": 354, "citedby": []}
+{"id": 569, "title": "Development of a Debugger for a Concurrent Language", "idAuthor": 355, "citedby": []}
+{"id": 570, "title": "Selective mu-calculus and formula-based equivalence of transition systems", "idAuthor": 355, "citedby": []}
+{"id": 25, "title": "Monitoring elderly behavior via indoor position-based stigmergy", "idAuthor": 355, "citedby": []}
+{"id": 571, "title": "Optimal joint routing and link scheduling for real-time traffic in TDMA wireless mesh networks", "idAuthor": 355, "citedby": []}
+{"id": 572, "title": "Ant colony optimization for deadlock detection in concurrent systems", "idAuthor": 355, "citedby": []}
+{"id": 573, "title": "Gaussian09", "idAuthor": 356, "citedby": []}
+{"id": 574, "title": "Gaussian 09, Revision D. 01, Gaussian", "idAuthor": 356, "citedby": []}
+{"id": 575, "title": "Quantum mechanical continuum solvation models", "idAuthor": 356, "citedby": []}
+{"id": 576, "title": "Gaussian 03, revision C. 02; Gaussian, Inc", "idAuthor": 356, "citedby": []}
+{"id": 577, "title": "A new integral equation formalism for the polarizable continuum model: Theoretical background and applications to isotropic and anisotropic dielectrics", "idAuthor": 356, "citedby": []}
+{"id": 578, "title": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC", "idAuthor": 357, "citedby": []}
+{"id": 579, "title": "Observation of a new boson with mass near 125 GeV in pp collisions at  and 8 TeV", "idAuthor": 357, "citedby": []}
+{"id": 580, "title": "Precise determination of the mass of the Higgs boson and tests of compatibility of its couplings with the standard model predictions using proton collisions at 7 and 8", "idAuthor": 357, "citedby": []}
+{"id": 581, "title": "Evidence for the 125 GeV Higgs boson decaying to a pair of \u03c4 leptons", "idAuthor": 357, "citedby": []}
+{"id": 582, "title": "Search for top-squark pair production in the single-lepton final state in pp collisions at ", "idAuthor": 357, "citedby": []}
+{"id": 583, "title": "Observation of gravitational waves from a binary black hole merger", "idAuthor": 358, "citedby": []}
+{"id": 584, "title": "GW151226: observation of gravitational waves from a 22-solar-mass binary black hole coalescence", "idAuthor": 358, "citedby": []}
+{"id": 585, "title": "ALEPH: a detector for electron-positron annihilations at LEP", "idAuthor": 358, "citedby": []}
+{"id": 586, "title": "Advanced ligo", "idAuthor": 358, "citedby": []}
+{"id": 587, "title": "GW170104: observation of a 50-solar-mass binary black hole coalescence at redshift 0.2", "idAuthor": 358, "citedby": []}
+{"id": 588, "title": "The BABAR detector", "idAuthor": 359, "citedby": []}
+{"id": 589, "title": "Observation of  Violation in the  Meson System", "idAuthor": 359, "citedby": []}
+{"id": 590, "title": "The BaBar detector: upgrades, operation and performance", "idAuthor": 359, "citedby": []}
+{"id": 591, "title": "Observation of a Broad Structure in the  Mass Spectrum around ", "idAuthor": 359, "citedby": []}
+{"id": 592, "title": "Observation of a Narrow Meson State Decaying to  at a Mass of ", "idAuthor": 359, "citedby": []}
+{"id": 593, "title": "Executive summary: heart disease and stroke statistics\u20142013 update: a report from the American Heart Association", "idAuthor": 360, "citedby": []}
+{"id": 594, "title": "European Guidelines on cardiovascular disease prevention in clinical practice (version 2012) The Fifth Joint Task Force of the European Society of Cardiology and Other \u2026", "idAuthor": 360, "citedby": []}
+{"id": 595, "title": "Pathophysiology and treatment of type 2 diabetes: perspectives on the past, present, and future", "idAuthor": 360, "citedby": []}
+{"id": 596, "title": "Glucose and free fatty acid metabolism in non-insulin-dependent diabetes mellitus. Evidence for multiple sites of insulin resistance.", "idAuthor": 360, "citedby": []}
+{"id": 596, "title": "Glucose and free fatty acid metabolism in non-insulin-dependent diabetes mellitus. Evidence for multiple sites of insulin resistance.", "idAuthor": 360, "citedby": []}
+{"id": 583, "title": "Observation of gravitational waves from a binary black hole merger", "idAuthor": 361, "citedby": []}
+{"id": 597, "title": "GW170817: observation of gravitational waves from a binary neutron star inspiral", "idAuthor": 361, "citedby": []}
+{"id": 584, "title": "GW151226: observation of gravitational waves from a 22-solar-mass binary black hole coalescence", "idAuthor": 361, "citedby": []}
+{"id": 587, "title": "GW170104: observation of a 50-solar-mass binary black hole coalescence at redshift 0.2", "idAuthor": 361, "citedby": []}
+{"id": 598, "title": "GW170814: A three-detector observation of gravitational waves from a binary black hole coalescence", "idAuthor": 361, "citedby": []}
+{"id": 583, "title": "Observation of gravitational waves from a binary black hole merger", "idAuthor": 362, "citedby": []}
+{"id": 584, "title": "GW151226: observation of gravitational waves from a 22-solar-mass binary black hole coalescence", "idAuthor": 362, "citedby": []}
+{"id": 586, "title": "Advanced ligo", "idAuthor": 362, "citedby": []}
+{"id": 587, "title": "GW170104: observation of a 50-solar-mass binary black hole coalescence at redshift 0.2", "idAuthor": 362, "citedby": []}
+{"id": 599, "title": "GW170814: a three-detector observation of gravitational waves from a binary black hole coalescence", "idAuthor": 362, "citedby": []}
+{"id": 593, "title": "Executive summary: heart disease and stroke statistics\u20142013 update: a report from the American Heart Association", "idAuthor": 363, "citedby": []}
+{"id": 600, "title": "Heart disease and stroke statistics-2018 update: a report from the American Heart Association.", "idAuthor": 363, "citedby": []}
+{"id": 601, "title": "Insulin resistance and hypersecretion in obesity. European Group for the Study of Insulin Resistance (EGIR).", "idAuthor": 363, "citedby": []}
+{"id": 602, "title": "Endothelial function and dysfunction. Part II: Association with cardiovascular risk factors and diseases. A statement by the Working Group on Endothelins and Endothelial \u2026", "idAuthor": 363, "citedby": []}
+{"id": 603, "title": "Effect of insulin on uric acid excretion in humans", "idAuthor": 363, "citedby": []}
+{"id": 604, "title": "An assay for circulating antibodies to a major etiologic virus of human non-A, non-B hepatitis", "idAuthor": 364, "citedby": []}
+{"id": 605, "title": "Peginterferon alfa-2a alone, lamivudine alone, and the two in combination in patients with HBeAg-negative chronic hepatitis B", "idAuthor": 364, "citedby": []}
+{"id": 606, "title": "A proposed system for the nomenclature of hepatitis C viral genotypes", "idAuthor": 364, "citedby": []}
+{"id": 607, "title": "Immunofluorescence detection of new antigen-antibody system (delta/anti-delta) associated to hepatitis B virus in liver and in serum of HBsAg carriers.", "idAuthor": 364, "citedby": []}
+{"id": 608, "title": "Evidence for immune selection of hepatitis C virus (HCV) putative envelope glycoprotein variants: potential role in chronic HCV infections.", "idAuthor": 364, "citedby": []}
