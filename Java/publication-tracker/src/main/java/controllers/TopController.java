@@ -1,4 +1,4 @@
-package frontend;
+package controllers;
 
 import java.util.List;
 import javafx.event.ActionEvent;

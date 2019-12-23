@@ -1,4 +1,4 @@
-package frontend;
+package controllers;
 
 import backend.DatabaseManager;
 import backend.GraphManager;

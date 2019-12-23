@@ -2,7 +2,7 @@ package com.mycompany.publication.tracker;
 
 import backend.DatabaseManager;
 import backend.GraphManager;
-import frontend.SessionController;
+import controllers.SessionController;
 import java.util.ArrayList;
 import java.util.List;
 import javafx.application.Application;
