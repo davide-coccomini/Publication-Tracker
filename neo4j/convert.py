@@ -1,6 +1,36 @@
 import json
 import os
+from collections import Counter
+from difflib import get_close_matches
+from functools import reduce
 
+def findPatterns():
+    authors_file = open("data/authors.json", "r")
+    banned_affiliations = ["iet", "mail", "ing", "net"]
+    emails = []
+    data_lines = authors_file.readlines()
+    for data_line in data_lines:
+        author = json.loads(data_line)
+        email = '.'.join((author["email"].replace("@", "").split("."))[:-1])
+        if email != "" and email not in banned_affiliations:
+            emails.append(email)
+    
+    affiliations = Counter(reduce(lambda x,y: x+y,map (lambda x : x.split("."),emails))).most_common(50)
+    affiliations.append("unisa")
+    affiliations.append("harvard")
+    affiliations.append("polimi")
+    affiliations.append("mit")
+    affiliations.append("nokia")
+    affiliations.append("microsoft")
+    affiliations.append("nih")
+    authors_file.close()
+    return affiliations
+
+def sanitizeString(string):
+    replaces = [('"email"', "email"), ('"name"', "name"), ('"affiliation"', "affiliation"), ('"heading"',"heading") ]
+    for k, v in replaces:
+        string = string.replace(k, v)
+    return string
 
 def main():
     publications_file = open("data/publications.json", "r")
@@ -13,10 +43,10 @@ def main():
     for data_line in data_lines:
         publication = json.loads(data_line)
         new_publication = {
-            "name": publication["title"],
-            "year": publication["year"]
+            "name": publication["title"]
         }
-        result_publication_file.write("(p"+str(publication["id"])+":Publication "+str(json.dumps(new_publication))+"),\n")
+        publicationString = sanitizeString(str(json.dumps(new_publication)))
+        result_publication_file.write("(p"+str(publication["id"])+":Publication "+publicationString+"),\n")
 
         for author in publication["idAuthor"]:
             relation = "(a"+str(author)+")-[:PUBLISHES]"+"->(p"+str(publication["id"])+"),\n"
@@ -25,17 +55,28 @@ def main():
             relation = "(p"+str(citation)+")-[:CITES]->(p"+str(publication["id"])+"),\n"
             publications_relation_file.write(relation)
 
+   
+
+    affiliations = findPatterns()
     authors_file = open("data/authors.json", "r")
+    affiliations = [affiliation[0] for affiliation in affiliations]
+
     result_author_file = open(result_paths[1], "w")
     data_lines = authors_file.readlines()
+    
     for data_line in data_lines:
         author = json.loads(data_line)
+        affiliation = get_close_matches(author["affiliation"], affiliations,1, cutoff=0.1)
+        if len(affiliation) == 0:
+            affiliation = "Unknown"
         new_author = {
             "name": author["name"].title(),
             "email": author["email"],
-            "affiliation": author["affiliation"]
+            "heading": author["affiliation"],
+            "affiliation": affiliation[0]
         }
-        result_author_file.write("(a"+str(author["id"])+":Author "+str(json.dumps(new_author))+"),\n")
+        authorString = sanitizeString(str(json.dumps(new_author)))
+        result_author_file.write("(a"+str(author["id"])+":Author "+authorString+"),\n")
 
     with open("data/neo4j_script", 'w') as outfile:
         outfile.write("CREATE ")
