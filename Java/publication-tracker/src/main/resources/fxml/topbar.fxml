@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="109.84000478515372" prefWidth="757.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" prefHeight="109.84000478515372" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
     <Button fx:id="authorsButton" focusTraversable="true" layoutX="210.0" layoutY="40.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="65.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="AUTHORS" textFill="WHITE">
       <font>
@@ -32,19 +32,21 @@
         <Image url="@../assets/logo.png" />
       </image>
     </ImageView>
-    <Button id="buttonUsers" focusTraversable="true" layoutX="675.0" layoutY="5.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="75.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;" text="LOGOUT" textFill="WHITE">
+    <Button id="buttonUsers" focusTraversable="true" layoutX="640.0" layoutY="58.0" mnemonicParsing="false" prefHeight="37.29290771484375" prefWidth="75.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;" text="LOGOUT" textFill="WHITE">
       <font>
         <Font name="System Bold" size="13.0" />
       </font>
     </Button>
-    <Text id="" fontSmoothingType="LCD" layoutX="540.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged as:">
+    <Text id="" fontSmoothingType="LCD" layoutX="592.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged as:">
       <fill>
-        <Color blue="0.800" green="0.512" red="0.000" fx:id="x3" />
+        <Color blue="0.890" green="0.671" red="0.157" fx:id="x3" />
       </fill>
       <font>
         <Font name="Nirmala UI Bold" size="17.0" fx:id="x4" />
       </font>
     </Text>
-    <Text fill="$x3" font="$x4" fontSmoothingType="LCD" layoutX="541.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" style="$null" text="Role:" />
+    <Text fill="$x3" font="$x4" fontSmoothingType="LCD" layoutX="593.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" text="Role:" />
+    <Text id="" fx:id="nameText" fill="$x3" font="$x4" fontSmoothingType="LCD" layoutX="682.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+    <Text fx:id="roleText" fill="$x3" font="$x4" fontSmoothingType="LCD" layoutX="637.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" text="" />
   </children>
 </AnchorPane>
