@@ -95,7 +95,6 @@ public class DatabaseManager {
                 for(int i=0; i<args.length; i++){
                     ps.setObject(i + 1,args[i]);
                 }
-                System.out.println(ps);
                 if(type == 0){
                     ResultSet rs = ps.executeQuery();
                     List<Object> result = new ArrayList();

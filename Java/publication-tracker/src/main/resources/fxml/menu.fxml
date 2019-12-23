@@ -34,5 +34,10 @@
     <Button fx:id="buttonPublications" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="204.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="PUBLICATIONS" textFill="WHITE" />
     <Button fx:id="buttonStatistics" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="259.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="STATISTICS" textFill="WHITE" />
     <Button fx:id="buttonUsers" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="314.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="USERS" textFill="WHITE" />
+    <ImageView fx:id="buttonLogout" fitHeight="42.72769562859197" fitWidth="36.69757843017578" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <image>
+        <Image url="@../assets/logout.png" />
+      </image>
+    </ImageView>
   </children>
 </AnchorPane>

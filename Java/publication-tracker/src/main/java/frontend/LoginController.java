@@ -26,11 +26,8 @@ public class LoginController {
     }
      @FXML
     public void authorize() { 
-        System.out.println("test");
-        
             String e = emailField.getText();
             String p = passwordField.getText();
-            System.out.println(e);
             if("".equals(e) || "".equals(p)){
                 errorText.setVisible(true);
                 return;

@@ -13,6 +13,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Font;
 import middleware.User;
 
@@ -34,6 +36,8 @@ public class MenuController {
     private Button buttonStatistics;
     @FXML
     private Button buttonUsers;
+    @FXML
+    private ImageView buttonLogout;
 
   private final SessionController controller;
  
@@ -65,6 +69,13 @@ public class MenuController {
                 controller.navigate(6,null);
                 }
             }); 
+        buttonLogout.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    controller.logout();
+                    event.consume();
+                }
+           }); 
         User u = controller.getLoggedUser();
         if(u.getRole()==1){ // Admin
             buttonUsers.setVisible(true);

@@ -73,6 +73,10 @@ public class SessionController {
         catch(IOException e){
             System.out.println(e);
         }
-    }
+    }    
+    public void logout(){
+        session = null;
+        navigate(0,null);
+    } 
 
 }
