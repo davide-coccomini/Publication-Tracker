@@ -21,9 +21,7 @@
         <Image url="@../assets/background.jpg" />
       </image>
     </ImageView>
-    <TextField fx:id="emailField" layoutX="76.0" layoutY="159.0" prefHeight="46.0" prefWidth="244.0" promptText="Email" />
-    <PasswordField fx:id="passwordField" layoutX="76.0" layoutY="211.0" prefHeight="46.0" prefWidth="244.0" promptText="Password" />
-    <Button fx:id="loginButton" focusTraversable="true" layoutX="76.0" layoutY="262.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="LOGIN" textFill="WHITE">
+    <Button fx:id="buttonAuthors" focusTraversable="true" layoutX="76.0" layoutY="149.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="AUTHORS" textFill="WHITE">
       <font>
         <Font name="System Bold" size="15.0" fx:id="x1" />
       </font>
@@ -33,7 +31,8 @@
         <Image url="@../assets/logo.png" />
       </image>
     </ImageView>
-    <Button focusTraversable="true" font="$x1" layoutX="76.0" layoutY="323.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="REGISTRATION" textFill="WHITE" />
-    <Text fx:id="errorText" fill="#cc0000" font="$x1" layoutX="107.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong email or password" visible="false" />
+    <Button fx:id="buttonPublications" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="204.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="PUBLICATIONS" textFill="WHITE" />
+    <Button fx:id="buttonStatistics" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="259.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="STATISTICS" textFill="WHITE" />
+    <Button fx:id="buttonUsers" focusTraversable="true" font="$x1" layoutX="76.0" layoutY="314.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="244.0" style="-fx-background-color: #28abe3" text="USERS" textFill="WHITE" />
   </children>
 </AnchorPane>

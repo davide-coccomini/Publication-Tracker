@@ -11,12 +11,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import middleware.User;
 
 public class LoginController {
     @FXML private TextField emailField;
     @FXML private TextField passwordField;
     @FXML private Button loginButton;
+    @FXML private Text errorText;
     SessionController controller;
     
     public LoginController(SessionController c) { 
@@ -28,6 +30,11 @@ public class LoginController {
         
             String e = emailField.getText();
             String p = passwordField.getText();
+            System.out.println(e);
+            if("".equals(e) || "".equals(p)){
+                errorText.setVisible(true);
+                return;
+            }
             Object[] args = new Object[2];
             args[0] = e;
             args[1] = p;
@@ -35,10 +42,10 @@ public class LoginController {
             if (session != null) {
                 controller.setSession(session);
                 controller.navigate(2,null); // go to menu
-                //errorText.setVisible(false);
+                errorText.setVisible(false);
             }else{
                 System.out.println("Login failed: wrong credentials");
-                //errorText.setVisible(true)
+                errorText.setVisible(true);
             }
      
     }

@@ -51,7 +51,14 @@ public class SessionController {
                 load_Page(c0,"login.fxml");
                 c0.initController();
                 break;
-         
+             case 1: // Registration
+               
+                break;
+             case 2: // Menu 
+                MenuController c2 = new MenuController(this);
+                load_Page(c2,"menu.fxml");
+                c2.initController();
+                break;
          }
     }
     
