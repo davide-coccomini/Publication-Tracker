@@ -3,6 +3,7 @@ package com.mycompany.publication.tracker;
 import backend.DatabaseManager;
 import backend.GraphManager;
 import controllers.SessionController;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import javafx.application.Application;
@@ -14,9 +15,9 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
-    private GraphManager graphManager;
-    private DatabaseManager dbManager;
-    private SessionController controller;
+    private static GraphManager graphManager;
+    private static DatabaseManager dbManager;
+    private  SessionController controller;
     
     
     @Override
@@ -36,6 +37,8 @@ public class MainApp extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        graphManager.close();
+        dbManager.connectionClose();
     }
     public void graphTest(){
         List<Long> authors = new ArrayList();

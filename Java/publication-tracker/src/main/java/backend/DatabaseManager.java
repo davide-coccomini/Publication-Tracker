@@ -31,8 +31,13 @@ public class DatabaseManager {
         return true;  
     }
     /* Handles JDBC to close a connection */
-    public boolean connectionClose() throws SQLException{
-        conn.close();
+    public boolean connectionClose(){
+        try{
+            conn.close();
+        }catch(SQLException e){
+            System.out.println(e);
+            return false;
+        }
         return true;
     }
     

@@ -28,8 +28,12 @@ public class GraphManager implements AutoCloseable{
     
     // Close connection (to be done at the end of the application)
     @Override
-    public void close() throws Exception {
-        driver.close();
+    public void close() {
+        try{
+            driver.close();
+        }catch(Exception e){
+            System.out.println(e);
+        }
     }
     
     ///// AUTHORS METHODS /////
