@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 import middleware.User;
 
 public class TopController {
@@ -18,6 +19,10 @@ public class TopController {
     private Button publicationsButton;
     @FXML
     private Button logoutButton;
+    @FXML
+    private Text roleText;
+    @FXML
+    private Text nameText;
     
     private SessionController controller;
     public TopController(SessionController c){
@@ -70,9 +75,9 @@ public class TopController {
         focusedButton.setStyle("-fx-background-color: #095185");
     }
     private void show_Name(){
-        /*User u=controller.getLoggedUser();
-        loggedRole.setText(u.getRoleAsString());
-        loggedName.setText(u.getFullName());*/
+        User u=controller.getLoggedUser();
+        roleText.setText(String.valueOf(u.getRole()));
+        nameText.setText(u.getUsername());
     }
     public void logout(){
         controller.logout();
