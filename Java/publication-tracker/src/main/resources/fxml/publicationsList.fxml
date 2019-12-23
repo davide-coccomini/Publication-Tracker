@@ -16,7 +16,7 @@
         <Image url="@../assets/background.jpg" />
       </image>
     </ImageView>
-    <TableView fx:id="eventsTable" layoutX="15.0" layoutY="122.0" prefHeight="243.0" prefWidth="471.0" />
+    <TableView fx:id="publicationsTable" layoutX="15.0" layoutY="122.0" prefHeight="243.0" prefWidth="471.0" />
     
     <Button fx:id="createButton" focusTraversable="true" layoutX="521.0" layoutY="158.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="52.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="ADD" textFill="WHITE">
       <font>
