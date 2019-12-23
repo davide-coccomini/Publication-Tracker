@@ -67,7 +67,7 @@ def extractPublicationInfo(result_authors_file, result_publications_file, idAuth
     k = 0
     for citation in publication.get_citedby():
         increase_requests()
-        time.sleep(3+random.uniform(0,3))
+        time.sleep(6+random.uniform(0,3))
         if k == citation_limit:
             continue
         k += 1
@@ -76,6 +76,7 @@ def extractPublicationInfo(result_authors_file, result_publications_file, idAuth
         if citationKey in publications: # The publication is already on the file
             idCitation = getNewPublicationId(citation.bib.get("title"))
             citations.append(idCitation)
+            time.sleep(20+random.uniform(5,10))
         else: # Add the publication to the file
             idCitation = getNewPublicationId(citation.bib.get("title"))
             citations.append(idCitation)
@@ -121,9 +122,11 @@ def extractPublicationInfo(result_authors_file, result_publications_file, idAuth
     publicationDict["citedby"] = citations
     if len(citations) == 0:
         print("**** DANGER!!! Probably detected as bot. Change IP and resume the scraping. ****")
+        result_publications_file.write("***************************************")
+        change_ip()
     print("PUBLICATION:")
     print(publicationDict)
-    time.sleep(1 + random.uniform(2,4))
+    time.sleep(3 + random.uniform(2,4))
     return publicationDict
 
 def remove_duplicates_publications():
@@ -211,7 +214,7 @@ def change_ip():
                 return True
             else:
                 continue
-        proxies.get_proxies()
+        proxies = get_proxies()
     return False
 
 def change_useragent():
@@ -286,8 +289,9 @@ def main():
         resume()
     
     publication_limit = 5
-    old_authors = ["Mario Giovanni Cosimo Antonio Cimino", "Pericle Perazzo", "Gianluca Dini", "Giuseppe Lettieri", "Pietro Ducange", "Francesco Marcelloni"]
-    authors = ["Carlo Vallati", "Enzo Mingozzi", "Giovanni Stea", "Marco Cococcioni", "Giuseppe Anastasi", "Marco Avvenuti", "Alessio Vecchio", "Cinzia Bernardeschi", "Beatrice Lazzerini", "gigliola vaglini", "University of Pisa", "Università di Pisa"]
+    old_authors = ["Carlo Vallati", "Enzo Mingozzi", "Giovanni Stea", "Marco Cococcioni", "Giuseppe Anastasi", "Marco Avvenuti", "Alessio Vecchio", "Cinzia Bernardeschi",
+                   "Beatrice Lazzerini", "gigliola vaglini", "Mario Giovanni Cosimo Antonio Cimino", "Pericle Perazzo","Antonio Virdis", "Gianluca Dini", "Giuseppe Lettieri", "Pietro Ducange", "Francesco Marcelloni","Alessio Vecchio", "Cinzia Bernardeschi","Beatrice Lazzerini", "gigliola vaglini","University of Pisa"]
+    authors = ["Giovanni Nardini","Guglielmo Cola", "Massimo Piotto","Marco Luise","Guido Tonelli","UNIPI",  "Università di Pisa", "University of Pisa", ]
    
     i = 0
     result_authors_file = open("data/authors.json", "a")
@@ -309,6 +313,7 @@ def main():
         except:
             continue
         while author:
+            time.sleep(10 + random.uniform(0,10))
             if "unipi" not in author.email and "Università di Pisa" not in author.affiliation and "University of Pisa" not in author.affiliation and "UNIPI" not in author.affiliation:
                 time.sleep(3 + random.uniform(0, 3))
                 author = next(search_authors_query).fill()
@@ -323,7 +328,11 @@ def main():
             for publication in author.publications:
                 if j == publication_limit:
                     break
-                publicationDict = extractPublicationInfo(result_authors_file, result_publications_file, authorDict["id"], publication)
+                try:
+                    publicationDict = extractPublicationInfo(result_authors_file, result_publications_file, authorDict["id"], publication)
+                except:
+                    print("Connection error... retry ...")
+                    change_ip()
                 result_publications_file.write(str(json.dumps(publicationDict))+"\n")
                 j += 1
             
