@@ -34,30 +34,31 @@ public class TopController {
                 logout();
                 }
             });
-        usersButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                controller.navigate(3,null);
-                setSectionButtonStyle(usersButton);
-                }
-            });
-        statisticsButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                controller.navigate(4,null);
-                setSectionButtonStyle(statisticsButton);
-                }
-            });
         authorsButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                controller.navigate(5,null);
+                controller.navigate(3,null);
                 setSectionButtonStyle(authorsButton);
                 }
-            });
+        });
         publicationsButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                controller.navigate(6,null);
+                controller.navigate(4,null);
                 setSectionButtonStyle(publicationsButton);
                 }
-            });   
+        });   
+        statisticsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(5,null);
+                setSectionButtonStyle(statisticsButton);
+                }
+        });
+        usersButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(6,null);
+                setSectionButtonStyle(usersButton);
+                }
+        });
+        
         User u = controller.getLoggedUser();
         if(u.getRole()==1){ // Admin
             usersButton.setVisible(true);
@@ -68,7 +69,11 @@ public class TopController {
         
     } 
     private void setSectionButtonStyle(Button focusedButton){
-        
+        authorsButton.setStyle("-fx-background-color: #28abe3");
+        publicationsButton.setStyle("-fx-background-color: #28abe3");
+        statisticsButton.setStyle("-fx-background-color: #28abe3");
+        usersButton.setStyle("-fx-background-color: #28abe3");
+        focusedButton.setStyle("-fx-background-color: #095185");
     }
     private void show_Name(){
         
