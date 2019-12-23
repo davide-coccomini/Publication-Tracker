@@ -107,11 +107,11 @@ public class GraphManager implements AutoCloseable{
     
    ///// PUBLICATIONS METHODS /////
    // Add a publication node and all its relationships
-   public Long addPublication(String name, int year, List<Long> idAuthors, List<Long> idCitations){
+   public Long addPublication(String name, List<Long> idAuthors, List<Long> idCitations){
         try (Session session = driver.session()){
             Long idNewPublication;
             try (Transaction tx = session.beginTransaction()){
-                StatementResult result = tx.run("CREATE (p:Publication {name: $name, year: $year}) RETURN id(p) as id", parameters( "name", name, "year", year));
+                StatementResult result = tx.run("CREATE (p:Publication {name: $name}) RETURN id(p) as id", parameters( "name", name));
                 idNewPublication = result.single().get("id").asLong();
                 // Add all authors relationships
                 for(Long idAuthor : idAuthors){
@@ -139,7 +139,7 @@ public class GraphManager implements AutoCloseable{
         try (Session session = driver.session()){
             StatementResult result = session.run(
                     "MATCH (p:Publication) WHERE id(p) = "+id+" RETURN p");
-            return new Publication(result.single().get("name").asString(), result.single().get("year").asInt(),getPublicationAuthors(id), getPublicationCitations(id));
+            return new Publication(result.single().get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
         }
     }
    // Given the id of a Publication, get all the relationships with it
@@ -175,7 +175,7 @@ public class GraphManager implements AutoCloseable{
             
             long id = result.single().get("id").asLong();
             
-            return new Publication(result.single().get("name").asString(), result.single().get("year").asInt(),getPublicationAuthors(id), getPublicationCitations(id));
+            return new Publication(result.single().get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
         }
     }
    // Given publication id, delete it

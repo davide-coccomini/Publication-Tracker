@@ -6,18 +6,24 @@ import org.neo4j.driver.v1.Record;
 public class Author {
     private String name;
     private String email;
+    private String heading;
     private String affiliation;
 
-    public Author(String name, String email, String affiliation) {
+    public Author(String name, String email, String heading, String affiliation) {
         this.name = name;
         this.email = email;
+        this.heading = heading;
         this.affiliation = affiliation;
     }
     public Author(Record author){
         name = author.get("name").asString();
         email = author.get("email").asString();
+        
+        heading = author.get("heading").asString();
         affiliation = author.get("affiliation").asString();
+        
     }
+    
     public String getName() {
         return name;
     }
@@ -34,6 +40,14 @@ public class Author {
         this.email = email;
     }
 
+    public String getHeading() {
+        return heading;
+    }
+
+    public void setHeading(String heading) {
+        this.heading = heading;
+    }
+    
     public String getAffiliation() {
         return affiliation;
     }
