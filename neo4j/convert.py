@@ -4,30 +4,22 @@ from collections import Counter
 from difflib import get_close_matches
 from functools import reduce
 
+generic_domains = ["edu", "ac"]
 def findPatterns():
     authors_file = open("data/authors.json", "r")
-    banned_affiliations = ["iet", "mail", "ing", "net"]
-    emails = []
     data_lines = authors_file.readlines()
+
+    c = Counter()
     for data_line in data_lines:
         author = json.loads(data_line)
-        email = '.'.join((author["email"].replace("@", "").split("."))[:-1])
-        if email != "":
-            emails.append(email)
-    affiliations = Counter(reduce(lambda x,y: x+y,map (lambda x : x.split("."),emails))).most_common(50)
-    affiliations.append("unisa")
-    affiliations.append("harvard")
-    affiliations.append("polimi")
-    affiliations.append("mit")
-    affiliations.append("nokia")
-    affiliations.append("microsoft")
-    affiliations.append("nih")
-    
-    for affiliation in affiliations:
-        if len(affiliation[0]) <= 2 or affiliation in  banned_affiliations:
-            affiliations.remove(affiliation)
-    authors_file.close()
-    return affiliations
+        if author["email"] != "":
+            current_email = author["email"].replace("@", "").split(".")
+            if current_email[-2] in generic_domains:
+                current_email = current_email[-3]
+            else:
+                current_email = current_email[-2]
+            c.update([current_email])
+    return c.most_common(30)
 
 def sanitizeString(string):
     replaces = [('"email"', "email"), ('"name"', "name"), ('"affiliation"', "affiliation"), ('"heading"',"heading") ]
@@ -61,6 +53,7 @@ def main():
    
 
     affiliations = findPatterns()
+    print(affiliations)
     authors_file = open("data/authors.json", "r")
     affiliations = [affiliation[0] for affiliation in affiliations]
 
@@ -72,14 +65,26 @@ def main():
 
     for data_line in data_lines:
         author = json.loads(data_line)
-        affiliation = get_close_matches(author["affiliation"], affiliations,1, cutoff=0.3)
+        affiliation = get_close_matches(author["email"], affiliations, 1, cutoff=0.6)
+        
+        if len(affiliation) == 0:
+            current_email = author["email"].replace("@", "").split(".")
+            if current_email[0] != "" and current_email[-2] in generic_domains:
+                affiliation = current_email[-3]
+            elif current_email[0] != "":
+                affiliation = current_email[-2]
+            else:
+                affiliation = "Unknown"
+            print(affiliation)
+        else:
+            affiliation = affiliation[0]
+
+
+        if "uni" in author["email"]:
+            affiliation = '.'.join(author["email"].split(".")[:-1]).replace("@","")
         if "Pisa" in author["affiliation"] or author["name"] in known_authors:
             affiliation = "unipi"
         
-        if len(affiliation) == 0:
-            affiliation = "Unknown"
-        else:
-            affiliation = affiliation[0]
         new_author = {
             "name": author["name"].title(),
             "email": author["email"],
