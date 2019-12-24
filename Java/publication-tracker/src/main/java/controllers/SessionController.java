@@ -87,6 +87,7 @@ public class SessionController {
                 c7.initController();
                 break;
          }
+        stage.sizeToScene();
     }
     
     private <T extends Object> void load_Page(T controller, String page){

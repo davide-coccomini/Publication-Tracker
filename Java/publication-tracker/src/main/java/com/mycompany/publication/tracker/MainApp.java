@@ -31,6 +31,7 @@ public class MainApp extends Application {
         
 
         stage.setTitle("Task 3");
+        stage.sizeToScene();
         stage.setScene(scene);
         stage.show();
     }

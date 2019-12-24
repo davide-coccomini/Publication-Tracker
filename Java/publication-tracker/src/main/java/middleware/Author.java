@@ -1,27 +1,38 @@
 package middleware;
 
 import org.neo4j.driver.v1.Record;
+import org.neo4j.driver.v1.types.Node;
 
 
 public class Author {
+    private long id;
     private String name;
     private String email;
     private String heading;
     private String affiliation;
 
-    public Author(String name, String email, String heading, String affiliation) {
+    public Author(long id, String name, String email, String heading, String affiliation) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.heading = heading;
         this.affiliation = affiliation;
     }
-    public Author(Record author){
+    public Author(Record authorRecord){
+        Node author = authorRecord.get(0).asNode();
+        id = author.id();
         name = author.get("name").asString();
         email = author.get("email").asString();
-        
         heading = author.get("heading").asString();
         affiliation = author.get("affiliation").asString();
-        
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
     
     public String getName() {
