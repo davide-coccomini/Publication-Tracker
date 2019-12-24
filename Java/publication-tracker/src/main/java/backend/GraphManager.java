@@ -82,6 +82,20 @@ public class GraphManager implements AutoCloseable{
             return authors;
         }
     }
+    // Method used for pagination in authorsList
+    public List<Author> getAuthors(int limit, int page){
+        int toSkip = page * limit;
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (a:Author) RETURN a SKIP $skip LIMIT $limit",
+                    parameters("skip", toSkip, "limit", limit));
+            List<Author> authors = new ArrayList();
+            while (result.hasNext()){
+                authors.add(new Author(result.next()));
+            }
+            return authors;
+        }    
+    }
    // Given the id of an Author, get all the relationships with it
    public StatementResult getAuthorRelationships(final Long id){
         try (Session session = driver.session()){
@@ -130,6 +144,20 @@ public class GraphManager implements AutoCloseable{
             return idNewPublication;
         }
    }
+   // Method used for pagination in publicationsList
+    public List<Publication> getPublications(int limit, int page){
+        int toSkip = page * limit;
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (p:Publication) RETURN p SKIP $skip LIMIT $limit",
+                    parameters("skip", toSkip, "limit", limit));
+            List<Publication> publications = new ArrayList();
+            while (result.hasNext()){
+                publications.add(new Publication(result.next()));
+            }
+            return publications;
+        }    
+    }
     // Given an id, get the matching Publication
     public Publication getPublicationById(long id){
         try (Session session = driver.session()){
