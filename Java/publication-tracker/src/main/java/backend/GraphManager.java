@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import middleware.Author;
 import middleware.Publication;
+import org.neo4j.driver.v1.types.Node;
 
 public class GraphManager implements AutoCloseable{
     private final Driver driver;
@@ -107,7 +108,7 @@ public class GraphManager implements AutoCloseable{
    public void deleteAuthor(final Long id){
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
-                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DELETE a");
+                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETATCH DELETE a");
                 tx.success(); 
             }
        }
@@ -158,6 +159,14 @@ public class GraphManager implements AutoCloseable{
             return publications;
         }    
     }
+    // Return the number of authors
+    public int getAuthorsNumber(){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (a:Author) RETURN count(a) as number");
+            return result.single().get(0).asInt();
+        }    
+    }
     // Given an id, get the matching Publication
     public Publication getPublicationById(long id){
         try (Session session = driver.session()){
@@ -171,7 +180,8 @@ public class GraphManager implements AutoCloseable{
         try (Session session = driver.session()){
             StatementResult result = session.run(
                     "MATCH (p:Publication) WHERE id(p) = "+id+" RETURN p");
-            return new Publication(result.single().get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
+            Node publication = result.single().get(0).asNode();
+            return new Publication(publication.id(), publication.get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
         }
     }
    // Given the id of a Publication, get all the relationships with it
@@ -206,8 +216,8 @@ public class GraphManager implements AutoCloseable{
                     parameters("value", value));
             
             long id = result.single().get("id").asLong();
-            
-            return new Publication(result.single().get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
+            Node publication = result.single().get(0).asNode();
+            return new Publication(publication.id(), publication.get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
         }
     }
    // Given publication id, delete it
@@ -219,6 +229,14 @@ public class GraphManager implements AutoCloseable{
             }
        }
    }
+   // Return the number of publications
+    public int getPublicationsNumber(){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (p:Publication) RETURN count(p) as number");
+            return result.single().get(0).asNode().get("number").asInt();
+        }    
+    }
    // Given publication id, remove all the relationships with it
    public void detatchPublication(final Long id){
        try (Session session = driver.session()){

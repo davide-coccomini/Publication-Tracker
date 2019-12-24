@@ -5,11 +5,13 @@ import java.util.List;
 import org.neo4j.driver.v1.Record;
 
 public class Publication {
+    private long id;
     private String name;
     private List<Author> authors;
     private List<Publication> citations;
 
-    public Publication(String name, List<Author> authors, List<Publication> citations) {
+    public Publication(long id, String name, List<Author> authors, List<Publication> citations) {
+        this.id = id;
         this.name = name;
         this.authors = authors;
         this.citations = citations;
