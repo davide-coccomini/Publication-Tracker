@@ -46,7 +46,7 @@ public class AuthorsListController {
         graphManager = c.getGraphManager();
     }
     public void initController(){
-        controller.load_Topbar(topbar);
+        controller.load_Topbar(topbar, 2);
         loadAuthors();
     }
     private void loadAuthors(){
