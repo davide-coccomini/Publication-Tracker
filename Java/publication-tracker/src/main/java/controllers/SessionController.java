@@ -104,9 +104,9 @@ public class SessionController {
             System.out.println(e);
         }
     }
-    public TopController load_Topbar(AnchorPane pane){
+    public TopController load_Topbar(AnchorPane pane, int page){
         String url = "/fxml/topbar.fxml";
-        TopController controller = new TopController(this);;
+        TopController controller = new TopController(this, page);
         try{
             java.net.URL target = getClass().getResource(url);
             FXMLLoader loader = new FXMLLoader(target);

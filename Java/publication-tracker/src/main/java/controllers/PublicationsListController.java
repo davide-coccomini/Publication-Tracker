@@ -42,7 +42,7 @@ public class PublicationsListController {
         graphManager = c.getGraphManager();
     }
     public void initController(){
-        controller.load_Topbar(topbar);
+        controller.load_Topbar(topbar,3);
         topbar.toFront();
         loadPublications();
     }

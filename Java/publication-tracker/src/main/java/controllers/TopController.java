@@ -23,10 +23,12 @@ public class TopController {
     private Text roleText;
     @FXML
     private Text nameText;
+    int page;
     
     private final SessionController controller;
-    public TopController(SessionController c){
+    public TopController(SessionController c, int page){
         controller = c;
+        this.page = page;
     }
     public void initController(){
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -65,15 +67,15 @@ public class TopController {
             usersButton.setVisible(false);
         }
         show_Name();
+        setSectionButtonStyle(page);
         
     } 
     private void setSectionButtonStyle(Button focusedButton){
-        System.out.println(focusedButton);
-        authorsButton.setStyle("-fx-background-color: #28abe3");
-        publicationsButton.setStyle("-fx-background-color: #28abe3");
-        statisticsButton.setStyle("-fx-background-color: #28abe3");
-        usersButton.setStyle("-fx-background-color: #28abe3");
-        focusedButton.setStyle("-fx-background-color: #095185");
+        authorsButton.setStyle("-fx-background-color: #28abe3;-fx-background-radius: 50 50 50 50;");
+        publicationsButton.setStyle("-fx-background-color: #28abe3; -fx-background-radius: 50 50 50 50;");
+        statisticsButton.setStyle("-fx-background-color: #28abe3; -fx-background-radius: 50 50 50 50;");
+        usersButton.setStyle("-fx-background-color: #28abe3; -fx-background-radius: 50 50 50 50;");
+        focusedButton.setStyle("-fx-background-color: #095185;-fx-background-radius: 50 50 50 50;");
     }
     private void setSectionButtonStyle(int button){
         switch(button){
