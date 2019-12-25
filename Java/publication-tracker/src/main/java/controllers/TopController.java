@@ -24,7 +24,7 @@ public class TopController {
     @FXML
     private Text nameText;
     
-    private SessionController controller;
+    private final SessionController controller;
     public TopController(SessionController c){
         controller = c;
     }

@@ -116,7 +116,6 @@ public class SessionController {
             AnchorPane newPane =  FXMLLoader.load(target);
             pane.getChildren().add(newPane);
             pane.getChildren().add((AnchorPane) loader.load());
-            newPane.toFront();
             controller.initController();
         }catch(IOException e){
             System.out.println(e);
