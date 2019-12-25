@@ -20,6 +20,7 @@ import javafx.scene.layout.HBox;
 import javafx.util.Callback;
 import middleware.Author;
 import middleware.User;
+import backend.DatabaseManager;
 
 public class UsersListController {
 	@FXML
@@ -30,24 +31,17 @@ public class UsersListController {
     private Button createButton;
 
     private final SessionController controller;
-    private final GraphManager graphManager;
+    private final DatabaseManager dbManager;
 
     public UsersListController(SessionController c){
         controller = c;
-        graphManager = c.getGraphManager();
+        dbManager = c.getDbManager();
     }
     public void initController(){
         controller.load_Topbar(topbar);
         topbar.toFront();
         loadUsers();
 
-        createButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-            	List<Object> args = new ArrayList<>();
-                args.add(-1);
-                controller.navigate(4,args);
-            }
-        });
     }
     private void loadUsers(){
         final ObservableList<User> users = getUsersList();
@@ -91,7 +85,9 @@ public class UsersListController {
 
         b1.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                graphManager.deleteUser(id);
+            	Object[] arg = new Object[1];
+            	arg[0] = (Object) id;
+                dbManager.deleteUser(arg);
                 loadUsers();
             }
         });
@@ -116,9 +112,13 @@ public class UsersListController {
         return hbox;
     }
     private ObservableList<User> getUsersList(){
-
-        List<User> users = graphManager.getUsers();
-
+    	List<User> users = null;
+    	try{
+        users =  (List<User>) (List) dbManager.getUsers();
+    	}catch(Exception e){
+    		System.out.println("Error fetching user list");
+    		System.out.println(e);
+    	}
         final ObservableList<User> observableAuthors = FXCollections.observableArrayList(users);
 
         return observableAuthors;

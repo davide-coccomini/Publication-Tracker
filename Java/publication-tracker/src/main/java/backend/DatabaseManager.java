@@ -1,5 +1,5 @@
 package backend;
- 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -17,18 +17,18 @@ public class DatabaseManager {
     private final String db_Password = "";
     private final String db_Name = "publication-tracker";
     private Connection conn;
-  
+
     private String makeStrString(){
         String str = "";
         str = "jdbc:mysql:" + db_Address + db_Name + "?user=" + db_User;
         return str;
     }
-    
+
     /* Handles JDBC to open a connection with database */
     public boolean connectionStart() throws SQLException{
         String connStr = makeStrString();
         conn = DriverManager.getConnection(connStr);
-        return true;  
+        return true;
     }
     /* Handles JDBC to close a connection */
     public boolean connectionClose(){
@@ -40,18 +40,18 @@ public class DatabaseManager {
         }
         return true;
     }
-    
+
     /* METHODS FOR USERS MANAGEMENT */
     public void createUser(Object[] args){
         String query = "INSERT INTO user(name, password, email, role) VALUES(?,?,?,?)";
         worker(query, args, 1);
     }
-    
+
     public void deleteUser(Object[] args){
         String query = "DELETE FROM user WHERE id = ?";
         worker(query, args, 0);
     }
-    
+
     public User getUserById(Object[] args){
         String query = "SELECT * FROM user WHERE id = ?";
         List<Object> result = worker(query, args, 0);
@@ -74,25 +74,25 @@ public class DatabaseManager {
         List<Object> users = worker(query, null, 1);
         return users;
     }
-    
+
     public void updateUserField(String field, Object[] args){
-        String query = "UPDATE user SET "+field+" = ?";
+        String query = "UPDATE user SET "+field+" = ? WHERE id = ?";
         worker(query,args,0);
     }
-    public User autentication(Object[] args){    
+    public User autentication(Object[] args){
         String query = "SELECT * FROM user WHERE email = ? AND password = ?";
         List<Object> result = worker(query,args, 0);
         User u = (User) result.get(0);
-        return u;       
+        return u;
     }
     /* Creates a List of the Object that needs to be returned as a result of the query */
     public List<Object> worker(String query, Object[] args, int type){
         try{
             if(args == null){
                 Statement stmt = conn.createStatement();
-                
-                stmt.execute(query);                                    
-                ResultSet rs = stmt.getResultSet();  
+
+                stmt.execute(query);
+                ResultSet rs = stmt.getResultSet();
 
                 List<Object> result = new ArrayList();
                 User u;
@@ -104,7 +104,7 @@ public class DatabaseManager {
 
                 rs.close();
                 stmt.close();
-                return result; 
+                return result;
             }else{
                 PreparedStatement ps = conn.prepareStatement(query);
                 for(int i=0; i<args.length; i++){
