@@ -45,6 +45,7 @@ public class SessionController {
         return graphManager;
     }
     public void navigate(int page, List<Object> args) {
+        System.out.println(page);
          switch(page){
             case 0: // Login
                LoginController c0 = new LoginController(this);
@@ -84,8 +85,8 @@ public class SessionController {
                 c6.initController();
                 break;
             case 7: //  Publication List
-                MenuController c7 = new MenuController(this);
-                load_Page(c7,"publicationList.fxml");
+                PublicationsListController c7 = new PublicationsListController(this);
+                load_Page(c7,"publicationsList.fxml");
                 c7.initController();
                 break;
          }

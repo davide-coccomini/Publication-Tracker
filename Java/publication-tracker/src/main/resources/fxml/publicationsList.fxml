@@ -8,17 +8,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" minWidth="754.7186279296875" prefHeight="378.0" prefWidth="754.7186279296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" minWidth="754.7186279296875" prefHeight="693.0" prefWidth="835.7186279296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
-    <AnchorPane fx:id="topbar"/>
-    <ImageView fitHeight="378.0" fitWidth="756.0" layoutX="1.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../assets/background.jpg" />
-      </image>
-    </ImageView>
-    <TableView fx:id="publicationsTable" layoutX="15.0" layoutY="122.0" prefHeight="243.0" prefWidth="471.0" />
-    
-    <Button fx:id="createButton" focusTraversable="true" layoutX="521.0" layoutY="158.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="52.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="ADD" textFill="WHITE">
+    <AnchorPane fx:id="topbar" />
+    <TableView fx:id="publicationsTable" layoutX="14.0" layoutY="127.0" prefHeight="452.0" prefWidth="807.7186279296875" />
+    <HBox fx:id="pagesButtons" alignment="CENTER" layoutX="28.0" layoutY="588.0" prefHeight="42.0" prefWidth="775.0" />
+    <Button fx:id="createButton" focusTraversable="true" layoutX="333.0" layoutY="637.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="165.0" style="-fx-background-radius: 50 50 50 50;&#10;-fx-background-color: #28abe3;" text="ADD PUBLICATION" textFill="WHITE">
       <font>
         <Font name="System Bold" size="13.0" />
       </font>

@@ -154,6 +154,7 @@ public class GraphManager implements AutoCloseable{
             StatementResult result = session.run(
                     "MATCH (p:Publication) RETURN p SKIP $skip LIMIT $limit",
                     parameters("skip", toSkip, "limit", limit));
+            
             List<Publication> publications = new ArrayList();
             while (result.hasNext()){
                 publications.add(new Publication(result.next()));
@@ -200,6 +201,7 @@ public class GraphManager implements AutoCloseable{
    }
    // Get the authors that wrote the publication
    public List<Author> getPublicationAuthors(final Long id){
+       System.out.println(id);
         try (Session session = driver.session()){
             StatementResult result = session.run("MATCH (p:Publication)-[r]-(a) WHERE id(p)="+id+" AND type(r) = 'PUBLISHES' RETURN id(a) as author");
             List<Author> authors = new ArrayList();
@@ -236,9 +238,10 @@ public class GraphManager implements AutoCloseable{
         try (Session session = driver.session()){
             StatementResult result = session.run(
                     "MATCH (p:Publication) RETURN count(p) as number");
-            return result.single().get(0).asNode().get("number").asInt();
+            return result.single().get(0).asInt();
         }
     }
+    
    // Given publication id, remove all the relationships with it
    public void detatchPublication(final Long id){
        try (Session session = driver.session()){
