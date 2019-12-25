@@ -13,17 +13,17 @@ import middleware.User;
 
 public class SessionController {
     private User session;
-     private Scene scene;
-    private Stage stage;
+     private final Scene scene;
+    private final Stage stage;
 
-    private DatabaseManager dbManager;
-    private GraphManager graphManager;
+    private final DatabaseManager dbManager;
+    private final GraphManager graphManager;
 
-
+   
     public void setSession(User session) {
 
         if(session==null){
-            session = new User (0,"Unknown","Unknown","Unknown",0);
+            this.session = new User(0,"Unknown","Unknown","Unknown",0);
         }else{
             this.session = session;
         }
@@ -45,7 +45,6 @@ public class SessionController {
         return graphManager;
     }
     public void navigate(int page, List<Object> args) {
-        System.out.println(page);
          switch(page){
             case 0: // Login
                LoginController c0 = new LoginController(this);

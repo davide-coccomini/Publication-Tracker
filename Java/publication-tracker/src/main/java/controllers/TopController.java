@@ -68,11 +68,28 @@ public class TopController {
         
     } 
     private void setSectionButtonStyle(Button focusedButton){
+        System.out.println(focusedButton);
         authorsButton.setStyle("-fx-background-color: #28abe3");
         publicationsButton.setStyle("-fx-background-color: #28abe3");
         statisticsButton.setStyle("-fx-background-color: #28abe3");
         usersButton.setStyle("-fx-background-color: #28abe3");
         focusedButton.setStyle("-fx-background-color: #095185");
+    }
+    private void setSectionButtonStyle(int button){
+        switch(button){
+            case 0:
+              setSectionButtonStyle(usersButton);
+              break;
+            case 1:
+              setSectionButtonStyle(statisticsButton);
+              break;
+            case 2:
+              setSectionButtonStyle(authorsButton);
+              break;
+            case 3:
+              setSectionButtonStyle(publicationsButton);
+              break;
+        }
     }
     private void show_Name(){
         User u=controller.getLoggedUser();
