@@ -1,14 +1,8 @@
 package controllers;
 
-import backend.DatabaseManager;
 import backend.GraphManager;
-import java.sql.Date;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Pattern;
-import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,14 +18,16 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
 import middleware.Author;
+import middleware.Publication;
 
-public class AuthorsListController {
+public class PublicationsListController {
     @FXML
     private AnchorPane topbar;
     @FXML
-    private TableView authorsTable;
+    private TableView publicationsTable;
     @FXML
     private Button createButton;
+
     @FXML 
     private HBox pagesButtons;
 
@@ -41,28 +37,47 @@ public class AuthorsListController {
     private final int ELEMENTS_PER_PAGE = 10;
     private final int BUTTONS_TO_SHOW = 6;
     
-    public AuthorsListController(SessionController c){
+    public PublicationsListController(SessionController c){
         controller = c;
         graphManager = c.getGraphManager();
     }
     public void initController(){
-        controller.load_Topbar(topbar, 2);
-        loadAuthors();
+        controller.load_Topbar(topbar,3);
+        topbar.toFront();
+        loadPublications();
     }
-    private void loadAuthors(){
-        final ObservableList<Author> authors = getAuthorsList();
-        TableColumn<Author,String> name_Col;
+    private void loadPublications(){
+        final ObservableList<Publication> publications = getPublicationsList();
+        TableColumn<Publication,String> name_Col;
         name_Col = new TableColumn<>("Name");
         name_Col.setCellValueFactory(new PropertyValueFactory("name"));
-        TableColumn<Author,String> email_Col;
-        email_Col = new TableColumn<>("Email");
-        email_Col.setCellValueFactory(new PropertyValueFactory("email"));
-        TableColumn<Author,String> heading_Col;
-        heading_Col = new TableColumn<>("Heading");
-        heading_Col.setCellValueFactory(new PropertyValueFactory("heading"));
-        TableColumn<Author,String> affiliation_Col;
-        affiliation_Col = new TableColumn<>("Affiliation");
-        affiliation_Col.setCellValueFactory(new PropertyValueFactory("affiliation"));
+        TableColumn authors_Col = new TableColumn("Authors");
+        authors_Col.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+        Callback<TableColumn<Object, String>, TableCell<Object, String>> cellFactoryAuthors = //
+                new Callback<TableColumn<Object, String>, TableCell<Object, String>>() {
+            @Override
+            public TableCell call(final TableColumn<Object, String> param) {
+                final TableCell<Object, String> cell = new TableCell<Object, String>() {
+
+                    @Override
+                    public void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if(getIndex()<publications.size() && getIndex() >= 0){
+                            Publication p = publications.get(getIndex());
+                            List<Author> authors = graphManager.getPublicationAuthors(p.getId());
+                            String authorsString = "";
+                            for(Author author:authors){
+                                 authorsString += author.getName() + ",";
+                            }
+                            authorsString = authorsString.substring(0, authorsString.length() - 1);
+                            setText(authorsString);
+                        }
+                    }
+                };
+                return cell;
+            }
+        };
+        authors_Col.setCellFactory(cellFactoryAuthors);
         TableColumn action_Col = new TableColumn("Action");
         action_Col.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
         Callback<TableColumn<Object, String>, TableCell<Object, String>> cellFactory = //
@@ -74,9 +89,9 @@ public class AuthorsListController {
                     @Override
                     public void updateItem(String item, boolean empty) {
                         super.updateItem(item, empty);
-                        if(getIndex()<authors.size() && getIndex() >= 0){
-                            Author a = authors.get(getIndex());
-                            setGraphic(make_Buttons(a.getId()));
+                        if(getIndex()<publications.size() && getIndex() >= 0){
+                            Publication p = publications.get(getIndex());
+                            setGraphic(make_Buttons(p.getId()));
                             setText(null);
                         }
                     }
@@ -85,12 +100,12 @@ public class AuthorsListController {
             }
         };
         action_Col.setCellFactory(cellFactory);
-        authorsTable.getColumns().setAll(action_Col,name_Col, email_Col, heading_Col, affiliation_Col);
+        publicationsTable.getColumns().setAll(action_Col,name_Col, authors_Col);
         
-        authorsTable.setItems(authors);
+        publicationsTable.setItems(publications);
     }
     void loadPagesButtons(){  
-        int elements = graphManager.getAuthorsNumber();
+        int elements = graphManager.getPublicationsNumber();
         long pages = elements/ELEMENTS_PER_PAGE;
         
         while(!pagesButtons.getChildren().isEmpty()){
@@ -106,7 +121,7 @@ public class AuthorsListController {
                 @Override public void handle(ActionEvent e) {
                     currentPage = (int) currentPage - 1;
                     loadPagesButtons();
-                    loadAuthors();
+                    loadPublications();
                 }
             });   
             pagesButtons.getChildren().add(btt);    
@@ -126,7 +141,7 @@ public class AuthorsListController {
                 @Override public void handle(ActionEvent e) {
                     currentPage = (int) currentPageIndex;
                     loadPagesButtons();
-                    loadAuthors();
+                    loadPublications();
                 }
             });  
              
@@ -142,7 +157,7 @@ public class AuthorsListController {
                 @Override public void handle(ActionEvent e) {
                     currentPage = (int) currentPage + 1;
                     loadPagesButtons();
-                    loadAuthors();
+                    loadPublications();
                 }
             });   
             pagesButtons.getChildren().add(btt);
@@ -155,8 +170,8 @@ public class AuthorsListController {
         
         b1.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                graphManager.deleteAuthor(id);
-                loadAuthors();
+                graphManager.deletePublication(id);
+                loadPublications();
             }
         });    
         
@@ -180,13 +195,14 @@ public class AuthorsListController {
        
         return hbox;
     }
-    private ObservableList<Author> getAuthorsList(){
+    private ObservableList<Publication> getPublicationsList(){
         loadPagesButtons();
-        List<Author> authors = graphManager.getAuthors(ELEMENTS_PER_PAGE, currentPage);
+        List<Publication> publications = graphManager.getPublications(ELEMENTS_PER_PAGE, currentPage);
         
-        final ObservableList<Author> observableAuthors = FXCollections.observableArrayList(authors);
+        final ObservableList<Publication> observablePublications = FXCollections.observableArrayList(publications);
 
-        return observableAuthors;
+        return observablePublications;
     }
+    
     
 }

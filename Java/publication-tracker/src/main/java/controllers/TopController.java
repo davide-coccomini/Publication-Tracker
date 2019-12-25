@@ -23,10 +23,12 @@ public class TopController {
     private Text roleText;
     @FXML
     private Text nameText;
+    int page;
     
-    private SessionController controller;
-    public TopController(SessionController c){
+    private final SessionController controller;
+    public TopController(SessionController c, int page){
         controller = c;
+        this.page = page;
     }
     public void initController(){
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -65,18 +67,36 @@ public class TopController {
             usersButton.setVisible(false);
         }
         show_Name();
+        setSectionButtonStyle(page);
         
     } 
     private void setSectionButtonStyle(Button focusedButton){
-        authorsButton.setStyle("-fx-background-color: #28abe3");
-        publicationsButton.setStyle("-fx-background-color: #28abe3");
-        statisticsButton.setStyle("-fx-background-color: #28abe3");
-        usersButton.setStyle("-fx-background-color: #28abe3");
-        focusedButton.setStyle("-fx-background-color: #095185");
+        authorsButton.setStyle("-fx-background-color: #28abe3;-fx-background-radius: 50 50 50 50;");
+        publicationsButton.setStyle("-fx-background-color: #28abe3; -fx-background-radius: 50 50 50 50;");
+        statisticsButton.setStyle("-fx-background-color: #28abe3; -fx-background-radius: 50 50 50 50;");
+        usersButton.setStyle("-fx-background-color: #28abe3; -fx-background-radius: 50 50 50 50;");
+        focusedButton.setStyle("-fx-background-color: #095185;-fx-background-radius: 50 50 50 50;");
+    }
+    private void setSectionButtonStyle(int button){
+        switch(button){
+            case 0:
+              setSectionButtonStyle(usersButton);
+              break;
+            case 1:
+              setSectionButtonStyle(statisticsButton);
+              break;
+            case 2:
+              setSectionButtonStyle(authorsButton);
+              break;
+            case 3:
+              setSectionButtonStyle(publicationsButton);
+              break;
+        }
     }
     private void show_Name(){
         User u=controller.getLoggedUser();
-        roleText.setText(String.valueOf(u.getRole()));
+        String role = (u.getRole()==1)?"Admin":"User";
+        roleText.setText(role);
         nameText.setText(u.getUsername());
     }
     public void logout(){

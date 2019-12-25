@@ -13,17 +13,17 @@ import middleware.User;
 
 public class SessionController {
     private User session;
-     private Scene scene;
-    private Stage stage;
+     private final Scene scene;
+    private final Stage stage;
 
-    private DatabaseManager dbManager;
-    private GraphManager graphManager;
+    private final DatabaseManager dbManager;
+    private final GraphManager graphManager;
 
-
+   
     public void setSession(User session) {
 
         if(session==null){
-            session = new User (0,"Unknown","Unknown","Unknown",0);
+            this.session = new User(0,"Unknown","Unknown","Unknown",0);
         }else{
             this.session = session;
         }
@@ -84,8 +84,8 @@ public class SessionController {
                 c6.initController();
                 break;
             case 7: //  Publication List
-                MenuController c7 = new MenuController(this);
-                load_Page(c7,"publicationList.fxml");
+                PublicationsListController c7 = new PublicationsListController(this);
+                load_Page(c7,"publicationsList.fxml");
                 c7.initController();
                 break;
          }
@@ -104,9 +104,9 @@ public class SessionController {
             System.out.println(e);
         }
     }
-    public TopController load_Topbar(AnchorPane pane){
+    public TopController load_Topbar(AnchorPane pane, int page){
         String url = "/fxml/topbar.fxml";
-        TopController controller = new TopController(this);;
+        TopController controller = new TopController(this, page);
         try{
             java.net.URL target = getClass().getResource(url);
             FXMLLoader loader = new FXMLLoader(target);
@@ -115,7 +115,6 @@ public class SessionController {
             AnchorPane newPane =  FXMLLoader.load(target);
             pane.getChildren().add(newPane);
             pane.getChildren().add((AnchorPane) loader.load());
-            newPane.toFront();
             controller.initController();
         }catch(IOException e){
             System.out.println(e);

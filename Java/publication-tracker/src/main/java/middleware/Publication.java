@@ -3,6 +3,7 @@ package middleware;
 
 import java.util.List;
 import org.neo4j.driver.v1.Record;
+import org.neo4j.driver.v1.types.Node;
 
 public class Publication {
     private long id;
@@ -16,8 +17,10 @@ public class Publication {
         this.authors = authors;
         this.citations = citations;
     }
-    public Publication(Record publication){
-        name = publication.get("name").toString();
+    public Publication(Record publicationRecord){
+        Node publication = publicationRecord.get(0).asNode();
+        id = publication.id();
+        name = publication.get("name").asString();
         authors = null;
         citations = null;
     }
@@ -25,6 +28,14 @@ public class Publication {
         name = publication.get("name").toString();
         this.authors = authors;
         this.citations = citations;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
     public String getName() {
         return name;

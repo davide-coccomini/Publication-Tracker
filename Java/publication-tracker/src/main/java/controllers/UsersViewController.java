@@ -40,7 +40,7 @@ public class UsersViewController {
 	        dbManager = c.getDbManager();
 	   }
 	    public void initController(){
-	        controller.load_Topbar(topbar);
+	        controller.load_Topbar(topbar,0);
 	        topbar.toFront();
 
         	loadUserById(currentUser);
