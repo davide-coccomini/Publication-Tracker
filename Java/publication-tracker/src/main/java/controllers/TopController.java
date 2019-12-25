@@ -93,7 +93,8 @@ public class TopController {
     }
     private void show_Name(){
         User u=controller.getLoggedUser();
-        roleText.setText(String.valueOf(u.getRole()));
+        String role = (u.getRole()==1)?"Admin":"User";
+        roleText.setText(role);
         nameText.setText(u.getUsername());
     }
     public void logout(){
