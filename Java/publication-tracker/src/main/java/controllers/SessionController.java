@@ -15,11 +15,11 @@ public class SessionController {
     private User session;
      private Scene scene;
     private Stage stage;
-    
+
     private DatabaseManager dbManager;
     private GraphManager graphManager;
-    
-    
+
+
     public void setSession(User session) {
 
         if(session==null){
@@ -44,7 +44,7 @@ public class SessionController {
     public GraphManager getGraphManager(){
         return graphManager;
     }
-    public void navigate(int page, List<Object> args) {  
+    public void navigate(int page, List<Object> args) {
          switch(page){
             case 0: // Login
                LoginController c0 = new LoginController(this);
@@ -56,18 +56,20 @@ public class SessionController {
                load_Page(c1,"registration.fxml");
                c1.initController();
                break;
-            case 2: // Menu 
+            case 2: // Menu
                MenuController c2 = new MenuController(this);
                load_Page(c2,"menu.fxml");
                c2.initController();
                break;
             case 3: //  Users List
-                MenuController c3 = new MenuController(this);
+                //MenuController c3 = new MenuController(this);
+            	UsersListController c3 = new UsersListController(this);
                 load_Page(c3,"usersList.fxml");
                 c3.initController();
                 break;
             case 4: //  Users View
-                MenuController c4 = new MenuController(this);
+                //MenuController c4 = new MenuController(this);
+            	UsersViewController c4 = new UsersViewController(this,args);
                 load_Page(c4,"usersView.fxml");
                 c4.initController();
                 break;
@@ -89,27 +91,27 @@ public class SessionController {
          }
         stage.sizeToScene();
     }
-    
+
     private <T extends Object> void load_Page(T controller, String page){
         String url = "/fxml/"+page;
-        try{ 
-            java.net.URL target = getClass().getResource(url);             
-            FXMLLoader loader = new FXMLLoader(target);           
-            loader.setController(controller);    
+        try{
+            java.net.URL target = getClass().getResource(url);
+            FXMLLoader loader = new FXMLLoader(target);
+            loader.setController(controller);
             scene.setRoot((Parent) loader.load());
         }
         catch(IOException e){
             System.out.println(e);
         }
-    }    
+    }
     public TopController load_Topbar(AnchorPane pane){
         String url = "/fxml/topbar.fxml";
         TopController controller = new TopController(this);;
-        try{     
-            java.net.URL target = getClass().getResource(url);             
-            FXMLLoader loader = new FXMLLoader(target);           
-            loader.setController(controller); 
-            
+        try{
+            java.net.URL target = getClass().getResource(url);
+            FXMLLoader loader = new FXMLLoader(target);
+            loader.setController(controller);
+
             AnchorPane newPane =  FXMLLoader.load(target);
             pane.getChildren().add(newPane);
             pane.getChildren().add((AnchorPane) loader.load());
@@ -123,6 +125,6 @@ public class SessionController {
     public void logout(){
         session = null;
         navigate(0,null);
-    } 
+    }
 
 }

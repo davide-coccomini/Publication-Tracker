@@ -18,15 +18,17 @@ import java.util.ArrayList;
 import java.util.List;
 import middleware.Author;
 import middleware.Publication;
+import middleware.User;
+
 import org.neo4j.driver.v1.types.Node;
 
 public class GraphManager implements AutoCloseable{
     private final Driver driver;
-    
+
     public GraphManager(String uri, String user, String password) {
         driver = GraphDatabase.driver( uri, AuthTokens.basic( user, password ) );
     }
-    
+
     // Close connection (to be done at the end of the application)
     @Override
     public void close() {
@@ -36,16 +38,16 @@ public class GraphManager implements AutoCloseable{
             System.out.println(e);
         }
     }
-    
+
     ///// AUTHORS METHODS /////
     // Insert an Author and return his ID
     public long addAuthor(final String name, final String email, final String affiliation){
         try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
                 tx.run("MERGE (a:Author {name: $name, email:$email, affiliation:$affiliation})", parameters("name", name, "email", email, "affiliation", affiliation));
-                tx.success();  
+                tx.success();
             }
-            
+
             StatementResult result = session.run(
                     "MATCH (a:Author {name: $name, email:$email, affiliation:$affiliation}) RETURN id(a) as id",
                     parameters("name", name, "email", email, "affiliation", affiliation));
@@ -95,7 +97,7 @@ public class GraphManager implements AutoCloseable{
                 authors.add(new Author(result.next()));
             }
             return authors;
-        }    
+        }
     }
    // Given the id of an Author, get all the relationships with it
    public StatementResult getAuthorRelationships(final Long id){
@@ -109,21 +111,21 @@ public class GraphManager implements AutoCloseable{
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
                 tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETATCH DELETE a");
-                tx.success(); 
+                tx.success();
             }
        }
    }
-   // Given an author id, remove all relationships with it 
+   // Given an author id, remove all relationships with it
    public void detatchAuthor(final Long id){
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
                 tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETATCH a");
-                tx.success(); 
+                tx.success();
             }
        }
    }
    ///// END AUTHORS METHODS /////
-    
+
    ///// PUBLICATIONS METHODS /////
    // Add a publication node and all its relationships
    public Long addPublication(String name, List<Long> idAuthors, List<Long> idCitations){
@@ -140,7 +142,7 @@ public class GraphManager implements AutoCloseable{
                 for(Long idPublication : idCitations){
                     tx.run("MATCH (p1:Publication),(p2:Publication) WHERE id(p1) = "+idPublication+" AND id(p2) = "+idNewPublication+" CREATE (p2)-[:CITES]->(p1)");
                 }
-                tx.success(); 
+                tx.success();
             }
             return idNewPublication;
         }
@@ -157,7 +159,7 @@ public class GraphManager implements AutoCloseable{
                 publications.add(new Publication(result.next()));
             }
             return publications;
-        }    
+        }
     }
     // Return the number of authors
     public int getAuthorsNumber(){
@@ -165,7 +167,7 @@ public class GraphManager implements AutoCloseable{
             StatementResult result = session.run(
                     "MATCH (a:Author) RETURN count(a) as number");
             return result.single().get(0).asInt();
-        }    
+        }
     }
     // Given an id, get the matching Publication
     public Publication getPublicationById(long id){
@@ -214,7 +216,7 @@ public class GraphManager implements AutoCloseable{
             StatementResult result = session.run(
                     "MATCH (p:Publication {"+key+": $value}) RETURN p,id(p) as id LIMIT 1",
                     parameters("value", value));
-            
+
             long id = result.single().get("id").asLong();
             Node publication = result.single().get(0).asNode();
             return new Publication(publication.id(), publication.get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
@@ -225,7 +227,7 @@ public class GraphManager implements AutoCloseable{
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
                 tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DELETE p");
-                tx.success(); 
+                tx.success();
             }
        }
    }
@@ -235,15 +237,75 @@ public class GraphManager implements AutoCloseable{
             StatementResult result = session.run(
                     "MATCH (p:Publication) RETURN count(p) as number");
             return result.single().get(0).asNode().get("number").asInt();
-        }    
+        }
     }
    // Given publication id, remove all the relationships with it
    public void detatchPublication(final Long id){
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
                 tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DETATCH p");
-                tx.success(); 
+                tx.success();
             }
        }
    }
+   ///// USERS METHODS /////
+   // Insert a User and return his ID
+   // public long addUser(final String name, final String email, final String password){
+
+   // Method used for pagination in usersList
+	public List<User> getUsers() {
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (u:Users) RETURN u");
+            List<User> users = new ArrayList();
+            while (result.hasNext()){
+                users.add(new User(result.next()));
+            }
+            return users;
+        }
+
+	}
+	// Given user id, delete it
+	public void deleteUser(long id) {
+		try (Session session = driver.session()){
+            try (Transaction tx = session.beginTransaction()){
+                tx.run("MATCH (u:User) WHERE id(u) = "+id+" DELETE u");
+                tx.success();
+            }
+       }
+	}
+    // Given an id, get the matching User
+    public User getUserById(long id){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (u:User) WHERE id(u) = "+id+" RETURN u");
+            return new User(result.single());
+        }catch(Exception e){
+        	System.out.println(e);
+        	return null;
+    	}
+    }
+    // Insert a User and return his ID
+    public long addUser(final String name, final String email, final long role, final String password){
+        try (Session session = driver.session()){
+            try (Transaction tx = session.beginTransaction()){
+                tx.run("MERGE (u:User {name: $name, email:$email, role:$role, password:$password})", parameters("name", name, "email", email, "role", role, "password", password));
+                tx.success();
+            }
+
+            StatementResult result = session.run(
+                    "MATCH (u:User {name: $name, email:$email, role:$role, password:$password}) RETURN id(u) as id",
+                    parameters("name", name, "email", email, "role", role, "password", password));
+            return result.single().get("id").asLong();
+        }
+    }
+    // Update a User and return his ID
+    public void updateUser(final long id,final String name, final String email, final String password){
+        try (Session session = driver.session()){
+            try (Transaction tx = session.beginTransaction()){
+                tx.run("MERGE (u:User {name: $name, email:$email, password:$password} )WHERE id(u) = "+id, parameters("name", name, "email", email, "password", password));
+                tx.success();
+            }
+        }
+    }
 }

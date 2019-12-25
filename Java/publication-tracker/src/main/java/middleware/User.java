@@ -1,6 +1,8 @@
 
 package middleware;
 
+import org.neo4j.driver.v1.Record;
+
 public class User {
     int id;
     String username;
@@ -15,7 +17,11 @@ public class User {
         this.password = password;
         this.role = role;
     }
-
+    public User(Record user){
+        username = user.get("username").toString();
+        email = user.get("email").toString();
+        role = user.get("role").asInt();
+    }
     public int getId() {
         return id;
     }
@@ -55,5 +61,5 @@ public class User {
     public void setRole(int role) {
         this.role = role;
     }
-    
+
 }
