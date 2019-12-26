@@ -12,8 +12,8 @@
   <children>
     <AnchorPane fx:id="topbar" />
     <TableView fx:id="queryResultTable" layoutX="42.0" layoutY="233.0" prefHeight="384.0" prefWidth="741.0" visible="false" />
-    <AnchorPane fx:id="statisticsContainer" layoutX="0.0" layoutY="-1.0" visible="true">
-      <AnchorPane layoutX="434.0" layoutY="431.0" prefHeight="188.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+    <AnchorPane fx:id="statisticsContainer" layoutX="213.0" layoutY="220.0" minHeight="398.0" minWidth="408.0" prefHeight="398.0" prefWidth="408.0" visible="true">
+      <AnchorPane layoutX="222.0" layoutY="191.0" prefHeight="188.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
         <children>
           <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
             <children>
@@ -31,7 +31,7 @@
           </Text>
         </children>
       </AnchorPane>
-      <AnchorPane layoutX="228.0" layoutY="430.0" prefHeight="188.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+      <AnchorPane layoutX="16.0" layoutY="191.0" prefHeight="188.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
         <children>
           <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
             <children>
@@ -41,7 +41,7 @@
           <Text fx:id="mostCitedAuthorResult" font="$x2" layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" />
         </children>
       </AnchorPane>
-      <AnchorPane layoutX="228.0" layoutY="263.0" prefHeight="142.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+      <AnchorPane layoutX="16.0" layoutY="24.0" prefHeight="142.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
         <children>
           <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
             <children>
@@ -51,7 +51,7 @@
           <Text fx:id="numAuthorsResult" font="$x2" layoutX="69.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" />
         </children>
       </AnchorPane>
-      <AnchorPane layoutX="434.0" layoutY="261.0" prefHeight="142.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+      <AnchorPane layoutX="222.0" layoutY="22.0" prefHeight="142.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
         <children>
           <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
             <children>
