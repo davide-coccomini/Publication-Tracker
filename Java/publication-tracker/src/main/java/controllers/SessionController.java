@@ -91,6 +91,11 @@ public class SessionController {
                 load_Page(c8,"authorView.fxml");
                 c8.initController();
                 break;
+            case 9: //  Author View
+                PublicationViewController c9 = new PublicationViewController(this, args);
+                load_Page(c9,"publicationView.fxml");
+                c9.initController();
+                break;
          }
         stage.sizeToScene();
     }

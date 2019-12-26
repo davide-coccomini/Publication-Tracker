@@ -240,6 +240,7 @@ public class GraphManager implements AutoCloseable{
     }
    // Given the id of a Publication, get all the relationships with it
    public List<Publication> getPublicationCitations(final Long id){
+       System.out.println(id);
         try (Session session = driver.session()){
             StatementResult result = session.run("MATCH (p1)<-[:CITES]-(p2) WHERE id(p1) = $id RETURN collect(p2) as citations", parameters("id",id));
             List<Publication> publications = new ArrayList();

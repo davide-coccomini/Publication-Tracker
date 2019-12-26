@@ -184,7 +184,7 @@ public class PublicationsListController {
                 List<Object> args = new ArrayList<>();
                 args.add(id);
                 args.add(currentPage);
-                controller.navigate(7,args);
+                controller.navigate(9,args);
             }
         });    
         

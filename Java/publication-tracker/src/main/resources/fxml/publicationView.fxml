@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="841.0" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane fx:id="topbar" />
+    <TableView fx:id="informationTable" layoutX="42.0" layoutY="158.0" prefHeight="94.0" prefWidth="747.0" />
+    <TableView fx:id="citationsTable" layoutX="42.0" layoutY="285.0" prefHeight="542.0" prefWidth="747.0" />
+    <Text layoutX="42.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information">
+      <fill>
+        <Color blue="0.890" green="0.671" red="0.157" fx:id="x1" />
+      </fill>
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x2" />
+      </font>
+    </Text>
+    <Text fill="$x1" font="$x2" layoutX="42.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Citations" />
+  </children>
+</AnchorPane>
