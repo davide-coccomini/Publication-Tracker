@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
-    <AnchorPane fx:id="topbar" layoutX="-325.0" layoutY="-132.0" />
+    <AnchorPane fx:id="topbar" />
     <Button fx:id="updateButton" layoutX="291.0" layoutY="379.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="248.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 30 30 30 30;" text="UPDATE ACCOUNT" textFill="WHITE">
       <font>
         <Font name="System Bold" size="20.0" />
