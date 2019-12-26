@@ -111,6 +111,22 @@ public class GraphManager implements AutoCloseable{
             return result;
         }
    }
+   // Given an author id, retrieve the list of his publications
+   public List<Publication> getAuthorPublications(final long id){
+       System.out.println(id);
+        try (Session session = driver.session()){
+            StatementResult result = session.run("MATCH (a1)-[:PUBLISHES]->(p1) WHERE id(a1) = $id RETURN p1 as publication", parameters("id",id));
+            List<Publication> publications = new ArrayList();
+            while (result.hasNext()){
+                Node publicationNode = result.next().get("publication").asNode();
+                publications.add(new Publication(publicationNode.id(), publicationNode.get("name").asString(),getPublicationAuthors(publicationNode.id()),null));
+            }
+            return publications;
+        }catch(Exception e){
+            System.out.println(e);
+            return null;
+        }
+   }
    // Given an author id, delete it
    public void deleteAuthor(final Long id){
        try (Session session = driver.session()){
