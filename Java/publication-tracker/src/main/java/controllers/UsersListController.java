@@ -39,7 +39,6 @@ public class UsersListController {
     }
     public void initController(){
         controller.load_Topbar(topbar,0);
-        topbar.toFront();
         loadUsers();
 
     }

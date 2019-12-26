@@ -15,11 +15,11 @@ import javafx.scene.text.Text;
 import beans.User;
 import middleware.DatabaseManager;
 
-public class UsersViewController {
-	private SessionController controller;
-	private final DatabaseManager dbManager;
-	private int currentUser;
-	@FXML
+public class UserViewController {
+    private SessionController controller;
+    private final DatabaseManager dbManager;
+    private long currentUser;
+    @FXML
     private AnchorPane topbar;
     @FXML
     private Button updateButton;
@@ -30,13 +30,13 @@ public class UsersViewController {
     @FXML
     TextField password;
     @FXML
-	ChoiceBox role;
+    ChoiceBox role;
     @FXML
     Text errorText;
 
-	   public UsersViewController(SessionController c, List<Object> args){
+	   public UserViewController(SessionController c, List<Object> args){
 	        controller = c;
-	        currentUser =  (int) args.get(0);
+	        currentUser = (long) args.get(0);
 	        dbManager = c.getDbManager();
 	   }
 	    public void initController(){
@@ -56,16 +56,14 @@ public class UsersViewController {
 	    private void enableTextBoxes(Boolean status){
 	    	name.setEditable(status);
 	    	email.setEditable(status);
-		    password.setEditable(status);
+		password.setEditable(status);
 
 	    }
-	    private void loadUserById(int id){
+	    private void loadUserById(long id){
 	    	Object[] args = new Object[1];
 	    	args[0] = (Object) id;
 	    	User u = dbManager.getUserById(args);
 	    	if(u!=null){
-	    		errorText.setText(Integer.toString(u.getId()));
-
 	    		name.setText(u.getUsername());
 	    		password.setText(u.getPassword());
 	    		email.setText(u.getEmail());

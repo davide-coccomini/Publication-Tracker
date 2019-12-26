@@ -62,15 +62,13 @@ public class SessionController {
                c2.initController();
                break;
             case 3: //  Users List
-                //MenuController c3 = new MenuController(this);
             	UsersListController c3 = new UsersListController(this);
                 load_Page(c3,"usersList.fxml");
                 c3.initController();
                 break;
             case 4: //  Users View
-                //MenuController c4 = new MenuController(this);
-            	UsersViewController c4 = new UsersViewController(this,args);
-                load_Page(c4,"usersView.fxml");
+            	UserViewController c4 = new UserViewController(this,args);
+                load_Page(c4,"userView.fxml");
                 c4.initController();
                 break;
             case 5: //  Authors List

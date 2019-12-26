@@ -8,18 +8,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
     <AnchorPane fx:id="topbar" layoutX="-325.0" layoutY="-132.0" />
-    <Button fx:id="updateButton" layoutX="176.0" layoutY="310.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="248.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 30 30 30 30;" text="UPDATE ACCOUNT" textFill="WHITE">
+    <Button fx:id="updateButton" layoutX="291.0" layoutY="379.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="248.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 30 30 30 30;" text="UPDATE ACCOUNT" textFill="WHITE">
       <font>
         <Font name="System Bold" size="20.0" />
       </font>
     </Button>
-    <TextField fx:id="name" layoutX="119.0" layoutY="73.0" prefHeight="46.0" prefWidth="363.0" promptText="Name" />
-    <TextField fx:id="email" layoutX="119.0" layoutY="132.0" prefHeight="46.0" prefWidth="363.0" promptText="Email" />
-    <PasswordField fx:id="password" layoutX="119.0" layoutY="194.0" prefHeight="46.0" prefWidth="363.0" promptText="Password" />
-    <ChoiceBox fx:id="role" layoutX="119.0" layoutY="256.0" prefWidth="363.0" style="">
+    <TextField fx:id="name" layoutX="234.0" layoutY="142.0" prefHeight="46.0" prefWidth="363.0" promptText="Name" />
+    <TextField fx:id="email" layoutX="234.0" layoutY="201.0" prefHeight="46.0" prefWidth="363.0" promptText="Email" />
+    <PasswordField fx:id="password" layoutX="234.0" layoutY="263.0" prefHeight="46.0" prefWidth="363.0" promptText="Password" />
+    <ChoiceBox fx:id="role" layoutX="234.0" layoutY="325.0" prefWidth="363.0" style="">
       <items>
         <FXCollections fx:factory="observableArrayList">
           <String fx:value="User" />
@@ -27,7 +27,7 @@
         </FXCollections>
       </items>
     </ChoiceBox>
-    <Text fx:id="errorText" fill="#cc0000" layoutX="119.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+    <Text fx:id="errorText" fill="#cc0000" layoutX="234.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
       <font>
         <Font name="System Bold" size="15.0" />
       </font>
