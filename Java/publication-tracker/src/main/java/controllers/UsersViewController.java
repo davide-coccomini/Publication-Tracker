@@ -69,8 +69,11 @@ public class UsersViewController {
 	    		name.setText(u.getUsername());
 	    		password.setText(u.getPassword());
 	    		email.setText(u.getEmail());
-
-	    		//role.set 	u.getRole();
+	    		Object r = "User";
+	    		if(u.getRole()==1){
+	    			r = "Admin";
+	    		}
+	    		role.setValue(r);
 	    	}
 	    	else{
 	    		System.out.println("user not found");
@@ -82,7 +85,16 @@ public class UsersViewController {
 	    	args[0] = id;
 	    	User u = dbManager.getUserById(args);
 
-	    	int newRole =  0; // TODO: read checkbox
+	    	int newRole = 0;
+	    	try{
+	    		String read = role.getValue().toString();
+	    		if("Admin".equals((String) read)){
+	    			newRole=1;
+	    		}
+	    	}catch(Exception e){
+	    		System.out.print("Error in reading role input: ");
+	    		System.out.println(e);
+	    	}
 	    	if(u.getRole()!=newRole){
 	    		updateField(id,"Role",(Object) newRole);
 	    	}
