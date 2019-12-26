@@ -79,7 +79,7 @@ public class SessionController {
                 c5.initController();
                 break;
             case 6: //  Statistics
-                MenuController c6 = new MenuController(this);
+                StatisticsController c6 = new StatisticsController(this);
                 load_Page(c6,"statistics.fxml");
                 c6.initController();
                 break;

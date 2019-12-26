@@ -2,10 +2,92 @@
 
 <?import java.lang.*?>
 <?import java.util.*?>
+<?import javafx.collections.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
-    
+<AnchorPane id="AnchorPane" prefHeight="644.0" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane fx:id="topbar" />
+    <TableView fx:id="queryResultTable" layoutX="42.0" layoutY="233.0" prefHeight="384.0" prefWidth="741.0" visible="false" />
+    <AnchorPane fx:id="statisticsContainer" layoutX="0.0" layoutY="-1.0" visible="true">
+      <AnchorPane layoutX="434.0" layoutY="431.0" prefHeight="188.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+        <children>
+          <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
+            <children>
+              <Text fill="WHITE" layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most cited publication">
+                <font>
+                  <Font name="System Bold" size="15.0" fx:id="x1" />
+                </font>
+              </Text>
+            </children>
+          </AnchorPane>
+          <Text fx:id="mostCitedPublicationResult" layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
+            <font>
+              <Font size="18.0" fx:id="x2" />
+            </font>
+          </Text>
+        </children>
+      </AnchorPane>
+      <AnchorPane layoutX="228.0" layoutY="430.0" prefHeight="188.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+        <children>
+          <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
+            <children>
+              <Text fill="WHITE" font="$x1" layoutX="23.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most cited author" />
+            </children>
+          </AnchorPane>
+          <Text fx:id="mostCitedAuthorResult" font="$x2" layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" />
+        </children>
+      </AnchorPane>
+      <AnchorPane layoutX="228.0" layoutY="263.0" prefHeight="142.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+        <children>
+          <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
+            <children>
+              <Text fill="WHITE" font="$x1" layoutX="58.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authors" />
+            </children>
+          </AnchorPane>
+          <Text fx:id="numAuthorsResult" font="$x2" layoutX="69.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" />
+        </children>
+      </AnchorPane>
+      <AnchorPane layoutX="434.0" layoutY="261.0" prefHeight="142.0" prefWidth="172.0" style="-fx-background-color: #ebebeb;&#10;-fx-background-radius: 0 0 20 20;">
+        <children>
+          <AnchorPane layoutX="0.0" layoutY="-8.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;">
+            <children>
+              <Text fill="WHITE" font="$x1" layoutX="43.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publications" />
+            </children>
+          </AnchorPane>
+          <Text fx:id="numPublicationsResult" font="$x2" layoutX="69.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" />
+        </children>
+      </AnchorPane>
+    </AnchorPane>
+    <TextField fx:id="queryTextField" layoutX="286.0" layoutY="171.0" prefHeight="49.0" prefWidth="340.0" promptText="Insert the name of author or publication" />
+    <Button fx:id="queryButton" layoutX="624.0" layoutY="171.0" prefHeight="49.0" prefWidth="159.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 0 50 50 0;" textFill="WHITE">
+      <String fx:value="SEARCH" />
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x3" />
+      </font>
+    </Button>
+    <ChoiceBox fx:id="querySelector" layoutX="44.0" layoutY="171.0" prefHeight="49.0" prefWidth="243.0" style="-fx-background-radius: 50 0 0 50;&#10;-fx-box-shadow: 0;">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Common coauthors" />
+          <String fx:value="Publication citations" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <AnchorPane fx:id="noResultMessageContainer" layoutX="53.0" layoutY="256.0" prefHeight="200.0" prefWidth="730.0" visible="false">
+      <children>
+        <Text fill="#28abe3" layoutX="219.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO RESULTS FOUND">
+          <font>
+            <Font name="System Bold" size="30.0" />
+          </font>
+        </Text>
+        <Button fx:id="showStatisticsButton" font="$x3" layoutX="225.0" layoutY="76.0" prefHeight="49.0" prefWidth="280.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 50 50 50 50;" textFill="WHITE">
+          <String fx:value="GO BACK TO STATISTICS" />
+        </Button>
+      </children>
+    </AnchorPane>
+  </children>
 </AnchorPane>

@@ -26,6 +26,13 @@ public class Author {
         heading = author.get("heading").asString();
         affiliation = author.get("affiliation").asString();
     }
+    public Author(Node authorNode){
+        id = authorNode.id();
+        name = authorNode.get("name").asString();
+        email = authorNode.get("email").asString();
+        heading = authorNode.get("heading").asString();
+        affiliation = authorNode.get("affiliation").asString();
+    }
 
     public long getId() {
         return id;
