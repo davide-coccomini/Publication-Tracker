@@ -1,4 +1,4 @@
-package middleware;
+package beans;
 
 import org.neo4j.driver.v1.Record;
 import org.neo4j.driver.v1.types.Node;

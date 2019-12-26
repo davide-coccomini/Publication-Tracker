@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package backend;
+package middleware;
 
 import org.neo4j.driver.v1.AuthTokens;
 import org.neo4j.driver.v1.Driver;
@@ -16,9 +16,9 @@ import static org.neo4j.driver.v1.Values.parameters;
 
 import java.util.ArrayList;
 import java.util.List;
-import middleware.Author;
-import middleware.Publication;
-import middleware.User;
+import beans.Author;
+import beans.Publication;
+import beans.User;
 
 import org.neo4j.driver.v1.types.Node;
 

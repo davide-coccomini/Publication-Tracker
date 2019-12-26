@@ -1,5 +1,5 @@
 
-package middleware;
+package beans;
 
 import org.neo4j.driver.v1.Record;
 

@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Font;
-import middleware.User;
+import beans.User;
 
 public class MenuController {
     @FXML

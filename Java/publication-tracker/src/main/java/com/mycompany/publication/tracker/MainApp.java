@@ -1,7 +1,7 @@
 package com.mycompany.publication.tracker;
 
-import backend.DatabaseManager;
-import backend.GraphManager;
+import middleware.DatabaseManager;
+import middleware.GraphManager;
 import controllers.SessionController;
 import java.sql.SQLException;
 import java.util.ArrayList;

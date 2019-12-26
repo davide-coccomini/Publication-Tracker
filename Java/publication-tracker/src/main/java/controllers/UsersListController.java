@@ -3,7 +3,7 @@ package controllers;
 import java.util.ArrayList;
 import java.util.List;
 
-import backend.GraphManager;
+import middleware.GraphManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,9 +18,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
-import middleware.Author;
-import middleware.User;
-import backend.DatabaseManager;
+import beans.Author;
+import beans.User;
+import middleware.DatabaseManager;
 
 public class UsersListController {
 	@FXML

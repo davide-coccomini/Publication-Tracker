@@ -1,7 +1,7 @@
 package controllers;
 
-import backend.DatabaseManager;
-import backend.GraphManager;
+import middleware.DatabaseManager;
+import middleware.GraphManager;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,7 +23,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
-import middleware.Author;
+import beans.Author;
 
 public class AuthorsListController {
     @FXML

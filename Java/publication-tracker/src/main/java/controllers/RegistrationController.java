@@ -5,7 +5,7 @@
  */
 package controllers;
 
-import backend.DatabaseManager;
+import middleware.DatabaseManager;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -15,7 +15,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import middleware.User;
+import beans.User;
 
 
 public class RegistrationController {

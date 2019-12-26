@@ -1,6 +1,6 @@
 package controllers;
 
-import backend.GraphManager;
+import middleware.GraphManager;
 import java.util.ArrayList;
 import java.util.List;
 import javafx.collections.FXCollections;
@@ -17,8 +17,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
-import middleware.Author;
-import middleware.Publication;
+import beans.Author;
+import beans.Publication;
 
 public class PublicationsListController {
     @FXML

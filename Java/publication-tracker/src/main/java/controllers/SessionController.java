@@ -1,7 +1,7 @@
 package controllers;
 
-import backend.DatabaseManager;
-import backend.GraphManager;
+import middleware.DatabaseManager;
+import middleware.GraphManager;
 import java.io.IOException;
 import java.util.List;
 import javafx.fxml.FXMLLoader;
@@ -9,7 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import middleware.User;
+import beans.User;
 
 public class SessionController {
     private User session;

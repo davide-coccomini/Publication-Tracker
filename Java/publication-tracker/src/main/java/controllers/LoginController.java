@@ -12,7 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import middleware.User;
+import beans.User;
 
 public class LoginController {
     @FXML private TextField emailField;

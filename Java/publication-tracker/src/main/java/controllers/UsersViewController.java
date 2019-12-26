@@ -3,7 +3,7 @@ package controllers;
 import java.util.ArrayList;
 import java.util.List;
 
-import backend.GraphManager;
+import middleware.GraphManager;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -12,8 +12,8 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
-import middleware.User;
-import backend.DatabaseManager;
+import beans.User;
+import middleware.DatabaseManager;
 
 public class UsersViewController {
 	private SessionController controller;
