@@ -27,7 +27,6 @@ public class PublicationsListController {
     private TableView publicationsTable;
     @FXML
     private Button createButton;
-
     @FXML 
     private HBox pagesButtons;
 
@@ -42,6 +41,11 @@ public class PublicationsListController {
         graphManager = c.getGraphManager();
     }
     public void initController(){
+        createButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(10,null);
+            }
+        });  
         controller.load_Topbar(topbar,3);
         topbar.toFront();
         loadPublications();
@@ -69,7 +73,9 @@ public class PublicationsListController {
                             for(Author author:authors){
                                  authorsString += author.getName() + ",";
                             }
-                            authorsString = authorsString.substring(0, authorsString.length() - 1);
+                            if(authorsString.length()>0){
+                                authorsString = authorsString.substring(0, authorsString.length() - 1);
+                            }
                             setText(authorsString);
                         }
                     }
@@ -184,7 +190,7 @@ public class PublicationsListController {
                 List<Object> args = new ArrayList<>();
                 args.add(id);
                 args.add(currentPage);
-                controller.navigate(9,args);
+                controller.navigate(11,args);
             }
         });    
         

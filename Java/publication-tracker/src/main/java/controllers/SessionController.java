@@ -91,10 +91,20 @@ public class SessionController {
                 load_Page(c8,"authorView.fxml");
                 c8.initController();
                 break;
-            case 9: //  Author View
+            case 9: //  Author Creation
                 AuthorCreationController c9 = new AuthorCreationController(this);
                 load_Page(c9,"authorCreation.fxml");
                 c9.initController();
+                break;
+            case 10: // Publication Creation
+                PublicationCreationController c10 = new PublicationCreationController(this);
+                load_Page(c10,"publicationCreation.fxml");
+                c10.initController();
+                break;
+            case 11: // Publication View
+                PublicationViewController c11 = new PublicationViewController(this,args);
+                load_Page(c11,"publicationView.fxml");
+                c11.initController();
                 break;
          }
         stage.sizeToScene();

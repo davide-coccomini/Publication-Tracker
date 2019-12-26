@@ -104,6 +104,18 @@ public class GraphManager implements AutoCloseable{
             return authors;
         }
     }
+    // Return all the authors
+    public List<Author> getAuthors(){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (a:Author) RETURN a");
+            List<Author> authors = new ArrayList();
+            while (result.hasNext()){
+                authors.add(new Author(result.next()));
+            }
+            return authors;
+        }
+    }
    // Given the id of an Author, get all the relationships with it
    public StatementResult getAuthorRelationships(final Long id){
         try (Session session = driver.session()){
@@ -191,6 +203,7 @@ public class GraphManager implements AutoCloseable{
                 }
                 // Add all publications relationships
                 for(Long idPublication : idCitations){
+                    System.out.println(idCitations);
                     tx.run("MATCH (p1:Publication),(p2:Publication) WHERE id(p1) = "+idPublication+" AND id(p2) = "+idNewPublication+" CREATE (p2)-[:CITES]->(p1)");
                 }
                 tx.success();
@@ -205,6 +218,19 @@ public class GraphManager implements AutoCloseable{
             StatementResult result = session.run(
                     "MATCH (p:Publication) RETURN p SKIP $skip LIMIT $limit",
                     parameters("skip", toSkip, "limit", limit));
+            
+            List<Publication> publications = new ArrayList();
+            while (result.hasNext()){
+                publications.add(new Publication(result.next()));
+            }
+            return publications;
+        }
+    }
+    // Return all the publications
+    public List<Publication> getPublications(){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (p:Publication) RETURN p");
             
             List<Publication> publications = new ArrayList();
             while (result.hasNext()){

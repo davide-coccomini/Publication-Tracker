@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="682.0" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane fx:id="topbar" />
+    <Button fx:id="createButton" layoutX="269.0" layoutY="593.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="248.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 30 30 30 30;" text="ADD PUBLICATION" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Button>
+    <TextField fx:id="name" layoutX="19.0" layoutY="118.0" prefHeight="46.0" prefWidth="794.0" promptText="Title" />
+    <Text fx:id="errorText" fill="#cc0000" layoutX="230.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Text>
+    <ScrollPane layoutX="20.0" layoutY="217.0" prefHeight="323.0" prefWidth="250.0">
+      <content>
+        <VBox fx:id="authorsContainer" prefHeight="309.0" prefWidth="248.0" />
+      </content>
+    </ScrollPane>
+    <ScrollPane id="Content" layoutX="334.0" layoutY="218.0" minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="483.0">
+      <content>
+        <VBox fx:id="publicationsContainer" prefHeight="307.0" prefWidth="478.0" />
+      </content>
+    </ScrollPane>
+    <Text layoutX="19.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authors">
+      <fill>
+        <Color blue="0.890" green="0.671" red="0.157" fx:id="x1" />
+      </fill>
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x2" />
+      </font>
+    </Text>
+    <Text fill="$x1" font="$x2" layoutX="335.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Citations" />
+    <Button fx:id="addAuthorButton" layoutX="20.0" layoutY="540.0" minHeight="27.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="250.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 0 0 30 30;" text="+" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="17.0" fx:id="x3" />
+      </font>
+    </Button>
+    <Button fx:id="addCitationButton" font="$x3" layoutX="334.0" layoutY="540.0" minHeight="27.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="483.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 0 0 30 30;" text="+" textFill="WHITE" />
+  </children>
+</AnchorPane>

@@ -23,7 +23,7 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Scene scene = new Scene(new StackPane());
-        graphManager = new GraphManager("bolt://localhost:7687", "neo4j", "test");
+        graphManager = new GraphManager("bolt://localhost:7687", "neo4j", "TEST");
         dbManager = new DatabaseManager();
         dbManager.connectionStart();
         controller = new SessionController(dbManager,graphManager,scene,stage);
