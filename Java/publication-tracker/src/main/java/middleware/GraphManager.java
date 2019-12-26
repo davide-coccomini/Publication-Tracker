@@ -19,6 +19,9 @@ import java.util.List;
 import beans.Author;
 import beans.Publication;
 import beans.User;
+import java.util.HashSet;
+import java.util.Set;
+import org.neo4j.driver.v1.Record;
 
 import org.neo4j.driver.v1.types.Node;
 
@@ -61,6 +64,8 @@ public class GraphManager implements AutoCloseable{
                     "MATCH (a:Author {"+key+": $value}) RETURN a LIMIT 1",
                     parameters("value", value));
             return new Author(result.single());
+        }catch(Exception e){
+            return null;
         }
     }
     // Given an id, get the matching Author
@@ -123,6 +128,36 @@ public class GraphManager implements AutoCloseable{
                 tx.success();
             }
        }
+   }
+   // Get most cited author
+   public Author getMostCitedAuthor(){
+       String query = "MATCH (a1)-[:PUBLISHES]->(p1)-[:CITES]->(p2)\n" +
+                      "RETURN  a1, SIZE(COLLECT(p1)), COLLECT(p1) as citations\n" +
+                      "ORDER BY SIZE(citations) DESC LIMIT 1";
+       try (Session session = driver.session()){
+            StatementResult result = session.run(query);
+            return new Author(result.single());
+       } 
+   }
+   // Given an author id, return other authors that wrote publications with him:
+   public List<Author> getCoauthors(long id){
+       String query = "MATCH (a1)-[:PUBLISHES]->()<-[:PUBLISHES]-(a2) WHERE id(a1) = $id \n" +
+                      "RETURN collect(DISTINCT a2) as coauthors \n" +
+                      "ORDER BY SIZE(coauthors) DESC";
+        try (Session session = driver.session()){
+            StatementResult result = session.run(query, parameters("id",id));
+            List<Author> authors = new ArrayList();
+            while (result.hasNext()){
+                List<Object> authorsNode = result.next().get("coauthors").asList();
+                for(Object authorObject: authorsNode){
+                    Node authorNode = (Node) authorObject;
+                    authors.add(new Author(authorNode));
+                }
+            }
+            return authors;
+        }catch(Exception e){
+            return null;
+        }
    }
    ///// END AUTHORS METHODS /////
 
@@ -190,18 +225,20 @@ public class GraphManager implements AutoCloseable{
    // Given the id of a Publication, get all the relationships with it
    public List<Publication> getPublicationCitations(final Long id){
         try (Session session = driver.session()){
-            StatementResult result = session.run("MATCH (p:Publication)-[r]-(a) WHERE id(p)="+id+" AND type(r) = 'CITES' RETURN id(p) as publication");
+            StatementResult result = session.run("MATCH (p1)<-[:CITES]-(p2) WHERE id(p1) = $id RETURN collect(p2) as citations", parameters("id",id));
             List<Publication> publications = new ArrayList();
-            while (result.hasNext()){
-                Publication p = getPublicationById(result.next().get("publication").asLong());
-                publications.add(p);
+            
+            List<Object> publicationNodes = result.single().get("citations").asList();
+            for(Object publicationObject: publicationNodes){
+                Node publicationNode = (Node) publicationObject;
+                publications.add(new Publication(publicationNode.id(), publicationNode.get("name").asString(),getPublicationAuthors(publicationNode.id()), getPublicationCitations(publicationNode.id())));
             }
+            
             return publications;
         }
    }
    // Get the authors that wrote the publication
    public List<Author> getPublicationAuthors(final Long id){
-       System.out.println(id);
         try (Session session = driver.session()){
             StatementResult result = session.run("MATCH (p:Publication)-[r]-(a) WHERE id(p)="+id+" AND type(r) = 'PUBLISHES' RETURN id(a) as author");
             List<Author> authors = new ArrayList();
@@ -214,14 +251,22 @@ public class GraphManager implements AutoCloseable{
    }
    // Given a key and a value, get a single publication that matches
    public Publication getPublicationBy(final String key, final String value){
+        String query = "MATCH (p:Publication{"+key+": $value}) RETURN p,id(p) as id LIMIT 1";
+        System.out.println(query);
+        System.out.println(value);
         try (Session session = driver.session()){
             StatementResult result = session.run(
-                    "MATCH (p:Publication {"+key+": $value}) RETURN p,id(p) as id LIMIT 1",
+                    query,
                     parameters("value", value));
-
-            long id = result.single().get("id").asLong();
+            System.out.println(result);
+      
             Node publication = result.single().get(0).asNode();
-            return new Publication(publication.id(), publication.get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
+            System.out.println(publication);
+            System.out.println("testttt");
+            return new Publication(publication.id(), publication.get("name").asString(),getPublicationAuthors(publication.id()),null);
+        }catch(Exception e){
+            System.out.println(e);
+            return null;
         }
     }
    // Given publication id, delete it
@@ -250,5 +295,15 @@ public class GraphManager implements AutoCloseable{
                 tx.success();
             }
        }
+   }
+   // Retrieve the publication most cited from other publications
+   public Publication getMostCitedPublication(){
+       String query = "MATCH (p1)-[:CITES]->(p2)\n" +
+                      "RETURN  p2,COLLECT(p2) as publications\n" +
+                      "ORDER BY SIZE(publications) DESC LIMIT 1";
+        try (Session session = driver.session()){
+            StatementResult result = session.run(query);
+            return new Publication(result.single());
+        } 
    }
 }

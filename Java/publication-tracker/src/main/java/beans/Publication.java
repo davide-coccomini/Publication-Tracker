@@ -29,6 +29,7 @@ public class Publication {
         this.authors = authors;
         this.citations = citations;
     }
+    
 
     public long getId() {
         return id;
