@@ -44,10 +44,10 @@ public class GraphManager implements AutoCloseable{
 
     ///// AUTHORS METHODS /////
     // Insert an Author and return his ID
-    public long addAuthor(final String name, final String email, final String affiliation){
+    public long addAuthor(final String name, final String email, final String heading, final String affiliation){
         try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
-                tx.run("MERGE (a:Author {name: $name, email:$email, affiliation:$affiliation})", parameters("name", name, "email", email, "affiliation", affiliation));
+                tx.run("MERGE (a:Author {name: $name, email:$email,heading:$heading, affiliation:$affiliation})", parameters("name", name, "email", email, "heading",heading, "affiliation", affiliation));
                 tx.success();
             }
 

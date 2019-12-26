@@ -43,8 +43,8 @@ public class MainApp extends Application {
     }
     public void graphTest(){
         List<Long> authors = new ArrayList();
-        authors.add(graphManager.addAuthor("Davide Coccomini", "d.coccomini@studenti.unipi.it", "University of Pisa"));
-        authors.add(graphManager.addAuthor("Marilisa Lippini", "m.lippini@studenti.unipi.it", "University of Pisa"));
+        authors.add(graphManager.addAuthor("Davide Coccomini", "d.coccomini@studenti.unipi.it", "Professor","University of Pisa"));
+        authors.add(graphManager.addAuthor("Marilisa Lippini", "m.lippini@studenti.unipi.it", "Researcher","University of Pisa"));
         
         List<Long> citations = new ArrayList();
         citations.add(graphManager.addPublication("Test1", authors, citations));

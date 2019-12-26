@@ -46,6 +46,11 @@ public class AuthorsListController {
         graphManager = c.getGraphManager();
     }
     public void initController(){
+        createButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                controller.navigate(9,null);
+            }
+        });  
         controller.load_Topbar(topbar, 2);
         loadAuthors();
     }

@@ -92,8 +92,8 @@ public class SessionController {
                 c8.initController();
                 break;
             case 9: //  Author View
-                PublicationViewController c9 = new PublicationViewController(this, args);
-                load_Page(c9,"publicationView.fxml");
+                AuthorCreationController c9 = new AuthorCreationController(this);
+                load_Page(c9,"authorCreation.fxml");
                 c9.initController();
                 break;
          }
