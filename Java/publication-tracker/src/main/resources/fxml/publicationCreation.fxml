@@ -17,8 +17,8 @@
         <Font name="System Bold" size="20.0" />
       </font>
     </Button>
-    <TextField fx:id="name" layoutX="19.0" layoutY="118.0" prefHeight="46.0" prefWidth="794.0" promptText="Title" />
-    <Text fx:id="errorText" fill="#cc0000" layoutX="230.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
+    <TextField fx:id="name" layoutX="19.0" layoutY="141.0" prefHeight="46.0" prefWidth="794.0" promptText="Title" />
+    <Text fx:id="errorText" fill="#cc0000" layoutX="20.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
       <font>
         <Font name="System Bold" size="15.0" />
       </font>

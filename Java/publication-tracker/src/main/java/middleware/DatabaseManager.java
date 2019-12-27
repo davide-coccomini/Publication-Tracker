@@ -82,8 +82,12 @@ public class DatabaseManager {
     public User autentication(Object[] args){
         String query = "SELECT * FROM user WHERE email = ? AND password = ?";
         List<Object> result = worker(query,args, 0);
-        User u = (User) result.get(0);
-        return u;
+        if(result.size()>0){
+            User u = (User) result.get(0);
+            return u;
+        }else{
+            return null;
+        }
     }
     /* Creates a List of the Object that needs to be returned as a result of the query */
     public List<Object> worker(String query, Object[] args, int type){

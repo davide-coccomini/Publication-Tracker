@@ -99,17 +99,60 @@ public class PublicationCreationController {
         for(Node n:authorsContainer.getChildren()){
             ChoiceBox c = (ChoiceBox) n;
             String authorName = (String) c.getValue();
-            Long authorId = Long.parseLong(authorName.split("#")[1]);
-            authorsList.add(authorId);
+            try{
+                Long authorId = Long.parseLong(authorName.split("#")[1]);
+                authorsList.add(authorId);
+            }catch(Exception e){}
         }   
         List<Long> citationsList = new ArrayList();
         for(Node n:publicationsContainer.getChildren()){
             ChoiceBox c = (ChoiceBox) n;
             String citationName = (String) c.getValue();
-            Long citationId = Long.parseLong(citationName.split("#")[1]);
-            citationsList.add(citationId);
+            try{
+                Long citationId = Long.parseLong(citationName.split("#")[1]);
+                citationsList.add(citationId);
+            }catch(Exception e){}
         }   
-        graphManager.addPublication(publicationName, authorsList, citationsList);
-        controller.navigate(7,null);
+        
+        if(nameCheck(publicationName) && listsCheck(authorsList,citationsList)){
+            graphManager.addPublication(publicationName, authorsList, citationsList);
+            controller.navigate(7,null);  
+        }
+ 
     }
+    public boolean nameCheck(String name){
+        for (int i = 0; i < name.length()-1; i++) {  
+            String regex = "[a-zA-Z-_0-9]+";
+            if (! name.matches(regex)) {  
+                errorText.setText("The name must contain only letters and numbers");
+                return false;
+            }  
+        }
+        return true;
+    }
+    public boolean listsCheck(List<Long> authorsList, List<Long> citationsList){
+        List<Long> checkedAuthors = new ArrayList();
+        for(Long a:authorsList){
+          if(checkedAuthors.contains(a)){
+              errorText.setText("You added the same author more than one time");
+              return false;
+          }else{
+              checkedAuthors.add(a);
+          }
+        }
+        
+        List<Long> checkedCitations = new ArrayList();
+        for(Long c:citationsList){
+          if(checkedCitations.contains(c)){
+              errorText.setText("You added the same publication more than one time");
+              return false;
+          }else{
+              checkedCitations.add(c);
+          }
+        }
+        
+        return true;
+    }
+
+ 
 }

@@ -50,7 +50,51 @@ public class AuthorCreationController {
         String authorEmail = email.getText();
         String authorHeading = heading.getText();
         String authorAffiliation = affiliation.getText();
-        graphManager.addAuthor(authorName, authorEmail, authorHeading, authorAffiliation);
-        controller.navigate(5,null);
+        if(nameCheck(authorName) && emailCheck(authorEmail) && headingCheck(authorHeading) && affiliationCheck(authorAffiliation)){
+            graphManager.addAuthor(authorName, authorEmail, authorHeading, authorAffiliation);
+            controller.navigate(5,null);
+        }
     }
+    public boolean nameCheck(String name){
+        for (int i = 0; i < name.length()-1; i++) {  
+            String regex = "[a-zA-Z ]+";
+            if (! name.matches(regex)) {  
+                errorText.setText("The name must contain only alphabetic characters");
+                return false;
+            }  
+        }
+        return true;
+    }
+    public boolean headingCheck(String heading){
+        for (int i = 0; i < heading.length()-1; i++) {  
+            String regex = "[a-zA-Z0-9]+";
+            if (! heading.matches(regex)) {  
+                errorText.setText("The heading must contain only alphabetic characters or numbers");
+                return false;
+            }  
+        }
+        return true;
+    }
+    public boolean affiliationCheck(String affiliation){
+        for (int i = 0; i < affiliation.length()-1; i++) {  
+            String regex = "[a-zA-Z0-9]+";
+            if (! affiliation.matches(regex)) {  
+                errorText.setText("The affiliation must contain only alphabetic characters or numbers");
+                return false;
+            }  
+        }
+        return true;
+    }
+    
+    public boolean emailCheck(String email){
+        String regex = "^@([\\w]+\\.)+[\\w]+[\\w]$";
+        
+        if(!email.matches(regex)){
+            errorText.setText("The email is invalid");
+            return false;
+        }
+        
+        return true;
+    }
+
 }

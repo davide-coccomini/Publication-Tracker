@@ -108,7 +108,6 @@ public class AuthorViewController {
         };
         authors_Col.setCellFactory(cellFactoryAuthors);
         publicationsTable.getColumns().setAll(publication_Name_Col, authors_Col);
-        System.out.println(publications);
         if(publications != null){
             publicationsTable.setItems(FXCollections.observableArrayList(publications));
         }
