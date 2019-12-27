@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 import beans.User;
+import javafx.scene.shape.Line;
 
 public class TopController {
     @FXML
@@ -23,6 +24,8 @@ public class TopController {
     private Text roleText;
     @FXML
     private Text nameText;
+    @FXML 
+    private Line usersLine;
     int page;
     
     private final SessionController controller;
@@ -62,8 +65,10 @@ public class TopController {
         });   
         User u = controller.getLoggedUser();
         if(u.getRole()==1){ // Admin
+            usersLine.setVisible(true);
             usersButton.setVisible(true);
         }else{ // User
+            usersLine.setVisible(false);
             usersButton.setVisible(false);
         }
         show_Name();
