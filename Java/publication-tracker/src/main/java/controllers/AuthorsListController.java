@@ -154,16 +154,25 @@ public class AuthorsListController {
         }
     }
     private HBox make_Buttons(final long id){
-        Button b1 = new Button();
-        b1.setText("DELETE");
-        b1.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
         
-        b1.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                graphManager.deleteAuthor(id);
-                loadAuthors();
-            }
-        });    
+        HBox hbox = new HBox();
+        hbox.setSpacing(5);
+        hbox.setPadding(new Insets(0, 0, 0, 10));  
+        int role = controller.getLoggedUser().getRole();
+        if(role == 1){
+             Button b1 = new Button();
+            b1.setText("DELETE");
+            b1.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
+
+            b1.setOnAction(new EventHandler<ActionEvent>() {
+                @Override public void handle(ActionEvent e) {
+                    graphManager.deleteAuthor(id);
+                    loadAuthors();
+                }
+            });   
+            hbox.getChildren().add(b1);
+        }
+        
         
         Button b2 = new Button();
         b2.setText("VISUALIZE");
@@ -178,10 +187,7 @@ public class AuthorsListController {
             }
         });    
         
-        HBox hbox = new HBox();
-        hbox.setSpacing(5);
-        hbox.setPadding(new Insets(0, 0, 0, 10));  
-        hbox.getChildren().addAll(b1,b2);
+        hbox.getChildren().add(b2);
        
         return hbox;
     }

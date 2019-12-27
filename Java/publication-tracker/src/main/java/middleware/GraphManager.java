@@ -262,7 +262,7 @@ public class GraphManager implements AutoCloseable{
             return new Publication(publication.id(), publication.get("name").asString(),getPublicationAuthors(id), getPublicationCitations(id));
         }
     }
-   // Given the id of a Publication, get all the relationships with it
+   // Given the id of a Publication, get all the publications that cites it
    public List<Publication> getPublicationCitations(final Long id){
         try (Session session = driver.session()){
             StatementResult result = session.run("MATCH (p1)<-[:CITES]-(p2) WHERE id(p1) = $id RETURN collect(p2) as citations", parameters("id",id));
@@ -274,6 +274,20 @@ public class GraphManager implements AutoCloseable{
                 publications.add(new Publication(publicationNode.id(), publicationNode.get("name").asString(),getPublicationAuthors(publicationNode.id()), getPublicationCitations(publicationNode.id())));
             }
             
+            return publications;
+        }
+   }
+   // Given the id of a publication, get all the publications cited by it
+   public List<Publication> getPublicationCitationsMade(final Long id){
+        try (Session session = driver.session()){
+            StatementResult result = session.run("MATCH (p1)-[:CITES]->(p2) WHERE id(p1) = $id RETURN collect(p2) as citations", parameters("id",id));
+            List<Publication> publications = new ArrayList();
+            
+            List<Object> publicationNodes = result.single().get("citations").asList();
+            for(Object publicationObject: publicationNodes){
+                Node publicationNode = (Node) publicationObject;
+                publications.add(new Publication(publicationNode.id(), publicationNode.get("name").asString(),getPublicationAuthors(publicationNode.id()), getPublicationCitations(publicationNode.id())));
+            }
             return publications;
         }
    }

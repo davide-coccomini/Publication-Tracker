@@ -22,7 +22,9 @@ public class PublicationViewController {
     @FXML
     private TableView informationTable;
     @FXML
-    private TableView citationsTable;
+    private TableView citedByTable;
+    @FXML
+    private TableView citesTable;
         
     private final SessionController controller;
     private final GraphManager graphManager;
@@ -38,6 +40,7 @@ public class PublicationViewController {
     public void initController(){
         controller.load_Topbar(topbar, 3);
         loadInformation();
+        loadCitationsMade();
         loadCitations();
     } 
     private void loadInformation(){
@@ -110,8 +113,44 @@ public class PublicationViewController {
             }
         };
         authors_Col.setCellFactory(cellFactoryAuthors);
-        citationsTable.getColumns().setAll(publication_Name_Col,authors_Col);
-        citationsTable.setItems(FXCollections.observableArrayList(publications)); 
+        citedByTable.getColumns().setAll(publication_Name_Col,authors_Col);
+        citedByTable.setItems(FXCollections.observableArrayList(publications)); 
+        
+    }
+    private void loadCitationsMade(){
+        final List<Publication> publications = graphManager.getPublicationCitationsMade(publicationId);
+        TableColumn<Publication,String> publication_Name_Col;
+        publication_Name_Col = new TableColumn<>("Name");
+        publication_Name_Col.setCellValueFactory(new PropertyValueFactory("name"));
+        TableColumn authors_Col = new TableColumn("Authors");
+        authors_Col.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+        Callback<TableColumn<Object, String>, TableCell<Object, String>> cellFactoryAuthors = //
+                new Callback<TableColumn<Object, String>, TableCell<Object, String>>() {
+            @Override
+            public TableCell call(final TableColumn<Object, String> param) {
+                final TableCell<Object, String> cell = new TableCell<Object, String>() {
+
+                    @Override
+                    public void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if(getIndex()<publications.size() && getIndex() >= 0){
+                            Publication p = publications.get(getIndex());
+                            List<Author> authors = graphManager.getPublicationAuthors(p.getId());
+                            String authorsString = "";
+                            for(Author author:authors){
+                                 authorsString += author.getName() + ",";
+                            }
+                            authorsString = authorsString.substring(0, authorsString.length() - 1);
+                            setText(authorsString);
+                        }
+                    }
+                };
+                return cell;
+            }
+        };
+        authors_Col.setCellFactory(cellFactoryAuthors);
+        citesTable.getColumns().setAll(publication_Name_Col,authors_Col);
+        citesTable.setItems(FXCollections.observableArrayList(publications)); 
     }
     
 }

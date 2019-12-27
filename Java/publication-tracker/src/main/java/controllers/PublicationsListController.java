@@ -170,17 +170,25 @@ public class PublicationsListController {
         }
     }
     private HBox make_Buttons(final long id){
-        Button b1 = new Button();
-        b1.setText("DELETE");
-        b1.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
+        HBox hbox = new HBox();
+        hbox.setSpacing(5);
+        hbox.setPadding(new Insets(0, 0, 0, 10));  
         
-        b1.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                graphManager.deletePublication(id);
-                loadPublications();
-            }
-        });    
-        
+        int role = controller.getLoggedUser().getRole();
+        if(role == 1){
+            Button b1 = new Button();
+            b1.setText("DELETE");
+            b1.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
+
+            b1.setOnAction(new EventHandler<ActionEvent>() {
+                @Override public void handle(ActionEvent e) {
+                    graphManager.deletePublication(id);
+                    loadPublications();
+                }
+            });    
+            hbox.getChildren().add(b1);
+        }
+   
         Button b2 = new Button();
         b2.setText("VISUALIZE");
         b2.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
@@ -194,10 +202,8 @@ public class PublicationsListController {
             }
         });    
         
-        HBox hbox = new HBox();
-        hbox.setSpacing(5);
-        hbox.setPadding(new Insets(0, 0, 0, 10));  
-        hbox.getChildren().addAll(b1,b2);
+    
+        hbox.getChildren().add(b2);
        
         return hbox;
     }
