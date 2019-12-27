@@ -86,8 +86,9 @@ public class StatisticsController {
     private void executeQuery(){
         String queryType = (String) querySelector.getValue();
         String queryValue = queryTextField.getText();
-        if(queryType == null){
+        if(queryType == null || queryValue == null){
             showNoResultMessage();
+            return;
         }
         switch(queryType){
             case "Common coauthors":
