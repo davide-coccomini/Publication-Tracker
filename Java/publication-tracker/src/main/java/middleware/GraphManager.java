@@ -125,7 +125,6 @@ public class GraphManager implements AutoCloseable{
    }
    // Given an author id, retrieve the list of his publications
    public List<Publication> getAuthorPublications(final long id){
-       System.out.println(id);
         try (Session session = driver.session()){
             StatementResult result = session.run("MATCH (a1)-[:PUBLISHES]->(p1) WHERE id(a1) = $id RETURN p1 as publication", parameters("id",id));
             List<Publication> publications = new ArrayList();
@@ -143,7 +142,7 @@ public class GraphManager implements AutoCloseable{
    public void deleteAuthor(final Long id){
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
-                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETATCH DELETE a");
+                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETACH DELETE a");
                 tx.success();
             }
        }
@@ -152,7 +151,7 @@ public class GraphManager implements AutoCloseable{
    public void detatchAuthor(final Long id){
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
-                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETATCH a");
+                tx.run("MATCH (a:Author) WHERE id(a) = "+id+" DETACH a");
                 tx.success();
             }
        }
@@ -203,7 +202,6 @@ public class GraphManager implements AutoCloseable{
                 }
                 // Add all publications relationships
                 for(Long idPublication : idCitations){
-                    System.out.println(idCitations);
                     tx.run("MATCH (p1:Publication),(p2:Publication) WHERE id(p1) = "+idPublication+" AND id(p2) = "+idNewPublication+" CREATE (p2)-[:CITES]->(p1)");
                 }
                 tx.success();
@@ -266,7 +264,6 @@ public class GraphManager implements AutoCloseable{
     }
    // Given the id of a Publication, get all the relationships with it
    public List<Publication> getPublicationCitations(final Long id){
-       System.out.println(id);
         try (Session session = driver.session()){
             StatementResult result = session.run("MATCH (p1)<-[:CITES]-(p2) WHERE id(p1) = $id RETURN collect(p2) as citations", parameters("id",id));
             List<Publication> publications = new ArrayList();
@@ -295,17 +292,12 @@ public class GraphManager implements AutoCloseable{
    // Given a key and a value, get a single publication that matches
    public Publication getPublicationBy(final String key, final String value){
         String query = "MATCH (p:Publication{"+key+": $value}) RETURN p,id(p) as id LIMIT 1";
-        System.out.println(query);
-        System.out.println(value);
         try (Session session = driver.session()){
             StatementResult result = session.run(
                     query,
                     parameters("value", value));
-            System.out.println(result);
       
             Node publication = result.single().get(0).asNode();
-            System.out.println(publication);
-            System.out.println("testttt");
             return new Publication(publication.id(), publication.get("name").asString(),getPublicationAuthors(publication.id()),null);
         }catch(Exception e){
             System.out.println(e);
@@ -316,7 +308,7 @@ public class GraphManager implements AutoCloseable{
    public void deletePublication(final Long id){
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
-                tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DELETE p");
+                tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DETACH DELETE p");
                 tx.success();
             }
        }
@@ -334,7 +326,7 @@ public class GraphManager implements AutoCloseable{
    public void detatchPublication(final Long id){
        try (Session session = driver.session()){
             try (Transaction tx = session.beginTransaction()){
-                tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DETATCH p");
+                tx.run("MATCH (p:Publication) WHERE id(p) = "+id+" DETACH p");
                 tx.success();
             }
        }
