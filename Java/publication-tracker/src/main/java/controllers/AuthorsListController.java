@@ -24,6 +24,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
 import beans.Author;
+import beans.User;
 
 public class AuthorsListController {
     @FXML
@@ -52,6 +53,12 @@ public class AuthorsListController {
             }
         });  
         controller.load_Topbar(topbar, 2);
+        User u = controller.getLoggedUser();
+        if(u.getRole()==1){
+            createButton.setVisible(true);
+        }else{
+            createButton.setVisible(false);
+        }
         loadAuthors();
     }
     private void loadAuthors(){

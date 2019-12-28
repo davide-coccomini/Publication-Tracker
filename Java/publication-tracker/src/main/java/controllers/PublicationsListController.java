@@ -19,6 +19,7 @@ import javafx.scene.layout.HBox;
 import javafx.util.Callback;
 import beans.Author;
 import beans.Publication;
+import beans.User;
 
 public class PublicationsListController {
     @FXML
@@ -47,7 +48,12 @@ public class PublicationsListController {
             }
         });  
         controller.load_Topbar(topbar,3);
-        topbar.toFront();
+        User u = controller.getLoggedUser();
+        if(u.getRole()==1){
+            createButton.setVisible(true);
+        }else{
+            createButton.setVisible(false);
+        }
         loadPublications();
     }
     private void loadPublications(){
