@@ -194,6 +194,14 @@ public class GraphManager implements AutoCloseable{
             return null;
         }
    }
+    // Return the number of authors
+    public int getAuthorsNumber(){
+        try (Session session = driver.session()){
+            StatementResult result = session.run(
+                    "MATCH (a:Author) RETURN count(a) as number");
+            return result.single().get(0).asInt();
+        }
+    }
    ///// END AUTHORS METHODS /////
 
    ///// PUBLICATIONS METHODS /////
@@ -243,14 +251,6 @@ public class GraphManager implements AutoCloseable{
                 publications.add(new Publication(result.next()));
             }
             return publications;
-        }
-    }
-    // Return the number of authors
-    public int getAuthorsNumber(){
-        try (Session session = driver.session()){
-            StatementResult result = session.run(
-                    "MATCH (a:Author) RETURN count(a) as number");
-            return result.single().get(0).asInt();
         }
     }
     // Given the publication id and the name value, update the name

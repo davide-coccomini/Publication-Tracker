@@ -21,6 +21,7 @@ import beans.Author;
 import beans.Publication;
 import beans.User;
 import java.io.File;
+import javafx.scene.Cursor;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -183,14 +184,42 @@ public class PublicationsListController {
         File file = new File("src/main/resources/assets/delete.png");
         Image imageDelete = new Image(file.toURI().toString());
         ImageView iconDelete = new ImageView(imageDelete);
-        
+        iconDelete.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.HAND); 
+            }
+        });
+        iconDelete.setOnMouseExited(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.DEFAULT); //Change cursor to crosshair
+            }
+        });
         file = new File("src/main/resources/assets/update.png");
         Image imageUpdate = new Image(file.toURI().toString());
         ImageView iconUpdate = new ImageView(imageUpdate);
-        
+        iconUpdate.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.HAND); 
+            }
+        });
+        iconUpdate.setOnMouseExited(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.DEFAULT); //Change cursor to crosshair
+            }
+        });
         file = new File("src/main/resources/assets/more.png");
         Image imageMore = new Image(file.toURI().toString());     
         ImageView iconMore = new ImageView(imageMore);
+        iconMore.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.HAND); 
+            }
+        });
+        iconMore.setOnMouseExited(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.DEFAULT); //Change cursor to crosshair
+            }
+        });
         HBox hbox = new HBox();
         hbox.setSpacing(5);
         hbox.setPadding(new Insets(0, 0, 0, 10));  

@@ -132,6 +132,9 @@ public class SessionController {
             System.out.println(e);
         }
     }
+    public Scene getScene(){
+        return scene;
+    }
     public TopController load_Topbar(AnchorPane pane, int page){
         String url = "/fxml/topbar.fxml";
         TopController controller = new TopController(this, page);
