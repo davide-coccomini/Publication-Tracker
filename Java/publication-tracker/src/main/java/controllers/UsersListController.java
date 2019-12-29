@@ -20,6 +20,11 @@ import javafx.scene.layout.HBox;
 import javafx.util.Callback;
 import beans.Author;
 import beans.User;
+import java.io.File;
+import javafx.scene.Cursor;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import middleware.DatabaseManager;
 
 public class UsersListController {
@@ -78,36 +83,55 @@ public class UsersListController {
         usersTable.setItems(users);
     }
     private HBox make_Buttons(final long id){
-        Button b1 = new Button();
-        b1.setText("DELETE");
-        b1.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
-
-        b1.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-            	Object[] arg = new Object[1];
-            	arg[0] = (Object) id;
+        HBox hbox = new HBox();
+        hbox.setSpacing(5);
+        hbox.setPadding(new Insets(0, 0, 0, 10));
+        
+        File file = new File("src/main/resources/assets/delete.png");
+        Image imageDelete = new Image(file.toURI().toString());
+        ImageView iconDelete = new ImageView(imageDelete);
+        iconDelete.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.HAND); 
+            }
+        });
+        iconDelete.setOnMouseExited(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.DEFAULT); 
+            }
+        });
+        file = new File("src/main/resources/assets/update.png");
+        Image imageUpdate = new Image(file.toURI().toString());
+        ImageView iconUpdate = new ImageView(imageUpdate);
+        iconUpdate.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.HAND); 
+            }
+        });
+        iconUpdate.setOnMouseExited(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.DEFAULT);
+            }
+        });
+     
+        iconDelete.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                Object[] arg = new Object[1];
+                arg[0] = (Object) id;
                 dbManager.deleteUser(arg);
                 loadUsers();
             }
-        });
-
-        Button b2 = new Button();
-        b2.setText("VISUALIZE");
-        b2.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
-
-        b2.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
+        }); 
+        iconUpdate.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
                 List<Object> args = new ArrayList<>();
                 args.add(id);
                 controller.navigate(4,args);
             }
-        });
-
-        HBox hbox = new HBox();
-        hbox.setSpacing(5);
-        hbox.setPadding(new Insets(0, 0, 0, 10));
-        hbox.getChildren().addAll(b1,b2);
-
+        }); 
+        hbox.getChildren().addAll(iconDelete,iconUpdate);
         return hbox;
     }
     private ObservableList<User> getUsersList(){
