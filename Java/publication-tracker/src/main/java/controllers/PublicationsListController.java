@@ -20,6 +20,10 @@ import javafx.util.Callback;
 import beans.Author;
 import beans.Publication;
 import beans.User;
+import java.io.File;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 public class PublicationsListController {
     @FXML
@@ -176,23 +180,41 @@ public class PublicationsListController {
         }
     }
     private HBox make_Buttons(final long id){
+        File file = new File("src/main/resources/assets/delete.png");
+        Image imageDelete = new Image(file.toURI().toString());
+        ImageView iconDelete = new ImageView(imageDelete);
+        
+        file = new File("src/main/resources/assets/update.png");
+        Image imageUpdate = new Image(file.toURI().toString());
+        ImageView iconUpdate = new ImageView(imageUpdate);
+        
+        file = new File("src/main/resources/assets/more.png");
+        Image imageMore = new Image(file.toURI().toString());     
+        ImageView iconMore = new ImageView(imageMore);
         HBox hbox = new HBox();
         hbox.setSpacing(5);
         hbox.setPadding(new Insets(0, 0, 0, 10));  
         
         int role = controller.getLoggedUser().getRole();
         if(role == 1){
-            Button b1 = new Button();
-            b1.setText("DELETE");
-            b1.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
-
-            b1.setOnAction(new EventHandler<ActionEvent>() {
-                @Override public void handle(ActionEvent e) {
-                    graphManager.deletePublication(id);
+            iconDelete.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                     graphManager.deletePublication(id);
                     loadPublications();
                 }
-            });    
-            hbox.getChildren().add(b1);
+            }); 
+            iconUpdate.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    List<Object> args = new ArrayList<>();
+                    args.add(id);
+                    args.add(currentPage);
+                    controller.navigate(13,args);
+                }
+            }); 
+            hbox.getChildren().addAll(iconDelete,iconUpdate);
+
         }
    
         Button b2 = new Button();
@@ -208,7 +230,15 @@ public class PublicationsListController {
             }
         });    
         
-    
+        iconMore.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+           @Override
+           public void handle(MouseEvent event) {
+                List<Object> args = new ArrayList<>();
+                args.add(id);
+                args.add(currentPage);
+                controller.navigate(11,args);
+           }
+       }); 
         hbox.getChildren().add(b2);
        
         return hbox;
