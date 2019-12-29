@@ -176,7 +176,7 @@ public class AuthorsListController {
         });
         iconDelete.setOnMouseExited(new EventHandler<MouseEvent>() {
             public void handle(MouseEvent me) {
-                controller.getScene().setCursor(Cursor.DEFAULT); //Change cursor to crosshair
+                controller.getScene().setCursor(Cursor.DEFAULT); 
             }
         });
         file = new File("src/main/resources/assets/update.png");
@@ -189,7 +189,7 @@ public class AuthorsListController {
         });
         iconUpdate.setOnMouseExited(new EventHandler<MouseEvent>() {
             public void handle(MouseEvent me) {
-                controller.getScene().setCursor(Cursor.DEFAULT); //Change cursor to crosshair
+                controller.getScene().setCursor(Cursor.DEFAULT);
             }
         });
         file = new File("src/main/resources/assets/more.png");
@@ -202,7 +202,7 @@ public class AuthorsListController {
         });
         iconMore.setOnMouseExited(new EventHandler<MouseEvent>() {
             public void handle(MouseEvent me) {
-                controller.getScene().setCursor(Cursor.DEFAULT); //Change cursor to crosshair
+                controller.getScene().setCursor(Cursor.DEFAULT);
             }
         });
         HBox hbox = new HBox();
