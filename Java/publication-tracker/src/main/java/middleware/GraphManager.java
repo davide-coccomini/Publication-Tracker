@@ -116,6 +116,14 @@ public class GraphManager implements AutoCloseable{
             return authors;
         }
     }
+    // Given the id of an Author and new values, update it
+    public void updateAuthor(long id, String name, String email, String heading, String affiliation){
+        try (Session session = driver.session()){
+            session.run("MATCH (a:Author) WHERE id(a) = $id SET a.name = $name, a.email = $email, a.heading = $heading, a.affiliation = $affiliation RETURN a", parameters("id",id, "name", name, "email", email, "heading", heading, "affiliation", affiliation));
+        }catch(Exception e){
+            System.out.println(e);
+        }
+    }
    // Given the id of an Author, get all the relationships with it
    public StatementResult getAuthorRelationships(final Long id){
         try (Session session = driver.session()){
@@ -243,6 +251,14 @@ public class GraphManager implements AutoCloseable{
             StatementResult result = session.run(
                     "MATCH (a:Author) RETURN count(a) as number");
             return result.single().get(0).asInt();
+        }
+    }
+    // Given the publication id and the name value, update the name
+    public void updatePublication(long id, String name){
+        try (Session session = driver.session()){
+            session.run("MATCH (p:Publication) WHERE id(p) = $id SET p.name = $name RETURN p", parameters("id",id, "name", name));
+        }catch(Exception e){
+            System.out.println(e);
         }
     }
     // Given an id, get the matching Publication

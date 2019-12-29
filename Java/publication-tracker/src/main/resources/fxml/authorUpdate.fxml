@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane fx:id="topbar" />
+    <TextField fx:id="nameText" layoutX="177.0" layoutY="138.0" prefHeight="59.0" prefWidth="478.0" promptText="Name" style="-fx-background-radius: 30 30 30 30;" />
+    <Button fx:id="updateButton" layoutX="329.0" layoutY="401.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="174.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 30 30 30 30;" text="UPDATE" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Button>
+    <Text fx:id="errorText" fill="#cc0000" layoutX="197.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Text>
+    <TextField fx:id="emailText" layoutX="177.0" layoutY="202.0" prefHeight="59.0" prefWidth="478.0" promptText="Email" style="-fx-background-radius: 30 30 30 30;" />
+    <TextField fx:id="headingText" layoutX="177.0" layoutY="266.0" prefHeight="59.0" prefWidth="478.0" promptText="Heading" style="-fx-background-radius: 30 30 30 30;" />
+    <TextField fx:id="affiliationText" layoutX="177.0" layoutY="330.0" prefHeight="59.0" prefWidth="478.0" promptText="Affiliation" style="-fx-background-radius: 30 30 30 30;" />
+  </children>
+</AnchorPane>

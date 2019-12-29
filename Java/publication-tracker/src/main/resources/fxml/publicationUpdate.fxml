@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="266.0" prefWidth="831.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane fx:id="topbar" />
+    <Text fx:id="errorText" fill="#cc0000" layoutX="47.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Text>
+    <TextField fx:id="nameText" layoutX="27.0" layoutY="159.0" prefHeight="58.000099999997474" prefWidth="699.0" promptText="Name" style="-fx-background-radius: 30 30 30 30;" />
+    <Button fx:id="updateButton" layoutX="630.0" layoutY="159.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="174.0" style="-fx-background-color: #28abe3;&#10;-fx-background-radius: 30 30 30 30;" text="UPDATE" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

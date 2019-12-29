@@ -216,19 +216,7 @@ public class PublicationsListController {
             hbox.getChildren().addAll(iconDelete,iconUpdate);
 
         }
-   
-        Button b2 = new Button();
-        b2.setText("VISUALIZE");
-        b2.setStyle("-fx-background-color: #28abe3; -fx-text-fill: white");
-        
-        b2.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                List<Object> args = new ArrayList<>();
-                args.add(id);
-                args.add(currentPage);
-                controller.navigate(11,args);
-            }
-        });    
+ 
         
         iconMore.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
            @Override
@@ -239,7 +227,7 @@ public class PublicationsListController {
                 controller.navigate(11,args);
            }
        }); 
-        hbox.getChildren().add(b2);
+        hbox.getChildren().add(iconMore);
        
         return hbox;
     }

@@ -106,6 +106,16 @@ public class SessionController {
                 load_Page(c11,"publicationView.fxml");
                 c11.initController();
                 break;
+            case 12: // Author update
+                AuthorUpdateController c12 = new AuthorUpdateController(this,args);
+                load_Page(c12,"authorUpdate.fxml");
+                c12.initController();
+                break;
+            case 13: // Publication update
+                PublicationUpdateController c13 = new PublicationUpdateController(this,args);
+                load_Page(c13,"publicationUpdate.fxml");
+                c13.initController();
+                break;
          }
         stage.sizeToScene();
     }

@@ -195,7 +195,7 @@ public class AuthorsListController {
                    List<Object> args = new ArrayList<>();
                    args.add(id);
                    args.add(currentPage);
-                   controller.navigate(12,null);
+                   controller.navigate(12,args);
                 }
             }); 
             hbox.getChildren().addAll(iconDelete,iconUpdate);
