@@ -12,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Font;
 import beans.User;
+import javafx.scene.Cursor;
 
 public class MenuController {
     @FXML
@@ -66,6 +67,16 @@ public class MenuController {
                     event.consume();
                 }
            }); 
+        buttonLogout.setOnMouseExited(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.DEFAULT);
+            }
+        });
+        buttonLogout.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent me) {
+                controller.getScene().setCursor(Cursor.HAND); 
+            }
+        });
         User u = controller.getLoggedUser();
         if(u.getRole()==1){ // Admin
             buttonUsers.setVisible(true);
