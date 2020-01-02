@@ -49,7 +49,7 @@ public class DatabaseManager {
 
     public void deleteUser(Object[] args){
         String query = "DELETE FROM user WHERE id = ?";
-        worker(query, args, 0);
+        worker(query, args, 1);
     }
 
     public User getUserById(Object[] args){
@@ -77,7 +77,7 @@ public class DatabaseManager {
 
     public void updateUserField(String field, Object[] args){
         String query = "UPDATE user SET "+field+" = ? WHERE id = ?";
-        worker(query,args,0);
+        worker(query,args,1);
     }
     public User autentication(Object[] args){
         String query = "SELECT * FROM user WHERE email = ? AND password = ?";

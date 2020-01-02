@@ -3,10 +3,8 @@ package controllers;
 import java.util.ArrayList;
 import java.util.List;
 
-import middleware.GraphManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
@@ -18,7 +16,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
-import beans.Author;
 import beans.User;
 import java.io.File;
 import javafx.scene.Cursor;
@@ -32,9 +29,7 @@ public class UsersListController {
     private AnchorPane topbar;
     @FXML
     private TableView usersTable;
-    @FXML
-    private Button createButton;
-
+    
     private final SessionController controller;
     private final DatabaseManager dbManager;
 

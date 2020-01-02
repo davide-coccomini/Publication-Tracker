@@ -1,9 +1,7 @@
 package controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import middleware.GraphManager;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -33,7 +31,7 @@ public class UserViewController {
     ChoiceBox role;
     @FXML
     Text errorText;
-
+    long currentUserId;
 	   public UserViewController(SessionController c, List<Object> args){
 	        controller = c;
 	        currentUser = (long) args.get(0);
@@ -44,8 +42,9 @@ public class UserViewController {
 	        topbar.toFront();
 
         	loadUserById(currentUser);
-
-        	enableTextBoxes(false);
+                
+                enableTextBoxes(controller.getLoggedUser().getRole()==1); // role 1 = admin
+                
 	        updateButton.setOnAction(new EventHandler<ActionEvent>() {
 	            @Override public void handle(ActionEvent e) {
 	            	update();
@@ -60,27 +59,29 @@ public class UserViewController {
 
 	    }
 	    private void loadUserById(long id){
+                
 	    	Object[] args = new Object[1];
 	    	args[0] = (Object) id;
 	    	User u = dbManager.getUserById(args);
-	    	if(u!=null){
-	    		name.setText(u.getUsername());
-	    		password.setText(u.getPassword());
-	    		email.setText(u.getEmail());
-	    		Object r = "User";
-	    		if(u.getRole()==1){
-	    			r = "Admin";
-	    		}
-	    		role.setValue(r);
+	    	if(u!=null){ 
+                    currentUserId= id;
+                    name.setText(u.getUsername());
+                    password.setText(u.getPassword());
+                    email.setText(u.getEmail());
+                    Object r = "User";
+                    if(u.getRole()==1){
+                            r = "Admin";
+                    }
+                    role.setValue(r);
 	    	}
 	    	else{
 	    		System.out.println("user not found");
 	    	}
 	    }
 	    public void update(){
-	    	int id = Integer.parseInt(errorText.getText());
+	    	 
 	    	Object[] args = new Object[1];
-	    	args[0] = id;
+	    	args[0] = currentUserId;
 	    	User u = dbManager.getUserById(args);
 
 	    	int newRole = 0;
@@ -94,19 +95,19 @@ public class UserViewController {
 	    		System.out.println(e);
 	    	}
 	    	if(u.getRole()!=newRole){
-	    		updateField(id,"Role",(Object) newRole);
+	    		updateField(currentUserId,"Role",(Object) newRole);
 	    	}
 
-	    	checkField(id,u.getEmail(),email.getText(),"email");
-	    	checkField(id,u.getUsername(),name.getText(),"username");
-	    	checkField(id,u.getPassword(),password.getText(),"password");
+	    	checkField(currentUserId,u.getEmail(),email.getText(),"email");
+	    	checkField(currentUserId,u.getUsername(),name.getText(),"name");
+	    	checkField(currentUserId,u.getPassword(),password.getText(),"password");
 	    }
-	    private void checkField(int id, String oldVal, String newVal, String fieldName){
+	    private void checkField(long id, String oldVal, String newVal, String fieldName){
 	    	if(!oldVal.equals(newVal)){
 	    		updateField(id,fieldName,(Object) newVal);
 	    	}
 	    }
-	    private void updateField(int id, String field, Object val){
+	    private void updateField(long id, String field, Object val){
 	    	Object[] args= new Object[2];
 	    	args[0] = val;
 	    	args[1] = id;
