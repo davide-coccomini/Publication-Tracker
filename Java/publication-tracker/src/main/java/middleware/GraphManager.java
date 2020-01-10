@@ -174,6 +174,16 @@ public class GraphManager implements AutoCloseable{
             return new Author(result.single());
        } 
    }
+   // Get citation from id author
+   public int getAuthorCitations(long id){
+       String query = "MATCH (a1)-[:PUBLISHES]->(p1)<-[:CITES]-(p2)<-[:PUBLISHES]-(a2) WHERE id(a1) = $id1 AND id(a2) <> $id2 RETURN  size(COLLECT(p1))";
+       try (Session session = driver.session()){
+            StatementResult result = session.run(query, parameters("id1",id, "id2", id));
+            return result.single().get(0).asInt();
+        }catch(Exception e){
+            return 0;
+        }
+   }
    // Given an author id, return other authors that wrote publications with him:
    public List<Author> getCoauthors(long id){
        String query = "MATCH (a1)-[:PUBLISHES]->()<-[:PUBLISHES]-(a2) WHERE id(a1) = $id \n" +
@@ -194,12 +204,53 @@ public class GraphManager implements AutoCloseable{
             return null;
         }
    }
+   // Given two authors, find common coauthors
+   public List<Author> getCommonCoauthors(long idAuthor1, long idAuthor2){
+       String query = "MATCH (a1)-[:PUBLISHES]->()<-[:PUBLISHES]-(a2)-[:PUBLISHES]->()<-[:PUBLISHES]-(a3) WHERE id(a1) = $id1 and id(a3) = $id2 RETURN collect(DISTINCT a2) as coauthors";
+        try (Session session = driver.session()){
+            StatementResult result = session.run(query, parameters("id1",idAuthor1, "id2", idAuthor2));
+            List<Author> authors = new ArrayList();
+            while (result.hasNext()){
+                List<Object> authorsNode = result.next().get("coauthors").asList();
+                for(Object authorObject: authorsNode){
+                    Node authorNode = (Node) authorObject;
+                    authors.add(new Author(authorNode));
+                }
+            }
+            return authors;
+        }catch(Exception e){
+            return null;
+        }
+   }
     // Return the number of authors
     public int getAuthorsNumber(){
         try (Session session = driver.session()){
             StatementResult result = session.run(
                     "MATCH (a:Author) RETURN count(a) as number");
             return result.single().get(0).asInt();
+        }
+    }
+    // Return not direct authors
+    public List<Author> getIndirectCoauthors(long id){
+        String query = "MATCH (a:Author)-[:PUBLISHES]->(p:Publication)<-[:PUBLISHES]-(a2:Author)-[:PUBLISHES]->(p2:Publication)<-[]-(a3:Author) WHERE id(a) = $id AND id(a3) <> id(a2) AND id(a3) <> id(a) RETURN COLLECT(DISTINCT a2) as direct_authors,COLLECT(DISTINCT a3) as all_authors";
+        try (Session session = driver.session()){
+            StatementResult result = session.run(query, parameters("id", id));
+            List<Author> authors = new ArrayList();
+            while (result.hasNext()){
+                Record r = result.next();
+                Set<Object> allAuthorsNodes = new HashSet(r.get("all_authors").asList());
+                Set<Object> directAuthorsNodes = new HashSet(r.get("direct_authors").asList());
+                directAuthorsNodes.removeAll(allAuthorsNodes);
+                List<Object> authorsNode = new ArrayList(directAuthorsNodes);
+                for(Object authorObject: authorsNode){
+                    Node authorNode = (Node) authorObject;
+                    authors.add(new Author(authorNode));
+                }
+            }
+            return authors;
+        }catch(Exception e){
+            e.printStackTrace();
+            return new ArrayList();
         }
     }
    ///// END AUTHORS METHODS /////
