@@ -88,7 +88,7 @@ public class AuthorViewController {
             return;
         }
         long searchedAuthorId = searchedAuthor.getId();
-        List<Author> commonCoauthors = graphManager.getCommonCoauthors(authorId, searchedAuthorId);
+        final List<Author> commonCoauthors = graphManager.getCommonCoauthors(authorId, searchedAuthorId);
         TableColumn<Author,String> name_Col;
         name_Col = new TableColumn<>("Name");
         name_Col.setCellValueFactory(new PropertyValueFactory("name"));
@@ -101,7 +101,30 @@ public class AuthorViewController {
         TableColumn<Author,String> affiliation_Col;
         affiliation_Col = new TableColumn<>("Affiliation");
         affiliation_Col.setCellValueFactory(new PropertyValueFactory("affiliation"));
-        commonCoauthorsTable.getColumns().setAll(name_Col, email_Col, heading_Col, affiliation_Col);
+        TableColumn citations_Col = new TableColumn("Citations");
+        citations_Col.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+        Callback<TableColumn<Object, String>, TableCell<Object, String>> cellFactoryAuthors = //
+                new Callback<TableColumn<Object, String>, TableCell<Object, String>>() {
+            @Override
+            public TableCell call(final TableColumn<Object, String> param) {
+                final TableCell<Object, String> cell = new TableCell<Object, String>() {
+
+                    @Override
+                    public void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if(getIndex()<commonCoauthors.size() && getIndex() >= 0){
+                            Author a = commonCoauthors.get(getIndex());
+                            int citations = graphManager.getAuthorCitations(a.getId());
+  
+                            setText(Integer.toString(citations));
+                        }
+                    }
+                };
+                return cell;
+            }
+        };
+        citations_Col.setCellFactory(cellFactoryAuthors);
+        commonCoauthorsTable.getColumns().setAll(name_Col, email_Col, heading_Col, affiliation_Col, citations_Col);
         commonCoauthorsTable.setItems(FXCollections.observableArrayList(commonCoauthors));
         if(commonCoauthors.size()>0){
             showTableResult();
@@ -110,7 +133,7 @@ public class AuthorViewController {
         }
     }
     private void loadInformation(){
-        Author author = graphManager.getAuthorById(authorId);
+        final Author author = graphManager.getAuthorById(authorId);
         TableColumn<Author,String> name_Col;
         name_Col = new TableColumn<>("Name");
         name_Col.setCellValueFactory(new PropertyValueFactory("name"));
@@ -123,7 +146,28 @@ public class AuthorViewController {
         TableColumn<Author,String> affiliation_Col;
         affiliation_Col = new TableColumn<>("Affiliation");
         affiliation_Col.setCellValueFactory(new PropertyValueFactory("affiliation"));
-        informationTable.getColumns().setAll(name_Col, email_Col, heading_Col, affiliation_Col);
+        TableColumn citations_Col = new TableColumn("Citations");
+        citations_Col.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+        Callback<TableColumn<Object, String>, TableCell<Object, String>> cellFactoryAuthors = //
+                new Callback<TableColumn<Object, String>, TableCell<Object, String>>() {
+            @Override
+            public TableCell call(final TableColumn<Object, String> param) {
+                final TableCell<Object, String> cell = new TableCell<Object, String>() {
+
+                    @Override
+                    public void updateItem(String item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if(getIndex() == 0){
+                            int citations = graphManager.getAuthorCitations(author.getId());
+                            setText(Integer.toString(citations));
+                        }
+                    }
+                };
+                return cell;
+            }
+        };
+        citations_Col.setCellFactory(cellFactoryAuthors);
+        informationTable.getColumns().setAll(name_Col, email_Col, heading_Col, affiliation_Col,citations_Col);
         informationTable.setItems(FXCollections.observableArrayList(author));
     }
     private void loadIndirectAuthors(){
